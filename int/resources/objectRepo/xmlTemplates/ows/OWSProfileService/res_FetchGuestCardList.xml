@@ -1,0 +1,60 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:name="http://webservices.micros.com/ows/5.1/Name.wsdl" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:name1="http://webservices.micros.com/og/4.3/Name/">
+   <soapenv:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="E" channelValidation="true" terminalID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName></core:UserName>
+               <core:UserPassword></core:UserPassword>
+               <core:Domain></core:Domain>
+               <core:SecurityId></core:SecurityId>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key></core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <name:FetchGuestCardListResponse>
+         <name:Result resultStatusFlag="?">
+            <com:Text>
+               <com:TextElement formatted="?" language="?"></com:TextElement>
+            </com:Text>
+            <com:IDs>
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <com:OperaErrorCode></com:OperaErrorCode>
+         </name:Result>
+         <name:GuestCardList>
+            <name1:NameMembership operaId="?" externalId="?" primary="?" preferred="?" central_setup_yn="?" membership_class="?" points_label="?" status="?" displaySequence="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?" usedInReservation="?">
+               <com:membershipType></com:membershipType>
+               <com:membershipNumber></com:membershipNumber>
+               <com:membershipLevel></com:membershipLevel>
+               <com:membershipNextLevel></com:membershipNextLevel>
+               <com:memberName></com:memberName>
+               <com:effectiveDate></com:effectiveDate>
+               <com:expirationDate></com:expirationDate>
+               <com:currentPoints></com:currentPoints>
+               <com:enrollmentCode></com:enrollmentCode>
+               <com:ResvNameId>
+                  <com:UniqueID type="?" source="?"></com:UniqueID>
+               </com:ResvNameId>
+               <com:membershipid type="?" source="?"></com:membershipid>
+               <com:transferPoints></com:transferPoints>
+               <com:enrollmentSource></com:enrollmentSource>
+               <com:enrolledAt></com:enrolledAt>
+               <com:awardPointsToExpires>
+                  <com:AwardPointsToExpire expirationDate="?" totalToExpire="?" expireByDate="?"/>
+               </com:awardPointsToExpires>
+               <com:inactive></com:inactive>
+               <com:excludeBatchIndicator></com:excludeBatchIndicator>
+            </name1:NameMembership>
+         </name:GuestCardList>
+      </name:FetchGuestCardListResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

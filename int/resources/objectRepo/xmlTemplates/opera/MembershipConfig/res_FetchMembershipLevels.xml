@@ -1,0 +1,43 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchMembershipLevelsRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:MembershipLevels>
+            <v91:MembershipLevel>
+               <v91:Type></v91:Type>
+               <v91:Code></v91:Code>
+               <v91:Description></v91:Description>
+               <v91:Label></v91:Label>
+               <v91:Rank></v91:Rank>
+               <v91:VIP></v91:VIP>
+               <v91:DisplayColor></v91:DisplayColor>
+               <v91:Inactive></v91:Inactive>
+               <v91:FolioTexts>
+                  <v91:HotelFolioTexts HotelCode="?">
+                     <v91:FolioText1></v91:FolioText1>
+                     <v91:FolioText2></v91:FolioText2>
+                     <v91:FolioText3></v91:FolioText3>
+                     <v91:FolioText4></v91:FolioText4>
+                  </v91:HotelFolioTexts>
+               </v91:FolioTexts>
+               <v91:Fulfillment></v91:Fulfillment>
+               <v91:ChangesRestricted></v91:ChangesRestricted>
+               <v91:AutoRenewGrace></v91:AutoRenewGrace>
+               <v91:CardValidYears></v91:CardValidYears>
+               <v91:RestrictedLevel></v91:RestrictedLevel>
+               <v91:RenewCard></v91:RenewCard>
+               <v91:FeeRequired></v91:FeeRequired>
+               <v91:MaxDowngradeLevel></v91:MaxDowngradeLevel>
+               <v91:NumberOfTransactions></v91:NumberOfTransactions>
+            </v91:MembershipLevel>
+         </v9:MembershipLevels>
+      </v9:FetchMembershipLevelsRS>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,35 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateCancellationPolicyRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Policy>
+            <v91:RevenueType/>
+            <v91:Policy Effective="?" Manual="?" NonRefundable="?" PolicyCode="?">
+               <v91:Deadline AbsoluteDeadline="?" OffsetDropTime="?" OffsetFromArrival="?" OffsetFromBookingDate="?"/>
+               <v91:AmountPercent Amount="?" BasisType="?" CurrencyCode="?" Nights="?" Percent="?"/>
+               <v91:PenaltyDescription/>
+               <v91:OffsetUnit/>
+            </v91:Policy>
+            <v91:PercentageDue/>
+            <v91:Comments/>
+            <v91:PolicyID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            <v91:HotelCode/>
+            <v91:ReservationID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+         </v9:Policy>
+      </v9:CreateCancellationPolicyRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

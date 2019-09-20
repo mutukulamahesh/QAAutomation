@@ -1,0 +1,35 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/fof/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:ApplyFinalPostingsRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Reservation AutoCheckout="?" CheckoutWithOpenFolio="?" MobileCheckout="?" StopCheckout="?" v91:CashierID="?">
+            <v91:HotelCode/>
+            <v91:ReservationIDList>
+               <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            </v91:ReservationIDList>
+            <v91:EventType/>
+            <v91:CheckoutInstr IgnoreWarnings="?">
+               <v91:RoomStatus/>
+               <v91:ScheduleOn/>
+               <v91:GuestPreferredCurrency/>
+            </v91:CheckoutInstr>
+            <v91:MobileCheckoutFolioEmail/>
+         </v9:Reservation>
+         <v9:ResponseInstruction/>
+      </v9:ApplyFinalPostingsRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

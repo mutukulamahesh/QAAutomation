@@ -1,0 +1,38 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/par/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchChannelRoomMappingRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:ChannelRoomMappingSearch MaxFetchCount="?" PageNumber="?">
+            <v91:HotelCodes>
+               <v91:Code/>
+            </v91:HotelCodes>
+            <v91:BookingChannelCodes>
+               <v91:Code/>
+            </v91:BookingChannelCodes>
+            <v91:RoomTypes>
+               <v91:Code/>
+            </v91:RoomTypes>
+            <v91:ChannelRoomTypes>
+               <v91:Code/>
+            </v91:ChannelRoomTypes>
+            <v91:IncludeInactiveMappings/>
+            <v91:IncludeUnmappedRoomTypes/>
+            <v91:OnlyUnmappedRoomTypes/>
+         </v9:ChannelRoomMappingSearch>
+      </v9:FetchChannelRoomMappingRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

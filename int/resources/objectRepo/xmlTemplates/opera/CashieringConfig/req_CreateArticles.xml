@@ -1,0 +1,31 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateArticlesRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:HotelCode/>
+         <v9:Articles>
+            <v91:Article ArticleCode="?" HotelCode="?" Inactive="?" OrderSequence="?">
+               <v91:Description/>
+               <v91:TransactionCode/>
+               <v91:Price Amount="?" CurrencyCode="?"/>
+               <v91:PostIt AvailableForPostIt="?" Color="?"/>
+               <v91:UniversalProductCode/>
+            </v91:Article>
+         </v9:Articles>
+      </v9:CreateArticlesRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

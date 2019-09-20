@@ -1,0 +1,179 @@
+<soapenv:Envelope xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://htng.org/PWSWG/2006/08/SingleGuestItinerary/Name/Types" xmlns:typ1="http://htng.org/PWSWG/2006/08/SingleGuestItinerary/Common/Types">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:UpdateProfileRequest>
+         <typ:Profile inactiveDate="?" insertDate="?" insertUser="?" languageCode="?" nameType="?" nationality="?" protected="?" taxExempt="?" updateDate="?" updateUser="?" vipCode="?">
+            <typ:IDs>
+               <typ1:UniqueID source="?"/>
+            </typ:IDs>
+            <typ:Customer birthDate="?" gender="?">
+               <typ:PersonName familiarName="?" nameOrdered="?">
+                  <typ1:NameTitle/>
+                  <typ1:FirstName/>
+                  <typ1:MiddleName/>
+                  <typ1:LastName/>
+                  <typ1:NameSuffix/>
+               </typ:PersonName>
+               <typ:BusinessTitle/>
+               <typ:GovernmentIDList>
+                  <typ1:GovernmentID>
+                     <typ1:DocumentType/>
+                     <typ1:DocumentNumber/>
+                     <typ1:EffectiveDate/>
+                     <typ1:ExpirationDate/>
+                     <typ1:PlaceOfIssue/>
+                     <typ1:CountryOfIssue/>
+                  </typ1:GovernmentID>
+               </typ:GovernmentIDList>
+            </typ:Customer>
+            <typ:Company commissionCode="?">
+               <typ:CompanyName/>
+            </typ:Company>
+            <typ:CreditCards>
+               <typ:NameCreditCard cardType="?" displaySequence="?" inactiveDate="?" insertDate="?" insertUser="?" otherCardType="?" primary="?" updateDate="?" updateUser="?">
+                  <typ1:CardCode/>
+                  <typ1:CardHolderName/>
+                  <typ1:CardNumber/>
+                  <typ1:SeriesCode/>
+                  <typ1:EffectiveDate/>
+                  <typ1:ExpirationDate/>
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"/>
+                  </typ:IDs>
+               </typ:NameCreditCard>
+            </typ:CreditCards>
+            <typ:Addresses>
+               <typ:NameAddress addressType="?" displaySequence="?" inactiveDate="?" insertDate="?" insertUser="?" otherAddressType="?" primary="?" updateDate="?" updateUser="?">
+                  <typ1:AddressLine/>
+                  <typ1:CityName/>
+                  <typ1:StateProv/>
+                  <typ1:CountryCode/>
+                  <typ1:PostalCode/>
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"/>
+                  </typ:IDs>
+               <typ1:AddressLine/><typ1:AddressLine/><typ1:AddressLine/></typ:NameAddress>
+			   <typ:NameAddress addressType="?" displaySequence="?" inactiveDate="?" insertDate="?" insertUser="?" otherAddressType="?" primary="?" updateDate="?" updateUser="?">
+                  <typ1:AddressLine/>
+                  <typ1:CityName/>
+                  <typ1:StateProv/>
+                  <typ1:CountryCode/>
+                  <typ1:PostalCode/>
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"/>
+                  </typ:IDs>
+               <typ1:AddressLine/><typ1:AddressLine/><typ1:AddressLine/></typ:NameAddress>
+            </typ:Addresses>
+            <typ:Blacklist flag="?"/>
+            <typ:Phones>
+               <typ:NamePhone displaySequence="?" inactiveDate="?" insertDate="?" insertUser="?" phoneRole="?" phoneType="?" primary="?" updateDate="?" updateUser="?">
+                  <typ1:PhoneNumber/>
+                  <typ1:PhoneData>
+                     <typ1:CountryAccessCode/>
+                     <typ1:AreaCode/>
+                     <typ1:PhoneNumber/>
+                     <typ1:Extension/>
+                  </typ1:PhoneData>
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"/>
+                  </typ:IDs>
+               </typ:NamePhone>
+			   <typ:NamePhone displaySequence="?" inactiveDate="?" insertDate="?" insertUser="?" phoneRole="?" phoneType="?" primary="?" updateDate="?" updateUser="?">
+                  <typ1:PhoneNumber/>
+                  <typ1:PhoneData>
+                     <typ1:CountryAccessCode/>
+                     <typ1:AreaCode/>
+                     <typ1:PhoneNumber/>
+                     <typ1:Extension/>
+                  </typ1:PhoneData>
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"/>
+                  </typ:IDs>
+               </typ:NamePhone>
+            </typ:Phones>
+            <typ:Preferences>
+               <typ:Preference inactiveDate="?" insertDate="?" insertUser="?" otherPreferenceType="?" preferenceType="?" preferenceValue="?" resortCode="?" updateDate="?" updateUser="?">
+                  <typ:PreferenceDescription>
+                     <typ1:Text>
+                        <typ1:TextElement language="?"/>
+                     </typ1:Text>
+                     <typ1:Image/>
+                     <typ1:Url/>
+                  </typ:PreferenceDescription>
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"/>
+                  </typ:IDs>
+               </typ:Preference>
+            </typ:Preferences>
+            <typ:Memberships>
+               <typ:NameMembership displaySequence="?" inactiveDate="?" insertDate="?" insertUser="?" primary="?" updateDate="?" updateUser="?">
+                  <typ1:MembershipType/>
+                  <typ1:MembershipNumber/>
+                  <typ1:MembershipLevel/>
+                  <typ1:MemberName/>
+                  <typ1:EffectiveDate/>
+                  <typ1:ExpirationDate/>
+                  <typ1:CurrentPoints/>
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"/>
+                  </typ:IDs>
+               </typ:NameMembership>
+			   <typ:NameMembership displaySequence="?" inactiveDate="?" insertDate="?" insertUser="?" primary="?" updateDate="?" updateUser="?">
+                  <typ1:MembershipType/>
+                  <typ1:MembershipNumber/>
+                  <typ1:MembershipLevel/>
+                  <typ1:MemberName/>
+                  <typ1:EffectiveDate/>
+                  <typ1:ExpirationDate/>
+                  <typ1:CurrentPoints/>
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"/>
+                  </typ:IDs>
+               </typ:NameMembership>
+            </typ:Memberships>
+            <typ:NegotiatedRates>
+               <typ:NegotiatedRate beginDate="?" commissionCode="?" displaySequence="?" endDate="?" inactiveDate="?" insertDate="?" insertUser="?" rateCode="?" resortCode="?" updateDate="?" updateUser="?">
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"/>
+                  </typ:IDs>
+               </typ:NegotiatedRate>
+            </typ:NegotiatedRates>
+            <typ:Comments>
+               <typ:Comment commentType="?" inactiveDate="?" insertDate="?" insertUser="?" updateDate="?" updateUser="?">
+                  <typ1:Text>
+                     <typ1:TextElement language="?"/>
+					 <typ1:TextElement language="?"/>
+                  </typ1:Text>
+                  <typ1:Image/>
+                  <typ1:Url/>
+               </typ:Comment>
+			   <typ:Comment commentType="?" inactiveDate="?" insertDate="?" insertUser="?" updateDate="?" updateUser="?">
+                  <typ1:Text>
+                     <typ1:TextElement language="?"/>
+                  </typ1:Text>
+                  <typ1:Image/>
+                  <typ1:Url/>
+               </typ:Comment>
+            </typ:Comments>
+            <typ:UserDefinedValues>
+               <typ1:UserDefinedValue valueName="?">
+                  <typ1:CharacterValue/>
+                  <typ1:DateValue/>
+                  <typ1:NumericValue/>
+               </typ1:UserDefinedValue>
+			   <typ1:UserDefinedValue valueName="?">
+                  <typ1:CharacterValue/>
+                  <typ1:DateValue/>
+                  <typ1:NumericValue/>
+               </typ1:UserDefinedValue>
+			   <typ1:UserDefinedValue valueName="?">
+                  <typ1:CharacterValue/>
+                  <typ1:DateValue/>
+                  <typ1:NumericValue/>
+               </typ1:UserDefinedValue>
+            </typ:UserDefinedValues>
+         </typ:Profile>
+         <typ:ResortId/>
+      </typ:UpdateProfileRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

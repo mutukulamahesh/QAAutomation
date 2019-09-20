@@ -1,0 +1,57 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:res="http://webservices.micros.com/ows/5.1/Reservation.wsdl" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:res1="http://webservices.micros.com/og/4.3/Reservation/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/">
+   <soapenv:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="E" channelValidation="true" terminalID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName></core:UserName>
+               <core:UserPassword></core:UserPassword>
+               <core:Domain></core:Domain>
+               <core:SecurityId></core:SecurityId>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key></core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:GetReservationStatusResponse>
+         <res:Result resultStatusFlag="?">
+            <com:Text>
+               <com:TextElement formatted="?" language="?"></com:TextElement>
+            </com:Text>
+            <com:IDs>
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <com:OperaErrorCode></com:OperaErrorCode>
+         </res:Result>
+         <res:HotelReference chainCode="?" hotelCode="?"></res:HotelReference>
+         <res:ConfirmationNumber></res:ConfirmationNumber>
+         <res:ExternalSystemNumber>
+            <res1:ReferenceNumber></res1:ReferenceNumber>
+            <res1:LegNumber></res1:LegNumber>
+            <res1:ReferenceType></res1:ReferenceType>
+         </res:ExternalSystemNumber>
+         <res:ResvNameId></res:ResvNameId>
+         <res:NameID type="?" source="?"></res:NameID>
+         <res:ReservationStatus></res:ReservationStatus>
+         <res:PreRegisterFlag></res:PreRegisterFlag>
+         <res:StayDateRange>
+            <hot:StartDate></hot:StartDate>
+            <hot:EndDate></hot:EndDate>
+            <hot:Duration></hot:Duration>
+         </res:StayDateRange>
+         <res:ArrivalTime></res:ArrivalTime>
+         <res:MembershipID type="?" source="?"></res:MembershipID>
+         <res:MembershipType></res:MembershipType>
+         <res:MembershipNumber></res:MembershipNumber>
+         <res:LastName></res:LastName>
+         <res:FirstName></res:FirstName>
+      </res:GetReservationStatusResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

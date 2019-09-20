@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Mar 22 15:08:11 IST 2019
+OPERAUIGeneric-0.0.1-SNAPSHOT-tests.jar>=
+OPERAUIGeneric-0.0.1-SNAPSHOT-fat-tests.jar>=
+OPERAUIGeneric-0.0.1-SNAPSHOT-jar-with-dependencies.jar>=
+OPERAUIGeneric-0.0.1-SNAPSHOT.jar>=
+OPERAUIGeneric-0.0.1-SNAPSHOT.pom>=

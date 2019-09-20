@@ -1,0 +1,46 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ava="http://webservices.micros.com/ows/5.1/Availability.wsdl" xmlns:ava1="http://webservices.micros.com/og/4.3/Availability/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ava:RegionalAvailabilityRequest>
+         <ava:RegionalSearchCode otherRegionalSearchCodeType="?" regionalSearchCodeType="?"/>
+         <ava:HotelReferences>
+            <ava:HotelReference chainCode="?" hotelCode="?"/>
+			<ava:HotelReference chainCode="?" hotelCode="?"/>
+         </ava:HotelReferences>
+         <ava:GeographicSearch>
+            <ava1:GeoSearch>
+               <hot:Radius distanceUnit="?" otherDistanceUnit="?"/>
+               <hot:Position altitude="?" latitude="?" longitude="?"/>
+            </ava1:GeoSearch>
+            <ava1:CitySearch cityCode="?" countryCode="?" regionCode="?" sameCityIndicator="?" stateCode="?"/>
+         </ava:GeographicSearch>
+         <ava:StayDateRange>
+            <hot:StartDate/>
+            <hot:EndDate/>
+            <hot:Duration/>
+         </ava:StayDateRange>
+         <ava:NumberOfRooms/>
+         <ava:NumberOfGuests/>
+         <ava:MinMaxRate commissionCode="?" currencyCode="?" decimals="?" maximumRate="?" minimumRate="?"/>
+      </ava:RegionalAvailabilityRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

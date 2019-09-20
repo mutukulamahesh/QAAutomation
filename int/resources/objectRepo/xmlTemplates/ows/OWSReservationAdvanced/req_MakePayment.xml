@@ -1,0 +1,96 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns:res="http://webservices.micros.com/og/4.3/ResvAdvanced/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="?" primaryLangID="?" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:MakePaymentRequest DCCCheck="?" canHandleVaultedCreditCard="?">
+         <res:Posting Charge="?" FolioViewNo="?" LongInfo="?" PostDate="?" PostTime="?" ShortInfo="?" StationID="?" UserID="?">
+            <res:ReservationRequestBase>
+               <res:HotelReference chainCode="?" hotelCode="?"/>
+               <res:KeyTrack Key1Track="?" Key2Track="?" Key3Track="?" Key4Track="?"/>
+               <res:ReservationID>
+                  <com:UniqueID source="?" type="?"/>
+               </res:ReservationID>
+               <res:CheckOutTime/>
+            </res:ReservationRequestBase>
+         </res:Posting>
+         <res:CreditCardInfo>
+            <res:CreditCard cardType="?" chipAndPin="?" otherCardType="?">
+               <com:cardID/>
+               <com:cardCode/>
+               <com:cardHolderName/>
+               <com:cardNumber/>
+               <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+               <com:seriesCode/>
+               <com:Track2/>
+               <com:effectiveDate/>
+               <com:expirationDate/>
+               <com:EncryptedSwipe>
+                  <com:TrackIndicator/>
+                  <com:SwiperType/>
+                  <com:SwiperID/>
+                  <com:MaskedPAN/>
+                  <com:Track1/>
+                  <com:Track2/>
+                  <com:KeySerialNumber/>
+               </com:EncryptedSwipe>
+            </res:CreditCard>
+            <res:CreditCardApproved cardType="?" chipAndPin="?" otherCardType="?">
+               <com:cardID/>
+               <com:cardCode/>
+               <com:cardHolderName/>
+               <com:cardNumber/>
+               <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+               <com:seriesCode/>
+               <com:Track2/>
+               <com:effectiveDate/>
+               <com:expirationDate/>
+               <com:EncryptedSwipe>
+                  <com:TrackIndicator/>
+                  <com:SwiperType/>
+                  <com:SwiperID/>
+                  <com:MaskedPAN/>
+                  <com:Track1/>
+                  <com:Track2/>
+                  <com:KeySerialNumber/>
+               </com:EncryptedSwipe>
+               <hot:CIDNumber/>
+               <hot:Address addressType="?" languageCode="?" otherAddressType="?">
+                  <com:AddressLine/>
+                  <com:cityName/>
+                  <com:stateProv/>
+                  <com:countryCode/>
+                  <com:postalCode/>
+                  <com:barCode/>
+                  <com:cityExtension/>
+               </hot:Address>
+               <hot:IssueNumber/>
+               <hot:ApprovalCode/>
+               <hot:DepositAmount currencyCode="?" currencyText="?" decimals="?"/>
+            </res:CreditCardApproved>
+         </res:CreditCardInfo>
+         <res:Reference/>
+         <res:SignedDocument CreateDateTime="?" fileName="?" fileType="?" folioView="?">
+            <com:FileContents/>
+            <com:Id source="?" type="?"/>
+         </res:SignedDocument>
+      </res:MakePaymentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

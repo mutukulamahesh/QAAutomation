@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Mar 22 14:54:38 IST 2019
+OperaUIConfig-0.0.1-SNAPSHOT-jar-with-dependencies.jar>=
+OperaUIConfig-0.0.1-SNAPSHOT.jar>=
+OperaUIConfig-0.0.1-SNAPSHOT-tests.jar>=
+OperaUIConfig-0.0.1-SNAPSHOT.pom>=

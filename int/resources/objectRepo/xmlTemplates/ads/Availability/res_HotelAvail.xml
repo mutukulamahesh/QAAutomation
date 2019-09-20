@@ -1,0 +1,270 @@
+      <a:FIDELIO_HotelAvailRS echoToken="?" timeStamp="?" target="Production" version="?" securityToken="?" sequenceNmbr="?" primaryLanguageId="?" altLanguageId="?" summaryOnly="?" exactMatchOnly="?">
+         <a:POS>
+            <a:Source sourceType="?" otherSourceType="?" agentSine="?" pseudoCityCode="?" agentCity="?" agentCountry="?" currency="?" agentDutyCode="?" carrierCode="?" airportCode="?" firstDepartPoint="?" ERSPUserId="?">
+               <a:UniqueId url="?" id="?" idType="?" otherIdType="?" instance="?" discoveryUrl="?"/>
+               <a:Position latitude="?" longitude="?" altitude="?"/>
+               <BookingChannel type="?" otherType="?" primary="?"/>
+            </Source>
+         </POS>
+         <Success responseCode="?" responseComment="?"></Success>
+         <Warnings>
+            <Warning type="?" code="?" subCode="?" segmentId="?" element="?" xpath="?" elementNumber="?" ducumentUrl="?" status="?" recordId="?"></Warning>
+         </Warnings>
+         <Properties>
+            <Property chainCode="?" brandCode="?" hotelCode="?" hotelName="?" areaId="?" cityCode="?" countryCode="?" alternate="?">
+               <HotelContact>
+                  <Addresses>
+                     <Address bldgRoom="?" city="?" cityCode="?" stateProv="?" postalCode="?" countryCode="?">
+                        <addressLine></addressLine>
+                     </Address>
+                  </Addresses>
+                  <EMails>
+                     <EMail primary="?" emailType="?"></EMail>
+                  </EMails>
+                  <ContactPhoneNumbers>
+                     <ContactPhoneNumber primary="?" phoneUseType="?" otherPhoneType="?">
+                        <PhoneNumber></PhoneNumber>
+                        <PhoneData phoneTechType="?" countryAccessCode="?" areaCityCode="?" phoneNumber="?" extension="?" PIN="?"/>
+                     </ContactPhoneNumber>
+                  </ContactPhoneNumbers>
+                  <HotelInformation>
+                     <HotelInfo infoType="?" otherInfoType="?">
+                        <Text formatted="?" language="?"></Text>
+                        <Image></Image>
+                        <Url></Url>
+                     </HotelInfo>
+                  </HotelInformation>
+                  <URLs>
+                     <URL></URL>
+                  </URLs>
+                  <Vector direction="?" otherDirection="?" distance="?" units="?" otherUnit="?"/>
+               </HotelContact>
+               <AvailabilityResponses>
+                  <AvailabilityResponse requestCorrelationId="?" moreDataEchoToken="?">
+                     <RatePlans>
+                        <RatePlan ratePlanCode="?" converted="?" ratePlanCategory="?" ratePlanId="?" ratePlanType="?" qualifyingId="?" hold="?" onRequest="?" ratePlanName="?" validStartDate="?" validEndDate="?" minimumLengthOfStay="?" maximumLengthOfStay="?">
+                           <RatePlanText>
+                              <Text formatted="?" language="?"></Text>
+                              <Image></Image>
+                              <Url></Url>
+                           </RatePlanText>
+                           <GuaranteeDepositFlags>
+                              <GuaranteeDepositFlag reqdGuaranteeType="?" otherGuaranteeType="?"/>
+                           </GuaranteeDepositFlags>
+                           <LateArrivalTerms>
+                              <period></period>
+                              <dateTime></dateTime>
+                              <date></date>
+                              <time></time>
+                           </LateArrivalTerms>
+                           <CancellationTerms>
+                              <period></period>
+                              <dateTime></dateTime>
+                              <date></date>
+                              <time></time>
+                           </CancellationTerms>
+                           <VendorPolicies>
+                              <VendorPolicy policyType="?" otherPolicyType="?">
+                                 <Text formatted="?" language="?"></Text>
+                                 <Image></Image>
+                                 <Url></Url>
+                              </VendorPolicy>
+                           </VendorPolicies>
+                           <StayDateRange>
+                              <HardDateRange startDate="?" endDate="?" los="?"/>
+                              <SoftDateRange minLos="?" maxLos="?" earliestEndDate="?" latestEndDate="?" earliestStartDate="?" latestStartDate="?" arrivalDOW="?" departureDOW="?"/>
+                           </StayDateRange>
+                           <AdvancedBookingRequirement>
+                              <period></period>
+                              <dateTime></dateTime>
+                              <date></date>
+                              <time></time>
+                           </AdvancedBookingRequirement>
+                           <RequiredPayments>
+                              <RequiredPayment requiredPaymentType="?" otherRequiredPaymentType="?" requiredBy="?" mandatory="?" creditCard="?" debitCard="?" automatedFundsTransfer="?" directBill="?" voucher="?" otherAuthorizedPaymentMethod="?">
+                                 <PaymentRequired>
+                                    <period></period>
+                                    <dateTime></dateTime>
+                                    <date></date>
+                                    <time></time>
+                                 </PaymentRequired>
+                                 <PaymentAmount currency="?" currencyFactor="?"></PaymentAmount>
+                                 <PaymentDescription></PaymentDescription>
+                              </RequiredPayment>
+                           </RequiredPayments>
+                           <AdditionalFees>
+                              <AdditionalFee feeType="?" feeCode="?" otherFeeType="?" taxable="?" taxIIncluded="?">
+                                 <Description>
+                                    <Text formatted="?" language="?"></Text>
+                                    <Image></Image>
+                                    <Url></Url>
+                                 </Description>
+                                 <Fee currency="?" currencyFactor="?"></Fee>
+                              </AdditionalFee>
+                           </AdditionalFees>
+                           <RatePlanDescription>
+                              <Text formatted="?" language="?"></Text>
+                              <Image></Image>
+                              <Url></Url>
+                           </RatePlanDescription>
+                           <Commissions>
+                              <Commission currency="?" currencyFactor="?" commissionType="?" commissionPercentage="?"></Commission>
+                           </Commissions>
+                        </RatePlan>
+                     </RatePlans>
+                     <RoomTypes>
+                        <RoomType roomTypeCode="?" psuedoBookingCode="?" converted="?" alternate="?" numberOfUnits="?">
+                           <RoomTypeDescription>
+                              <Text formatted="?" language="?"></Text>
+                              <Image></Image>
+                              <Url></Url>
+                           </RoomTypeDescription>
+                           <Amenities>
+                              <Amenity amenityCode="?" amenityType="?" otherType="?" availabilityFlag="?" otherFlag="?">
+                                 <amenityDescription></amenityDescription>
+                              </Amenity>
+                           </Amenities>
+                        </RoomType>
+                     </RoomTypes>
+                     <RoomRates>
+                        <RoomRate ratePlanCode="?" roomTypeCode="?" rateChange="?" qualifyingId="?" nativeCurrency="?" requestedCurrency="?">
+                           <LateArrivalTerms>
+                              <period></period>
+                              <dateTime></dateTime>
+                              <date></date>
+                              <time></time>
+                           </LateArrivalTerms>
+                           <GuaranteeDepositFlags>
+                              <GuaranteeDepositFlag reqdGuaranteeType="?" otherGuaranteeType="?"/>
+                           </GuaranteeDepositFlags>
+                           <CancellationTerms>
+                              <period></period>
+                              <dateTime></dateTime>
+                              <date></date>
+                              <time></time>
+                           </CancellationTerms>
+                           <BookableRoomRate currency="?" currencyFactor="?" rateFrequencyCode="?" otherFrequencyCode="?"></BookableRoomRate>
+                           <TotalRoomRate currency="?" currencyFactor="?"></TotalRoomRate>
+                           <RoomRateText>
+                              <Text formatted="?" language="?"></Text>
+                              <Image></Image>
+                              <Url></Url>
+                           </RoomRateText>
+                           <VendorPolicies>
+                              <VendorPolicy policyType="?" otherPolicyType="?">
+                                 <Text formatted="?" language="?"></Text>
+                                 <Image></Image>
+                                 <Url></Url>
+                              </VendorPolicy>
+                           </VendorPolicies>
+                           <StayDateRange>
+                              <HardDateRange startDate="?" endDate="?" los="?"/>
+                              <SoftDateRange minLos="?" maxLos="?" earliestEndDate="?" latestEndDate="?" earliestStartDate="?" latestStartDate="?" arrivalDOW="?" departureDOW="?"/>
+                           </StayDateRange>
+                           <ExtraBeds>
+                              <ExtraBed extraBedType="?" otherType="?" quantity="?">
+                                 <Amount currency="?" currencyFactor="?"></Amount>
+                              </ExtraBed>
+                           </ExtraBeds>
+                           <ExtraPersons>
+                              <ExtraPerson extraPersonType="?" otherType="?" quantity="?">
+                                 <Amount currency="?" currencyFactor="?"></Amount>
+                              </ExtraPerson>
+                           </ExtraPersons>
+                           <AdditionalFees>
+                              <AdditionalFee feeType="?" feeCode="?" otherFeeType="?" taxable="?" taxIIncluded="?">
+                                 <Description>
+                                    <Text formatted="?" language="?"></Text>
+                                    <Image></Image>
+                                    <Url></Url>
+                                 </Description>
+                                 <Fee currency="?" currencyFactor="?"></Fee>
+                              </AdditionalFee>
+                           </AdditionalFees>
+                           <RateChanges>
+                              <RateChange rateChangeDate="?" rateChangeFrequency="?" otherChangeFrequency="?" rateChangeText="?">
+                                 <RateAmount currency="?" currencyFactor="?"></RateAmount>
+                                 <ExtraBeds>
+                                    <ExtraBed extraBedType="?" otherType="?" quantity="?">
+                                       <Amount currency="?" currencyFactor="?"></Amount>
+                                    </ExtraBed>
+                                 </ExtraBeds>
+                                 <ExtraPersons>
+                                    <ExtraPerson extraPersonType="?" otherType="?" quantity="?">
+                                       <Amount currency="?" currencyFactor="?"></Amount>
+                                    </ExtraPerson>
+                                 </ExtraPersons>
+                                 <AdditionalFees>
+                                    <AdditionalFee feeType="?" feeCode="?" otherFeeType="?" taxable="?" taxIIncluded="?">
+                                       <Description>
+                                          <Text formatted="?" language="?"></Text>
+                                          <Image></Image>
+                                          <Url></Url>
+                                       </Description>
+                                       <Fee currency="?" currencyFactor="?"></Fee>
+                                    </AdditionalFee>
+                                 </AdditionalFees>
+                              </RateChange>
+                           </RateChanges>
+                           <ExpectedCharges TotalRoomRateAndPackages="?" TotalTaxesAndFees="?" TaxInclusive="?">
+                              <ChargesForPostingDate PostingDate="?" TotalCharges="?">
+                                 <RoomRateAndPackages TotalCharges="?">
+                                    <Charges>
+                                       <Description></Description>
+                                       <Amount currency="?" currencyFactor="?"></Amount>
+                                    </Charges>
+                                 </RoomRateAndPackages>
+                                 <TaxesAndFees TotalCharges="?">
+                                    <Charges>
+                                       <Description></Description>
+                                       <Amount currency="?" currencyFactor="?"></Amount>
+                                    </Charges>
+                                 </TaxesAndFees>
+                              </ChargesForPostingDate>
+                           </ExpectedCharges>
+                        </RoomRate>
+                     </RoomRates>
+                  </AvailabilityResponse>
+               </AvailabilityResponses>
+               <Amenities>
+                  <Amenity amenityCode="?" amenityType="?" otherType="?" availabilityFlag="?" otherFlag="?">
+                     <amenityDescription></amenityDescription>
+                  </Amenity>
+               </Amenities>
+               <SearchCriteriaMatchs>
+                  <SearchCriterionMatch searchCriterionRPH="?" match="?" relevance="?"/>
+               </SearchCriteriaMatchs>
+               <TPE_Extensions/>
+            </Property>
+         </Properties>
+         <Criteria>
+            <SearchCriterion searchCriterionRPH="?" exactMatch="?" importance="?">
+               <AddressSearch>
+                  <Address bldgRoom="?" city="?" cityCode="?" stateProv="?" postalCode="?" countryCode="?">
+                     <addressLine></addressLine>
+                  </Address>
+                  <Vector direction="?" otherDirection="?" distance="?" units="?" otherUnit="?"/>
+               </AddressSearch>
+               <GeoSearch>
+                  <Position latitude="?" longitude="?" altitude="?"/>
+                  <Vector direction="?" otherDirection="?" distance="?" units="?" otherUnit="?"/>
+               </GeoSearch>
+               <Telephone primary="?" phoneUseType="?" otherPhoneType="?">
+                  <PhoneNumber></PhoneNumber>
+                  <PhoneData phoneTechType="?" countryAccessCode="?" areaCityCode="?" phoneNumber="?" extension="?" PIN="?"/>
+               </Telephone>
+               <HotelAreaSearch chainCode="?" brandCode="?" hotelCode="?" hotelName="?" areaId="?" cityCode="?" countryCode="?">
+                  <Vector direction="?" otherDirection="?" distance="?" units="?" otherUnit="?"/>
+               </HotelAreaSearch>
+               <HotelNameSearch chainCode="?" brandCode="?" hotelCode="?" hotelName="?" areaId="?" cityCode="?" countryCode="?"/>
+               <CodeRef code="?" codeContext="?"/>
+               <Amenity amenityCode="?" amenityType="?" otherType="?" availabilityFlag="?" otherFlag="?">
+                  <amenityDescription></amenityDescription>
+               </Amenity>
+            </SearchCriterion>
+         </Criteria>
+         <TPE_Extensions/>
+         <Errors>
+            <Error type="?" code="?" subCode="?" segmentId="?" element="?" xpath="?" elementNumber="?" documentUrl="?" status="?" recordId="?"></Error>
+         </Errors>
+      </FIDELIO_HotelAvailRS>

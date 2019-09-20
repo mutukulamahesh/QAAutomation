@@ -1,0 +1,44 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/fof/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:PostBillingChargesRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Criteria PostIt="?">
+            <v91:HotelCode/>
+            <v91:Charges>
+               <v91:Charge FolioWindowNo="?" v91:CashierID="?">
+                  <v91:TrxCode/>
+                  <v91:ArticleCode/>
+                  <v91:Price Amount="?" CurrencyCode="?"/>
+                  <v91:PostingQuantity/>
+                  <v91:PostingReference/>
+                  <v91:PostingRemark/>
+                  <v91:CheckNumber/>
+                  <v91:ArrangementCode/>
+                  <v91:ApplyRoutingInstructions/>
+                  <v91:UsePackageAllowance/>
+                  <v91:AutoPosting/>
+                  <v91:FinancialTransactionIDList>
+                     <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                  </v91:FinancialTransactionIDList>
+               </v91:Charge>
+            </v91:Charges>
+            <v91:ReservationID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            <v91:IncomeAuditDate/>
+         </v9:Criteria>
+      </v9:PostBillingChargesRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,100 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoapenv.org/soapenv/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:res="http://webservices.micros.com/ows/5.1/Reservation.wsdl" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/">
+   <soapenv:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="E" channelValidation="true" terminalID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName></core:UserName>
+               <core:UserPassword></core:UserPassword>
+               <core:Domain></core:Domain>
+               <core:SecurityId></core:SecurityId>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key></core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:UpdatePackagesResponse>
+         <res:Result resultStatusFlag="?">
+            <com:Text>
+               <com:TextElement formatted="?" language="?"></com:TextElement>
+            </com:Text>
+            <com:IDs>
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <com:OperaErrorCode></com:OperaErrorCode>
+            <hot:GDSError errorCode="?" elementId="?"></hot:GDSError>
+         </res:Result>
+         <res:BookedPackageList>
+            <hot:PackageDetails>
+               <hot:PackageInfo packageCode="?" calculationRule="?" postingRhythm="?" quantity="?" includedInRate="?" addRateSeprateLine="?" addRateCombinedLine="?" startTime="?" endTime="?" sellSeparate="?" totalDepositAmount="?" source="?" taxIncluded="?" repeatPostingRhythm="?" discountRateAmount="?" discountRatePercent="?" postingRhythmNights="?" packageType="?" packageGroupCode="?" rateChangeIndicator="?" minAdvanceBookingDays="?">
+                  <hot:Amount currencyCode="?" decimals="?" currencyText="?"></hot:Amount>
+                  <hot:PackageAmount currencyCode="?" decimals="?" currencyText="?"></hot:PackageAmount>
+                  <hot:TaxAmount currencyCode="?" decimals="?" currencyText="?"></hot:TaxAmount>
+                  <hot:Allowance currencyCode="?" decimals="?" currencyText="?"></hot:Allowance>
+                  <hot:Description>
+                     <com:Text>
+                        <com:TextElement formatted="?" language="?"></com:TextElement>
+                     </com:Text>
+                     <com:Image></com:Image>
+                     <com:Url></com:Url>
+                  </hot:Description>
+                  <hot:ShortDescription>
+                     <com:Text>
+                        <com:TextElement formatted="?" language="?"></com:TextElement>
+                     </com:Text>
+                     <com:Image></com:Image>
+                     <com:Url></com:Url>
+                  </hot:ShortDescription>
+                  <hot:LongDescription>
+                     <com:Text>
+                        <com:TextElement formatted="?" language="?"></com:TextElement>
+                     </com:Text>
+                     <com:Image></com:Image>
+                     <com:Url></com:Url>
+                  </hot:LongDescription>
+                  <hot:PackageDetails dow="?" restriction="?" quantityAvailable="?" rateAvailable="?">
+                     <hot:StartDate></hot:StartDate>
+                     <hot:EndDate></hot:EndDate>
+                     <hot:Allowance currencyCode="?" decimals="?" currencyText="?"></hot:Allowance>
+                     <hot:Amount currencyCode="?" decimals="?" currencyText="?"></hot:Amount>
+                     <hot:TaxAmount currencyCode="?" decimals="?" currencyText="?"></hot:TaxAmount>
+                     <hot:Quantity></hot:Quantity>
+                  </hot:PackageDetails>
+                  <hot:PackageCodes>
+                     <hot:Code></hot:Code>
+                     <hot:Description>
+                        <hot:Text formatted="?" language="?"></hot:Text>
+                        <hot:Image></hot:Image>
+                        <hot:URL></hot:URL>
+                     </hot:Description>
+                  </hot:PackageCodes>
+                  <hot:StartDate></hot:StartDate>
+                  <hot:EndDate></hot:EndDate>
+               </hot:PackageInfo>
+               <hot:ExpectedCharges>
+                  <hot:PackageCharge>
+                     <hot:PackageCode></hot:PackageCode>
+                     <hot:ValidDates>
+                        <hot:StartDate></hot:StartDate>
+                        <hot:EndDate></hot:EndDate>
+                        <hot:Duration></hot:Duration>
+                     </hot:ValidDates>
+                     <hot:UnitAmount currencyCode="?" decimals="?" currencyText="?"></hot:UnitAmount>
+                     <hot:Quantity></hot:Quantity>
+                     <hot:Tax currencyCode="?" decimals="?" currencyText="?"></hot:Tax>
+                     <hot:TotalAmount currencyCode="?" decimals="?" currencyText="?"></hot:TotalAmount>
+                     <hot:RateCode></hot:RateCode>
+                  </hot:PackageCharge>
+               </hot:ExpectedCharges>
+            </hot:PackageDetails>
+         </res:BookedPackageList>
+      </res:UpdatePackagesResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

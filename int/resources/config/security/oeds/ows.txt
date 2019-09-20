@@ -1,0 +1,13 @@
+<soapenv:Header>
+<OGHeader primaryLangID="E" timeStamp="{WS_TIMESTAMP}" transactionID="{WS_TRANSACTIONCODE}" xmlns="http://webservices.micros.com/og/4.3/Core/">
+<Origin entityID="{WS_CHANNELCARRIER}" systemType="WEB"/>
+         <Destination entityID="TI" systemType="ORS"/>
+         <Authentication>
+         <UserCredentials>
+         <UserName>{WS_USERNAME}</UserName>
+         <UserPassword>{WS_PASSWORD}</UserPassword>
+         <Domain>{WS_RESORT}</Domain>
+         </UserCredentials>
+         </Authentication>
+</OGHeader>
+</soapenv:Header>

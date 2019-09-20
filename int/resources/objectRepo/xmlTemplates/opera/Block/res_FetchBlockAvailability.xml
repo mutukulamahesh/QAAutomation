@@ -1,0 +1,137 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchBlockAvailabilityRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:BlockAvailability>
+            <v91:BlockAvailabilityMasterInfo>
+               <v91:MasterRoomTypes>
+                  <v91:Code></v91:Code>
+               </v91:MasterRoomTypes>
+               <v91:FetchedRoomTypes>
+                  <v91:FetchedRoomType Available="?" RoomType="?">
+                     <v91:Packages>
+                        <v91:Package PackageCode="?" CalculationRule="?" PostingRhythm="?" Quantity="?" IncludedInRate="?" AddRateSeprateLine="?" AddRateCombinedLine="?" StartTime="?" EndTime="?" SellSeparate="?">
+                           <v91:Amount Amount="?" CurrencyCode="?"/>
+                           <v91:Allowance Amount="?" CurrencyCode="?"/>
+                           <v91:Description></v91:Description>
+                           <v91:StartDate></v91:StartDate>
+                           <v91:EndDate></v91:EndDate>
+                        </v91:Package>
+                     </v91:Packages>
+                     <v91:RoomTypeInfo RoomType="?" HotelCode="?" RoomClass="?" Description="?" Suite="?" Component="?" InvBlockCode="?" RoomViewCode="?" PromotionCode="?" RoomQualifierCode="?" RoomQualifierMatchIndicator="?">
+                        <v91:LongDescription></v91:LongDescription>
+                        <v91:WebName></v91:WebName>
+                        <v91:WebPage></v91:WebPage>
+                        <v91:RoomFeatures>
+                           <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+                        </v91:RoomFeatures>
+                        <v91:RoomTypeAttributes>
+                           <v91:DefaultOccupancy></v91:DefaultOccupancy>
+                           <v91:MaxOccupancy></v91:MaxOccupancy>
+                           <v91:NoOfPhysicalRooms></v91:NoOfPhysicalRooms>
+                        </v91:RoomTypeAttributes>
+                        <v91:BookingChannelMappings>
+                           <v91:BookingChannelMapping BookingChannelCode="?" Code="?" Name="?" Description="?"/>
+                        </v91:BookingChannelMappings>
+                        <v91:BedTypeCodes>
+                           <v91:BedTypeCode></v91:BedTypeCode>
+                        </v91:BedTypeCodes>
+                     </v91:RoomTypeInfo>
+                  </v91:FetchedRoomType>
+               </v91:FetchedRoomTypes>
+               <v91:RatePlans>
+                  <v91:BlockAvailabilityRatePlan>
+                     <v91:RatePlanInfo RatePlanCode="?" HotelCode="?" RatePlanCategory="?" TaxInclusive="?" ServiceFeeInclusive="?">
+                        <v91:ShortInfo></v91:ShortInfo>
+                        <v91:LongInfo></v91:LongInfo>
+                        <v91:WebPage></v91:WebPage>
+                        <v91:Description></v91:Description>
+                        <v91:RatePlanChannelInfo>
+                           <v91:RatePlanLevel></v91:RatePlanLevel>
+                           <v91:RatePlanID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <v91:RatePlanWebName></v91:RatePlanWebName>
+                        </v91:RatePlanChannelInfo>
+                        <v91:CurrencyCode></v91:CurrencyCode>
+                        <v91:BookingChannelMappings>
+                           <v91:BookingChannelMapping BookingChannelCode="?" Code="?" Name="?" Description="?"/>
+                        </v91:BookingChannelMappings>
+                        <v91:RatePlanLevel></v91:RatePlanLevel>
+                        <v91:Guarantee GuaranteeCode="?" OnHold="?" ReserveInventory="?" LateArrival="?" OrderSequence="?">
+                           <v91:Description></v91:Description>
+                           <v91:Requirements RequirementCode="?" Cancellation="?" PhoneNumber="?" Address="?" CreditCard="?" ArrivalTime="?" Deposit="?"/>
+                           <v91:ShortDescription>
+                              <v91:DefaultText></v91:DefaultText>
+                              <v91:TranslatedTexts>
+                                 <v91:Text Lang="?"></v91:Text>
+                              </v91:TranslatedTexts>
+                           </v91:ShortDescription>
+                           <v91:PaymentTypes>
+                              <v91:CardCode></v91:CardCode>
+                           </v91:PaymentTypes>
+                        </v91:Guarantee>
+                        <v91:CancelPenalty PolicyCode="?" Manual="?" NonRefundable="?">
+                           <v91:Deadline AbsoluteDeadline="?" OffsetFromArrival="?" OffsetDropTime="?" OffsetFromBookingDate="?"/>
+                           <v91:AmountPercent BasisType="?" Nights="?" Percent="?" Amount="?" CurrencyCode="?"/>
+                           <v91:PenaltyDescription></v91:PenaltyDescription>
+                           <v91:OffsetUnit></v91:OffsetUnit>
+                        </v91:CancelPenalty>
+                        <v91:MealPlans>
+                           <v91:MealPlanCode Included="?" BreakfastIncluded="?" LunchIncluded="?" DinnerIncluded="?">
+                              <v91:Code></v91:Code>
+                           </v91:MealPlanCode>
+                        </v91:MealPlans>
+                        <v91:RateCommission>
+                           <v91:CommissionCode></v91:CommissionCode>
+                           <v91:CommissionPercentage></v91:CommissionPercentage>
+                           <v91:CommissionAmount></v91:CommissionAmount>
+                        </v91:RateCommission>
+                        <v91:NegotiatedBy></v91:NegotiatedBy>
+                     </v91:RatePlanInfo>
+                  </v91:BlockAvailabilityRatePlan>
+               </v91:RatePlans>
+               <v91:CurrencyExchangeRates>
+                  <v91:CurrencyExchangeRate CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?">
+                     <v91:Description></v91:Description>
+                     <v91:ExchangeRate Amount="?" CurrencyCode="?"/>
+                  </v91:CurrencyExchangeRate>
+               </v91:CurrencyExchangeRates>
+            </v91:BlockAvailabilityMasterInfo>
+            <v91:BlockHeaderInfo SuppressRate="?">
+               <v91:HotelCode></v91:HotelCode>
+               <v91:HotelName></v91:HotelName>
+               <v91:BlockName></v91:BlockName>
+               <v91:BlockCode></v91:BlockCode>
+               <v91:BlockID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               <v91:CurrencyCode></v91:CurrencyCode>
+               <v91:RateCode></v91:RateCode>
+               <v91:ShoulderStartDate></v91:ShoulderStartDate>
+               <v91:ShoulderEndDate></v91:ShoulderEndDate>
+               <v91:StartDate></v91:StartDate>
+               <v91:EndDate></v91:EndDate>
+               <v91:InventoryControl></v91:InventoryControl>
+               <v91:MarketCode></v91:MarketCode>
+               <v91:SourceOfSale SourceType="?" SourceTypeDescription="?">
+                  <v91:SourceCode SourceCode="?" HotelCode="?" SourceGroup="?" Description="?"/>
+               </v91:SourceOfSale>
+               <v91:GuaranteeCode></v91:GuaranteeCode>
+               <v91:BlockStatus Code="?" Description="?"/>
+            </v91:BlockHeaderInfo>
+            <v91:BlockAvailability>
+               <v91:BlockAvailabilityInfo StayDate="?" ExtendedStay="?">
+                  <v91:RoomInfo RoomType="?" SellLimit="?">
+                     <v91:Inventory></v91:Inventory>
+                     <v91:Rate></v91:Rate>
+                  </v91:RoomInfo>
+               </v91:BlockAvailabilityInfo>
+            </v91:BlockAvailability>
+         </v9:BlockAvailability>
+      </v9:FetchBlockAvailabilityRS>
+   </soapenv:Body>
+</soapenv:Envelope>

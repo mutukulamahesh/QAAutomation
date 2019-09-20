@@ -1,0 +1,46 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateRevenueGroupsRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:RevenueGroups>
+            <v91:RevenueGroup>
+               <v91:Code/>
+               <v91:Description/>
+               <v91:DisplaySequence/>
+               <v91:Inactive/>
+               <v91:RevenueTypes>
+                  <v91:RevenueType>
+                     <v91:Code/>
+                     <v91:Description/>
+                     <v91:DisplaySequence/>
+                     <v91:RevenueGroup/>
+                     <v91:FoodAndBeverage/>
+                     <v91:Inactive/>
+                     <v91:RevenueDetails>
+                        <v91:RevenueTypeDetail>
+                           <v91:HotelCode/>
+                           <v91:RevenueMinimum/>
+                           <v91:Tax/>
+                        </v91:RevenueTypeDetail>
+                     </v91:RevenueDetails>
+                  </v91:RevenueType>
+               </v91:RevenueTypes>
+            </v91:RevenueGroup>
+         </v9:RevenueGroups>
+      </v9:CreateRevenueGroupsRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

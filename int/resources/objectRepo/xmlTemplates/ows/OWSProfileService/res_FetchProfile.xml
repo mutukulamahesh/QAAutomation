@@ -1,0 +1,191 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:name="http://webservices.micros.com/ows/5.1/Name.wsdl" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:name1="http://webservices.micros.com/og/4.3/Name/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/">
+   <soapenv:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="E" channelValidation="true" terminalID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName></core:UserName>
+               <core:UserPassword></core:UserPassword>
+               <core:Domain></core:Domain>
+               <core:SecurityId></core:SecurityId>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key></core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <name:FetchProfileResponse>
+         <name:Result resultStatusFlag="?">
+            <com:Text>
+               <com:TextElement formatted="?" language="?"></com:TextElement>
+            </com:Text>
+            <com:IDs>
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <com:OperaErrorCode></com:OperaErrorCode>
+         </name:Result>
+         <name:ProfileDetails nameType="?" protected="?" languageCode="?" nationality="?" vipCode="?" taxExempt="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?" active="?" yieldMarketCode="?" customerValue="?" protectedBy="?">
+            <name1:ProfileIDs>
+               <com:UniqueID type="?" source="?"></com:UniqueID>
+            </name1:ProfileIDs>
+            <name1:Customer gender="?" birthDate="?" profileType="?">
+               <name1:PersonName nameOrdered="?" familiarName="?" active="?">
+                  <com:nameTitle></com:nameTitle>
+                  <com:firstName></com:firstName>
+                  <com:middleName></com:middleName>
+                  <com:lastName></com:lastName>
+                  <com:nameSuffix></com:nameSuffix>
+                  <com:accountName2></com:accountName2>
+                  <com:accountName3></com:accountName3>
+                  <com:profession></com:profession>
+               </name1:PersonName>
+               <name1:NativeName nameOrdered="?" familiarName="?" active="?" languageCode="?">
+                  <com:nameTitle></com:nameTitle>
+                  <com:firstName></com:firstName>
+                  <com:middleName></com:middleName>
+                  <com:lastName></com:lastName>
+                  <com:nameSuffix></com:nameSuffix>
+                  <com:accountName2></com:accountName2>
+                  <com:accountName3></com:accountName3>
+                  <com:profession></com:profession>
+               </name1:NativeName>
+               <name1:BusinessTitle></name1:BusinessTitle>
+               <name1:GovernmentIDList>
+                  <com:GovernmentID documentType="?" documentNumber="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" countryOfIssue="?" documentID="?" resort="?" primary="?" displaySequence="?"/>
+               </name1:GovernmentIDList>
+            </name1:Customer>
+            <name1:Company commissionCode="?">
+               <name1:CompanyName></name1:CompanyName>
+               <name1:CompanyType></name1:CompanyType>
+               <name1:CompanyID></name1:CompanyID>
+            </name1:Company>
+            <name1:CreditCards>
+               <name1:NameCreditCard cardType="?" otherCardType="?" chipAndPin="?" operaId="?" externalId="?" primary="?" displaySequence="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <com:cardID></com:cardID>
+                  <com:cardCode></com:cardCode>
+                  <com:cardHolderName></com:cardHolderName>
+                  <com:cardNumber></com:cardNumber>
+                  <com:VaultedCardData vaultedCardID="?" lastFourDigits="?"/>
+                  <com:seriesCode></com:seriesCode>
+                  <com:Track2></com:Track2>
+                  <com:effectiveDate></com:effectiveDate>
+                  <com:expirationDate></com:expirationDate>
+                  <com:EncryptedSwipe>
+                     <com:TrackIndicator></com:TrackIndicator>
+                     <com:SwiperType></com:SwiperType>
+                     <com:SwiperID></com:SwiperID>
+                     <com:MaskedPAN></com:MaskedPAN>
+                     <com:Track1></com:Track1>
+                     <com:Track2></com:Track2>
+                     <com:KeySerialNumber></com:KeySerialNumber>
+                  </com:EncryptedSwipe>
+               </name1:NameCreditCard>
+            </name1:CreditCards>
+            <name1:Addresses>
+               <name1:NameAddress addressType="?" otherAddressType="?" languageCode="?" operaId="?" externalId="?" primary="?" displaySequence="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <com:AddressLine></com:AddressLine>
+                  <com:cityName></com:cityName>
+                  <com:stateProv></com:stateProv>
+                  <com:countryCode></com:countryCode>
+                  <com:postalCode></com:postalCode>
+                  <com:barCode></com:barCode>
+                  <com:cityExtension></com:cityExtension>
+               </name1:NameAddress>
+            </name1:Addresses>
+            <name1:Blacklist flag="?"></name1:Blacklist>
+            <name1:Phones>
+               <name1:NamePhone phoneType="?" phoneRole="?" primaryPhone="?" operaId="?" externalId="?" primary="?" displaySequence="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <com:PhoneNumber></com:PhoneNumber>
+                  <com:PhoneData countryAccessCode="?" areaCode="?" phoneNumber="?" extension="?"/>
+               </name1:NamePhone>
+            </name1:Phones>
+            <name1:EMails>
+               <name1:NameEmail operaId="?" externalId="?" primary="?" displaySequence="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?" emailType="?" emailFormat="?"></name1:NameEmail>
+            </name1:EMails>
+            <name1:Preferences>
+               <name1:Preference resortCode="?" preferenceType="?" otherPreferenceType="?" preferenceValue="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <name1:PreferenceDescription>
+                     <com:Text>
+                        <com:TextElement formatted="?" language="?"></com:TextElement>
+                     </com:Text>
+                     <com:Image></com:Image>
+                     <com:Url></com:Url>
+                  </name1:PreferenceDescription>
+               </name1:Preference>
+            </name1:Preferences>
+            <name1:Memberships>
+               <name1:NameMembership operaId="?" externalId="?" primary="?" preferred="?" central_setup_yn="?" membership_class="?" points_label="?" status="?" displaySequence="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?" usedInReservation="?">
+                  <com:membershipType></com:membershipType>
+                  <com:membershipNumber></com:membershipNumber>
+                  <com:membershipLevel></com:membershipLevel>
+                  <com:membershipNextLevel></com:membershipNextLevel>
+                  <com:memberName></com:memberName>
+                  <com:effectiveDate></com:effectiveDate>
+                  <com:expirationDate></com:expirationDate>
+                  <com:currentPoints></com:currentPoints>
+                  <com:enrollmentCode></com:enrollmentCode>
+                  <com:ResvNameId>
+                     <com:UniqueID type="?" source="?"></com:UniqueID>
+                  </com:ResvNameId>
+                  <com:membershipid type="?" source="?"></com:membershipid>
+                  <com:transferPoints></com:transferPoints>
+                  <com:enrollmentSource></com:enrollmentSource>
+                  <com:enrolledAt></com:enrolledAt>
+                  <com:awardPointsToExpires>
+                     <com:AwardPointsToExpire expirationDate="?" totalToExpire="?" expireByDate="?"/>
+                  </com:awardPointsToExpires>
+                  <com:inactive></com:inactive>
+                  <com:excludeBatchIndicator></com:excludeBatchIndicator>
+               </name1:NameMembership>
+            </name1:Memberships>
+            <name1:NegotiatedRates>
+               <name1:NegotiatedRate operaId="?" resortCode="?" rateCode="?" commissionCode="?" beginDate="?" endDate="?" displaySequence="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?"/>
+            </name1:NegotiatedRates>
+            <name1:Comments>
+               <name1:Comment operaId="?" externalId="?" commentTitle="?" commentType="?" globalYn="?" internalYn="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <com:Text>
+                     <com:TextElement formatted="?" language="?"></com:TextElement>
+                  </com:Text>
+                  <com:Image></com:Image>
+                  <com:Url></com:Url>
+               </name1:Comment>
+            </name1:Comments>
+            <name1:UserDefinedValues>
+               <com:UserDefinedValue valueName="?">
+                  <com:CharacterValue></com:CharacterValue>
+                  <com:DateValue></com:DateValue>
+                  <com:NumericValue></com:NumericValue>
+               </com:UserDefinedValue>
+            </name1:UserDefinedValues>
+            <name1:Privacy>
+               <name1:PrivacyOption OptionType="?" OptionValue="?"/>
+            </name1:Privacy>
+            <name1:UserGroup groupType="?"/>
+            <name1:StayHistory>
+               <name1:LastStay></name1:LastStay>
+               <name1:TotalNumberOfStays></name1:TotalNumberOfStays>
+               <name1:LastRoomNumber></name1:LastRoomNumber>
+               <name1:LastRate currencyCode="?" decimals="?" currencyText="?"></name1:LastRate>
+            </name1:StayHistory>
+            <name1:Id documentType="?" documentNumber="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" countryOfIssue="?" documentID="?" resort="?" primary="?" displaySequence="?"/>
+            <name1:KeyWord>
+               <name1:KeyWord>
+                  <name1:Type></name1:Type>
+                  <name1:Value></name1:Value>
+               </name1:KeyWord>
+            </name1:KeyWord>
+            <name1:Features>
+               <hot:Features Feature="?" Description="?" AttachPreferenceToProfile="?">
+                  <hot:FeatureID></hot:FeatureID>
+               </hot:Features>
+            </name1:Features>
+         </name:ProfileDetails>
+      </name:FetchProfileResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

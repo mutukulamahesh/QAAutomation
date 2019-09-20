@@ -1,0 +1,186 @@
+<soapenv:Envelope xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://htng.org/PWS/2008B/SingleGuestItinerary/Reservation/Types" xmlns:typ1="http://htng.org/PWS/2008B/SingleGuestItinerary/Common/Types" xmlns:typ2="http://htng.org/PWS/2008B/SingleGuestItinerary/Activity/Types">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:FetchReservationResponse>
+         <Result resultStatusFlag="?" code="?">
+            <!--Optional:-->
+            <typ1:Text>
+               <!--1 or more repetitions:-->
+               <typ1:TextElement language="?">?</typ1:TextElement>
+            </typ1:Text>
+            <!--Optional:-->
+            <typ1:IDs>
+               <!--Zero or more repetitions:-->
+               <typ1:UniqueID source="?">?</typ1:UniqueID>
+            </typ1:IDs>
+         </Result>
+         <!--Optional:-->
+         <ReservationData reservationStatus="?" otherReservationStatus="?">
+            <ReservationID source="?">?</ReservationID>
+            <ConfirmationNO>?</ConfirmationNO>
+            <!--Optional:-->
+            <ProfileID source="?">?</ProfileID>
+            <!--Optional:-->
+            <ProfileInfo nameOrdered="?" familiarName="?">
+               <!--Zero or more repetitions:-->
+               <typ1:NameTitle>?</typ1:NameTitle>
+               <!--Optional:-->
+               <typ1:FirstName>?</typ1:FirstName>
+               <!--Zero or more repetitions:-->
+               <typ1:MiddleName>?</typ1:MiddleName>
+               <typ1:LastName>?</typ1:LastName>
+               <!--Zero or more repetitions:-->
+               <typ1:NameSuffix>?</typ1:NameSuffix>
+            </ProfileInfo>
+            <ArrivalDate>?</ArrivalDate>
+            <DepartureDate>?</DepartureDate>
+            <!--Optional:-->
+            <ShortRateCode>?</ShortRateCode>
+            <!--Optional:-->
+            <ShortRoomType>?</ShortRoomType>
+            <!--Optional:-->
+            <PackageElements>
+               <!--1 or more repetitions:-->
+               <PackageElement>
+                  <ElementCode>?</ElementCode>
+                  <ElementDescription>?</ElementDescription>
+               </PackageElement>
+            </PackageElements>
+            <!--Optional:-->
+            <Activities>
+               <!--Zero or more repetitions:-->
+               <typ2:Activity status="?">
+                  <typ2:ActivityIDs>
+                     <!--Zero or more repetitions:-->
+                     <typ1:UniqueID source="?">?</typ1:UniqueID>
+                  </typ2:ActivityIDs>
+                  <typ2:ActivityType>?</typ2:ActivityType>
+                  <typ2:Location>?</typ2:Location>
+                  <!--1 or more repetitions:-->
+                  <typ2:Name language="?">?</typ2:Name>
+                  <!--Optional:-->
+                  <typ2:NumberOfPersons>?</typ2:NumberOfPersons>
+                  <typ2:TimeSpan>
+                     <typ1:Start>?</typ1:Start>
+                     <!--Optional:-->
+                     <typ1:End>?</typ1:End>
+                  </typ2:TimeSpan>
+                  <!--Optional:-->
+                  <typ2:Duration>
+                     <typ1:Start>?</typ1:Start>
+                     <!--Optional:-->
+                     <typ1:End>?</typ1:End>
+                  </typ2:Duration>
+                  <!--Zero or more repetitions:-->
+                  <typ2:Description language="?">?</typ2:Description>
+                  <!--Zero or more repetitions:-->
+                  <typ2:Note language="?">?</typ2:Note>
+                  <!--Optional:-->
+                  <typ2:GroupCode>?</typ2:GroupCode>
+                  <!--Optional:-->
+                  <typ2:Amount currencyCode="?">?</typ2:Amount>
+                  <!--Optional:-->
+                  <typ2:DepositRequired currencyCode="?" collectedBy="?">?</typ2:DepositRequired>
+                  <!--Optional:-->
+                  <typ2:InactiveDate>?</typ2:InactiveDate>
+                  <!--Optional:-->
+                  <typ2:Participants>
+                     <!--Zero or more repetitions:-->
+                     <typ2:Participant nameOrdered="?" familiarName="?">
+                        <!--Zero or more repetitions:-->
+                        <typ1:NameTitle>?</typ1:NameTitle>
+                        <!--Optional:-->
+                        <typ1:FirstName>?</typ1:FirstName>
+                        <!--Zero or more repetitions:-->
+                        <typ1:MiddleName>?</typ1:MiddleName>
+                        <typ1:LastName>?</typ1:LastName>
+                        <!--Zero or more repetitions:-->
+                        <typ1:NameSuffix>?</typ1:NameSuffix>
+                     </typ2:Participant>
+                  </typ2:Participants>
+                  <!--Optional:-->
+                  <typ2:URLLink>?</typ2:URLLink>
+                  <!--Optional:-->
+                  <typ2:Extensions>
+                     <!--Zero or more repetitions:-->
+                     <typ2:ActivitySpecific>?</typ2:ActivitySpecific>
+                  </typ2:Extensions>
+               </typ2:Activity>
+            </Activities>
+            <!--Optional:-->
+            <RoomNumber>?</RoomNumber>
+            <!--Optional:-->
+            <ResortId>?</ResortId>
+            <!--Optional:-->
+            <MarketSegment>?</MarketSegment>
+            <!--Optional:-->
+            <SourceCode>?</SourceCode>
+            <!--Optional:-->
+            <NoPostFlag>?</NoPostFlag>
+            <!--Optional:-->
+            <UserDefinedValues>
+               <!--Zero or more repetitions:-->
+               <typ1:UserDefinedValue valueName="?">
+                  <!--You have a CHOICE of the next 3 items at this level-->
+                  <typ1:CharacterValue>?</typ1:CharacterValue>
+                  <typ1:DateValue>?</typ1:DateValue>
+                  <typ1:NumericValue>?</typ1:NumericValue>
+               </typ1:UserDefinedValue>
+            </UserDefinedValues>
+            <!--Optional:-->
+            <ReservationPreferences>
+               <!--Zero or more repetitions:-->
+               <typ1:Preference insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <!--Optional:-->
+                  <typ1:ResortCode>?</typ1:ResortCode>
+                  <typ1:Type>?</typ1:Type>
+                  <!--Optional:-->
+                  <typ1:OtherType>?</typ1:OtherType>
+                  <typ1:Value>?</typ1:Value>
+                  <!--Optional:-->
+                  <typ1:Description>
+                     <!--You have a CHOICE of the next 3 items at this level-->
+                     <typ1:Text>
+                        <!--1 or more repetitions:-->
+                        <typ1:TextElement language="?">?</typ1:TextElement>
+                     </typ1:Text>
+                     <typ1:Image>?</typ1:Image>
+                     <typ1:Url>?</typ1:Url>
+                  </typ1:Description>
+                  <!--Optional:-->
+                  <typ1:Preferred>?</typ1:Preferred>
+                  <!--Optional:-->
+                  <typ1:Mode>?</typ1:Mode>
+                  <!--Optional:-->
+                  <typ1:IDs>
+                     <!--Zero or more repetitions:-->
+                     <typ1:UniqueID source="?">?</typ1:UniqueID>
+                  </typ1:IDs>
+               </typ1:Preference>
+            </ReservationPreferences>
+            <!--Optional:-->
+            <Transportation>
+               <!--1 or more repetitions:-->
+               <Transportation>
+                  <Direction>?</Direction>
+                  <TransportDate>?</TransportDate>
+                  <TranspoftType>?</TranspoftType>
+                  <!--Optional:-->
+                  <Carrier>?</Carrier>
+                  <!--Optional:-->
+                  <TransportCode>?</TransportCode>
+                  <!--Optional:-->
+                  <Location>?</Location>
+                  <!--Optional:-->
+                  <GuestCount>?</GuestCount>
+                  <!--Optional:-->
+                  <IDs>
+                     <!--Zero or more repetitions:-->
+                     <typ1:UniqueID source="?">?</typ1:UniqueID>
+                  </IDs>
+               </Transportation>
+            </Transportation>
+         </ReservationData>
+      </typ:FetchReservationResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

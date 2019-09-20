@@ -1,0 +1,37 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:gues="http://webservices.micros.com/og/4.3/GuestServices/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="?" primaryLangID="?" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <gues:WakeUpCallRequest>
+         <gues:HotelReference chainCode="?" hotelCode="?"/>
+         <gues:RoomNumber/>
+         <gues:ResvNameId source="?" type="?"/>
+         <gues:WakeUpCallDetails>
+            <gues:FromDate/>
+            <gues:ToDate/>
+            <gues:WakeupTime/>
+            <gues:Comments/>
+            <gues:Status/>
+         </gues:WakeUpCallDetails>
+         <gues:ActionType/>
+      </gues:WakeUpCallRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,34 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateGuestMessagesRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:GuestMessages>
+            <v91:GuestMessage URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?">
+               <v91:Message MessageDate="?" TypeOfMessage="?" Recipient="?" Operator="?">
+                  <v91:MessageText></v91:MessageText>
+                  <v91:ReservationID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  <v91:RoomNo></v91:RoomNo>
+                  <v91:ReservationStatus></v91:ReservationStatus>
+                  <v91:NoOfNights></v91:NoOfNights>
+                  <v91:GuestNameId></v91:GuestNameId>
+                  <v91:DepartureDate></v91:DepartureDate>
+                  <v91:ArrivalDate></v91:ArrivalDate>
+                  <v91:ConfirmationNo></v91:ConfirmationNo>
+                  <v91:BlockCode></v91:BlockCode>
+                  <v91:GuaranteeCode></v91:GuaranteeCode>
+                  <v91:BlockID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  <v91:RoomStatus></v91:RoomStatus>
+               </v91:Message>
+               <v91:Delivery DeliveryStatus="?" DeliveryDate="?" DeliveredBy="?" PrintDate="?" TextMessageSentDate="?" TextMessageSentBy="?" TextMessageSentById="?" TextMessageRecipientNo="?"/>
+            </v91:GuestMessage>
+         </v9:GuestMessages>
+      </v9:CreateGuestMessagesRS>
+   </soapenv:Body>
+</soapenv:Envelope>

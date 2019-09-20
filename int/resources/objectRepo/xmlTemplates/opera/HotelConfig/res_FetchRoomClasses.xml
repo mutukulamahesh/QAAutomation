@@ -1,0 +1,37 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchRoomClassesRS EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:RoomClasses>
+            <v91:RoomClass Code="?" Inactive="?" HotelCode="?">
+               <v91:Description>
+                  <v91:DefaultText></v91:DefaultText>
+                  <v91:TranslatedTexts>
+                     <v91:Text Lang="?"></v91:Text>
+                  </v91:TranslatedTexts>
+               </v91:Description>
+               <v91:Sequence></v91:Sequence>
+               <v91:RoomTypes HotelCode="?">
+                  <v91:RoomTypeSummary RoomType="?" NumberOfRooms="?" Inactive="?">
+                     <v91:RoomClass></v91:RoomClass>
+                     <v91:ShortDescription></v91:ShortDescription>
+                     <v91:ActiveDate></v91:ActiveDate>
+                     <v91:Pseudo></v91:Pseudo>
+                     <v91:SendToInterface></v91:SendToInterface>
+                     <v91:SellSequence></v91:SellSequence>
+                     <v91:Suite></v91:Suite>
+                     <v91:MeetingRoom></v91:MeetingRoom>
+                  </v91:RoomTypeSummary>
+               </v91:RoomTypes>
+            </v91:RoomClass>
+         </v9:RoomClasses>
+      </v9:FetchRoomClassesRS>
+   </soapenv:Body>
+</soapenv:Envelope>

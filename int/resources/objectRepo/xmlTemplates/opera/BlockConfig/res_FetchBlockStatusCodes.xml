@@ -1,0 +1,24 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchBlockStatusCodesRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:BlockStatusCodeList>
+            <v91:BlockStatusCode AllowPickup="?" ReturnToInventory="?" Starting="?" LeadStatus="?" LogCatering="?" ShowDiary="?" OrderBy="?" InUse="?">
+               <v91:Status Code="?" Description="?"/>
+               <v91:RoomStatusType></v91:RoomStatusType>
+               <v91:CateringStatusType></v91:CateringStatusType>
+               <v91:DefaultReservationType Code="?" Description="?"/>
+               <v91:ReasonType></v91:ReasonType>
+               <v91:Color></v91:Color>
+            </v91:BlockStatusCode>
+         </v9:BlockStatusCodeList>
+      </v9:FetchBlockStatusCodesRS>
+   </soapenv:Body>
+</soapenv:Envelope>

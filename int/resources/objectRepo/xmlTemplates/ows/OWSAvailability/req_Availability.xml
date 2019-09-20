@@ -1,0 +1,181 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ava="http://webservices.micros.com/ows/5.1/Availability.wsdl" xmlns:ava1="http://webservices.micros.com/og/4.3/Availability/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns:mem="http://webservices.micros.com/og/4.3/Membership/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ava:AvailabilityRequest summaryOnly="?">
+         <ava1:AvailRequestSegment availReqType="?" checkCateringPkgRate="?" childBucket1="?" childBucket2="?" childBucket3="?" displaySet="?" membershipId="?" membershipLevel="?" membershipNumber="?" membershipType="?" moreDataEchoToken="?" numberOfAdults="?" numberOfChildren="?" numberOfRooms="?" pointsAbove="?" pointsBelow="?" returnAmenities="?" returnFeatures="?" returnOnlyReqRate="?" returnPseudoRooom="?" roomOccupancy="?" totalNumberOfGuests="?" yieldMarketCode="?">
+            <ava1:StayDateRange>
+               <hot:StartDate/>
+               <hot:EndDate/>
+               <hot:Duration/>
+            </ava1:StayDateRange>
+            <ava1:RateRange commissionCode="?" currencyCode="?" decimals="?" maximumRate="?" minimumRate="?"/>
+            <ava1:RatePlanCandidates>
+               <ava1:RatePlanCandidate awardType="?" commissionCode="?" promotionCode="?" qualifyingIdType="?" qualifyingIdValue="?" ratePlanCode="?">
+                  <ava1:MealPlanCodes>
+                     <hot:Amenities>
+                        <hot:Amenity amenityCode="?" amenityType="?" availabilityFlag="?" otherFlag="?" otherType="?">
+                           <hot:amenityDescription/>
+                        </hot:Amenity>
+                     </hot:Amenities>
+                  </ava1:MealPlanCodes>
+               </ava1:RatePlanCandidate>
+            </ava1:RatePlanCandidates>
+            <ava1:RoomStayCandidates>
+               <ava1:RoomStayCandidate invBlockCode="?" pseudoRoom="?" roomClass="?" roomTypeCode="?">
+                  <ava1:AmenityInfo>
+                     <hot:Amenities>
+                        <hot:Amenity amenityCode="?" amenityType="?" availabilityFlag="?" otherFlag="?" otherType="?">
+                           <hot:amenityDescription/>
+                        </hot:Amenity>
+                     </hot:Amenities>
+                  </ava1:AmenityInfo>
+                  <ava1:RoomFeatures>
+                     <hot:Features AttachPreferenceToProfile="?" Description="?" Feature="?">
+                        <hot:FeatureID/>
+                     </hot:Features>
+                  </ava1:RoomFeatures>
+               </ava1:RoomStayCandidate>
+            </ava1:RoomStayCandidates>
+            <ava1:HotelSearchCriteria>
+               <ava1:Criterion>
+                  <ava1:HotelRef chainCode="?" hotelCode="?"/>
+               </ava1:Criterion>
+            </ava1:HotelSearchCriteria>
+            <ava1:ChildAges>
+               <ava1:ChildAge age="?"/>
+            </ava1:ChildAges>
+            <ava1:GdsTotalPrice>
+               <ava1:RateCalculation calculatePercentagesIndicator="?" rateCategory="?" rateChangeIndicator="?" rateChangeMethod="?" taxApplicationIndicator="?"/>
+               <ava1:AdditionalBedAmounts>
+                  <hot:AdditionalBedAmount extraBedType="?" otherExtraBedType="?" quantity="?">
+                     <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                  </hot:AdditionalBedAmount>
+               </ava1:AdditionalBedAmounts>
+               <ava1:RoomQuality/>
+               <ava1:BedType/>
+            </ava1:GdsTotalPrice>
+            <ava1:AlternateDates>
+               <ava1:StayDateRange>
+                  <hot:StartDate/>
+                  <hot:EndDate/>
+                  <hot:Duration/>
+               </ava1:StayDateRange>
+            </ava1:AlternateDates>
+            <ava1:PointsDateRange>
+               <hot:StartDate/>
+               <hot:EndDate/>
+               <hot:Duration/>
+            </ava1:PointsDateRange>
+            <ava1:ECertificate>
+               <mem:CertificateID source="?" type="?"/>
+               <mem:VoucherNumber/>
+               <mem:CertificateNumber/>
+               <mem:CertificateCode/>
+               <mem:HotelReference chainCode="?" hotelCode="?"/>
+               <mem:MembershipType/>
+               <mem:AwardType/>
+               <mem:PromotionCode/>
+               <mem:ShortDescription/>
+               <mem:LongDescription/>
+               <mem:ExpirationDate/>
+               <mem:ReservationCertificateYN/>
+               <mem:CertificateValue currencyCode="?" currencyText="?" decimals="?"/>
+               <mem:CertificateCost currencyCode="?" currencyText="?" decimals="?"/>
+               <mem:CertificateLabel/>
+               <mem:NameID source="?" type="?"/>
+               <mem:ConsumedAt/>
+               <mem:ConsumerLastName/>
+               <mem:ConsumerFirstName/>
+               <mem:ConsumerMiddleName/>
+               <mem:ConsumerEmail/>
+               <mem:ConsumptionDate/>
+               <mem:ConsumedHotelReference chainCode="?" hotelCode="?"/>
+               <mem:ConsumptionRefNo source="?" type="?"/>
+               <mem:ConsumptionRefType/>
+               <mem:ConsumptionLegNo source="?" type="?"/>
+               <mem:UserNotes/>
+               <mem:Status/>
+               <mem:PrintStatus/>
+               <mem:MembershipAwardID source="?" type="?"/>
+               <mem:IssueType/>
+               <mem:IssueSource/>
+               <mem:AwardPoints/>
+               <mem:InActiveDate/>
+               <mem:CertificateBeginDate/>
+               <mem:CertificateEndDate/>
+               <mem:CertificateExpriyMonths/>
+               <mem:WebConsumed/>
+               <mem:WebAllowed/>
+               <mem:PMSConsumed/>
+               <mem:Awards>
+                  <mem:AwardCode/>
+                  <mem:AwardBeginDate/>
+                  <mem:AwardEndDate/>
+                  <mem:Points>
+                     <mem:RequiredPointsInfo>
+                        <mem:PointsBeginDate/>
+                        <mem:PointsEndDate/>
+                        <mem:PointsRequired/>
+                        <mem:RuleSchedule>
+                           <mem:Code/>
+                           <mem:Description>
+                              <com:Text>
+                                 <com:TextElement formatted="?" language="?"/>
+                              </com:Text>
+                              <com:Image/>
+                              <com:Url/>
+                           </mem:Description>
+                           <mem:PointsSchedule>
+                              <mem:BeginDate/>
+                              <mem:EndDate/>
+                              <mem:PointsRequired/>
+                           </mem:PointsSchedule>
+                        </mem:RuleSchedule>
+                     </mem:RequiredPointsInfo>
+                  </mem:Points>
+               </mem:Awards>
+               <mem:Promotions>
+                  <mem:PromotionCode/>
+                  <mem:PromotionName/>
+                  <mem:Resort/>
+                  <mem:BookingDate>
+                     <hot:StartDate/>
+                     <hot:EndDate/>
+                     <hot:Duration/>
+                  </mem:BookingDate>
+                  <mem:StayDate>
+                     <hot:StartDate/>
+                     <hot:EndDate/>
+                     <hot:Duration/>
+                  </mem:StayDate>
+                  <mem:RateCode/>
+               </mem:Promotions>
+               <mem:Scope/>
+               <mem:HotelReferences chainCode="?" hotelCode="?"/>
+               <mem:ConsumptionLocationType/>
+            </ava1:ECertificate>
+            <ava1:ASBRateCycle rateCycleType="?"/>
+            <ava1:NameID source="?" type="?"/>
+         </ava1:AvailRequestSegment>
+      </ava:AvailabilityRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

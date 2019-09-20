@@ -1,0 +1,195 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/crm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchProfilesRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:ProfileSummaries TotalPages="?" AllRowsFetched="?" TotalRows="?" PageNumber="?" MaxFetchCount="?">
+            <v91:ProfileInfo>
+               <v91:ProfileIDList>
+                  <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               </v91:ProfileIDList>
+               <v91:Profile StatusCode="?" Protected="?" PrivateProfile="?" InheritedNegRates="?" RegisteredProperty="?" ProfileType="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?">
+                  <v91:FormerName NameType="?" CustomerValue="?" Gender="?" BirthDate="?" BirthDateMasked="?" Language="?" CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?">
+                     <v91:Name></v91:Name>
+                     <v91:FullName></v91:FullName>
+                     <v91:NamePrefix></v91:NamePrefix>
+                     <v91:GivenName></v91:GivenName>
+                     <v91:MiddleName></v91:MiddleName>
+                     <v91:NameSuffix></v91:NameSuffix>
+                     <v91:NameTitle></v91:NameTitle>
+                  </v91:FormerName>
+                  <v91:AltName NameType="?">
+                     <v91:Name></v91:Name>
+                     <v91:FullName></v91:FullName>
+                     <v91:NamePrefix></v91:NamePrefix>
+                     <v91:GivenName></v91:GivenName>
+                     <v91:MiddleName></v91:MiddleName>
+                     <v91:NameSuffix></v91:NameSuffix>
+                     <v91:NameTitle></v91:NameTitle>
+                  </v91:AltName>
+                  <v91:Anonymization>
+                     <v91:AnonymizationStatus></v91:AnonymizationStatus>
+                     <v91:AnonymizationDate></v91:AnonymizationDate>
+                  </v91:Anonymization>
+                  <v91:AddressInfo>
+                     <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:Address Type="?" TypeDescription="?" UpdateReservations="?" BarCode="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" PrimaryInd="?">
+                        <v91:AddressLine></v91:AddressLine>
+                        <v91:CityName></v91:CityName>
+                        <v91:PostalCode></v91:PostalCode>
+                        <v91:CityExtension></v91:CityExtension>
+                        <v91:County></v91:County>
+                        <v91:State></v91:State>
+                        <v91:CountryName Code="?"></v91:CountryName>
+                        <v91:Language></v91:Language>
+                     </v91:Address>
+                  </v91:AddressInfo>
+                  <v91:TelephoneInfo>
+                     <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:Telephone CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" PhoneTechType="?" PhoneUseType="?" PhoneUseTypeDescription="?" PhoneNumber="?" Extension="?" OrderSequence="?" PrimaryInd="?"/>
+                  </v91:TelephoneInfo>
+                  <v91:EmailInfo>
+                     <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:Email CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" OrderSequence="?" EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?"/>
+                  </v91:EmailInfo>
+                  <v91:ProfileMembership MembershipID="?" ProgramID="?" PrimaryMembershipYn="?" MembershipIDNo="?" CentralSetupYn="?" OrderSequence="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" SignupDate="?" EffectiveDate="?" ExpireDate="?" ExpireDateExclusiveIndicator="?">
+                     <v91:Comment>
+                        <v91:Text Formatted="?" TextFormat="?" Language="?"></v91:Text>
+                        <v91:Image></v91:Image>
+                        <v91:URL></v91:URL>
+                     </v91:Comment>
+                     <v91:NewMembershipID></v91:NewMembershipID>
+                     <v91:NameOnCard></v91:NameOnCard>
+                     <v91:ProgramDescription></v91:ProgramDescription>
+                     <v91:MembershipLevel></v91:MembershipLevel>
+                     <v91:MembershipLevelDescription></v91:MembershipLevelDescription>
+                     <v91:MembershipClass></v91:MembershipClass>
+                     <v91:EarningPreference></v91:EarningPreference>
+                     <v91:Inactive></v91:Inactive>
+                     <v91:Benefits>
+                        <v91:benefit Inactive="?">
+                           <v91:Code></v91:Code>
+                           <v91:Message></v91:Message>
+                        </v91:benefit>
+                     </v91:Benefits>
+                     <v91:TierAdministration></v91:TierAdministration>
+                     <v91:Downgrade></v91:Downgrade>
+                     <v91:ReIssueNewCard></v91:ReIssueNewCard>
+                     <v91:ExcludeFromBatch></v91:ExcludeFromBatch>
+                     <v91:UpgradeDescription></v91:UpgradeDescription>
+                     <v91:DowngradeDescription></v91:DowngradeDescription>
+                     <v91:Rating></v91:Rating>
+                     <v91:MembershipEnrollmentCode></v91:MembershipEnrollmentCode>
+                     <v91:MemberStatus></v91:MemberStatus>
+                     <v91:CurrentPoints></v91:CurrentPoints>
+                     <v91:PointsLabel></v91:PointsLabel>
+                     <v91:EnrollmentSource></v91:EnrollmentSource>
+                     <v91:EnrollmentResort></v91:EnrollmentResort>
+                     <v91:PreferredCard></v91:PreferredCard>
+                  </v91:ProfileMembership>
+                  <v91:URLInfo>
+                     <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:URL Type="?" TypeDescription="?" OrderSequence="?" PrimaryInd="?"></v91:URL>
+                  </v91:URLInfo>
+                  <v91:CitizenCountryName Code="?"></v91:CitizenCountryName>
+                  <v91:ProfileIndicators>
+                     <v91:Indicator IndicatorName="?" Count="?"/>
+                  </v91:ProfileIndicators>
+                  <v91:SearchMatches>
+                     <v91:SearchMatch Attribute="?" Value="?"/>
+                  </v91:SearchMatches>
+                  <v91:ProfileAccessType SharedLevel="?">
+                     <v91:ChainCode></v91:ChainCode>
+                     <v91:CROCode></v91:CROCode>
+                     <v91:HotelCode></v91:HotelCode>
+                  </v91:ProfileAccessType>
+                  <v91:ProfileRestrictions Restricted="?">
+                     <v91:Reason></v91:Reason>
+                     <v91:ReasonDescription></v91:ReasonDescription>
+                  </v91:ProfileRestrictions>
+                  <v91:VIPStatus Code="?"></v91:VIPStatus>
+                  <v91:Owners>
+                     <v91:Owner Primary="?">
+                        <v91:Hotel Code="?" Description="?"/>
+                        <v91:UserID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                        <v91:UserName></v91:UserName>
+                        <v91:OwnerCode></v91:OwnerCode>
+                        <v91:ProfileID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                        <v91:Name NameType="?" Language="?" ExternalSystem="?">
+                           <v91:NamePrefix></v91:NamePrefix>
+                           <v91:GivenName></v91:GivenName>
+                           <v91:MiddleName></v91:MiddleName>
+                           <v91:Surname></v91:Surname>
+                           <v91:NameSuffix></v91:NameSuffix>
+                           <v91:NameTitle></v91:NameTitle>
+                           <v91:NameTitleSuffix></v91:NameTitleSuffix>
+                           <v91:EnvelopeGreeting></v91:EnvelopeGreeting>
+                           <v91:Salutation></v91:Salutation>
+                        </v91:Name>
+                        <v91:Department Code="?" Description="?"/>
+                        <v91:Email>
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <v91:Email CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" OrderSequence="?" EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?"/>
+                        </v91:Email>
+                        <v91:Phone>
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <v91:Telephone CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" PhoneTechType="?" PhoneUseType="?" PhoneUseTypeDescription="?" PhoneNumber="?" Extension="?" OrderSequence="?" PrimaryInd="?"/>
+                        </v91:Phone>
+                        <v91:Relationship Code="?" Description="?"/>
+                     </v91:Owner>
+                  </v91:Owners>
+                  <v91:PrimaryCompany></v91:PrimaryCompany>
+                  <v91:ARAccount HotelCode="?" ARNumber="?"/>
+                  <v91:Commission Code="?" Description="?"/>
+                  <v91:TaxInfo>
+                     <v91:Tax1No></v91:Tax1No>
+                     <v91:Tax2No></v91:Tax2No>
+                     <v91:TaxCategory></v91:TaxCategory>
+                     <v91:TaxOffice></v91:TaxOffice>
+                     <v91:TaxType></v91:TaxType>
+                  </v91:TaxInfo>
+                  <v91:Cashiering CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?">
+                     <v91:DirectBillingList>
+                        <v91:DirectBilling HotelCode="?" ARNumber="?"/>
+                     </v91:DirectBillingList>
+                     <v91:AutoFolioSettlementType></v91:AutoFolioSettlementType>
+                     <v91:PaymentDueDays></v91:PaymentDueDays>
+                     <v91:TaxPercent1></v91:TaxPercent1>
+                     <v91:TaxPercent2></v91:TaxPercent2>
+                     <v91:TaxPercent3></v91:TaxPercent3>
+                     <v91:TaxPercent4></v91:TaxPercent4>
+                     <v91:TaxPercent5></v91:TaxPercent5>
+                     <v91:ArNoCentral></v91:ArNoCentral>
+                     <v91:ReferenceCurrency></v91:ReferenceCurrency>
+                  </v91:Cashiering>
+                  <v91:LastStayInfo>
+                     <v91:LastVisit></v91:LastVisit>
+                     <v91:LastRoom></v91:LastRoom>
+                     <v91:LastRate Amount="?" CurrencyCode="?"/>
+                     <v91:TotalStay></v91:TotalStay>
+                  </v91:LastStayInfo>
+                  <v91:AllowedActions>
+                     <v91:AllowedAction></v91:AllowedAction>
+                  </v91:AllowedActions>
+               </v91:Profile>
+            </v91:ProfileInfo>
+         </v9:ProfileSummaries>
+         <v9:MasterInfoList>
+            <v9:MasterInfo CodeType="?">
+               <v91:CodeInfo HotelCode="?" Code="?">
+                  <v91:Description></v91:Description>
+                  <v91:AddtionalCodeInfo>
+                     <v91:Code Name="?" Value="?"/>
+                  </v91:AddtionalCodeInfo>
+               </v91:CodeInfo>
+            </v9:MasterInfo>
+         </v9:MasterInfoList>
+      </v9:FetchProfilesRS>
+   </soapenv:Body>
+</soapenv:Envelope>

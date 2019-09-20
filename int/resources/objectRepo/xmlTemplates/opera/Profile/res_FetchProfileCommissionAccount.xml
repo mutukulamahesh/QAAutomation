@@ -1,0 +1,35 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/crm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchProfileCommissionAccountRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:ProfileCommissionAccountInfoList>
+            <v91:ProfileCommissionAccountInfo>
+               <v91:ProfileID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               <v91:BankAccount Default="?" LinkedToProfile="?">
+                  <v91:HotelCode></v91:HotelCode>
+                  <v91:BankAccountID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  <v91:BankAccountNo></v91:BankAccountNo>
+                  <v91:BankCode></v91:BankCode>
+                  <v91:BranchCode></v91:BranchCode>
+                  <v91:BankName></v91:BankName>
+                  <v91:PaymentMethod Code="?" Description="?">
+                     <v91:Format></v91:Format>
+                  </v91:PaymentMethod>
+                  <v91:CheckFormat></v91:CheckFormat>
+                  <v91:Currency Code="?" Description="?"/>
+                  <v91:CurrentCheckNo></v91:CurrentCheckNo>
+                  <v91:HotelName></v91:HotelName>
+               </v91:BankAccount>
+               <v91:CommissionCode Code="?" Description="?"/>
+            </v91:ProfileCommissionAccountInfo>
+         </v9:ProfileCommissionAccountInfoList>
+      </v9:FetchProfileCommissionAccountRS>
+   </soapenv:Body>
+</soapenv:Envelope>

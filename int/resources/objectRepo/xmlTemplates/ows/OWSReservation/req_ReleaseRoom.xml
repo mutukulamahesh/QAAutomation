@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:res="http://webservices.micros.com/ows/5.1/Reservation.wsdl">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:ReleaseRoomRequest>
+         <res:HotelReference chainCode="?" hotelCode="?"/>
+         <res:ResvNameId source="?" type="?"/>
+         <res:StationID/>
+      </res:ReleaseRoomRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

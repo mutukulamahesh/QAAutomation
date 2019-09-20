@@ -1,0 +1,123 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/par/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreatePackageRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:PackageCode AllRowsFetched="?" Code="?" Description="?" HotelCode="?" RatePlanCode="?" TotalRows="?" adjustOverlappingRange="?">
+            <v91:Header>
+               <v91:PrimaryDetails>
+                  <v91:Description/>
+                  <v91:ShortDescription/>
+                  <v91:ForecastGroup/>
+                  <v91:BeginSellDate/>
+                  <v91:EndSellDate/>
+               </v91:PrimaryDetails>
+               <v91:TransactionDetails>
+                  <v91:Allowance/>
+                  <v91:Currency/>
+                  <v91:PostingType/>
+                  <v91:CalculationRule/>
+                  <v91:PackagePostingRules>
+                     <v91:TransactionCode Code="?" Type="?">
+                        <v91:Description/>
+                     </v91:TransactionCode>
+                     <v91:OverageCode Code="?" Type="?">
+                        <v91:Description/>
+                     </v91:OverageCode>
+                     <v91:ProfitCode Code="?" Type="?">
+                        <v91:Description/>
+                     </v91:ProfitCode>
+                     <v91:LossCode Code="?" Type="?">
+                        <v91:Description/>
+                     </v91:LossCode>
+                     <v91:AlternateCodesList>
+                        <v91:AlternateCode Code="?" Type="?">
+                           <v91:Description/>
+                        </v91:AlternateCode>
+                     </v91:AlternateCodesList>
+                  </v91:PackagePostingRules>
+               </v91:TransactionDetails>
+               <v91:PostingAttributes>
+                  <v91:AddToRate/>
+                  <v91:PrintSeparateLine/>
+                  <v91:SellSeparate/>
+                  <v91:PostNextDay/>
+                  <v91:ForecastNextDay/>
+                  <v91:DeliveryTimeRequired/>
+                  <v91:WebBookable/>
+                  <v91:Formula/>
+                  <v91:FormulaFunctionName/>
+                  <v91:FormulaFunctionArguments>
+                     <v91:FunctionArgument>
+                        <v91:Name/>
+                        <v91:Value/>
+                        <v91:Position/>
+                        <v91:DataType/>
+                        <v91:Required/>
+                     </v91:FunctionArgument>
+                  </v91:FormulaFunctionArguments>
+                  <v91:StartTime/>
+                  <v91:EndTime/>
+                  <v91:Catering/>
+                  <v91:PostingRhythm Type="?">
+                     <v91:EveryXNightsStartingNightY PostEveryXNights="?" StartOnNightY="?"/>
+                     <v91:CertainNightsOfTheWeek Friday="?" Monday="?" Saturday="?" Sunday="?" Thursday="?" Tuesday="?" Wednesday="?"/>
+                     <v91:CustomStaySchedule Night1="?" Night10="?" Night11="?" Night12="?" Night13="?" Night14="?" Night2="?" Night3="?" Night4="?" Night5="?" Night6="?" Night7="?" Night8="?" Night9="?"/>
+                     <v91:CustomNightSchedule Night1="?" Night10="?" Night11="?" Night12="?" Night13="?" Night14="?" Night2="?" Night3="?" Night4="?" Night5="?" Night6="?" Night7="?" Night8="?" Night9="?"/>
+                  </v91:PostingRhythm>
+                  <v91:PriceCalculationRule/>
+                  <v91:Ticket/>
+                  <v91:InventoryItems>
+                     <v91:InventoryItem ItemId="?">
+                        <v91:ArticleNumber/>
+                        <v91:Description/>
+                        <v91:Quantity/>
+                     </v91:InventoryItem>
+                  </v91:InventoryItems>
+               </v91:PostingAttributes>
+               <v91:UsageDetails UsedInHouseReservations="?" UsedInRates="?" UsedInReservations="?">
+                  <v91:Source/>
+               </v91:UsageDetails>
+            </v91:Header>
+            <v91:Schedules>
+               <v91:Schedule End="?" Start="?">
+                  <v91:NewTimeSpan>
+                     <v91:StartDate/>
+                     <v91:EndDate/>
+                     <v91:Duration/>
+                  </v91:NewTimeSpan>
+                  <v91:SchedulePrices>
+                     <v91:SchedulePrice>
+                        <v91:UnitPrice/>
+                        <v91:UnitAllowance/>
+                        <v91:Bucket/>
+                     </v91:SchedulePrice>
+                  </v91:SchedulePrices>
+                  <v91:RatePlanCode/>
+                  <v91:MinNights/>
+                  <v91:MaxNights/>
+                  <v91:MinPersons/>
+                  <v91:MaxPersons/>
+                  <v91:NewMinNights/>
+                  <v91:NewMaxNights/>
+                  <v91:NewMinPersons/>
+                  <v91:NewMaxPersons/>
+               </v91:Schedule>
+            </v91:Schedules>
+         </v9:PackageCode>
+      </v9:CreatePackageRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

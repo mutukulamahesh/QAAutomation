@@ -1,0 +1,116 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/par/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchPackageRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:PackageCode HotelCode="?" Code="?" Description="?" RatePlanCode="?" adjustOverlappingRange="?" AllRowsFetched="?" TotalRows="?">
+            <v91:Header>
+               <v91:PrimaryDetails>
+                  <v91:Description></v91:Description>
+                  <v91:ShortDescription></v91:ShortDescription>
+                  <v91:ForecastGroup></v91:ForecastGroup>
+                  <v91:BeginSellDate></v91:BeginSellDate>
+                  <v91:EndSellDate></v91:EndSellDate>
+               </v91:PrimaryDetails>
+               <v91:TransactionDetails>
+                  <v91:Allowance></v91:Allowance>
+                  <v91:Currency></v91:Currency>
+                  <v91:PostingType></v91:PostingType>
+                  <v91:CalculationRule></v91:CalculationRule>
+                  <v91:PackagePostingRules>
+                     <v91:TransactionCode Code="?" Type="?">
+                        <v91:Description></v91:Description>
+                     </v91:TransactionCode>
+                     <v91:OverageCode Code="?" Type="?">
+                        <v91:Description></v91:Description>
+                     </v91:OverageCode>
+                     <v91:ProfitCode Code="?" Type="?">
+                        <v91:Description></v91:Description>
+                     </v91:ProfitCode>
+                     <v91:LossCode Code="?" Type="?">
+                        <v91:Description></v91:Description>
+                     </v91:LossCode>
+                     <v91:AlternateCodesList>
+                        <v91:AlternateCode Code="?" Type="?">
+                           <v91:Description></v91:Description>
+                        </v91:AlternateCode>
+                     </v91:AlternateCodesList>
+                  </v91:PackagePostingRules>
+               </v91:TransactionDetails>
+               <v91:PostingAttributes>
+                  <v91:AddToRate></v91:AddToRate>
+                  <v91:PrintSeparateLine></v91:PrintSeparateLine>
+                  <v91:SellSeparate></v91:SellSeparate>
+                  <v91:PostNextDay></v91:PostNextDay>
+                  <v91:ForecastNextDay></v91:ForecastNextDay>
+                  <v91:DeliveryTimeRequired></v91:DeliveryTimeRequired>
+                  <v91:WebBookable></v91:WebBookable>
+                  <v91:Formula></v91:Formula>
+                  <v91:FormulaFunctionName></v91:FormulaFunctionName>
+                  <v91:FormulaFunctionArguments>
+                     <v91:FunctionArgument>
+                        <v91:Name></v91:Name>
+                        <v91:Value></v91:Value>
+                        <v91:Position></v91:Position>
+                        <v91:DataType></v91:DataType>
+                        <v91:Required></v91:Required>
+                     </v91:FunctionArgument>
+                  </v91:FormulaFunctionArguments>
+                  <v91:StartTime></v91:StartTime>
+                  <v91:EndTime></v91:EndTime>
+                  <v91:Catering></v91:Catering>
+                  <v91:PostingRhythm Type="?">
+                     <v91:EveryXNightsStartingNightY StartOnNightY="?" PostEveryXNights="?"/>
+                     <v91:CertainNightsOfTheWeek Sunday="?" Monday="?" Tuesday="?" Wednesday="?" Thursday="?" Friday="?" Saturday="?"/>
+                     <v91:CustomStaySchedule Night1="?" Night2="?" Night3="?" Night4="?" Night5="?" Night6="?" Night7="?" Night8="?" Night9="?" Night10="?" Night11="?" Night12="?" Night13="?" Night14="?"/>
+                     <v91:CustomNightSchedule Night1="?" Night2="?" Night3="?" Night4="?" Night5="?" Night6="?" Night7="?" Night8="?" Night9="?" Night10="?" Night11="?" Night12="?" Night13="?" Night14="?"/>
+                  </v91:PostingRhythm>
+                  <v91:PriceCalculationRule></v91:PriceCalculationRule>
+                  <v91:Ticket></v91:Ticket>
+                  <v91:InventoryItems>
+                     <v91:InventoryItem ItemId="?">
+                        <v91:ArticleNumber></v91:ArticleNumber>
+                        <v91:Description></v91:Description>
+                        <v91:Quantity></v91:Quantity>
+                     </v91:InventoryItem>
+                  </v91:InventoryItems>
+               </v91:PostingAttributes>
+               <v91:UsageDetails UsedInReservations="?" UsedInRates="?" UsedInHouseReservations="?">
+                  <v91:Source></v91:Source>
+               </v91:UsageDetails>
+            </v91:Header>
+            <v91:Schedules>
+               <v91:Schedule Start="?" End="?">
+                  <v91:NewTimeSpan>
+                     <v91:StartDate></v91:StartDate>
+                     <v91:EndDate></v91:EndDate>
+                     <v91:Duration></v91:Duration>
+                  </v91:NewTimeSpan>
+                  <v91:SchedulePrices>
+                     <v91:SchedulePrice>
+                        <v91:UnitPrice></v91:UnitPrice>
+                        <v91:UnitAllowance></v91:UnitAllowance>
+                        <v91:Bucket></v91:Bucket>
+                     </v91:SchedulePrice>
+                  </v91:SchedulePrices>
+                  <v91:RatePlanCode></v91:RatePlanCode>
+                  <v91:MinNights></v91:MinNights>
+                  <v91:MaxNights></v91:MaxNights>
+                  <v91:MinPersons></v91:MinPersons>
+                  <v91:MaxPersons></v91:MaxPersons>
+                  <v91:NewMinNights></v91:NewMinNights>
+                  <v91:NewMaxNights></v91:NewMaxNights>
+                  <v91:NewMinPersons></v91:NewMinPersons>
+                  <v91:NewMaxPersons></v91:NewMaxPersons>
+               </v91:Schedule>
+            </v91:Schedules>
+         </v9:PackageCode>
+      </v9:FetchPackageRS>
+   </soapenv:Body>
+</soapenv:Envelope>

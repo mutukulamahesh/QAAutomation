@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Opera Reservation Sanity Suite" verbose="1" allow-return-values="true">
+
+    <parameter name="emailFrom" value="operaInterfacesAutomationExecution_notifier_noreply@oracle.com" />
+    <!-- santhoshi.basana@oracle.com -->
+    <parameter name="emailTo" value="uday.vangala@oracle.com" />
+    <parameter name="emailCC" value="santhoshi.basana@oracle.com" />
+    <parameter name="smtpHost" value="internal-mail-router.oracle.com" />
+    <parameter name="smtpPort" value="25" />
+    
+    
+    <test name="Opera Reservation Sanity Suite1" preserve-order="true">
+        <parameter name="environment" value="LAUNCHPAD" />
+        <!--  ONLY WS and SSD are allowed for the below parameter -->
+        <parameter name="wsLayer" value="WS" />
+        <parameter name="runOnEntry" value="ES_01" />
+        <parameter name="schema" value="CENTRAL"/>
+        <parameter name="testGroup" value="Create Reservation"/>
+        <groups>
+            <run>
+                <include name="sanity" />
+            </run>
+        </groups>
+        <classes>
+            <class
+                name="com.oracle.hgbu.opera.qaauto.ws.testcases.reservation.CreateReservationTest" />
+        </classes>
+    </test>
+    
+</suite>

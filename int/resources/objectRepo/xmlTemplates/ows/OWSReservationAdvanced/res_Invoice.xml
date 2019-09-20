@@ -1,0 +1,116 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:res="http://webservices.micros.com/og/4.3/ResvAdvanced/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:res1="http://webservices.micros.com/og/4.3/Reservation/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/">
+   <soapenv:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="?" channelValidation="?" terminalID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName></core:UserName>
+               <core:UserPassword></core:UserPassword>
+               <core:Domain></core:Domain>
+               <core:SecurityId></core:SecurityId>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key></core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:InvoiceResponse>
+         <res:HotelReference chainCode="?" hotelCode="?"></res:HotelReference>
+         <res:ReservationID>
+            <com:UniqueID type="?" source="?"></com:UniqueID>
+         </res:ReservationID>
+         <res:Invoice FolioViewNo="?">
+            <res1:Address addressType="?" otherAddressType="?" languageCode="?" operaId="?" externalId="?" primary="?" displaySequence="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+               <com:AddressLine></com:AddressLine>
+               <com:cityName></com:cityName>
+               <com:stateProv></com:stateProv>
+               <com:countryCode></com:countryCode>
+               <com:postalCode></com:postalCode>
+               <com:barCode></com:barCode>
+               <com:cityExtension></com:cityExtension>
+            </res1:Address>
+            <res1:Name nameOrdered="?" familiarName="?" active="?" languageCode="?">
+               <com:nameTitle></com:nameTitle>
+               <com:firstName></com:firstName>
+               <com:middleName></com:middleName>
+               <com:lastName></com:lastName>
+               <com:nameSuffix></com:nameSuffix>
+               <com:accountName2></com:accountName2>
+               <com:accountName3></com:accountName3>
+               <com:profession></com:profession>
+            </res1:Name>
+            <res1:ProfileIDs>
+               <com:UniqueID type="?" source="?"></com:UniqueID>
+            </res1:ProfileIDs>
+            <res1:BillNumber type="?" source="?"></res1:BillNumber>
+            <res1:BillItems Date="?" Time="?" Description="?" TransactionCode="?" TransactionNo="?">
+               <res1:Account type="?" source="?"></res1:Account>
+               <res1:Amount currencyCode="?" decimals="?" currencyText="?"></res1:Amount>
+               <res1:VatCode type="?" source="?"></res1:VatCode>
+               <res1:RevenueGroup></res1:RevenueGroup>
+               <res1:Supplement></res1:Supplement>
+               <res1:Reference></res1:Reference>
+               <res1:OriginalRoom></res1:OriginalRoom>
+               <res1:Quantity></res1:Quantity>
+            </res1:BillItems>
+            <res1:BillTaxes Description="?">
+               <res1:VatAmount currencyCode="?" decimals="?" currencyText="?"></res1:VatAmount>
+               <res1:VatAmountEuro currencyCode="?" decimals="?" currencyText="?"></res1:VatAmountEuro>
+            </res1:BillTaxes>
+            <res1:CreditCardSurcharges CreditCardType="?" SurchargePercentage="?">
+               <res1:SurchargeThreshold currencyCode="?" decimals="?" currencyText="?"></res1:SurchargeThreshold>
+               <res1:SurchargeAmount currencyCode="?" decimals="?" currencyText="?"></res1:SurchargeAmount>
+               <res1:TaxAmount currencyCode="?" decimals="?" currencyText="?"></res1:TaxAmount>
+               <res1:TotalBillAmount currencyCode="?" decimals="?" currencyText="?"></res1:TotalBillAmount>
+            </res1:CreditCardSurcharges>
+            <res1:CurrentBalance currencyCode="?" decimals="?" currencyText="?"></res1:CurrentBalance>
+         </res:Invoice>
+         <res:ExpectedCharges>
+            <res:TotalCharges currencyCode="?" decimals="?" currencyText="?"></res:TotalCharges>
+            <res:CurrentBalance currencyCode="?" decimals="?" currencyText="?"></res:CurrentBalance>
+            <res:DailyCharges TotalRoomRateAndPackages="?" TotalTaxesAndFees="?" TotalFixedCharges="?" TaxInclusive="?" decimals="?">
+               <hot:ChargesForPostingDate PostingDate="?" TotalCharges="?">
+                  <hot:RoomRateAndPackages TotalCharges="?" decimals="?">
+                     <hot:Charges>
+                        <hot:Description></hot:Description>
+                        <hot:Amount currencyCode="?" decimals="?" currencyText="?"></hot:Amount>
+                        <hot:CodeType></hot:CodeType>
+                        <hot:Code></hot:Code>
+                     </hot:Charges>
+                  </hot:RoomRateAndPackages>
+                  <hot:TaxesAndFees TotalCharges="?" decimals="?">
+                     <hot:Charges>
+                        <hot:Description></hot:Description>
+                        <hot:Amount currencyCode="?" decimals="?" currencyText="?"></hot:Amount>
+                        <hot:CodeType></hot:CodeType>
+                        <hot:Code></hot:Code>
+                     </hot:Charges>
+                  </hot:TaxesAndFees>
+                  <hot:FixedCharges TotalCharges="?" decimals="?">
+                     <hot:FixedCharge id="?" transactionCode="?" quantity="?" frequency="?" beginDate="?" endDate="?" dayToExecute="?" dateToExecute="?" articleId="?" supplement="?" roomNights="?">
+                        <hot:Description></hot:Description>
+                        <hot:Amount currencyCode="?" decimals="?" currencyText="?"></hot:Amount>
+                        <hot:TaxesAndFees currencyCode="?" decimals="?" currencyText="?"></hot:TaxesAndFees>
+                     </hot:FixedCharge>
+                  </hot:FixedCharges>
+               </hot:ChargesForPostingDate>
+            </res:DailyCharges>
+         </res:ExpectedCharges>
+         <res:Result resultStatusFlag="?">
+            <com:Text>
+               <com:TextElement formatted="?" language="?"></com:TextElement>
+            </com:Text>
+            <com:IDs>
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <com:OperaErrorCode></com:OperaErrorCode>
+         </res:Result>
+      </res:InvoiceResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

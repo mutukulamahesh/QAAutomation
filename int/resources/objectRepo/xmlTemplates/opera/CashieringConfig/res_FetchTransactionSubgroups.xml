@@ -1,0 +1,74 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchTransactionSubgroupsRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:TransactionSubgroups>
+            <v91:TransactionSubgroup Code="?" Group="?" NewGroup="?" Type="?" HotelCode="?">
+               <v91:Description></v91:Description>
+               <v91:Sequence></v91:Sequence>
+               <v91:GroupDescription></v91:GroupDescription>
+               <v91:GeneratesSetup>
+                  <v91:AddBaseAmtTo Bucket1="?" Bucket2="?" Bucket3="?"/>
+                  <v91:Generates>
+                     <v91:Generate Code="?" Description="?">
+                        <v91:GenerateId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                        <v91:Rule>
+                           <v91:Percentage Amount="?" CalculatedOn="?" UseTaxBracket="?"/>
+                           <v91:FlatAmount Amount="?"/>
+                           <v91:UDF></v91:UDF>
+                           <v91:UDFFunctionName></v91:UDFFunctionName>
+                           <v91:UDFFunctionArguments>
+                              <v91:FunctionArgument>
+                                 <v91:Name></v91:Name>
+                                 <v91:Value></v91:Value>
+                                 <v91:Position></v91:Position>
+                                 <v91:DataType></v91:DataType>
+                                 <v91:Required></v91:Required>
+                              </v91:FunctionArgument>
+                           </v91:UDFFunctionArguments>
+                           <v91:TaxTypeBased>
+                              <v91:TaxType Code="?" Description="?">
+                                 <v91:Schedule StartDate="?">
+                                    <v91:Rule>
+                                       <v91:Percentage Amount="?" CalculatedOn="?" UseTaxBracket="?"/>
+                                       <v91:FlatAmount Amount="?"/>
+                                       <v91:UDF>
+                                          <v91:UDF></v91:UDF>
+                                          <v91:UDFFunctionName></v91:UDFFunctionName>
+                                          <v91:UDFFunctionArguments>
+                                             <v91:FunctionArgument>
+                                                <v91:Name></v91:Name>
+                                                <v91:Value></v91:Value>
+                                                <v91:Position></v91:Position>
+                                                <v91:DataType></v91:DataType>
+                                                <v91:Required></v91:Required>
+                                             </v91:FunctionArgument>
+                                          </v91:UDFFunctionArguments>
+                                       </v91:UDF>
+                                       <v91:DoNotPost/>
+                                       <v91:RoundingMethod></v91:RoundingMethod>
+                                    </v91:Rule>
+                                 </v91:Schedule>
+                              </v91:TaxType>
+                           </v91:TaxTypeBased>
+                           <v91:RoundingMethod></v91:RoundingMethod>
+                           <v91:Posting ApplicableDays="?" AdjustmentType="?"/>
+                        </v91:Rule>
+                        <v91:AddGeneratedAmtTo Bucket1="?" Bucket2="?" Bucket3="?"/>
+                        <v91:Level></v91:Level>
+                     </v91:Generate>
+                  </v91:Generates>
+               </v91:GeneratesSetup>
+               <v91:GeneratesAvailable></v91:GeneratesAvailable>
+            </v91:TransactionSubgroup>
+         </v9:TransactionSubgroups>
+      </v9:FetchTransactionSubgroupsRS>
+   </soapenv:Body>
+</soapenv:Envelope>

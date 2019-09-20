@@ -1,0 +1,69 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/fof/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:SetRoomOutOfServiceRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Criteria HotelCode="?">
+            <v91:RoomRepairByRoomNumber>
+               <v91:RoomNumber/>
+               <v91:RoomOutOfOrder End="?" RoomStatus="?" Start="?">
+                  <v91:RepairRemarks/>
+                  <v91:ReturnStatus/>
+                  <v91:ReasonCode/>
+                  <v91:ReasonDesc/>
+                  <v91:NewDateRange End="?" Start="?"/>
+               </v91:RoomOutOfOrder>
+            </v91:RoomRepairByRoomNumber>
+            <v91:RoomRangeList>
+               <v91:RoomNumbers>
+                  <v91:RoomNumber/>
+               </v91:RoomNumbers>
+               <v91:Range>
+                  <v91:RoomRange FromRoomNumber="?" ToRoomNumber="?"/>
+               </v91:Range>
+               <v91:RoomOutOfOrder End="?" RoomStatus="?" Start="?">
+                  <v91:RepairRemarks/>
+                  <v91:ReturnStatus/>
+                  <v91:ReasonCode/>
+                  <v91:ReasonDesc/>
+                  <v91:NewDateRange End="?" Start="?"/>
+               </v91:RoomOutOfOrder>
+            </v91:RoomRangeList>
+            <v91:FrontOfficeRoomStatusList>
+               <v91:FrontOfficeRoomStatus/>
+            </v91:FrontOfficeRoomStatusList>
+            <v91:RoomParityStatusList>
+               <v91:RoomParityStatus/>
+            </v91:RoomParityStatusList>
+            <v91:BuildingList>
+               <v91:Building/>
+            </v91:BuildingList>
+            <v91:RoomFeaturesList>
+               <v91:RoomFeatures/>
+            </v91:RoomFeaturesList>
+            <v91:AMSectionList>
+               <v91:AMSection/>
+            </v91:AMSectionList>
+            <v91:PMSectionList>
+               <v91:PMSection/>
+            </v91:PMSectionList>
+            <v91:FloorList>
+               <v91:Floor/>
+            </v91:FloorList>
+         </v9:Criteria>
+      </v9:SetRoomOutOfServiceRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

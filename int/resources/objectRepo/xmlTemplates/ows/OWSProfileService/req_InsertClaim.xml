@@ -1,0 +1,89 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:name="http://webservices.micros.com/ows/5.1/Name.wsdl">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <name:InsertClaimRequest>
+         <name:Profile>
+            <com:NameID source="?" type="?"/>
+            <com:PersonName active="?" familiarName="?" nameOrdered="?">
+               <com:nameTitle/>
+               <com:firstName/>
+               <com:middleName/>
+               <com:lastName/>
+               <com:nameSuffix/>
+               <com:accountName2/>
+               <com:accountName3/>
+               <com:profession/>
+            </com:PersonName>
+            <com:BirthDate/>
+            <com:Gender/>
+            <com:Address addressType="?" languageCode="?" otherAddressType="?">
+               <com:AddressLine/>
+               <com:cityName/>
+               <com:stateProv/>
+               <com:countryCode/>
+               <com:postalCode/>
+               <com:barCode/>
+               <com:cityExtension/>
+            </com:Address>
+            <com:Phone phoneRole="?" phoneType="?" primaryPhone="?">
+               <com:PhoneNumber/>
+               <com:PhoneData areaCode="?" countryAccessCode="?" extension="?" phoneNumber="?"/>
+            </com:Phone>
+            <com:EmailAddress/>
+            <com:MembershipID source="?" type="?"/>
+            <com:MembershipNumber/>
+            <com:MembershipType/>
+         </name:Profile>
+         <name:CallerName/>
+         <name:Claim>
+            <com:ClaimId/>
+            <com:ClaimDate/>
+            <com:ClaimType/>
+            <com:RecordType/>
+            <com:Resort/>
+            <com:ClaimStatus/>
+            <com:FinalStatus/>
+            <com:ClaimInformation/>
+            <com:CloseDate/>
+            <com:ClaimSource/>
+            <com:CallerName/>
+            <com:Owner/>
+            <com:NameID source="?" type="?"/>
+            <com:MembershipID source="?" type="?"/>
+            <com:MembershipType/>
+            <com:MembershipCardNumber/>
+            <com:PmsReferenceNumber/>
+            <com:OrsReferenceNumber/>
+            <com:ClaimComments>
+               <com:ClaimCommentsInfo>
+                  <com:Sequence/>
+                  <com:ClaimDate/>
+                  <com:ClaimActivity/>
+                  <com:Comments/>
+               </com:ClaimCommentsInfo>
+            </com:ClaimComments>
+            <com:StartDate/>
+            <com:EndDate/>
+         </name:Claim>
+      </name:InsertClaimRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

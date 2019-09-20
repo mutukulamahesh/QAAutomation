@@ -1,0 +1,61 @@
+<soapenv:Envelope xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://webservices.micros.com/htng/2008B/SingleGuestItinerary/Reservation/Types" xmlns:typ1="http://htng.org/PWS/2008B/SingleGuestItinerary/Common/Types">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:FetchBookedPackagesResponse>
+         <typ:Result resultStatusFlag="?" code="?">
+            <typ1:Text>
+               <typ1:TextElement language="?"></typ1:TextElement>
+            </typ1:Text>
+            <typ1:IDs>
+               <typ1:UniqueID source="?"></typ1:UniqueID>
+            </typ1:IDs>
+         </typ:Result>
+         <typ:BookedPackageList>
+            <typ1:PackageDetail>
+               <typ1:PackageInfo packageCode="?" calculationRule="?" postingRhythm="?" quantity="?" includedInRate="?" addRateSeprateLine="?" addRateCombinedLine="?" startTime="?" endTime="?" sellSeparate="?" totalDepositAmount="?" source="?">
+                  <typ1:Amount currencyCode="?"></typ1:Amount>
+                  <typ1:Allowance currencyCode="?"></typ1:Allowance>
+                  <typ1:Description>
+                     <typ1:Text>
+                        <typ1:TextElement language="?"></typ1:TextElement>
+                     </typ1:Text>
+                     <typ1:Image></typ1:Image>
+                     <typ1:Url></typ1:Url>
+                  </typ1:Description>
+                  <typ1:ShortDescription>
+                     <typ1:Text>
+                        <typ1:TextElement language="?"></typ1:TextElement>
+                     </typ1:Text>
+                     <typ1:Image></typ1:Image>
+                     <typ1:Url></typ1:Url>
+                  </typ1:ShortDescription>
+                  <typ1:PackageDetails>
+                     <typ1:StartDate></typ1:StartDate>
+                     <typ1:EndDate></typ1:EndDate>
+                     <typ1:Allowance currencyCode="?"></typ1:Allowance>
+                     <typ1:Amount currencyCode="?"></typ1:Amount>
+                  </typ1:PackageDetails>
+                  <typ1:StartDate></typ1:StartDate>
+                  <typ1:EndDate></typ1:EndDate>
+               </typ1:PackageInfo>
+               <typ1:ExpectedCharges>
+                  <typ1:PackageCharge>
+                     <typ1:PackageCode></typ1:PackageCode>
+                     <typ1:ValidDates>
+                        <typ1:Start></typ1:Start>
+                        <typ1:End></typ1:End>
+                     </typ1:ValidDates>
+                     <typ1:UnitAmount currencyCode="?"></typ1:UnitAmount>
+                     <typ1:UnitAllowance currencyCode="?"></typ1:UnitAllowance>
+                     <typ1:Quantity></typ1:Quantity>
+                     <typ1:Tax currencyCode="?"></typ1:Tax>
+                     <typ1:TotalAmount currencyCode="?"></typ1:TotalAmount>
+                     <typ1:TotalAllowance currencyCode="?"></typ1:TotalAllowance>
+                     <typ1:RateCode></typ1:RateCode>
+                  </typ1:PackageCharge>
+               </typ1:ExpectedCharges>
+            </typ1:PackageDetail>
+         </typ:BookedPackageList>
+      </typ:FetchBookedPackagesResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

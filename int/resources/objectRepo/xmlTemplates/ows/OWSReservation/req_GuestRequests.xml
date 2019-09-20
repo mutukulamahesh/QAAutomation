@@ -1,0 +1,82 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns:res="http://webservices.micros.com/ows/5.1/Reservation.wsdl">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:GuestRequestsRequest>
+         <res:HotelReference chainCode="?" hotelCode="?"/>
+         <res:ConfirmationNumber source="?" type="?"/>
+         <res:LegNumber source="?" type="?"/>
+         <res:ResvNameId source="?" type="?"/>
+         <res:ActionType/>
+         <res:RequestType/>
+         <res:FullOverlay/>
+         <res:GuestRequests>
+            <hot:Comments>
+               <hot:Comment commentOriginatorCode="?" guestViewable="?">
+                  <hot:Text formatted="?" language="?"/>
+                  <hot:Image/>
+                  <hot:URL/>
+                  <hot:CommentId/>
+                  <hot:InternalYn/>
+                  <hot:CommentType/>
+               </hot:Comment>
+            </hot:Comments>
+            <hot:Specials>
+               <hot:SpecialRequest requestCode="?">
+                  <hot:Text formatted="?" language="?"/>
+                  <hot:Image/>
+                  <hot:URL/>
+                  <hot:SpecialRequestId/>
+               </hot:SpecialRequest>
+            </hot:Specials>
+            <hot:Traces>
+               <hot:Trace department="?" resolved="?">
+                  <hot:Text formatted="?" language="?"/>
+                  <hot:Image/>
+                  <hot:URL/>
+                  <hot:TraceId/>
+                  <hot:TraceDate/>
+                  <hot:TraceTime/>
+                  <hot:ResolvedOn/>
+                  <hot:ResolvedBy/>
+               </hot:Trace>
+            </hot:Traces>
+            <hot:Features>
+               <hot:Features AttachPreferenceToProfile="?" Description="?" Feature="?">
+                  <hot:FeatureID/>
+               </hot:Features>
+            </hot:Features>
+            <hot:Alerts>
+               <hot:ReservationAlerts displaySequence="?" printNotification="?" screenNotification="?">
+                  <hot:AlertID/>
+                  <hot:Code/>
+                  <hot:Area/>
+                  <hot:Description>
+                     <hot:Text formatted="?" language="?"/>
+                     <hot:Image/>
+                     <hot:URL/>
+                  </hot:Description>
+               </hot:ReservationAlerts>
+            </hot:Alerts>
+         </res:GuestRequests>
+      </res:GuestRequestsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

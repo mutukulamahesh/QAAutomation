@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OPERABAT" configfailurepolicy="continue">	
+	<test name="OPERA Configutaion">	
+		<groups>
+		  <run>
+			<include name="BAT" />
+		  </run>
+		</groups>
+		<classes>			
+			<class name="com.oracle.hgbu.opera.qaauto.ui.config.testcases.Config" />
+		</classes>
+	</test>
+	
+	<test name="Profiles">	
+		<groups>
+		  <run>
+			<include name="BAT" />
+		  </run>
+		</groups>
+		<classes>  
+			<class name="com.oracle.hgbu.opera.qaauto.ui.crm.testcases.profile.Profile" />
+		</classes>
+	</test>
+	
+	<test name="Reservations">
+		<groups>
+		  <run>
+			<include name="BAT" />
+		  </run>
+		</groups>
+		<classes>
+			<class name="com.oracle.hgbu.opera.qaauto.ui.rsv.testcases.reservation.Reservation"/>		
+		</classes>
+	</test>
+	
+	<test name="Housekeeping">
+		<groups>
+		  <run>
+			<include name="BAT" />
+		  </run>
+		</groups>
+		<classes>
+			<class name="com.oracle.hgbu.opera.auto.ui.fof.testcases.hsk.Housekeeping"/>		
+		</classes>
+    </test>
+</suite> <!-- Suite -->

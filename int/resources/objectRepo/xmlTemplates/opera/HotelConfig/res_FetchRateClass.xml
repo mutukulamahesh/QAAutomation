@@ -1,0 +1,30 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchRateClassRS>
+         <v9:RateClasses TotalPages="?" PageNumber="?" MaxFetchCount="?" AllRowsFetched="?" TotalRows="?">
+            <v9:RateClasses>
+               <v91:RateClass RateClass="?" HotelCode="?">
+                  <v91:Description></v91:Description>
+                  <v91:Sequence></v91:Sequence>
+                  <v91:TimeSpan>
+                     <v91:StartDate></v91:StartDate>
+                     <v91:EndDate></v91:EndDate>
+                     <v91:Duration></v91:Duration>
+                  </v91:TimeSpan>
+                  <v91:RateCategories>
+                     <v91:RateCategory Code="?" Description="?"/>
+                  </v91:RateCategories>
+               </v91:RateClass>
+            </v9:RateClasses>
+         </v9:RateClasses>
+         <v9:Success/>
+         <v9:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v9:Warnings>
+         <v9:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v9:Errors>
+      </v9:FetchRateClassRS>
+   </soapenv:Body>
+</soapenv:Envelope>

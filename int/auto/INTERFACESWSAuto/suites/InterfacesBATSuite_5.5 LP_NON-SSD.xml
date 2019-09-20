@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Interfaces BAT Execution Report"
+	verbose="1" allow-return-values="true">	
+	
+	<parameter name="emailFrom" value="operaInterfacesAutomationExecution_notifier_noreply@oracle.com" />
+	<parameter name="emailTo" value="vaishali.dihenia@oracle.com;tejal.patel@oracle.com;radhika.kutadi@oracle.com;rashi.saluja@oracle.com" />
+	<parameter name="emailCC" value="santhoshi.basana@oracle.com" />
+	<parameter name="smtpHost" value="internal-mail-router.oracle.com" />
+	<parameter name="smtpPort" value="25" />
+	
+	<test name="OWS BAT Suite 5.5.x LP ASP" preserve-order="true">
+		<!-- Pass parameters here-->
+		<parameter name="environment" value="LAUNCHPAD_5.5.x_ASP" />
+		<parameter name="runOnEntry" value="ES_01" />
+		<parameter name="wsLayer" value="OEDS" />	
+		<!--  Possible Values ASP, NONASP, CENTRAL	-->
+		<parameter name="schema" value="ASP"/>
+		<parameter name="version" value="5.5"/>
+		<parameter name="testGroup" value="INTERFACES BAT RUN ON 5.5.x LP ASP"/>
+		<groups>
+			<run>
+				<include name="BAT" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.ows.*" />
+		</packages>
+	</test>  
+	
+	<test name="ADS BAT Suite 5.5.x LP ASP" preserve-order="true">
+		<!-- Pass parameters here-->
+		<parameter name="environment" value="LAUNCHPAD_5.5.x_ASP" />
+		<parameter name="runOnEntry" value="ES_02" />
+		<parameter name="wsLayer" value="OEDS" />	
+		<!--  Possible Values ASP, NONASP, CENTRAL	-->
+		<parameter name="schema" value="ASP"/>
+		<parameter name="version" value="5.5"/>
+		<parameter name="testGroup" value="INTERFACES BAT RUN ON 5.5.x LP ASP"/>
+		<groups>
+			<run>
+				<include name="BAT" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.ads.*" />
+		</packages>
+	</test> 
+	
+	<test name="HTNG BAT Suite 5.5.x LP ASP" preserve-order="true">
+		<!-- Pass parameters here -->
+		<parameter name="environment" value="LAUNCHPAD_5.5.x_ASP" />
+		<parameter name="runOnEntry" value="ES_03" />
+		<parameter name="wsLayer" value="OEDS" />	
+		 <!-- Possible Values ASP, NONASP, CENTRAL	-->
+		<parameter name="schema" value="ASP"/>
+		<parameter name="version" value="5.5"/>
+		<parameter name="testGroup" value="INTERFACES BAT RUN ON 5.5.x LP ASP"/>
+		<groups>
+			<run>
+				<include name="BAT" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.htng.*" />
+		</packages>
+	</test>	 	
+	
+	<test name="OWS BAT Suite 5.5.x LP Central" preserve-order="true">
+			<!-- Pass parameters here-->
+		<parameter name="environment" value="LAUNCHPAD_5.5.x_CENTRAL" />
+		<parameter name="runOnEntry" value="ES_01" />
+		<parameter name="wsLayer" value="OEDS" />	
+		<!--  Possible Values ASP, NONASP, CENTRAL	-->
+		<parameter name="schema" value="CENTRAL"/>
+		<parameter name="version" value="5.5"/>
+		<parameter name="testGroup" value="INTERFACES BAT RUN ON 5.5.x LP CENTRAL"/>
+		<groups>
+			<run>
+				<include name="BAT" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.ows.*" />
+		</packages>
+	</test>   
+	
+	<test name="ADS BAT Suite 5.5.x LP Central" preserve-order="true">
+		<!-- Pass parameters here-->
+		<parameter name="environment" value="LAUNCHPAD_5.5.x_CENTRAL" />
+		<parameter name="runOnEntry" value="ES_02" />
+		<parameter name="wsLayer" value="OEDS" />	
+		<!--  Possible Values ASP, NONASP, CENTRAL	-->
+		<parameter name="schema" value="CENTRAL"/>
+		<parameter name="version" value="5.5"/>
+		<parameter name="testGroup" value="INTERFACES BAT RUN ON 5.5.x LP CENTRAL"/>
+		<groups>
+			<run>
+				<include name="BAT" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.ads.*" />
+		</packages>
+	</test> 	
+	
+</suite>

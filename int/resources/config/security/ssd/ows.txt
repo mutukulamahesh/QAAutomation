@@ -1,0 +1,25 @@
+<soapenv:Header>
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <wsu:Timestamp wsu:Id="TS-96D75F348EA81FFF9D15445390711912">
+            <wsu:Created>{WS_GMT_TIMESTAMP}</wsu:Created>
+            <wsu:Expires>2022-02-11T00:24:31.191Z</wsu:Expires>
+         </wsu:Timestamp>
+         <wsse:UsernameToken wsu:Id="UsernameToken-96D75F348EA81FFF9D15445390711891">
+            <wsse:Username>{WS_USERNAME}</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">{WS_PASSWORD}</wsse:Password>
+            <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">MAr1Zmr0w/Gn6YjP66lsHw==</wsse:Nonce>
+            <wsu:Created>{WS_GMT_TIMESTAMP}</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <OGHeader timeStamp="{WS_GMT_TIMESTAMP}" transactionID="{WS_MSGID}" xmlns="http://webservices.micros.com/og/4.3/Core/">
+         <Origin entityID="{WS_CHANNELCARRIER}" systemType="WEB"/>
+         <Destination entityID="TI" systemType="ORS"/>
+         <Authentication>
+            <UserCredentials>
+               <UserName>{WS_USERNAME}</UserName>
+               <UserPassword>{WS_PASSWORD}</UserPassword>
+               <Domain>{WS_RESORT}</Domain>
+            </UserCredentials>
+         </Authentication>
+      </OGHeader>
+</soapenv:Header>

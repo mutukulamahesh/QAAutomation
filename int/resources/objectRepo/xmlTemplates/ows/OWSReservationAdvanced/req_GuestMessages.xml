@@ -1,0 +1,53 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:res="http://webservices.micros.com/og/4.3/ResvAdvanced/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="?" primaryLangID="?" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:GuestMessagesRequest LineLength="?" ReceivedFlag="?">
+         <res:ReservationRequest>
+            <res:HotelReference chainCode="?" hotelCode="?"/>
+            <res:KeyTrack Key1Track="?" Key2Track="?" Key3Track="?" Key4Track="?"/>
+            <res:ReservationID>
+               <com:UniqueID source="?" type="?"/>
+            <com:UniqueID source="?" type="?"/></res:ReservationID>
+            <res:CheckOutTime/>
+         </res:ReservationRequest>
+         <res:ReturnAllMessages/>
+         <res:GuestMessage Date="?" Time="?">
+            <res:UserID source="?" type="?"/>
+            <res:Value/>
+            <res:SenderTitle/>
+            <res:SenderName/>
+            <res:SenderFirstName/>
+            <res:SenderCompany/>
+            <res:SenderContact/>
+            <res:GuestMessageID source="?" type="?"/>
+            <res:RecipientName/>
+            <res:ReceivedTime/>
+            <res:Printed/>
+            <res:TextMessageSent/>
+            <res:ReceivedBy/>
+            <res:ReceivedYN/>
+            <res:StatusFlag/>
+         </res:GuestMessage>
+         <res:ActionType/>
+      </res:GuestMessagesRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

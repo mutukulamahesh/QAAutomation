@@ -1,0 +1,45 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/par/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchPropertiesMappingRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?" TotalPages="?" PageNumber="?" MaxFetchCount="?" AllRowsFetched="?" TotalRows="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:PropertiesMapping>
+            <v91:Property>
+               <v91:SystemInfo SystemCode="?" SystemType="?" SystemSubType="?" Inactive="?">
+                  <v91:SystemName></v91:SystemName>
+                  <v91:WebsiteURL></v91:WebsiteURL>
+                  <v91:IconURL></v91:IconURL>
+               </v91:SystemInfo>
+               <v91:LocalSystemCode></v91:LocalSystemCode>
+               <v91:ExternalSystemCode></v91:ExternalSystemCode>
+               <v91:Description></v91:Description>
+               <v91:DateRange>
+                  <v91:StartDate></v91:StartDate>
+                  <v91:EndDate></v91:EndDate>
+                  <v91:Duration></v91:Duration>
+               </v91:DateRange>
+               <v91:City></v91:City>
+               <v91:RoomLimit></v91:RoomLimit>
+               <v91:BookingLimit></v91:BookingLimit>
+               <v91:HotelChainId></v91:HotelChainId>
+               <v91:ChainCode></v91:ChainCode>
+               <v91:PrevailingRates></v91:PrevailingRates>
+               <v91:ARIEnabled></v91:ARIEnabled>
+               <v91:AddOnLicense></v91:AddOnLicense>
+               <v91:ChannelHotelCodeMappingBuckets DefaultRateCode="?" Available="?">
+                  <v91:ChannelHotelCodeMappingBucket DefaultRateCode="?">
+                     <v91:LowRevenueThreshold></v91:LowRevenueThreshold>
+                     <v91:HighRevenueThreshold></v91:HighRevenueThreshold>
+                  </v91:ChannelHotelCodeMappingBucket>
+               </v91:ChannelHotelCodeMappingBuckets>
+            </v91:Property>
+         </v9:PropertiesMapping>
+      </v9:FetchPropertiesMappingRS>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,130 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateRoomRQ EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:OperaContext>
+            <v91:UserLanguage></v91:UserLanguage>
+            <v91:CROCode></v91:CROCode>
+            <v91:HotelCode></v91:HotelCode>
+            <v91:Language></v91:Language>
+            <v91:RunningApplication></v91:RunningApplication>
+            <v91:TerminalId></v91:TerminalId>
+            <v91:LogLevel></v91:LogLevel>
+            <v91:ExternalSystem></v91:ExternalSystem>
+            <v91:Override></v91:Override>
+            <v91:TargetExternalSystem></v91:TargetExternalSystem>
+            <v91:UseLocal></v91:UseLocal>
+            <v91:ExternalData></v91:ExternalData>
+         </v91:OperaContext>
+         <v9:Room HotelCode="?">
+            <v9:RoomDetails RoomNumber="?">
+               <v91:RoomType RoomType="?">
+                  <v91:Pseudo></v91:Pseudo>
+                  <v91:Suite></v91:Suite>
+                  <v91:RoomClass></v91:RoomClass>
+                  <v91:HouseKeeping></v91:HouseKeeping>
+                  <v91:SmokingPreference></v91:SmokingPreference>
+                  <v91:Building></v91:Building>
+                  <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+               </v91:RoomType>
+               <v91:Floor></v91:Floor>
+               <v91:FloorDescription></v91:FloorDescription>
+               <v91:RoomFeatures>
+                  <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+               </v91:RoomFeatures>
+               <v91:Description>
+                  <v91:DefaultText></v91:DefaultText>
+                  <v91:TranslatedTexts>
+                     <v91:Text Lang="?"></v91:Text>
+                  </v91:TranslatedTexts>
+               </v91:Description>
+               <v91:SmokingPreference></v91:SmokingPreference>
+               <v91:SmokingPreferenceDescription></v91:SmokingPreferenceDescription>
+               <v91:Building></v91:Building>
+               <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+               <v91:RoomComponents>
+                  <v91:RoomComponent RoomType="?">
+                     <v91:Qty></v91:Qty>
+                     <v91:Description></v91:Description>
+                     <v91:Rooms>
+                        <v91:Room RoomNumber="?">
+                           <v91:RoomType RoomType="?">
+                              <v91:Pseudo></v91:Pseudo>
+                              <v91:Suite></v91:Suite>
+                              <v91:RoomClass></v91:RoomClass>
+                              <v91:HouseKeeping></v91:HouseKeeping>
+                              <v91:SmokingPreference></v91:SmokingPreference>
+                              <v91:Building></v91:Building>
+                              <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                           </v91:RoomType>
+                           <v91:Floor></v91:Floor>
+                           <v91:FloorDescription></v91:FloorDescription>
+                           <v91:RoomFeatures>
+                              <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+                           </v91:RoomFeatures>
+                           <v91:Description>
+                              <v91:DefaultText></v91:DefaultText>
+                              <v91:TranslatedTexts>
+                                 <v91:Text Lang="?"></v91:Text>
+                              </v91:TranslatedTexts>
+                           </v91:Description>
+                           <v91:SmokingPreference></v91:SmokingPreference>
+                           <v91:SmokingPreferenceDescription></v91:SmokingPreferenceDescription>
+                           <v91:Building></v91:Building>
+                           <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                        </v91:Room>
+                     </v91:Rooms>
+                  </v91:RoomComponent>
+               </v91:RoomComponents>
+               <v91:ConnectingRooms>
+                  <v91:Room RoomNumber="?">
+                     <v91:RoomType RoomType="?">
+                        <v91:Pseudo></v91:Pseudo>
+                        <v91:Suite></v91:Suite>
+                        <v91:RoomClass></v91:RoomClass>
+                        <v91:HouseKeeping></v91:HouseKeeping>
+                        <v91:SmokingPreference></v91:SmokingPreference>
+                        <v91:Building></v91:Building>
+                        <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                     </v91:RoomType>
+                     <v91:Floor></v91:Floor>
+                     <v91:FloorDescription></v91:FloorDescription>
+                     <v91:RoomFeatures>
+                        <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+                     </v91:RoomFeatures>
+                     <v91:Description>
+                        <v91:DefaultText></v91:DefaultText>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"></v91:Text>
+                        </v91:TranslatedTexts>
+                     </v91:Description>
+                     <v91:SmokingPreference></v91:SmokingPreference>
+                     <v91:SmokingPreferenceDescription></v91:SmokingPreferenceDescription>
+                     <v91:Building></v91:Building>
+                     <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                  </v91:Room>
+               </v91:ConnectingRooms>
+               <v91:RateCode></v91:RateCode>
+               <v91:RateAmount Amount="?" CurrencyCode="?"/>
+               <v91:MaxOccupancy></v91:MaxOccupancy>
+               <v91:SellSequence></v91:SellSequence>
+               <v91:Smoking></v91:Smoking>
+               <v91:KeyCode></v91:KeyCode>
+               <v91:KeyOptions>
+                  <v91:Code></v91:Code>
+               </v91:KeyOptions>
+               <v91:SquareUnits></v91:SquareUnits>
+               <v91:TurndownService></v91:TurndownService>
+               <v91:SquareUnitsMeasurement></v91:SquareUnitsMeasurement>
+               <v91:PhoneNumber></v91:PhoneNumber>
+               <v91:HousekeepingCredit>
+                  <v91:Type></v91:Type>
+                  <v91:NumberOfCredits></v91:NumberOfCredits>
+               </v91:HousekeepingCredit>
+               <v91:RoomSection DaySectionCode="?" EveningSectionCode="?"/>
+               <v91:NoOfBeds></v91:NoOfBeds>
+            </v9:RoomDetails>
+         </v9:Room>
+      </v9:CreateRoomRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,46 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:name="http://webservices.micros.com/ows/5.1/Name.wsdl" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:name1="http://webservices.micros.com/og/4.3/Name/">
+   <soapenv:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="E" channelValidation="true" terminalID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName></core:UserName>
+               <core:UserPassword></core:UserPassword>
+               <core:Domain></core:Domain>
+               <core:SecurityId></core:SecurityId>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key></core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <name:FetchPreferenceListResponse>
+         <name:Result resultStatusFlag="?">
+            <com:Text>
+               <com:TextElement formatted="?" language="?"></com:TextElement>
+            </com:Text>
+            <com:IDs>
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <com:OperaErrorCode></com:OperaErrorCode>
+         </name:Result>
+         <name:PreferenceList>
+            <name1:Preference resortCode="?" preferenceType="?" otherPreferenceType="?" preferenceValue="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+               <name1:PreferenceDescription>
+                  <com:Text>
+                     <com:TextElement formatted="?" language="?"></com:TextElement>
+                  </com:Text>
+                  <com:Image></com:Image>
+                  <com:Url></com:Url>
+               </name1:PreferenceDescription>
+            </name1:Preference>
+         </name:PreferenceList>
+      </name:FetchPreferenceListResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

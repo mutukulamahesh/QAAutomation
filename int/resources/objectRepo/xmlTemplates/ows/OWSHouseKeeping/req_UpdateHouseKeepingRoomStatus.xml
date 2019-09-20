@@ -1,0 +1,47 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns:hous="http://webservices.micros.com/ows/5.1/HouseKeeping.wsdl" xmlns:hous1="http://webservices.micros.com/og/4.3/HouseKeeping/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="?" primaryLangID="?" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <hous:UpdateHouseKeepingRoomStatusRequest>
+         <hous:HotelReference chainCode="?" hotelCode="?"/>
+         <hous:Criteria>
+            <hous1:HouseKeepingStatus>
+               <hous1:HouseKeepingStatus>
+                  <hous1:RoomNo/>
+                  <hous1:RoomType/>
+                  <hous1:RoomStatus/>
+                  <hous1:FOStatus/>
+                  <hous1:HKStatus/>
+                  <hous1:ReservationStatus/>
+                  <hous1:RoomClass/>
+                  <hous1:Floor/>
+                  <hous1:Section/>
+                  <hous1:Features>
+                     <hot:Features AttachPreferenceToProfile="?" Description="?" Feature="?">
+                        <hot:FeatureID/>
+                     </hot:Features>
+                  </hous1:Features>
+               </hous1:HouseKeepingStatus>
+            </hous1:HouseKeepingStatus>
+         </hous:Criteria>
+      </hous:UpdateHouseKeepingRoomStatusRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

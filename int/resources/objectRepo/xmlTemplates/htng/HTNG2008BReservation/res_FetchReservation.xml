@@ -1,0 +1,121 @@
+<soapenv:Envelope xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://htng.org/PWS/2008B/SingleGuestItinerary/Reservation/Types" xmlns:typ1="http://htng.org/PWS/2008B/SingleGuestItinerary/Common/Types" xmlns:typ2="http://htng.org/PWS/2008B/SingleGuestItinerary/Activity/Types">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:FetchReservationResponse>
+         <Result resultStatusFlag="?" code="?">
+            <typ1:Text>
+               <typ1:TextElement language="?"></typ1:TextElement>
+            </typ1:Text>
+            <typ1:IDs>
+               <typ1:UniqueID source="?"></typ1:UniqueID>
+            </typ1:IDs>
+         </Result>
+         <ReservationData reservationStatus="?" otherReservationStatus="?">
+            <ReservationID source="?"></ReservationID>
+            <ConfirmationNO></ConfirmationNO>
+            <ProfileID source="?"></ProfileID>
+            <ProfileInfo nameOrdered="?" familiarName="?">
+               <typ1:NameTitle></typ1:NameTitle>
+               <typ1:FirstName></typ1:FirstName>
+               <typ1:MiddleName></typ1:MiddleName>
+               <typ1:LastName></typ1:LastName>
+               <typ1:NameSuffix></typ1:NameSuffix>
+            </ProfileInfo>
+            <ArrivalDate></ArrivalDate>
+            <DepartureDate></DepartureDate>
+            <ShortRateCode></ShortRateCode>
+            <ShortRoomType></ShortRoomType>
+            <PackageElements>
+               <PackageElement>
+                  <ElementCode></ElementCode>
+                  <ElementDescription></ElementDescription>
+               </PackageElement>
+            </PackageElements>
+            <Activities>
+               <typ2:Activity status="?">
+                  <typ2:ActivityIDs>
+                     <typ1:UniqueID source="?"></typ1:UniqueID>
+                  </typ2:ActivityIDs>
+                  <typ2:ActivityType></typ2:ActivityType>
+                  <typ2:Location></typ2:Location>
+                  <typ2:Name language="?"></typ2:Name>
+                  <typ2:NumberOfPersons></typ2:NumberOfPersons>
+                  <typ2:TimeSpan>
+                     <typ1:Start></typ1:Start>
+                     <typ1:End></typ1:End>
+                  </typ2:TimeSpan>
+                  <typ2:Duration>
+                     <typ1:Start></typ1:Start>
+                     <typ1:End></typ1:End>
+                  </typ2:Duration>
+                  <typ2:Description language="?"></typ2:Description>
+                  <typ2:Note language="?"></typ2:Note>
+                  <typ2:GroupCode></typ2:GroupCode>
+                  <typ2:Amount currencyCode="?"></typ2:Amount>
+                  <typ2:DepositRequired currencyCode="?" collectedBy="?"></typ2:DepositRequired>
+                  <typ2:InactiveDate></typ2:InactiveDate>
+                  <typ2:Participants>
+                     <typ2:Participant nameOrdered="?" familiarName="?">
+                        <typ1:NameTitle></typ1:NameTitle>
+                        <typ1:FirstName></typ1:FirstName>
+                        <typ1:MiddleName></typ1:MiddleName>
+                        <typ1:LastName></typ1:LastName>
+                        <typ1:NameSuffix></typ1:NameSuffix>
+                     </typ2:Participant>
+                  </typ2:Participants>
+                  <typ2:URLLink></typ2:URLLink>
+                  <typ2:Extensions>
+                     <typ2:ActivitySpecific></typ2:ActivitySpecific>
+                  </typ2:Extensions>
+               </typ2:Activity>
+            </Activities>
+            <RoomNumber></RoomNumber>
+            <ResortId></ResortId>
+            <MarketSegment></MarketSegment>
+            <SourceCode></SourceCode>
+            <NoPostFlag></NoPostFlag>
+            <UserDefinedValues>
+               <typ1:UserDefinedValue valueName="?">
+                  <typ1:CharacterValue></typ1:CharacterValue>
+                  <typ1:DateValue></typ1:DateValue>
+                  <typ1:NumericValue></typ1:NumericValue>
+               </typ1:UserDefinedValue>
+            </UserDefinedValues>
+            <ReservationPreferences>
+               <typ1:Preference insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <typ1:ResortCode></typ1:ResortCode>
+                  <typ1:Type></typ1:Type>
+                  <typ1:OtherType></typ1:OtherType>
+                  <typ1:Value></typ1:Value>
+                  <typ1:Description>
+                     <typ1:Text>
+                        <typ1:TextElement language="?"></typ1:TextElement>
+                     </typ1:Text>
+                     <typ1:Image></typ1:Image>
+                     <typ1:Url></typ1:Url>
+                  </typ1:Description>
+                  <typ1:Preferred></typ1:Preferred>
+                  <typ1:Mode></typ1:Mode>
+                  <typ1:IDs>
+                     <typ1:UniqueID source="?"></typ1:UniqueID>
+                  </typ1:IDs>
+               </typ1:Preference>
+            </ReservationPreferences>
+            <Transportation>
+               <Transportation>
+                  <Direction></Direction>
+                  <TransportDate></TransportDate>
+                  <TranspoftType></TranspoftType>
+                  <Carrier></Carrier>
+                  <TransportCode></TransportCode>
+                  <Location></Location>
+                  <GuestCount></GuestCount>
+                  <IDs>
+                     <typ1:UniqueID source="?"></typ1:UniqueID>
+                  </IDs>
+               </Transportation>
+            </Transportation>
+         </ReservationData>
+      </typ:FetchReservationResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

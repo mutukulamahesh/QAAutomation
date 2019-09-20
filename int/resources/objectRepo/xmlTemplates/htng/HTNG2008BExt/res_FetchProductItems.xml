@@ -1,0 +1,107 @@
+<soapenv:Envelope xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://webservices.micros.com/htng/2008B/SingleGuestItinerary/Information/Types" xmlns:typ1="http://htng.org/PWS/2008B/SingleGuestItinerary/Common/Types">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:FetchProductItemsResponse>
+         <typ:Result resultStatusFlag="?" code="?">
+            <typ1:Text>
+               <typ1:TextElement language="?"></typ1:TextElement>
+            </typ1:Text>
+            <typ1:IDs>
+               <typ1:UniqueID source="?"></typ1:UniqueID>
+            </typ1:IDs>
+         </typ:Result>
+         <typ:ProductGroups>
+            <typ:PackageGroup groupCode="?">
+               <typ:Description>
+                  <typ1:Text>
+                     <typ1:TextElement language="?"></typ1:TextElement>
+                  </typ1:Text>
+                  <typ1:Image></typ1:Image>
+                  <typ1:Url></typ1:Url>
+               </typ:Description>
+               <typ:Packages packageCode="?" calculationRule="?" postingRhythm="?" quantity="?" includedInRate="?" addRateSeprateLine="?" addRateCombinedLine="?" startTime="?" endTime="?" sellSeparate="?" totalDepositAmount="?">
+                  <typ:Amount currencyCode="?"></typ:Amount>
+                  <typ:Description>
+                     <typ1:Text>
+                        <typ1:TextElement language="?"></typ1:TextElement>
+                     </typ1:Text>
+                     <typ1:Image></typ1:Image>
+                     <typ1:Url></typ1:Url>
+                  </typ:Description>
+                  <typ:ShortDescription>
+                     <typ1:Text>
+                        <typ1:TextElement language="?"></typ1:TextElement>
+                     </typ1:Text>
+                     <typ1:Image></typ1:Image>
+                     <typ1:Url></typ1:Url>
+                  </typ:ShortDescription>
+                  <typ:PackageDetails>
+                     <typ:StartDate></typ:StartDate>
+                     <typ:EndDate></typ:EndDate>
+                     <typ:Allowance currencyCode="?"></typ:Allowance>
+                     <typ:Amount currencyCode="?"></typ:Amount>
+                  </typ:PackageDetails>
+                  <typ:StartDate></typ:StartDate>
+                  <typ:EndDate></typ:EndDate>
+               </typ:Packages>
+            </typ:PackageGroup>
+         </typ:ProductGroups>
+         <typ:Products>
+            <typ:Package packageCode="?" calculationRule="?" postingRhythm="?" quantity="?" includedInRate="?" addRateSeprateLine="?" addRateCombinedLine="?" startTime="?" endTime="?" sellSeparate="?" totalDepositAmount="?">
+               <typ:Amount currencyCode="?"></typ:Amount>
+               <typ:Description>
+                  <typ1:Text>
+                     <typ1:TextElement language="?"></typ1:TextElement>
+                  </typ1:Text>
+                  <typ1:Image></typ1:Image>
+                  <typ1:Url></typ1:Url>
+               </typ:Description>
+               <typ:ShortDescription>
+                  <typ1:Text>
+                     <typ1:TextElement language="?"></typ1:TextElement>
+                  </typ1:Text>
+                  <typ1:Image></typ1:Image>
+                  <typ1:Url></typ1:Url>
+               </typ:ShortDescription>
+               <typ:PackageDetails>
+                  <typ:StartDate></typ:StartDate>
+                  <typ:EndDate></typ:EndDate>
+                  <typ:Allowance currencyCode="?"></typ:Allowance>
+                  <typ:Amount currencyCode="?"></typ:Amount>
+               </typ:PackageDetails>
+               <typ:StartDate></typ:StartDate>
+               <typ:EndDate></typ:EndDate>
+            </typ:Package>
+         </typ:Products>
+         <typ:Items>
+            <typ:InventoryItemGroup groupCode="?">
+               <typ:InventoryItem isPackage="?" isChild="?" ItemDate="?">
+                  <typ:ItemCode></typ:ItemCode>
+                  <typ:ItemName></typ:ItemName>
+                  <typ:Description>
+                     <typ1:Text>
+                        <typ1:TextElement language="?"></typ1:TextElement>
+                     </typ1:Text>
+                     <typ1:Image></typ1:Image>
+                     <typ1:Url></typ1:Url>
+                  </typ:Description>
+                  <typ:SellControl></typ:SellControl>
+                  <typ:SellSeparate></typ:SellSeparate>
+                  <typ:Quantity></typ:Quantity>
+                  <typ:Available></typ:Available>
+                  <typ:ItemGroup>
+                     <typ:Code></typ:Code>
+                     <typ:Description>
+                        <typ1:Text>
+                           <typ1:TextElement language="?"></typ1:TextElement>
+                        </typ1:Text>
+                        <typ1:Image></typ1:Image>
+                        <typ1:Url></typ1:Url>
+                     </typ:Description>
+                  </typ:ItemGroup>
+               </typ:InventoryItem>
+            </typ:InventoryItemGroup>
+         </typ:Items>
+      </typ:FetchProductItemsResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

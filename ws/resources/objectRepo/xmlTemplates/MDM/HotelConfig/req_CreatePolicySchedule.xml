@@ -1,0 +1,41 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreatePolicyScheduleRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:PolicySchedule HotelCode="?" PolicyType="?">
+            <v91:ScheduleId ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            <v91:ScheduleDetail Inactive="?" Override="?" Sequence="?">
+               <v91:TimeSpan>
+                  <v91:StartDate/>
+                  <v91:EndDate/>
+                  <v91:Duration/>
+               </v91:TimeSpan>
+               <v91:Policy Code="?" Description="?"/>
+               <v91:ApplicableCodes>
+                  <v91:HotelCode/>
+                  <v91:RatePlanCode/>
+                  <v91:GuaranteeCode/>
+                  <v91:BlockId ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                  <v91:BlockCode/>
+                  <v91:CreditRating/>
+                  <v91:SeasonCode/>
+               </v91:ApplicableCodes>
+            </v91:ScheduleDetail>
+         </v9:PolicySchedule>
+      </v9:CreatePolicyScheduleRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

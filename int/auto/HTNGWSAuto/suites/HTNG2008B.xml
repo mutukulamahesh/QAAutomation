@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Opera Integration Automation Suite for HTNG 2006 Version"
+	verbose="1" allow-return-values="true">
+	<!-- Pass global parameters here -->
+	<parameter name="environment" value="LAUNCHPAD" />
+	<test name="HTNG 2006 Suite" preserve-order="true">
+		<!-- Pass parameters here -->
+		<parameter name="runOnEntry" value="ES_04" />
+		<parameter name="wsLayer" value="SSD" />
+		<groups>
+			<run>
+			</run>
+		</groups>
+		<packages>
+			<package
+				name="com.oracle.hgbu.opera.qaauto.ws.testcases.htng.v2008b.profile" />
+			<package
+				name="com.oracle.hgbu.opera.qaauto.ws.testcases.htng.v2008b.activity" />
+			<package
+				name="com.oracle.hgbu.opera.qaauto.ws.testcases.htng.v2008b.reservation" />
+			<package
+				name="com.oracle.hgbu.opera.qaauto.ws.testcases.htng.v2008b.activitysync" />
+		</packages>
+	</test>
+</suite>
+
+
+

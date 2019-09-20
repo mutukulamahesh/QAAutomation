@@ -1,0 +1,169 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/fof/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:GenerateFolioRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:FolioWindows>
+            <v9:FolioWindow InternalFolioWindowID="?" EmptyFolio="?" EmptyWindow="?" FolioWindowNo="?">
+               <v91:Revenue Amount="?" CurrencyCode="?"/>
+               <v91:Payment Amount="?" CurrencyCode="?"/>
+               <v91:Balance Amount="?" CurrencyCode="?"/>
+               <v91:DebitRevenue Amount="?" CurrencyCode="?"/>
+               <v91:DebitPayment Amount="?" CurrencyCode="?"/>
+               <v91:DebitBalance Amount="?" CurrencyCode="?"/>
+               <v91:Exchange>
+                  <v91:Revenue Amount="?" CurrencyCode="?"/>
+                  <v91:Payment Amount="?" CurrencyCode="?"/>
+                  <v91:Balance Amount="?" CurrencyCode="?"/>
+               </v91:Exchange>
+               <v91:PaymentMethod PaymentMethod="?" Description="?" FolioView="?">
+                  <v91:PaymentCard CardType="?" CardNumber="?" CardNumberMasked="?" ExpirationDate="?" ExpirationDateMasked="?" ExpirationDateExpired="?" CardHolderName="?" AttachCreditCardToProfile="?" Processing="?" Swiped="?" CardNumberType="?">
+                     <v91:CardId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:CurrentAuthorizedAmount Amount="?" CurrencyCode="?"/>
+                     <v91:ApprovalAmountNeeded Amount="?" CurrencyCode="?"/>
+                  </v91:PaymentCard>
+                  <v91:Balance Amount="?" CurrencyCode="?"/>
+                  <v91:AuthorizationRule>
+                     <v91:Code></v91:Code>
+                     <v91:Amount Amount="?" CurrencyCode="?"/>
+                     <v91:Percent></v91:Percent>
+                  </v91:AuthorizationRule>
+                  <v91:EmailFolioInfo EmailFolio="?">
+                     <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:Email CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?" OrderSequence="?"/>
+                  </v91:EmailFolioInfo>
+               </v91:PaymentMethod>
+               <v91:PayeeInfo>
+                  <v91:PayeeID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  <v91:PayeeName></v91:PayeeName>
+                  <v91:PayeeAddress>
+                     <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:Address Type="?" TypeDescription="?" UpdateReservations="?" BarCode="?" PrimaryInd="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?">
+                        <v91:AddressLine></v91:AddressLine>
+                        <v91:CityName></v91:CityName>
+                        <v91:PostalCode></v91:PostalCode>
+                        <v91:CityExtension></v91:CityExtension>
+                        <v91:County></v91:County>
+                        <v91:State></v91:State>
+                        <v91:CountryName Code="?"></v91:CountryName>
+                        <v91:Language></v91:Language>
+                     </v91:Address>
+                  </v91:PayeeAddress>
+                  <v91:PayeeAddressCount></v91:PayeeAddressCount>
+                  <v91:PayeeReferenceCurrency></v91:PayeeReferenceCurrency>
+                  <v91:PayeeAccountInfo>
+                     <v91:AccountName></v91:AccountName>
+                     <v91:AccountID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:AccountNo></v91:AccountNo>
+                     <v91:Status Restricted="?">
+                        <v91:Restriction></v91:Restriction>
+                        <v91:Description></v91:Description>
+                     </v91:Status>
+                  </v91:PayeeAccountInfo>
+                  <v91:PayeeTaxNumber></v91:PayeeTaxNumber>
+               </v91:PayeeInfo>
+               <v91:CompAccountingInfo>
+                  <v91:AuthorizerID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  <v91:AuthorizerUserName></v91:AuthorizerUserName>
+                  <v91:AuthorizerName></v91:AuthorizerName>
+                  <v91:ARNumber></v91:ARNumber>
+                  <v91:CompTypeCode></v91:CompTypeCode>
+                  <v91:CompVoucherNo></v91:CompVoucherNo>
+                  <v91:DateRange Start="?" End="?"/>
+                  <v91:MembershipID></v91:MembershipID>
+               </v91:CompAccountingInfo>
+               <v91:StoredFolioID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               <v91:StoredFolioName></v91:StoredFolioName>
+               <v91:Folios>
+                  <v91:Folio RevisionNo="?" FolioNo="?" InvoiceNo="?" FiscalBillNo="?" FolioTypeName="?" InternalFolioWindowID="?" FolioDate="?" FolioStatus="?" Start="?" End="?">
+                     <v91:PayeeInfo>
+                        <v91:PayeeID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                        <v91:PayeeName></v91:PayeeName>
+                        <v91:PayeeAddress>
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <v91:Address Type="?" TypeDescription="?" UpdateReservations="?" BarCode="?" PrimaryInd="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?">
+                              <v91:AddressLine></v91:AddressLine>
+                              <v91:CityName></v91:CityName>
+                              <v91:PostalCode></v91:PostalCode>
+                              <v91:CityExtension></v91:CityExtension>
+                              <v91:County></v91:County>
+                              <v91:State></v91:State>
+                              <v91:CountryName Code="?"></v91:CountryName>
+                              <v91:Language></v91:Language>
+                           </v91:Address>
+                        </v91:PayeeAddress>
+                        <v91:PayeeAddressCount></v91:PayeeAddressCount>
+                        <v91:PayeeReferenceCurrency></v91:PayeeReferenceCurrency>
+                        <v91:PayeeAccountInfo>
+                           <v91:AccountName></v91:AccountName>
+                           <v91:AccountID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <v91:AccountNo></v91:AccountNo>
+                           <v91:Status Restricted="?">
+                              <v91:Restriction></v91:Restriction>
+                              <v91:Description></v91:Description>
+                           </v91:Status>
+                        </v91:PayeeAccountInfo>
+                        <v91:PayeeTaxNumber></v91:PayeeTaxNumber>
+                     </v91:PayeeInfo>
+                     <v91:Postings>
+                        <v91:Posting TransactionNo="?" TransactionDate="?" TransactionCode="?" TransactionDescription="?" TransactionAmount="?" PostingDate="?" RevenueDate="?" ReceiptNo="?" RoundingDifferenceTrx="?" Commissionable="?" ReversePaymentTransactionNo="?">
+                           <v91:ReferenceTransactionNo></v91:ReferenceTransactionNo>
+                           <v91:Remark></v91:Remark>
+                           <v91:Reference></v91:Reference>
+                           <v91:CheckNo></v91:CheckNo>
+                           <v91:CheckCount></v91:CheckCount>
+                           <v91:PostedAmount Amount="?" CurrencyCode="?"/>
+                           <v91:Price Amount="?" CurrencyCode="?"/>
+                           <v91:Quantity></v91:Quantity>
+                           <v91:TransactionType></v91:TransactionType>
+                           <v91:CreditAmount Amount="?" CurrencyCode="?"/>
+                           <v91:DebitAmount Amount="?" CurrencyCode="?"/>
+                           <v91:ArticleCode></v91:ArticleCode>
+                           <v91:CashierInfo CashierId="?" CashierName="?"/>
+                           <v91:PaidOut></v91:PaidOut>
+                           <v91:ArrangementCode></v91:ArrangementCode>
+                           <v91:GroupTypeInfo>
+                              <v91:GroupId></v91:GroupId>
+                              <v91:GroupCount></v91:GroupCount>
+                              <v91:GroupDescription></v91:GroupDescription>
+                              <v91:SubGroupId></v91:SubGroupId>
+                           </v91:GroupTypeInfo>
+                           <v91:RateCode></v91:RateCode>
+                           <v91:UpdateInfo>
+                              <v91:UpdateDate></v91:UpdateDate>
+                              <v91:UpdateBy></v91:UpdateBy>
+                           </v91:UpdateInfo>
+                           <v91:FbaCertificate></v91:FbaCertificate>
+                           <v91:TaxInvoiceNo></v91:TaxInvoiceNo>
+                           <v91:ServiceRecovery></v91:ServiceRecovery>
+                           <v91:CompPostingsInfo>
+                              <v91:Authorizer></v91:Authorizer>
+                              <v91:ApprovalStatus></v91:ApprovalStatus>
+                           </v91:CompPostingsInfo>
+                           <v91:FinancialTransactionIDList>
+                              <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           </v91:FinancialTransactionIDList>
+                           <v91:Exchange>
+                              <v91:DebitAmount Amount="?" CurrencyCode="?"/>
+                              <v91:CreditAmount Amount="?" CurrencyCode="?"/>
+                           </v91:Exchange>
+                           <v91:ApprovalCode></v91:ApprovalCode>
+                           <v91:ApprovalStatus></v91:ApprovalStatus>
+                           <v91:GroupByCount></v91:GroupByCount>
+                        </v91:Posting>
+                     </v91:Postings>
+                     <v91:FolioAmount Amount="?" CurrencyCode="?"/>
+                     <v91:AllowConvertFolioYn></v91:AllowConvertFolioYn>
+                  </v91:Folio>
+               </v91:Folios>
+            </v9:FolioWindow>
+         </v9:FolioWindows>
+      </v9:GenerateFolioRS>
+   </soapenv:Body>
+</soapenv:Envelope>

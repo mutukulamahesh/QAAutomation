@@ -1,0 +1,3224 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:ChangeBlockStatusRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <!--Optional:-->
+         <v91:Success/>
+         <!--Optional:-->
+         <v91:Warnings>
+            <!--Zero or more repetitions:-->
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?">?</v91:Warning>
+         </v91:Warnings>
+         <!--Optional:-->
+         <v91:Errors>
+            <!--Zero or more repetitions:-->
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?">?</v91:Error>
+         </v91:Errors>
+         <!--Optional:-->
+         <v9:Block HotelCode="?" MarkAsRecentlyAccessed="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?">
+            <!--Optional:-->
+            <v91:BlockIDList>
+               <!--Zero or more repetitions:-->
+               <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+            </v91:BlockIDList>
+            <!--Optional:-->
+            <v91:BlockDetails CateringOnlyBlock="?" FlexibleDates="?" ExternalLocked="?" AutoloadContractGrid="?" AllowRateOverride="?" WholesaleBlock="?" controlBlockLocally="?" BusinessDateArrivalsExist="?">
+               <!--Optional:-->
+               <v91:BlockCode>?</v91:BlockCode>
+               <!--Optional:-->
+               <v91:BlockName>?</v91:BlockName>
+               <!--Optional:-->
+               <v91:BlockAliases>
+                  <!--Zero or more repetitions:-->
+                  <v91:Alias>?</v91:Alias>
+               </v91:BlockAliases>
+               <!--Optional:-->
+               <v91:TimeSpan>
+                  <!--Optional:-->
+                  <v91:StartDate>?</v91:StartDate>
+                  <!--Optional:-->
+                  <v91:EndDate>?</v91:EndDate>
+                  <!--Optional:-->
+                  <v91:Duration>?</v91:Duration>
+               </v91:TimeSpan>
+               <!--Optional:-->
+               <v91:OriginalTimeSpan>
+                  <!--Optional:-->
+                  <v91:StartDate>?</v91:StartDate>
+                  <!--Optional:-->
+                  <v91:EndDate>?</v91:EndDate>
+                  <!--Optional:-->
+                  <v91:Duration>?</v91:Duration>
+               </v91:OriginalTimeSpan>
+               <!--Optional:-->
+               <v91:ShoulderDates>
+                  <!--Optional:-->
+                  <v91:StartDate>?</v91:StartDate>
+                  <!--Optional:-->
+                  <v91:EndDate>?</v91:EndDate>
+                  <!--Optional:-->
+                  <v91:Duration>?</v91:Duration>
+               </v91:ShoulderDates>
+               <!--Optional:-->
+               <v91:ShoulderRatePlans>
+                  <!--Zero or more repetitions:-->
+                  <v91:ShoulderStart RatePlanCode="?" HotelCode="?" RatePlanCategory="?" TaxInclusive="?" ServiceFeeInclusive="?" Primary="?" ShowRateAmount="?" MarketCode="?" SourceCode="?">
+                     <!--Optional:-->
+                     <v91:ShortInfo>?</v91:ShortInfo>
+                     <!--Optional:-->
+                     <v91:LongInfo>?</v91:LongInfo>
+                     <!--Optional:-->
+                     <v91:WebPage>?</v91:WebPage>
+                     <!--Optional:-->
+                     <v91:Description>?</v91:Description>
+                     <!--Optional:-->
+                     <v91:RatePlanChannelInfo>
+                        <!--Optional:-->
+                        <v91:RatePlanLevel>?</v91:RatePlanLevel>
+                        <!--Optional:-->
+                        <v91:RatePlanID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                        <!--Optional:-->
+                        <v91:RatePlanWebName>?</v91:RatePlanWebName>
+                     </v91:RatePlanChannelInfo>
+                     <v91:CurrencyCode>?</v91:CurrencyCode>
+                     <!--Optional:-->
+                     <v91:BookingChannelMappings>
+                        <!--1 or more repetitions:-->
+                        <v91:BookingChannelMapping BookingChannelCode="?" Code="?" Name="?" Description="?"/>
+                     </v91:BookingChannelMappings>
+                     <!--Optional:-->
+                     <v91:RatePlanLevel>?</v91:RatePlanLevel>
+                     <v91:Guarantee GuaranteeCode="?" OnHold="?" ReserveInventory="?" LateArrival="?" OrderSequence="?">
+                        <!--Optional:-->
+                        <v91:Description>?</v91:Description>
+                        <!--Optional:-->
+                        <v91:Requirements RequirementCode="?" Cancellation="?" PhoneNumber="?" Address="?" CreditCard="?" ArrivalTime="?" Deposit="?"/>
+                        <!--Optional:-->
+                        <v91:ShortDescription>
+                           <!--Optional:-->
+                           <v91:DefaultText>?</v91:DefaultText>
+                           <!--Optional:-->
+                           <v91:TranslatedTexts>
+                              <!--Zero or more repetitions:-->
+                              <v91:Text Lang="?">?</v91:Text>
+                           </v91:TranslatedTexts>
+                        </v91:ShortDescription>
+                        <!--Optional:-->
+                        <v91:PaymentTypes>
+                           <!--Zero or more repetitions:-->
+                           <v91:CardCode>?</v91:CardCode>
+                        </v91:PaymentTypes>
+                     </v91:Guarantee>
+                     <v91:CancelPenalty PolicyCode="?" Manual="?" NonRefundable="?">
+                        <!--Optional:-->
+                        <v91:Deadline AbsoluteDeadline="?" OffsetFromArrival="?" OffsetDropTime="?" OffsetFromBookingDate="?"/>
+                        <!--Optional:-->
+                        <v91:AmountPercent BasisType="?" Nights="?" Percent="?" Amount="?" CurrencyCode="?"/>
+                        <!--Optional:-->
+                        <v91:PenaltyDescription>?</v91:PenaltyDescription>
+                        <!--Optional:-->
+                        <v91:OffsetUnit>?</v91:OffsetUnit>
+                     </v91:CancelPenalty>
+                     <!--Optional:-->
+                     <v91:MealPlans>
+                        <!--Zero or more repetitions:-->
+                        <v91:MealPlanCode Included="?" BreakfastIncluded="?" LunchIncluded="?" DinnerIncluded="?">
+                           <!--Optional:-->
+                           <v91:Code>?</v91:Code>
+                        </v91:MealPlanCode>
+                     </v91:MealPlans>
+                  </v91:ShoulderStart>
+                  <!--Zero or more repetitions:-->
+                  <v91:ShoulderEnd RatePlanCode="?" HotelCode="?" RatePlanCategory="?" TaxInclusive="?" ServiceFeeInclusive="?" Primary="?" ShowRateAmount="?" MarketCode="?" SourceCode="?">
+                     <!--Optional:-->
+                     <v91:ShortInfo>?</v91:ShortInfo>
+                     <!--Optional:-->
+                     <v91:LongInfo>?</v91:LongInfo>
+                     <!--Optional:-->
+                     <v91:WebPage>?</v91:WebPage>
+                     <!--Optional:-->
+                     <v91:Description>?</v91:Description>
+                     <!--Optional:-->
+                     <v91:RatePlanChannelInfo>
+                        <!--Optional:-->
+                        <v91:RatePlanLevel>?</v91:RatePlanLevel>
+                        <!--Optional:-->
+                        <v91:RatePlanID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                        <!--Optional:-->
+                        <v91:RatePlanWebName>?</v91:RatePlanWebName>
+                     </v91:RatePlanChannelInfo>
+                     <v91:CurrencyCode>?</v91:CurrencyCode>
+                     <!--Optional:-->
+                     <v91:BookingChannelMappings>
+                        <!--1 or more repetitions:-->
+                        <v91:BookingChannelMapping BookingChannelCode="?" Code="?" Name="?" Description="?"/>
+                     </v91:BookingChannelMappings>
+                     <!--Optional:-->
+                     <v91:RatePlanLevel>?</v91:RatePlanLevel>
+                     <v91:Guarantee GuaranteeCode="?" OnHold="?" ReserveInventory="?" LateArrival="?" OrderSequence="?">
+                        <!--Optional:-->
+                        <v91:Description>?</v91:Description>
+                        <!--Optional:-->
+                        <v91:Requirements RequirementCode="?" Cancellation="?" PhoneNumber="?" Address="?" CreditCard="?" ArrivalTime="?" Deposit="?"/>
+                        <!--Optional:-->
+                        <v91:ShortDescription>
+                           <!--Optional:-->
+                           <v91:DefaultText>?</v91:DefaultText>
+                           <!--Optional:-->
+                           <v91:TranslatedTexts>
+                              <!--Zero or more repetitions:-->
+                              <v91:Text Lang="?">?</v91:Text>
+                           </v91:TranslatedTexts>
+                        </v91:ShortDescription>
+                        <!--Optional:-->
+                        <v91:PaymentTypes>
+                           <!--Zero or more repetitions:-->
+                           <v91:CardCode>?</v91:CardCode>
+                        </v91:PaymentTypes>
+                     </v91:Guarantee>
+                     <v91:CancelPenalty PolicyCode="?" Manual="?" NonRefundable="?">
+                        <!--Optional:-->
+                        <v91:Deadline AbsoluteDeadline="?" OffsetFromArrival="?" OffsetDropTime="?" OffsetFromBookingDate="?"/>
+                        <!--Optional:-->
+                        <v91:AmountPercent BasisType="?" Nights="?" Percent="?" Amount="?" CurrencyCode="?"/>
+                        <!--Optional:-->
+                        <v91:PenaltyDescription>?</v91:PenaltyDescription>
+                        <!--Optional:-->
+                        <v91:OffsetUnit>?</v91:OffsetUnit>
+                     </v91:CancelPenalty>
+                     <!--Optional:-->
+                     <v91:MealPlans>
+                        <!--Zero or more repetitions:-->
+                        <v91:MealPlanCode Included="?" BreakfastIncluded="?" LunchIncluded="?" DinnerIncluded="?">
+                           <!--Optional:-->
+                           <v91:Code>?</v91:Code>
+                        </v91:MealPlanCode>
+                     </v91:MealPlans>
+                  </v91:ShoulderEnd>
+               </v91:ShoulderRatePlans>
+               <!--Optional:-->
+               <v91:BlockStatus>
+                  <!--Optional:-->
+                  <v91:BookingStatus>
+                     <!--Optional:-->
+                     <v91:Status Code="?" Description="?"/>
+                     <!--Optional:-->
+                     <v91:Color>?</v91:Color>
+                  </v91:BookingStatus>
+                  <!--Optional:-->
+                  <v91:ParentBookingStatus>?</v91:ParentBookingStatus>
+                  <!--Optional:-->
+                  <v91:DeductInventory>?</v91:DeductInventory>
+                  <!--Optional:-->
+                  <v91:CatDeductInventory>?</v91:CatDeductInventory>
+                  <!--Optional:-->
+                  <v91:AllowPickup>?</v91:AllowPickup>
+                  <!--Optional:-->
+                  <v91:ReturnToInventory>?</v91:ReturnToInventory>
+                  <!--Optional:-->
+                  <v91:DefaultReservationType>?</v91:DefaultReservationType>
+                  <!--Optional:-->
+                  <v91:CancellationType>?</v91:CancellationType>
+               </v91:BlockStatus>
+               <!--Optional:-->
+               <v91:BlockNextStatusList>
+                  <!--Zero or more repetitions:-->
+                  <v91:BlockNextStatus>
+                     <!--Optional:-->
+                     <v91:BookingStatus>
+                        <!--Optional:-->
+                        <v91:Status Code="?" Description="?"/>
+                        <!--Optional:-->
+                        <v91:Color>?</v91:Color>
+                     </v91:BookingStatus>
+                     <!--Optional:-->
+                     <v91:ParentBookingStatus>?</v91:ParentBookingStatus>
+                     <!--Optional:-->
+                     <v91:DeductInventory>?</v91:DeductInventory>
+                     <!--Optional:-->
+                     <v91:CatDeductInventory>?</v91:CatDeductInventory>
+                     <!--Optional:-->
+                     <v91:AllowPickup>?</v91:AllowPickup>
+                     <!--Optional:-->
+                     <v91:ReturnToInventory>?</v91:ReturnToInventory>
+                     <!--Optional:-->
+                     <v91:DefaultReservationType>?</v91:DefaultReservationType>
+                     <!--Optional:-->
+                     <v91:CancellationType>?</v91:CancellationType>
+                  </v91:BlockNextStatus>
+               </v91:BlockNextStatusList>
+               <!--Optional:-->
+               <v91:BlockStatusChangeHistory>
+                  <!--Zero or more repetitions:-->
+                  <v91:BlockStatusHistory>
+                     <!--Optional:-->
+                     <v91:Sequence>?</v91:Sequence>
+                     <!--Optional:-->
+                     <v91:BookingStatus Code="?" Description="?"/>
+                     <!--Optional:-->
+                     <v91:ModifyDateTime>?</v91:ModifyDateTime>
+                     <!--Optional:-->
+                     <v91:ModifierID>?</v91:ModifierID>
+                  </v91:BlockStatusHistory>
+               </v91:BlockStatusChangeHistory>
+               <!--Optional:-->
+               <v91:ReservationType ReservationType="?" ChainCode="?" Description="?"/>
+               <!--Optional:-->
+               <v91:MarketCode MarketCode="?" HotelCode="?" MarketGroup="?" Description="?"/>
+               <!--Optional:-->
+               <v91:SourceOfSale SourceType="?" SourceTypeDescription="?">
+                  <!--Optional:-->
+                  <v91:SourceCode SourceCode="?" HotelCode="?" SourceGroup="?" Description="?"/>
+               </v91:SourceOfSale>
+               <!--Optional:-->
+               <v91:ReservationMethod Code="?" Description="?"/>
+               <!--Optional:-->
+               <v91:BookingType Code="?" Description="?"/>
+               <!--Optional:-->
+               <v91:Status>?</v91:Status>
+               <!--Optional:-->
+               <v91:BlockType>?</v91:BlockType>
+               <!--Optional:-->
+               <v91:BlockOrigin>?</v91:BlockOrigin>
+               <!--Optional:-->
+               <v91:PaymentMethod Code="?" Description="?"/>
+               <!--Optional:-->
+               <v91:CommissionPercent>?</v91:CommissionPercent>
+               <!--Optional:-->
+               <v91:ConversionCode>?</v91:ConversionCode>
+               <!--Optional:-->
+               <v91:ConversionCodeDescription>?</v91:ConversionCodeDescription>
+               <!--Optional:-->
+               <v91:RateProtectionDetails>
+                  <v91:Criteria>?</v91:Criteria>
+                  <!--Optional:-->
+                  <v91:ProtectedDates>
+                     <!--Zero or more repetitions:-->
+                     <v91:Date>?</v91:Date>
+                  </v91:ProtectedDates>
+               </v91:RateProtectionDetails>
+               <!--Optional:-->
+               <v91:NonCompeteDetails>
+                  <!--Optional:-->
+                  <v91:Industry>?</v91:Industry>
+                  <!--Optional:-->
+                  <v91:IndustryDescription>?</v91:IndustryDescription>
+                  <v91:Criteria>?</v91:Criteria>
+                  <!--Optional:-->
+                  <v91:ProtectedDates>
+                     <!--Zero or more repetitions:-->
+                     <v91:Date>?</v91:Date>
+                  </v91:ProtectedDates>
+               </v91:NonCompeteDetails>
+               <!--Optional:-->
+               <v91:RankingCode>?</v91:RankingCode>
+               <!--Optional:-->
+               <v91:RankingCodeDescription>?</v91:RankingCodeDescription>
+               <!--Optional:-->
+               <v91:CurrencyCode>?</v91:CurrencyCode>
+               <!--Optional:-->
+               <v91:CancellationDetails>
+                  <!--Optional:-->
+                  <v91:CancellationNumber URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  <!--Optional:-->
+                  <v91:CancellationCode Code="?" Description="?"/>
+                  <!--Optional:-->
+                  <v91:CancellationDate>?</v91:CancellationDate>
+                  <!--Optional:-->
+                  <v91:CancellationInfo>?</v91:CancellationInfo>
+                  <!--Optional:-->
+                  <v91:Destination>?</v91:Destination>
+                  <!--Optional:-->
+                  <v91:LostToProperty>?</v91:LostToProperty>
+               </v91:CancellationDetails>
+               <!--Optional:-->
+               <v91:HotelName>?</v91:HotelName>
+               <!--Optional:-->
+               <v91:TourCode>?</v91:TourCode>
+               <!--Optional:-->
+               <v91:HotelUse HotelUseOnly="?">
+                  <!--Optional:-->
+                  <v91:HotelUseReason>?</v91:HotelUseReason>
+               </v91:HotelUse>
+               <!--Optional:-->
+               <v91:RateOverrideReason Code="?" Description="?"/>
+               <!--Optional:-->
+               <v91:BlockClassification>?</v91:BlockClassification>
+               <!--Optional:-->
+               <v91:Synchronized>?</v91:Synchronized>
+               <!--Optional:-->
+               <v91:SubBlockIDList>
+                  <!--Zero or more repetitions:-->
+                  <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               </v91:SubBlockIDList>
+            </v91:BlockDetails>
+            <!--Optional:-->
+            <v91:BlockOwners LockBlockOwners="?" LockRoomsOwners="?" LockCateringOwners="?">
+               <!--Zero or more repetitions:-->
+               <v91:Owner Primary="?" Ownership="?">
+                  <!--Optional:-->
+                  <v91:Hotel Code="?" Description="?"/>
+                  <!--Optional:-->
+                  <v91:UserID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  <!--Optional:-->
+                  <v91:UserName>?</v91:UserName>
+                  <!--Optional:-->
+                  <v91:OwnerCode>?</v91:OwnerCode>
+                  <!--Optional:-->
+                  <v91:ProfileID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  <!--Optional:-->
+                  <v91:Name NameType="?" Language="?" ExternalSystem="?">
+                     <!--Optional:-->
+                     <v91:NamePrefix>?</v91:NamePrefix>
+                     <!--Optional:-->
+                     <v91:GivenName>?</v91:GivenName>
+                     <!--Optional:-->
+                     <v91:MiddleName>?</v91:MiddleName>
+                     <!--Optional:-->
+                     <v91:Surname>?</v91:Surname>
+                     <!--Optional:-->
+                     <v91:NameSuffix>?</v91:NameSuffix>
+                     <!--Optional:-->
+                     <v91:NameTitle>?</v91:NameTitle>
+                     <!--Optional:-->
+                     <v91:NameTitleSuffix>?</v91:NameTitleSuffix>
+                     <!--Optional:-->
+                     <v91:EnvelopeGreeting>?</v91:EnvelopeGreeting>
+                     <!--Optional:-->
+                     <v91:Salutation>?</v91:Salutation>
+                  </v91:Name>
+                  <!--Optional:-->
+                  <v91:Department Code="?" Description="?"/>
+                  <!--Optional:-->
+                  <v91:Email>
+                     <!--Optional:-->
+                     <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <!--Optional:-->
+                     <v91:Email CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" OrderSequence="?" EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?"/>
+                  </v91:Email>
+                  <!--Optional:-->
+                  <v91:Phone>
+                     <!--Optional:-->
+                     <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <!--Optional:-->
+                     <v91:Telephone CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" PhoneTechType="?" PhoneUseType="?" PhoneUseTypeDescription="?" PhoneNumber="?" Extension="?" OrderSequence="?" PrimaryInd="?"/>
+                  </v91:Phone>
+                  <!--Optional:-->
+                  <v91:Relationship Code="?" Description="?"/>
+               </v91:Owner>
+            </v91:BlockOwners>
+            <!--Optional:-->
+            <v91:MasterBlockInfo>
+               <!--Optional:-->
+               <v91:BlockIDList>
+                  <!--Zero or more repetitions:-->
+                  <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               </v91:BlockIDList>
+               <!--Optional:-->
+               <v91:HotelCode>?</v91:HotelCode>
+               <!--Optional:-->
+               <v91:BlockType>?</v91:BlockType>
+               <!--Optional:-->
+               <v91:TimeSpan>
+                  <!--Optional:-->
+                  <v91:StartDate>?</v91:StartDate>
+                  <!--Optional:-->
+                  <v91:EndDate>?</v91:EndDate>
+                  <!--Optional:-->
+                  <v91:Duration>?</v91:Duration>
+               </v91:TimeSpan>
+               <!--Optional:-->
+               <v91:BlockName>?</v91:BlockName>
+               <!--Optional:-->
+               <v91:BlockStatus>
+                  <!--Optional:-->
+                  <v91:Status Code="?" Description="?"/>
+                  <!--Optional:-->
+                  <v91:Color>?</v91:Color>
+               </v91:BlockStatus>
+               <!--Optional:-->
+               <v91:CateringStatus>
+                  <!--Optional:-->
+                  <v91:Status Code="?" Description="?"/>
+                  <!--Optional:-->
+                  <v91:Color>?</v91:Color>
+               </v91:CateringStatus>
+               <!--Optional:-->
+               <v91:RoomNights>?</v91:RoomNights>
+               <!--1 or more repetitions:-->
+               <v91:SubBlockInfo>
+                  <!--Optional:-->
+                  <v91:BlockIDList>
+                     <!--Zero or more repetitions:-->
+                     <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  </v91:BlockIDList>
+                  <!--Optional:-->
+                  <v91:HotelCode>?</v91:HotelCode>
+                  <!--Optional:-->
+                  <v91:BlockType>?</v91:BlockType>
+                  <!--Optional:-->
+                  <v91:TimeSpan>
+                     <!--Optional:-->
+                     <v91:StartDate>?</v91:StartDate>
+                     <!--Optional:-->
+                     <v91:EndDate>?</v91:EndDate>
+                     <!--Optional:-->
+                     <v91:Duration>?</v91:Duration>
+                  </v91:TimeSpan>
+                  <!--Optional:-->
+                  <v91:BlockName>?</v91:BlockName>
+                  <!--Optional:-->
+                  <v91:BlockStatus>
+                     <!--Optional:-->
+                     <v91:Status Code="?" Description="?"/>
+                     <!--Optional:-->
+                     <v91:Color>?</v91:Color>
+                  </v91:BlockStatus>
+                  <!--Optional:-->
+                  <v91:CateringStatus>
+                     <!--Optional:-->
+                     <v91:Status Code="?" Description="?"/>
+                     <!--Optional:-->
+                     <v91:Color>?</v91:Color>
+                  </v91:CateringStatus>
+                  <!--Optional:-->
+                  <v91:RoomNights>?</v91:RoomNights>
+               </v91:SubBlockInfo>
+               <!--1 or more repetitions:-->
+               <v91:MasterSubHotels>
+                  <!--Zero or more repetitions:-->
+                  <v91:HotelCode>?</v91:HotelCode>
+               </v91:MasterSubHotels>
+            </v91:MasterBlockInfo>
+            <!--Zero or more repetitions:-->
+            <v91:ReservationPolicies>
+               <!--Optional:-->
+               <v91:CancellationPolicies>
+                  <!--Zero or more repetitions:-->
+                  <v91:CancellationPolicy>
+                     <!--Optional:-->
+                     <v91:RevenueType>?</v91:RevenueType>
+                     <!--Optional:-->
+                     <v91:Policy PolicyCode="?" Manual="?" NonRefundable="?" Effective="?">
+                        <!--Optional:-->
+                        <v91:Deadline AbsoluteDeadline="?" OffsetFromArrival="?" OffsetDropTime="?" OffsetFromBookingDate="?"/>
+                        <!--Optional:-->
+                        <v91:AmountPercent BasisType="?" Nights="?" Percent="?" Amount="?" CurrencyCode="?"/>
+                        <!--Optional:-->
+                        <v91:PenaltyDescription>?</v91:PenaltyDescription>
+                        <!--Optional:-->
+                        <v91:OffsetUnit>?</v91:OffsetUnit>
+                     </v91:Policy>
+                     <!--Optional:-->
+                     <v91:PercentageDue>?</v91:PercentageDue>
+                     <!--Optional:-->
+                     <v91:Comments>?</v91:Comments>
+                     <!--Optional:-->
+                     <v91:PolicyID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  </v91:CancellationPolicy>
+               </v91:CancellationPolicies>
+               <!--Optional:-->
+               <v91:DepositPolicies>
+                  <!--Zero or more repetitions:-->
+                  <v91:DepositPolicy>
+                     <!--Optional:-->
+                     <v91:RevenueType>?</v91:RevenueType>
+                     <!--Optional:-->
+                     <v91:Policy PolicyCode="?" Manual="?">
+                        <!--Optional:-->
+                        <v91:AmountPercent BasisType="?" Nights="?" Percent="?" Amount="?" CurrencyCode="?"/>
+                        <!--Optional:-->
+                        <v91:Deadline AbsoluteDeadline="?" OffsetFromArrival="?" OffsetDropTime="?" OffsetFromBookingDate="?"/>
+                        <!--Optional:-->
+                        <v91:Description>?</v91:Description>
+                        <!--Optional:-->
+                        <v91:DepositReceiptNo>?</v91:DepositReceiptNo>
+                        <!--Optional:-->
+                        <v91:TrxDate>?</v91:TrxDate>
+                        <!--Optional:-->
+                        <v91:DepositReqReversed>?</v91:DepositReqReversed>
+                     </v91:Policy>
+                     <!--Optional:-->
+                     <v91:Comments>?</v91:Comments>
+                     <!--Optional:-->
+                     <v91:AmountPaid Amount="?" CurrencyCode="?"/>
+                     <!--Optional:-->
+                     <v91:AmountDue Amount="?" CurrencyCode="?"/>
+                     <!--Optional:-->
+                     <v91:PolicyID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  </v91:DepositPolicy>
+               </v91:DepositPolicies>
+               <!--Optional:-->
+               <v91:ReservationIDList>
+                  <!--Zero or more repetitions:-->
+                  <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               </v91:ReservationIDList>
+               <!--Optional:-->
+               <v91:Name>?</v91:Name>
+            </v91:ReservationPolicies>
+            <!--Optional:-->
+            <v91:ReservationDetails CutOffDate="?" CutOffDays="?" UpdateGridOnCutoffChange="?" FollowupDate="?" DecisionDate="?" RoomingListDueDate="?" Elastic="?" SuppressRate="?" PrintRate="?" RateGuarantee="?" InventoryControl="?" PersonsPerRoom="?" ActivePostingMasterReservations="?" Housing="?" GuaranteeRequired="?" controlBlockLocally="?" TrxCode="?">
+               <!--Zero or more repetitions:-->
+               <v91:RatePlan RatePlanCode="?" HotelCode="?" RatePlanCategory="?" TaxInclusive="?" ServiceFeeInclusive="?" Primary="?" ShowRateAmount="?" MarketCode="?" SourceCode="?">
+                  <!--Optional:-->
+                  <v91:ShortInfo>?</v91:ShortInfo>
+                  <!--Optional:-->
+                  <v91:LongInfo>?</v91:LongInfo>
+                  <!--Optional:-->
+                  <v91:WebPage>?</v91:WebPage>
+                  <!--Optional:-->
+                  <v91:Description>?</v91:Description>
+                  <!--Optional:-->
+                  <v91:RatePlanChannelInfo>
+                     <!--Optional:-->
+                     <v91:RatePlanLevel>?</v91:RatePlanLevel>
+                     <!--Optional:-->
+                     <v91:RatePlanID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <!--Optional:-->
+                     <v91:RatePlanWebName>?</v91:RatePlanWebName>
+                  </v91:RatePlanChannelInfo>
+                  <v91:CurrencyCode>?</v91:CurrencyCode>
+                  <!--Optional:-->
+                  <v91:BookingChannelMappings>
+                     <!--1 or more repetitions:-->
+                     <v91:BookingChannelMapping BookingChannelCode="?" Code="?" Name="?" Description="?"/>
+                  </v91:BookingChannelMappings>
+                  <!--Optional:-->
+                  <v91:RatePlanLevel>?</v91:RatePlanLevel>
+                  <v91:Guarantee GuaranteeCode="?" OnHold="?" ReserveInventory="?" LateArrival="?" OrderSequence="?">
+                     <!--Optional:-->
+                     <v91:Description>?</v91:Description>
+                     <!--Optional:-->
+                     <v91:Requirements RequirementCode="?" Cancellation="?" PhoneNumber="?" Address="?" CreditCard="?" ArrivalTime="?" Deposit="?"/>
+                     <!--Optional:-->
+                     <v91:ShortDescription>
+                        <!--Optional:-->
+                        <v91:DefaultText>?</v91:DefaultText>
+                        <!--Optional:-->
+                        <v91:TranslatedTexts>
+                           <!--Zero or more repetitions:-->
+                           <v91:Text Lang="?">?</v91:Text>
+                        </v91:TranslatedTexts>
+                     </v91:ShortDescription>
+                     <!--Optional:-->
+                     <v91:PaymentTypes>
+                        <!--Zero or more repetitions:-->
+                        <v91:CardCode>?</v91:CardCode>
+                     </v91:PaymentTypes>
+                  </v91:Guarantee>
+                  <v91:CancelPenalty PolicyCode="?" Manual="?" NonRefundable="?">
+                     <!--Optional:-->
+                     <v91:Deadline AbsoluteDeadline="?" OffsetFromArrival="?" OffsetDropTime="?" OffsetFromBookingDate="?"/>
+                     <!--Optional:-->
+                     <v91:AmountPercent BasisType="?" Nights="?" Percent="?" Amount="?" CurrencyCode="?"/>
+                     <!--Optional:-->
+                     <v91:PenaltyDescription>?</v91:PenaltyDescription>
+                     <!--Optional:-->
+                     <v91:OffsetUnit>?</v91:OffsetUnit>
+                  </v91:CancelPenalty>
+                  <!--Optional:-->
+                  <v91:MealPlans>
+                     <!--Zero or more repetitions:-->
+                     <v91:MealPlanCode Included="?" BreakfastIncluded="?" LunchIncluded="?" DinnerIncluded="?">
+                        <!--Optional:-->
+                        <v91:Code>?</v91:Code>
+                     </v91:MealPlanCode>
+                  </v91:MealPlans>
+               </v91:RatePlan>
+               <!--Optional:-->
+               <v91:ArrivalTime>?</v91:ArrivalTime>
+               <!--Optional:-->
+               <v91:DepartureTime>?</v91:DepartureTime>
+               <!--Optional:-->
+               <v91:TraceCode Code="?" Description="?"/>
+               <!--Optional:-->
+               <v91:Breakfast Description="?">
+                  <!--Optional:-->
+                  <v91:BreakfastIncluded>?</v91:BreakfastIncluded>
+                  <!--Optional:-->
+                  <v91:Price Amount="?" CurrencyCode="?"/>
+               </v91:Breakfast>
+               <!--Optional:-->
+               <v91:Porterage>
+                  <!--Optional:-->
+                  <v91:PorterageIncluded>?</v91:PorterageIncluded>
+                  <!--Optional:-->
+                  <v91:Price Amount="?" CurrencyCode="?"/>
+               </v91:Porterage>
+               <!--Optional:-->
+               <v91:TaRecordLocator>?</v91:TaRecordLocator>
+            </v91:ReservationDetails>
+            <!--Optional:-->
+            <v91:Catering ApplyBoardInfoToAllEvents="?" ApplyEventsGuaranteeToAllEvents="?" ApplyEventAttendeesChangesToEvents="?">
+               <!--Optional:-->
+               <v91:CateringStatus>
+                  <!--Optional:-->
+                  <v91:BookingStatus>
+                     <!--Optional:-->
+                     <v91:Status Code="?" Description="?"/>
+                     <!--Optional:-->
+                     <v91:Color>?</v91:Color>
+                  </v91:BookingStatus>
+                  <!--Optional:-->
+                  <v91:ParentBookingStatus>?</v91:ParentBookingStatus>
+                  <!--Optional:-->
+                  <v91:DeductInventory>?</v91:DeductInventory>
+                  <!--Optional:-->
+                  <v91:CatDeductInventory>?</v91:CatDeductInventory>
+                  <!--Optional:-->
+                  <v91:AllowPickup>?</v91:AllowPickup>
+                  <!--Optional:-->
+                  <v91:ReturnToInventory>?</v91:ReturnToInventory>
+                  <!--Optional:-->
+                  <v91:DefaultReservationType>?</v91:DefaultReservationType>
+                  <!--Optional:-->
+                  <v91:CancellationType>?</v91:CancellationType>
+               </v91:CateringStatus>
+               <!--Optional:-->
+               <v91:CateringInternalStatus>?</v91:CateringInternalStatus>
+               <!--Optional:-->
+               <v91:CateringNextStatusList>
+                  <!--Zero or more repetitions:-->
+                  <v91:CateringNextStatus>
+                     <!--Optional:-->
+                     <v91:BookingStatus>
+                        <!--Optional:-->
+                        <v91:Status Code="?" Description="?"/>
+                        <!--Optional:-->
+                        <v91:Color>?</v91:Color>
+                     </v91:BookingStatus>
+                     <!--Optional:-->
+                     <v91:ParentBookingStatus>?</v91:ParentBookingStatus>
+                     <!--Optional:-->
+                     <v91:DeductInventory>?</v91:DeductInventory>
+                     <!--Optional:-->
+                     <v91:CatDeductInventory>?</v91:CatDeductInventory>
+                     <!--Optional:-->
+                     <v91:AllowPickup>?</v91:AllowPickup>
+                     <!--Optional:-->
+                     <v91:ReturnToInventory>?</v91:ReturnToInventory>
+                     <!--Optional:-->
+                     <v91:DefaultReservationType>?</v91:DefaultReservationType>
+                     <!--Optional:-->
+                     <v91:CancellationType>?</v91:CancellationType>
+                  </v91:CateringNextStatus>
+               </v91:CateringNextStatusList>
+               <!--Optional:-->
+               <v91:CateringStatusChangeHistory>
+                  <!--Zero or more repetitions:-->
+                  <v91:CateringStatusHistory>
+                     <!--Optional:-->
+                     <v91:Sequence>?</v91:Sequence>
+                     <!--Optional:-->
+                     <v91:BookingStatus Code="?" Description="?"/>
+                     <!--Optional:-->
+                     <v91:ModifyDateTime>?</v91:ModifyDateTime>
+                     <!--Optional:-->
+                     <v91:ModifierID>?</v91:ModifierID>
+                  </v91:CateringStatusHistory>
+               </v91:CateringStatusChangeHistory>
+               <!--Optional:-->
+               <v91:EventAttendees NoOfAttendees="?" AttendeesGuaranteed="?"/>
+               <!--Optional:-->
+               <v91:BoardInfo>?</v91:BoardInfo>
+               <!--Optional:-->
+               <v91:OnSiteName>?</v91:OnSiteName>
+               <!--Optional:-->
+               <v91:ContractNumber>?</v91:ContractNumber>
+               <!--Optional:-->
+               <v91:FunctionInfo>?</v91:FunctionInfo>
+               <!--Optional:-->
+               <v91:TrackChanges>?</v91:TrackChanges>
+               <!--Optional:-->
+               <v91:EventOrder Distributed="?" DistributedDate="?"/>
+               <!--Optional:-->
+               <v91:CateringRevenue>
+                  <!--Optional:-->
+                  <v91:ServiceCharge Amount="?" CurrencyCode="?"/>
+                  <!--Optional:-->
+                  <v91:TaxAmount Amount="?" CurrencyCode="?"/>
+                  <!--Optional:-->
+                  <v91:ItemDiscount>?</v91:ItemDiscount>
+                  <!--Optional:-->
+                  <v91:ItemDiscountPercentage>?</v91:ItemDiscountPercentage>
+               </v91:CateringRevenue>
+               <!--Optional:-->
+               <v91:FollowUpDate>?</v91:FollowUpDate>
+               <!--Optional:-->
+               <v91:DecisionDate>?</v91:DecisionDate>
+               <!--Optional:-->
+               <v91:PkgsTmplt>?</v91:PkgsTmplt>
+            </v91:Catering>
+            <!--Optional:-->
+            <v91:BlockProfiles FullOverlay="?">
+               <!--Zero or more repetitions:-->
+               <v91:BlockProfile Primary="?" BlockProfileType="?">
+                  <!--Optional:-->
+                  <v91:ProfileIDList>
+                     <!--Zero or more repetitions:-->
+                     <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  </v91:ProfileIDList>
+                  <!--Optional:-->
+                  <v91:Profile StatusCode="?" RegisteredProperty="?" RequestForHotel="?" ProtectedBy="?" MarkAsRecentlyAccessed="?" MarkForHistory="?" hasCommission="?" InheritedNegRates="?" ProfileType="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?">
+                     <!--Optional:-->
+                     <v91:Customer CustomerValue="?" CreditRating="?" VIPStatus="?" VIPDescription="?" BirthPlace="?" PrivateProfile="?" Blacklist="?" Gender="?" BirthDate="?" BirthDateMasked="?" Language="?" CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?" Nationality="?" NationalityDescription="?">
+                        <!--1 or more repetitions:-->
+                        <v91:PersonName NameType="?" Language="?" ExternalSystem="?">
+                           <!--Optional:-->
+                           <v91:NamePrefix>?</v91:NamePrefix>
+                           <!--Optional:-->
+                           <v91:GivenName>?</v91:GivenName>
+                           <!--Optional:-->
+                           <v91:MiddleName>?</v91:MiddleName>
+                           <!--Optional:-->
+                           <v91:Surname>?</v91:Surname>
+                           <!--Optional:-->
+                           <v91:NameSuffix>?</v91:NameSuffix>
+                           <!--Optional:-->
+                           <v91:NameTitle>?</v91:NameTitle>
+                           <!--Optional:-->
+                           <v91:NameTitleSuffix>?</v91:NameTitleSuffix>
+                           <!--Optional:-->
+                           <v91:EnvelopeGreeting>?</v91:EnvelopeGreeting>
+                           <!--Optional:-->
+                           <v91:Salutation>?</v91:Salutation>
+                        </v91:PersonName>
+                        <!--Optional:-->
+                        <v91:Anonymization>
+                           <v91:AnonymizationStatus>?</v91:AnonymizationStatus>
+                           <!--Optional:-->
+                           <v91:AnonymizationDate>?</v91:AnonymizationDate>
+                        </v91:Anonymization>
+                        <!--Optional:-->
+                        <v91:CitizenCountryName Code="?">?</v91:CitizenCountryName>
+                        <!--Optional:-->
+                        <v91:Identifications AllRowsFetched="?" TotalRows="?">
+                           <!--Zero or more repetitions:-->
+                           <v91:IdentificationInfo>
+                              <!--Optional:-->
+                              <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                              <!--Optional:-->
+                              <v91:Identification RegisteredProperty="?" PrimaryInd="?" OrderSequence="?">
+                                 <!--Optional:-->
+                                 <v91:IDType>?</v91:IDType>
+                                 <!--Optional:-->
+                                 <v91:IDNumber>?</v91:IDNumber>
+                                 <!--Optional:-->
+                                 <v91:IDNumberMasked>?</v91:IDNumberMasked>
+                                 <!--Optional:-->
+                                 <v91:IssuedCountry>?</v91:IssuedCountry>
+                                 <!--Optional:-->
+                                 <v91:IssuedDate>?</v91:IssuedDate>
+                                 <!--Optional:-->
+                                 <v91:IssuedPlace>?</v91:IssuedPlace>
+                              </v91:Identification>
+                           </v91:IdentificationInfo>
+                        </v91:Identifications>
+                        <!--Optional:-->
+                        <v91:Profession>?</v91:Profession>
+                        <!--Optional:-->
+                        <v91:AlienInfo>
+                           <!--Optional:-->
+                           <v91:AlienRegistrationNo>?</v91:AlienRegistrationNo>
+                           <!--Optional:-->
+                           <v91:ImmigrationStatus>?</v91:ImmigrationStatus>
+                           <!--Optional:-->
+                           <v91:VisaValidityType>?</v91:VisaValidityType>
+                        </v91:AlienInfo>
+                        <!--Optional:-->
+                        <v91:BirthCountry Code="?">?</v91:BirthCountry>
+                        <!--Optional:-->
+                        <v91:LegalCompany>?</v91:LegalCompany>
+                        <!--Optional:-->
+                        <v91:CompanyInfo>
+                           <!--Optional:-->
+                           <v91:LegalCompany>?</v91:LegalCompany>
+                           <!--Optional:-->
+                           <v91:Department>?</v91:Department>
+                           <!--Optional:-->
+                           <v91:Position>?</v91:Position>
+                        </v91:CompanyInfo>
+                        <!--Optional:-->
+                        <v91:BusinessTitle>?</v91:BusinessTitle>
+                     </v91:Customer>
+                     <!--Optional:-->
+                     <v91:Company commissionCode="?" CreditRating="?" CorporateIdType="?" VIPStatus="?" VIPDescription="?" Blacklist="?" Language="?" Nationality="?" NationalityDescription="?" CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?">
+                        <!--Optional:-->
+                        <v91:CompanyName>?</v91:CompanyName>
+                        <!--Optional:-->
+                        <v91:CompanyName2>?</v91:CompanyName2>
+                        <!--Optional:-->
+                        <v91:CompanyName3>?</v91:CompanyName3>
+                        <!--Optional:-->
+                        <v91:AlternateName>?</v91:AlternateName>
+                        <!--Optional:-->
+                        <v91:AlternateLanguage>?</v91:AlternateLanguage>
+                        <!--Optional:-->
+                        <v91:BusinessLocale>?</v91:BusinessLocale>
+                        <!--Optional:-->
+                        <v91:IATAInfo>
+                           <!--Optional:-->
+                           <v91:IATACompany>?</v91:IATACompany>
+                           <!--Optional:-->
+                           <v91:IATAConsortia>?</v91:IATAConsortia>
+                        </v91:IATAInfo>
+                        <!--Optional:-->
+                        <v91:BusinessTitle>?</v91:BusinessTitle>
+                     </v91:Company>
+                     <!--Optional:-->
+                     <v91:Addresses AllRowsFetched="?" TotalRows="?">
+                        <!--Zero or more repetitions:-->
+                        <v91:AddressInfo>
+                           <!--Optional:-->
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <!--Optional:-->
+                           <v91:Address Type="?" TypeDescription="?" UpdateReservations="?" BarCode="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" PrimaryInd="?">
+                              <!--Zero or more repetitions:-->
+                              <v91:AddressLine>?</v91:AddressLine>
+                              <!--Optional:-->
+                              <v91:CityName>?</v91:CityName>
+                              <!--Optional:-->
+                              <v91:PostalCode>?</v91:PostalCode>
+                              <!--Optional:-->
+                              <v91:CityExtension>?</v91:CityExtension>
+                              <!--Optional:-->
+                              <v91:County>?</v91:County>
+                              <!--Optional:-->
+                              <v91:State>?</v91:State>
+                              <!--Optional:-->
+                              <v91:CountryName Code="?">?</v91:CountryName>
+                              <!--Optional:-->
+                              <v91:Language>?</v91:Language>
+                           </v91:Address>
+                        </v91:AddressInfo>
+                     </v91:Addresses>
+                     <!--Optional:-->
+                     <v91:BusinessSegments>
+                        <!--Zero or more repetitions:-->
+                        <v91:BusinessSegment>?</v91:BusinessSegment>
+                     </v91:BusinessSegments>
+                     <!--Optional:-->
+                     <v91:Territory>?</v91:Territory>
+                     <!--Optional:-->
+                     <v91:TraceCode>?</v91:TraceCode>
+                     <!--Optional:-->
+                     <v91:InfluenceCode>?</v91:InfluenceCode>
+                     <!--Optional:-->
+                     <v91:Telephones AllRowsFetched="?" TotalRows="?">
+                        <!--Zero or more repetitions:-->
+                        <v91:TelephoneInfo>
+                           <!--Optional:-->
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <!--Optional:-->
+                           <v91:Telephone CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" PhoneTechType="?" PhoneUseType="?" PhoneUseTypeDescription="?" PhoneNumber="?" Extension="?" OrderSequence="?" PrimaryInd="?"/>
+                        </v91:TelephoneInfo>
+                     </v91:Telephones>
+                     <!--Optional:-->
+                     <v91:Emails AllRowsFetched="?" TotalRows="?">
+                        <!--Zero or more repetitions:-->
+                        <v91:EmailInfo>
+                           <!--Optional:-->
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <!--Optional:-->
+                           <v91:Email CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" OrderSequence="?" EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?"/>
+                        </v91:EmailInfo>
+                     </v91:Emails>
+                     <!--Optional:-->
+                     <v91:URLs AllRowsFetched="?" TotalRows="?">
+                        <!--Zero or more repetitions:-->
+                        <v91:URLInfo>
+                           <!--Optional:-->
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <!--Optional:-->
+                           <v91:URL Type="?" TypeDescription="?" OrderSequence="?" PrimaryInd="?">?</v91:URL>
+                        </v91:URLInfo>
+                     </v91:URLs>
+                     <!--Optional:-->
+                     <v91:Comments AllRowsFetched="?" TotalRows="?">
+                        <!--Zero or more repetitions:-->
+                        <v91:CommentInfo>
+                           <!--Optional:-->
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <!--Optional:-->
+                           <v91:Comment Type="?" TypeDescription="?" Internal="?" Confidential="?" OverrideInternal="?" ProtectDescription="?" HotelCode="?" ActionType="?" ActionDate="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?">
+                              <!--Optional:-->
+                              <v91:Text Formatted="?" TextFormat="?" Language="?">?</v91:Text>
+                              <!--Optional:-->
+                              <v91:Image>?</v91:Image>
+                              <!--Optional:-->
+                              <v91:URL>?</v91:URL>
+                              <!--Optional:-->
+                              <v91:CommentTitle>?</v91:CommentTitle>
+                              <!--Optional:-->
+                              <v91:NotificationLocation>?</v91:NotificationLocation>
+                           </v91:Comment>
+                        </v91:CommentInfo>
+                     </v91:Comments>
+                     <!--Optional:-->
+                     <v91:ProfileMemberships AllRowsFetched="?" TotalRows="?">
+                        <!--Zero or more repetitions:-->
+                        <v91:ProfileMembership MembershipID="?" ProgramID="?" PrimaryMembershipYn="?" MembershipIDNo="?" CentralSetupYn="?" OrderSequence="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" SignupDate="?" EffectiveDate="?" ExpireDate="?" ExpireDateExclusiveIndicator="?">
+                           <!--Optional:-->
+                           <v91:Comment>
+                              <!--Optional:-->
+                              <v91:Text Formatted="?" TextFormat="?" Language="?">?</v91:Text>
+                              <!--Optional:-->
+                              <v91:Image>?</v91:Image>
+                              <!--Optional:-->
+                              <v91:URL>?</v91:URL>
+                           </v91:Comment>
+                           <!--Optional:-->
+                           <v91:NewMembershipID>?</v91:NewMembershipID>
+                           <!--Optional:-->
+                           <v91:NameOnCard>?</v91:NameOnCard>
+                           <!--Optional:-->
+                           <v91:ProgramDescription>?</v91:ProgramDescription>
+                           <!--Optional:-->
+                           <v91:MembershipLevel>?</v91:MembershipLevel>
+                           <!--Optional:-->
+                           <v91:MembershipLevelDescription>?</v91:MembershipLevelDescription>
+                           <!--Optional:-->
+                           <v91:MembershipClass>?</v91:MembershipClass>
+                           <!--Optional:-->
+                           <v91:EarningPreference>?</v91:EarningPreference>
+                           <!--Optional:-->
+                           <v91:Inactive>?</v91:Inactive>
+                           <!--Optional:-->
+                           <v91:Benefits>
+                              <!--Zero or more repetitions:-->
+                              <v91:benefit Inactive="?">
+                                 <!--Optional:-->
+                                 <v91:Code>?</v91:Code>
+                                 <!--Optional:-->
+                                 <v91:Message>?</v91:Message>
+                              </v91:benefit>
+                           </v91:Benefits>
+                           <!--Optional:-->
+                           <v91:TierAdministration>?</v91:TierAdministration>
+                           <!--Optional:-->
+                           <v91:Downgrade>?</v91:Downgrade>
+                           <!--Optional:-->
+                           <v91:ReIssueNewCard>?</v91:ReIssueNewCard>
+                           <!--Optional:-->
+                           <v91:ExcludeFromBatch>?</v91:ExcludeFromBatch>
+                           <!--Optional:-->
+                           <v91:UpgradeDescription>?</v91:UpgradeDescription>
+                           <!--Optional:-->
+                           <v91:DowngradeDescription>?</v91:DowngradeDescription>
+                           <!--Optional:-->
+                           <v91:Rating>?</v91:Rating>
+                           <!--Optional:-->
+                           <v91:MembershipEnrollmentCode>?</v91:MembershipEnrollmentCode>
+                           <!--Optional:-->
+                           <v91:MemberStatus>?</v91:MemberStatus>
+                           <!--Optional:-->
+                           <v91:CurrentPoints>?</v91:CurrentPoints>
+                           <!--Optional:-->
+                           <v91:PointsLabel>?</v91:PointsLabel>
+                           <!--Optional:-->
+                           <v91:EnrollmentSource>?</v91:EnrollmentSource>
+                           <!--Optional:-->
+                           <v91:EnrollmentResort>?</v91:EnrollmentResort>
+                           <!--Optional:-->
+                           <v91:PreferredCard>false</v91:PreferredCard>
+                        </v91:ProfileMembership>
+                     </v91:ProfileMemberships>
+                     <!--Optional:-->
+                     <v91:PreferenceCollection AllRowsFetched="?" TotalRows="?">
+                        <!--Zero or more repetitions:-->
+                        <v91:PreferenceType PrefType="?" PrefTypeDescription="?" OrderValue="?" MaxQuantity="?" AvailableQuantity="?" MaxResortUsedQuantity="?" ReservationPreference="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?">
+                           <!--Zero or more repetitions:-->
+                           <v91:Preference PreferenceId="?" ExcludedPreferencesCount="?">
+                              <!--Optional:-->
+                              <v91:PrefValue>?</v91:PrefValue>
+                              <!--Optional:-->
+                              <v91:Description>?</v91:Description>
+                              <!--Optional:-->
+                              <v91:Global>?</v91:Global>
+                              <!--Optional:-->
+                              <v91:Source>?</v91:Source>
+                              <!--Zero or more repetitions:-->
+                              <v91:Hotels>?</v91:Hotels>
+                           </v91:Preference>
+                        </v91:PreferenceType>
+                     </v91:PreferenceCollection>
+                     <!--Optional:-->
+                     <v91:Keywords AllRowsFetched="?" TotalRows="?">
+                        <!--Zero or more repetitions:-->
+                        <v91:Keyword Type="?" Keyword="?">
+                           <!--Optional:-->
+                           <v91:KeywordDetail NewKeyword="?"/>
+                        </v91:Keyword>
+                     </v91:Keywords>
+                     <!--Optional:-->
+                     <v91:NegotiatedRates AllRowsFetched="?" TotalRows="?">
+                        <!--Zero or more repetitions:-->
+                        <v91:NegotiatedRate HotelCode="?" RateCode="?">
+                           <!--Zero or more repetitions:-->
+                           <v91:NegotiatedInfoList Start="?" End="?">
+                              <!--Optional:-->
+                              <v91:CorporateAgreementId>?</v91:CorporateAgreementId>
+                              <!--Optional:-->
+                              <v91:ComissionCode>?</v91:ComissionCode>
+                              <!--Optional:-->
+                              <v91:Order>?</v91:Order>
+                              <!--Optional:-->
+                              <v91:Inactive>?</v91:Inactive>
+                           </v91:NegotiatedInfoList>
+                        </v91:NegotiatedRate>
+                     </v91:NegotiatedRates>
+                     <!--Optional:-->
+                     <v91:GdsNegotiatedRates AllRowsFetched="?" TotalRows="?">
+                        <!--Zero or more repetitions:-->
+                        <v91:GdsNegotiatedRate BookingChannelCode="?" HotelCode="?" ChannelRatePlanCode="?">
+                           <!--Zero or more repetitions:-->
+                           <v91:GdsNegotiatedInfoList Start="?" End="?">
+                              <!--Optional:-->
+                              <v91:AccessCode>?</v91:AccessCode>
+                              <!--Optional:-->
+                              <v91:Order>?</v91:Order>
+                              <!--Optional:-->
+                              <v91:Inactive>?</v91:Inactive>
+                           </v91:GdsNegotiatedInfoList>
+                        </v91:GdsNegotiatedRate>
+                     </v91:GdsNegotiatedRates>
+                     <!--Optional:-->
+                     <v91:ProfileIndicators>
+                        <!--Zero or more repetitions:-->
+                        <v91:Indicator IndicatorName="?" Count="?"/>
+                     </v91:ProfileIndicators>
+                     <!--Optional:-->
+                     <v91:Relationships AllRowsFetched="?" TotalRows="?">
+                        <!--Zero or more repetitions:-->
+                        <v91:Relationship ID="?" Relation="?" RelationDescription="?" TargetRelation="?" TargetRelationDescription="?">
+                           <!--Optional:-->
+                           <v91:ChangeRelationship ID="?" Relation="?" RelationDescription="?" TargetRelation="?" TargetRelationDescription="?"/>
+                           <!--Optional:-->
+                           <v91:RelationshipProfile Primary="?" ID="?" StatusCode="?" ProfileType="?">
+                              <!--Optional:-->
+                              <v91:Customer CustomerValue="?" CreditRating="?" VIPStatus="?" VIPDescription="?" BirthPlace="?" PrivateProfile="?" Blacklist="?" Gender="?" BirthDate="?" BirthDateMasked="?" Language="?" CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?" Nationality="?" NationalityDescription="?">
+                                 <!--1 or more repetitions:-->
+                                 <v91:PersonName NameType="?" Language="?" ExternalSystem="?">
+                                    <!--Optional:-->
+                                    <v91:NamePrefix>?</v91:NamePrefix>
+                                    <!--Optional:-->
+                                    <v91:GivenName>?</v91:GivenName>
+                                    <!--Optional:-->
+                                    <v91:MiddleName>?</v91:MiddleName>
+                                    <!--Optional:-->
+                                    <v91:Surname>?</v91:Surname>
+                                    <!--Optional:-->
+                                    <v91:NameSuffix>?</v91:NameSuffix>
+                                    <!--Optional:-->
+                                    <v91:NameTitle>?</v91:NameTitle>
+                                    <!--Optional:-->
+                                    <v91:NameTitleSuffix>?</v91:NameTitleSuffix>
+                                    <!--Optional:-->
+                                    <v91:EnvelopeGreeting>?</v91:EnvelopeGreeting>
+                                    <!--Optional:-->
+                                    <v91:Salutation>?</v91:Salutation>
+                                 </v91:PersonName>
+                                 <!--Optional:-->
+                                 <v91:Anonymization>
+                                    <v91:AnonymizationStatus>?</v91:AnonymizationStatus>
+                                    <!--Optional:-->
+                                    <v91:AnonymizationDate>?</v91:AnonymizationDate>
+                                 </v91:Anonymization>
+                                 <!--Optional:-->
+                                 <v91:CitizenCountryName Code="?">?</v91:CitizenCountryName>
+                                 <!--Optional:-->
+                                 <v91:Identifications AllRowsFetched="?" TotalRows="?">
+                                    <!--Zero or more repetitions:-->
+                                    <v91:IdentificationInfo>
+                                       <!--Optional:-->
+                                       <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                       <!--Optional:-->
+                                       <v91:Identification RegisteredProperty="?" PrimaryInd="?" OrderSequence="?">
+                                          <!--Optional:-->
+                                          <v91:IDType>?</v91:IDType>
+                                          <!--Optional:-->
+                                          <v91:IDNumber>?</v91:IDNumber>
+                                          <!--Optional:-->
+                                          <v91:IDNumberMasked>?</v91:IDNumberMasked>
+                                          <!--Optional:-->
+                                          <v91:IssuedCountry>?</v91:IssuedCountry>
+                                          <!--Optional:-->
+                                          <v91:IssuedDate>?</v91:IssuedDate>
+                                          <!--Optional:-->
+                                          <v91:IssuedPlace>?</v91:IssuedPlace>
+                                       </v91:Identification>
+                                    </v91:IdentificationInfo>
+                                 </v91:Identifications>
+                                 <!--Optional:-->
+                                 <v91:Profession>?</v91:Profession>
+                                 <!--Optional:-->
+                                 <v91:AlienInfo>
+                                    <!--Optional:-->
+                                    <v91:AlienRegistrationNo>?</v91:AlienRegistrationNo>
+                                    <!--Optional:-->
+                                    <v91:ImmigrationStatus>?</v91:ImmigrationStatus>
+                                    <!--Optional:-->
+                                    <v91:VisaValidityType>?</v91:VisaValidityType>
+                                 </v91:AlienInfo>
+                                 <!--Optional:-->
+                                 <v91:BirthCountry Code="?">?</v91:BirthCountry>
+                                 <!--Optional:-->
+                                 <v91:LegalCompany>?</v91:LegalCompany>
+                                 <!--Optional:-->
+                                 <v91:CompanyInfo>
+                                    <!--Optional:-->
+                                    <v91:LegalCompany>?</v91:LegalCompany>
+                                    <!--Optional:-->
+                                    <v91:Department>?</v91:Department>
+                                    <!--Optional:-->
+                                    <v91:Position>?</v91:Position>
+                                 </v91:CompanyInfo>
+                                 <!--Optional:-->
+                                 <v91:BusinessTitle>?</v91:BusinessTitle>
+                              </v91:Customer>
+                              <!--Optional:-->
+                              <v91:Company commissionCode="?" CreditRating="?" CorporateIdType="?" VIPStatus="?" VIPDescription="?" Blacklist="?" Language="?" Nationality="?" NationalityDescription="?" CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?">
+                                 <!--Optional:-->
+                                 <v91:CompanyName>?</v91:CompanyName>
+                                 <!--Optional:-->
+                                 <v91:CompanyName2>?</v91:CompanyName2>
+                                 <!--Optional:-->
+                                 <v91:CompanyName3>?</v91:CompanyName3>
+                                 <!--Optional:-->
+                                 <v91:AlternateName>?</v91:AlternateName>
+                                 <!--Optional:-->
+                                 <v91:AlternateLanguage>?</v91:AlternateLanguage>
+                                 <!--Optional:-->
+                                 <v91:BusinessLocale>?</v91:BusinessLocale>
+                                 <!--Optional:-->
+                                 <v91:IATAInfo>
+                                    <!--Optional:-->
+                                    <v91:IATACompany>?</v91:IATACompany>
+                                    <!--Optional:-->
+                                    <v91:IATAConsortia>?</v91:IATAConsortia>
+                                 </v91:IATAInfo>
+                                 <!--Optional:-->
+                                 <v91:BusinessTitle>?</v91:BusinessTitle>
+                              </v91:Company>
+                              <!--Optional:-->
+                              <v91:Telephone>
+                                 <!--Optional:-->
+                                 <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                 <!--Optional:-->
+                                 <v91:Telephone CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" PhoneTechType="?" PhoneUseType="?" PhoneUseTypeDescription="?" PhoneNumber="?" Extension="?" OrderSequence="?" PrimaryInd="?"/>
+                              </v91:Telephone>
+                              <!--Optional:-->
+                              <v91:Address>
+                                 <!--Optional:-->
+                                 <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                 <!--Optional:-->
+                                 <v91:Address Type="?" TypeDescription="?" UpdateReservations="?" BarCode="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" PrimaryInd="?">
+                                    <!--Zero or more repetitions:-->
+                                    <v91:AddressLine>?</v91:AddressLine>
+                                    <!--Optional:-->
+                                    <v91:CityName>?</v91:CityName>
+                                    <!--Optional:-->
+                                    <v91:PostalCode>?</v91:PostalCode>
+                                    <!--Optional:-->
+                                    <v91:CityExtension>?</v91:CityExtension>
+                                    <!--Optional:-->
+                                    <v91:County>?</v91:County>
+                                    <!--Optional:-->
+                                    <v91:State>?</v91:State>
+                                    <!--Optional:-->
+                                    <v91:CountryName Code="?">?</v91:CountryName>
+                                    <!--Optional:-->
+                                    <v91:Language>?</v91:Language>
+                                 </v91:Address>
+                              </v91:Address>
+                              <!--Optional:-->
+                              <v91:Email>
+                                 <!--Optional:-->
+                                 <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                 <!--Optional:-->
+                                 <v91:Email CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" OrderSequence="?" EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?"/>
+                              </v91:Email>
+                              <!--Optional:-->
+                              <v91:URLs>
+                                 <!--Optional:-->
+                                 <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                 <!--Optional:-->
+                                 <v91:URL Type="?" TypeDescription="?" OrderSequence="?" PrimaryInd="?">?</v91:URL>
+                              </v91:URLs>
+                              <!--Optional:-->
+                              <v91:ProfileIDList>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                              </v91:ProfileIDList>
+                              <!--Optional:-->
+                              <v91:ChangeProfileIDList>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                              </v91:ChangeProfileIDList>
+                           </v91:RelationshipProfile>
+                        </v91:Relationship>
+                     </v91:Relationships>
+                     <!--Optional:-->
+                     <v91:ReservationInfoList>
+                        <!--Optional:-->
+                        <v91:HistoryList AllRowsFetched="?" TotalRows="?">
+                           <!--Zero or more repetitions:-->
+                           <v91:ReservationInfo HotelCode="?" HotelName="?" ExpectedServiceTime="?" RoomStayReservation="?" ResStatus="?" ComputedResStatus="?" WalkInIndicator="?" AccessRestriction="?" CommissionPayoutTo="?" PaymentMethod="?" PreRegistered="?" OpenFolio="?" AllowMobileCheckout="?" AllowMobileViewFolio="?" OptedForCommunication="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?">
+                              <!--Optional:-->
+                              <v91:ReservationIDList>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                              </v91:ReservationIDList>
+                              <!--Optional:-->
+                              <v91:RoomStay ScheduledCheckoutTime="?" RoomNumberLocked="?" PseudoRoom="?">
+                                 <!--Optional:-->
+                                 <v91:TimeSpan>
+                                    <!--Optional:-->
+                                    <v91:StartDate>?</v91:StartDate>
+                                    <!--Optional:-->
+                                    <v91:EndDate>?</v91:EndDate>
+                                    <!--Optional:-->
+                                    <v91:Duration>?</v91:Duration>
+                                 </v91:TimeSpan>
+                                 <!--Optional:-->
+                                 <v91:OriginalTimeSpan>
+                                    <!--Optional:-->
+                                    <v91:StartDate>?</v91:StartDate>
+                                    <!--Optional:-->
+                                    <v91:EndDate>?</v91:EndDate>
+                                    <!--Optional:-->
+                                    <v91:Duration>?</v91:Duration>
+                                 </v91:OriginalTimeSpan>
+                                 <!--Optional:-->
+                                 <v91:ExpectedTimes ResExpectedArrivalTime="?" ResExpectedDepartureTime="?"/>
+                                 <!--Optional:-->
+                                 <v91:AdultCount>?</v91:AdultCount>
+                                 <!--Optional:-->
+                                 <v91:ChildCount>?</v91:ChildCount>
+                                 <!--Optional:-->
+                                 <v91:RoomClass>?</v91:RoomClass>
+                                 <!--Optional:-->
+                                 <v91:RoomType>?</v91:RoomType>
+                                 <!--Optional:-->
+                                 <v91:NumberOfRooms>?</v91:NumberOfRooms>
+                                 <!--Optional:-->
+                                 <v91:RoomNumber>?</v91:RoomNumber>
+                                 <!--Optional:-->
+                                 <v91:RatePlanCode>?</v91:RatePlanCode>
+                                 <!--Optional:-->
+                                 <v91:RateAmount Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:Points AwardsType="?" Points="?"/>
+                                 <!--Optional:-->
+                                 <v91:RateSuppressed>?</v91:RateSuppressed>
+                                 <!--Optional:-->
+                                 <v91:ReservationBlock HotelCode="?">
+                                    <!--Optional:-->
+                                    <v91:BlockIDList>
+                                       <!--Zero or more repetitions:-->
+                                       <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                    </v91:BlockIDList>
+                                    <!--Optional:-->
+                                    <v91:BlockName>?</v91:BlockName>
+                                 </v91:ReservationBlock>
+                                 <!--Optional:-->
+                                 <v91:BookingChannelCode>?</v91:BookingChannelCode>
+                                 <!--Optional:-->
+                                 <v91:PartyCode>?</v91:PartyCode>
+                                 <!--Optional:-->
+                                 <v91:FixedRate>?</v91:FixedRate>
+                                 <!--Optional:-->
+                                 <v91:TotalAmount Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:Guarantee GuaranteeCode="?" ShortDescription="?" OnHold="?"/>
+                                 <!--Optional:-->
+                                 <v91:Promotion PromotionCode="?" PromotionName="?" CouponCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:MarketCode>?</v91:MarketCode>
+                                 <!--Optional:-->
+                                 <v91:SourceOfBusiness>?</v91:SourceOfBusiness>
+                                 <!--Optional:-->
+                                 <v91:SourceOfBusinessDescription>?</v91:SourceOfBusinessDescription>
+                                 <!--Optional:-->
+                                 <v91:Balance Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:CompBalance Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:RoomTypeCharged>?</v91:RoomTypeCharged>
+                                 <!--Optional:-->
+                                 <v91:DepositPayments Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:GuestServiceStatus>?</v91:GuestServiceStatus>
+                              </v91:RoomStay>
+                              <!--Optional:-->
+                              <v91:ResGuest NameType="?">
+                                 <!--Optional:-->
+                                 <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                 <!--Optional:-->
+                                 <v91:Membership ProgramCode="?" BonusCode="?" MembershipTypeDesc="?" MembershipLevelDesc="?" AccountID="?" MembershipLevel="?">
+                                    <!--Optional:-->
+                                    <v91:MembershipID>?</v91:MembershipID>
+                                 </v91:Membership>
+                                 <!--Optional:-->
+                                 <v91:NamePrefix>?</v91:NamePrefix>
+                                 <!--Optional:-->
+                                 <v91:GivenName>?</v91:GivenName>
+                                 <!--Optional:-->
+                                 <v91:AltGivenName>?</v91:AltGivenName>
+                                 <!--Optional:-->
+                                 <v91:MiddleName>?</v91:MiddleName>
+                                 <!--Optional:-->
+                                 <v91:SurnamePrefix>?</v91:SurnamePrefix>
+                                 <!--Optional:-->
+                                 <v91:Surname>?</v91:Surname>
+                                 <!--Optional:-->
+                                 <v91:AltSurname>?</v91:AltSurname>
+                                 <!--Optional:-->
+                                 <v91:NameSuffix>?</v91:NameSuffix>
+                                 <!--Optional:-->
+                                 <v91:NameTitle>?</v91:NameTitle>
+                                 <!--Optional:-->
+                                 <v91:FullName>?</v91:FullName>
+                                 <!--Optional:-->
+                                 <v91:AltFullName>?</v91:AltFullName>
+                                 <!--Optional:-->
+                                 <v91:PhoneNumber>?</v91:PhoneNumber>
+                                 <!--Optional:-->
+                                 <v91:Email>?</v91:Email>
+                                 <!--Optional:-->
+                                 <v91:BirthDate>?</v91:BirthDate>
+                                 <!--Optional:-->
+                                 <v91:Language>?</v91:Language>
+                                 <!--Optional:-->
+                                 <v91:Nationality Code="?">?</v91:Nationality>
+                                 <!--Optional:-->
+                                 <v91:VIP VIPCode="?" VIPDescription="?"/>
+                                 <!--Optional:-->
+                                 <v91:Address ExcludeNoCity="?">
+                                    <!--Optional:-->
+                                    <v91:CityName>?</v91:CityName>
+                                    <!--Optional:-->
+                                    <v91:PostalCode>?</v91:PostalCode>
+                                    <!--Optional:-->
+                                    <v91:State>?</v91:State>
+                                    <!--Optional:-->
+                                    <v91:CountryName Code="?">?</v91:CountryName>
+                                    <!--Optional:-->
+                                    <v91:StreetAddress>?</v91:StreetAddress>
+                                 </v91:Address>
+                                 <!--Optional:-->
+                                 <v91:AccompanyGuests>
+                                    <!--Zero or more repetitions:-->
+                                    <v91:AccompanyGuest>
+                                       <!--Optional:-->
+                                       <v91:FirstName>?</v91:FirstName>
+                                       <!--Optional:-->
+                                       <v91:LastName>?</v91:LastName>
+                                       <!--Optional:-->
+                                       <v91:FullName>?</v91:FullName>
+                                       <!--Optional:-->
+                                       <v91:RegistrationCardNo>?</v91:RegistrationCardNo>
+                                       <!--Optional:-->
+                                       <v91:ProfileIDList>
+                                          <!--Zero or more repetitions:-->
+                                          <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                       </v91:ProfileIDList>
+                                    </v91:AccompanyGuest>
+                                 </v91:AccompanyGuests>
+                                 <!--Optional:-->
+                                 <v91:ExternalInfo>
+                                    <!--Optional:-->
+                                    <v91:GivenName>?</v91:GivenName>
+                                    <!--Optional:-->
+                                    <v91:Surname>?</v91:Surname>
+                                 </v91:ExternalInfo>
+                                 <!--Optional:-->
+                                 <v91:GuestLastStayInfo>
+                                    <!--Optional:-->
+                                    <v91:LastStayDate>?</v91:LastStayDate>
+                                    <!--Optional:-->
+                                    <v91:LastStayRoom>?</v91:LastStayRoom>
+                                    <!--Optional:-->
+                                    <v91:LastStayRate Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:TotalStay>?</v91:TotalStay>
+                                 </v91:GuestLastStayInfo>
+                                 <v91:GuestRestrictedCode>?</v91:GuestRestrictedCode>
+                                 <v91:GuestRestrictedReasonDesc>?</v91:GuestRestrictedReasonDesc>
+                                 <v91:GuestRestricted>?</v91:GuestRestricted>
+                                 <!--Optional:-->
+                                 <v91:RegistrationCardNo>?</v91:RegistrationCardNo>
+                              </v91:ResGuest>
+                              <!--Optional:-->
+                              <v91:SharedGuests>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:SharedGuest>
+                                    <!--Optional:-->
+                                    <v91:ProfileID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                    <!--Optional:-->
+                                    <v91:FirstName>?</v91:FirstName>
+                                    <!--Optional:-->
+                                    <v91:LastName>?</v91:LastName>
+                                    <!--Optional:-->
+                                    <v91:FullName>?</v91:FullName>
+                                 </v91:SharedGuest>
+                              </v91:SharedGuests>
+                              <!--Optional:-->
+                              <v91:AttachedProfiles>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:AttachedProfile ResProfileType="?">
+                                    <!--Optional:-->
+                                    <v91:Name>?</v91:Name>
+                                    <!--Optional:-->
+                                    <v91:ProfileIDList>
+                                       <!--Zero or more repetitions:-->
+                                       <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                    </v91:ProfileIDList>
+                                 </v91:AttachedProfile>
+                              </v91:AttachedProfiles>
+                              <!--Optional:-->
+                              <v91:ReservationPaymentMethod PaymentMethod="?" Description="?" FolioView="?">
+                                 <!--Optional:-->
+                                 <v91:PaymentCard CardType="?" CardNumber="?" CardNumberMasked="?" ExpirationDate="?" ExpirationDateMasked="?" ExpirationDateExpired="?" CardHolderName="?" AttachCreditCardToProfile="?" Processing="?" Swiped="?" CardNumberType="?">
+                                    <!--Optional:-->
+                                    <v91:CardId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                    <!--Optional:-->
+                                    <v91:CurrentAuthorizedAmount Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:ApprovalAmountNeeded Amount="?" CurrencyCode="?"/>
+                                 </v91:PaymentCard>
+                                 <!--Optional:-->
+                                 <v91:Balance Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:AuthorizationRule>
+                                    <!--Optional:-->
+                                    <v91:Code>?</v91:Code>
+                                    <!--Optional:-->
+                                    <v91:Amount Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:Percent>?</v91:Percent>
+                                 </v91:AuthorizationRule>
+                                 <!--Optional:-->
+                                 <v91:EmailFolioInfo EmailFolio="?">
+                                    <!--Optional:-->
+                                    <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                    <!--Optional:-->
+                                    <v91:Email CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" OrderSequence="?" EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?"/>
+                                 </v91:EmailFolioInfo>
+                              </v91:ReservationPaymentMethod>
+                              <!--Optional:-->
+                              <v91:Specials>?</v91:Specials>
+                              <!--Optional:-->
+                              <v91:LastPrivacyPromptDate>?</v91:LastPrivacyPromptDate>
+                              <!--Optional:-->
+                              <v91:DisplayColor>?</v91:DisplayColor>
+                              <!--Optional:-->
+                              <v91:ReservationIndicators>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:Indicator IndicatorName="?" Count="?"/>
+                              </v91:ReservationIndicators>
+                              <!--Optional:-->
+                              <v91:RoomStatus>?</v91:RoomStatus>
+                              <!--Optional:-->
+                              <v91:SearchMatches>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:SearchMatch Attribute="?" Value="?"/>
+                              </v91:SearchMatches>
+                              <!--Optional:-->
+                              <v91:SourceOfSale SourceType="?" SourceCode="?"/>
+                              <!--Optional:-->
+                              <v91:Waitlist ReasonCode="?" PriorityCode="?" Telephone="?">
+                                 <!--Optional:-->
+                                 <v91:ReasonDescription>?</v91:ReasonDescription>
+                                 <!--Optional:-->
+                                 <v91:PriorityDescription>?</v91:PriorityDescription>
+                                 <!--Optional:-->
+                                 <v91:Description>?</v91:Description>
+                              </v91:Waitlist>
+                              <!--Optional:-->
+                              <v91:Queue Priority="?" AvgQueueTimeToCheckIn="?" AvgQueueTimeCurrentReservations="?" QueueDate="?">
+                                 <v91:TimeSpan DurationInSeconds="?">
+                                    <!--Optional:-->
+                                    <v91:StartDate>?</v91:StartDate>
+                                    <!--Optional:-->
+                                    <v91:EndDate>?</v91:EndDate>
+                                    <!--Optional:-->
+                                    <v91:Duration>?</v91:Duration>
+                                 </v91:TimeSpan>
+                                 <!--Optional:-->
+                                 <v91:GuestTextInfo>
+                                    <!--Optional:-->
+                                    <v91:SentTime>?</v91:SentTime>
+                                    <!--Optional:-->
+                                    <v91:SentBy>?</v91:SentBy>
+                                 </v91:GuestTextInfo>
+                              </v91:Queue>
+                              <!--Optional:-->
+                              <v91:Housekeeping TurndownRequested="?" ServiceTime="?" ExpectedServiceTime="?" RoomStatus="?">
+                                 <!--Optional:-->
+                                 <v91:Instructions>?</v91:Instructions>
+                                 <!--Optional:-->
+                                 <v91:FacilityTaskInfo Date="?">
+                                    <!--Optional:-->
+                                    <v91:Task HotelCode="?" Code="?" Sequence="?">
+                                       <!--Optional:-->
+                                       <v91:Description>?</v91:Description>
+                                       <!--Optional:-->
+                                       <v91:Instructions>?</v91:Instructions>
+                                       <!--Optional:-->
+                                       <v91:FacilityDepartureTask>?</v91:FacilityDepartureTask>
+                                       <!--Optional:-->
+                                       <v91:LinenChange>?</v91:LinenChange>
+                                    </v91:Task>
+                                    <!--Optional:-->
+                                    <v91:Supplies>
+                                       <!--Zero or more repetitions:-->
+                                       <v91:FacilityCode Code="?">
+                                          <!--Optional:-->
+                                          <v91:Description>?</v91:Description>
+                                          <!--Optional:-->
+                                          <v91:Quantity>?</v91:Quantity>
+                                       </v91:FacilityCode>
+                                    </v91:Supplies>
+                                 </v91:FacilityTaskInfo>
+                                 <!--Optional:-->
+                                 <v91:LinenChange>?</v91:LinenChange>
+                              </v91:Housekeeping>
+                              <!--Optional:-->
+                              <v91:Cashiering FinanciallyResponsible="?" ProratedBilling="?" LastRoomAndTaxPostedDate="?" ReverseCheckInAllowed="?" ReverseAdvanceCheckInAllowed="?" TransactionsPosted="?">
+                                 <!--Optional:-->
+                                 <v91:RevenuesAndBalances>
+                                    <!--Optional:-->
+                                    <v91:TotalFixedCharge Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:TotalPayment Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:RoomRevenue Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:FoodAndBevRevenue Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:OtherRevenue Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:NonRevenue Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:TotalRevenue Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:Balance Amount="?" CurrencyCode="?"/>
+                                 </v91:RevenuesAndBalances>
+                                 <!--Optional:-->
+                                 <v91:BillingPrivileges PostingRestriction="?" PreStayCharging="?" PostStayCharging="?" FolioCloseDate="?" ScheduledCheckout="?" ScheduledCheckoutTime="?" DirectBillAuthorized="?" VideoCheckout="?" AllowAutoCheckin="?" AutoSettlement="?" AutoSettlementType="?" AutoSettlementFreq="?" CreditLimitAutoPay="?"/>
+                                 <!--Optional:-->
+                                 <v91:TaxType TaxExemptNo="?">
+                                    <!--Optional:-->
+                                    <v91:HotelCode>?</v91:HotelCode>
+                                    <!--Optional:-->
+                                    <v91:Code>?</v91:Code>
+                                    <!--Optional:-->
+                                    <v91:Description>?</v91:Description>
+                                    <v91:CollectingAgentTax>?</v91:CollectingAgentTax>
+                                    <v91:PrintAutoAdjust>?</v91:PrintAutoAdjust>
+                                    <v91:ReportExemptDays>?</v91:ReportExemptDays>
+                                    <v91:ReportTaxPerc>?</v91:ReportTaxPerc>
+                                 </v91:TaxType>
+                                 <!--Optional:-->
+                                 <v91:BedTaxReporting TaxRegistrationNo="?" VisaNumber="?" VisaIssueDate="?" VisaExpiryDate="?" TaxableDays="?"/>
+                                 <!--Optional:-->
+                                 <v91:FolioTexts>
+                                    <!--Zero or more repetitions:-->
+                                    <v91:FolioText Text="?" Row="?"/>
+                                 </v91:FolioTexts>
+                                 <!--Optional:-->
+                                 <v91:PeriodicFolio LastSettlementDate="?" LastFolioDate="?" Frequency="?"/>
+                                 <!--Optional:-->
+                                 <v91:CompAccounting CompType="?" Authorizer="?"/>
+                                 <!--Optional:-->
+                                 <v91:ResPreConfiguredRoutingInstruction RatePlanCode="?" ProfileType="?"/>
+                              </v91:Cashiering>
+                              <!--Optional:-->
+                              <v91:TaxType>
+                                 <!--Optional:-->
+                                 <v91:HotelCode>?</v91:HotelCode>
+                                 <!--Optional:-->
+                                 <v91:Code>?</v91:Code>
+                                 <!--Optional:-->
+                                 <v91:Description>?</v91:Description>
+                                 <v91:CollectingAgentTax>?</v91:CollectingAgentTax>
+                                 <v91:PrintAutoAdjust>?</v91:PrintAutoAdjust>
+                                 <v91:ReportExemptDays>?</v91:ReportExemptDays>
+                                 <v91:ReportTaxPerc>?</v91:ReportTaxPerc>
+                              </v91:TaxType>
+                              <!--Optional:-->
+                              <v91:Deposit HasPaid="?" HasOutstanding="?">
+                                 <!--Optional:-->
+                                 <v91:AmountRequired>?</v91:AmountRequired>
+                                 <!--Optional:-->
+                                 <v91:AmountPaid>?</v91:AmountPaid>
+                                 <!--Optional:-->
+                                 <v91:AmountOwed>?</v91:AmountOwed>
+                                 <!--Optional:-->
+                                 <v91:DueDate>?</v91:DueDate>
+                                 <!--Optional:-->
+                                 <v91:PostingDate>?</v91:PostingDate>
+                              </v91:Deposit>
+                              <!--Optional:-->
+                              <v91:AllowedActions>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:AllowedAction>?</v91:AllowedAction>
+                              </v91:AllowedActions>
+                              <!--Optional:-->
+                              <v91:RevenuesAndBalances>
+                                 <!--Optional:-->
+                                 <v91:TotalFixedCharge Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:TotalPayment Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:RoomRevenue Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:FoodAndBevRevenue Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:OtherRevenue Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:NonRevenue Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:TotalRevenue Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:Balance Amount="?" CurrencyCode="?"/>
+                              </v91:RevenuesAndBalances>
+                              <!--Zero or more repetitions:-->
+                              <v91:HotelInterfaceStatusList>
+                                 <v91:RoomExtension>?</v91:RoomExtension>
+                                 <v91:HotelInterface>
+                                    <v91:InterfaceId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                    <v91:HotelCode>?</v91:HotelCode>
+                                    <v91:InterfaceName>?</v91:InterfaceName>
+                                    <v91:InterfaceType>?</v91:InterfaceType>
+                                    <v91:Logo>?</v91:Logo>
+                                    <!--Optional:-->
+                                    <v91:MachineName>?</v91:MachineName>
+                                    <v91:Status>?</v91:Status>
+                                    <!--Optional:-->
+                                    <v91:ActiveFlag>?</v91:ActiveFlag>
+                                 </v91:HotelInterface>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:InterfaceRights>
+                                    <v91:Right>?</v91:Right>
+                                    <v91:StatusCode>?</v91:StatusCode>
+                                    <!--Optional:-->
+                                    <v91:Description>?</v91:Description>
+                                    <v91:Category>?</v91:Category>
+                                 </v91:InterfaceRights>
+                              </v91:HotelInterfaceStatusList>
+                              <!--Optional:-->
+                              <v91:GuestPreferredCurrency>?</v91:GuestPreferredCurrency>
+                              <!--Optional:-->
+                              <v91:TurndownInfo>
+                                 <!--Optional:-->
+                                 <v91:Allowed>?</v91:Allowed>
+                                 <!--Optional:-->
+                                 <v91:Status>?</v91:Status>
+                              </v91:TurndownInfo>
+                              <!--Optional:-->
+                              <v91:MobileNotifications>
+                                 <!--Optional:-->
+                                 <v91:RoomReady>?</v91:RoomReady>
+                                 <!--Optional:-->
+                                 <v91:KeyReady>?</v91:KeyReady>
+                                 <!--Optional:-->
+                                 <v91:CheckoutMessageReceived>false</v91:CheckoutMessageReceived>
+                                 <!--Optional:-->
+                                 <v91:RequiresAction>false</v91:RequiresAction>
+                                 <!--Optional:-->
+                                 <v91:ErrorMessage>?</v91:ErrorMessage>
+                              </v91:MobileNotifications>
+                              <!--Optional:-->
+                              <v91:ResCommunication>
+                                 <!--Optional:-->
+                                 <v91:Telephones AllRowsFetched="?" TotalRows="?">
+                                    <!--Zero or more repetitions:-->
+                                    <v91:TelephoneInfo>
+                                       <!--Optional:-->
+                                       <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                       <!--Optional:-->
+                                       <v91:Telephone CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" PhoneTechType="?" PhoneUseType="?" PhoneUseTypeDescription="?" PhoneNumber="?" Extension="?" OrderSequence="?" PrimaryInd="?"/>
+                                    </v91:TelephoneInfo>
+                                 </v91:Telephones>
+                                 <!--Optional:-->
+                                 <v91:Emails AllRowsFetched="?" TotalRows="?">
+                                    <!--Zero or more repetitions:-->
+                                    <v91:EmailInfo>
+                                       <!--Optional:-->
+                                       <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                       <!--Optional:-->
+                                       <v91:Email CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" OrderSequence="?" EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?"/>
+                                    </v91:EmailInfo>
+                                 </v91:Emails>
+                              </v91:ResCommunication>
+                              <!--Optional:-->
+                              <v91:AdvanceCheckIn>
+                                 <!--Optional:-->
+                                 <v91:AdvanceCheckedIn>?</v91:AdvanceCheckedIn>
+                                 <!--Optional:-->
+                                 <v91:ExpectedReturnTime>?</v91:ExpectedReturnTime>
+                                 <!--Optional:-->
+                                 <v91:ETRComments>?</v91:ETRComments>
+                              </v91:AdvanceCheckIn>
+                              <!--Optional:-->
+                              <v91:WelcomeOffer>?</v91:WelcomeOffer>
+                              <!--Optional:-->
+                              <v91:CancellationInfo Code="?" Date="?">
+                                 <!--Optional:-->
+                                 <v91:Description>?</v91:Description>
+                              </v91:CancellationInfo>
+                           </v91:ReservationInfo>
+                        </v91:HistoryList>
+                        <!--Optional:-->
+                        <v91:FutureList AllRowsFetched="?" TotalRows="?">
+                           <!--Zero or more repetitions:-->
+                           <v91:ReservationInfo HotelCode="?" HotelName="?" ExpectedServiceTime="?" RoomStayReservation="?" ResStatus="?" ComputedResStatus="?" WalkInIndicator="?" AccessRestriction="?" CommissionPayoutTo="?" PaymentMethod="?" PreRegistered="?" OpenFolio="?" AllowMobileCheckout="?" AllowMobileViewFolio="?" OptedForCommunication="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?">
+                              <!--Optional:-->
+                              <v91:ReservationIDList>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                              </v91:ReservationIDList>
+                              <!--Optional:-->
+                              <v91:RoomStay ScheduledCheckoutTime="?" RoomNumberLocked="?" PseudoRoom="?">
+                                 <!--Optional:-->
+                                 <v91:TimeSpan>
+                                    <!--Optional:-->
+                                    <v91:StartDate>?</v91:StartDate>
+                                    <!--Optional:-->
+                                    <v91:EndDate>?</v91:EndDate>
+                                    <!--Optional:-->
+                                    <v91:Duration>?</v91:Duration>
+                                 </v91:TimeSpan>
+                                 <!--Optional:-->
+                                 <v91:OriginalTimeSpan>
+                                    <!--Optional:-->
+                                    <v91:StartDate>?</v91:StartDate>
+                                    <!--Optional:-->
+                                    <v91:EndDate>?</v91:EndDate>
+                                    <!--Optional:-->
+                                    <v91:Duration>?</v91:Duration>
+                                 </v91:OriginalTimeSpan>
+                                 <!--Optional:-->
+                                 <v91:ExpectedTimes ResExpectedArrivalTime="?" ResExpectedDepartureTime="?"/>
+                                 <!--Optional:-->
+                                 <v91:AdultCount>?</v91:AdultCount>
+                                 <!--Optional:-->
+                                 <v91:ChildCount>?</v91:ChildCount>
+                                 <!--Optional:-->
+                                 <v91:RoomClass>?</v91:RoomClass>
+                                 <!--Optional:-->
+                                 <v91:RoomType>?</v91:RoomType>
+                                 <!--Optional:-->
+                                 <v91:NumberOfRooms>?</v91:NumberOfRooms>
+                                 <!--Optional:-->
+                                 <v91:RoomNumber>?</v91:RoomNumber>
+                                 <!--Optional:-->
+                                 <v91:RatePlanCode>?</v91:RatePlanCode>
+                                 <!--Optional:-->
+                                 <v91:RateAmount Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:Points AwardsType="?" Points="?"/>
+                                 <!--Optional:-->
+                                 <v91:RateSuppressed>?</v91:RateSuppressed>
+                                 <!--Optional:-->
+                                 <v91:ReservationBlock HotelCode="?">
+                                    <!--Optional:-->
+                                    <v91:BlockIDList>
+                                       <!--Zero or more repetitions:-->
+                                       <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                    </v91:BlockIDList>
+                                    <!--Optional:-->
+                                    <v91:BlockName>?</v91:BlockName>
+                                 </v91:ReservationBlock>
+                                 <!--Optional:-->
+                                 <v91:BookingChannelCode>?</v91:BookingChannelCode>
+                                 <!--Optional:-->
+                                 <v91:PartyCode>?</v91:PartyCode>
+                                 <!--Optional:-->
+                                 <v91:FixedRate>?</v91:FixedRate>
+                                 <!--Optional:-->
+                                 <v91:TotalAmount Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:Guarantee GuaranteeCode="?" ShortDescription="?" OnHold="?"/>
+                                 <!--Optional:-->
+                                 <v91:Promotion PromotionCode="?" PromotionName="?" CouponCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:MarketCode>?</v91:MarketCode>
+                                 <!--Optional:-->
+                                 <v91:SourceOfBusiness>?</v91:SourceOfBusiness>
+                                 <!--Optional:-->
+                                 <v91:SourceOfBusinessDescription>?</v91:SourceOfBusinessDescription>
+                                 <!--Optional:-->
+                                 <v91:Balance Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:CompBalance Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:RoomTypeCharged>?</v91:RoomTypeCharged>
+                                 <!--Optional:-->
+                                 <v91:DepositPayments Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:GuestServiceStatus>?</v91:GuestServiceStatus>
+                              </v91:RoomStay>
+                              <!--Optional:-->
+                              <v91:ResGuest NameType="?">
+                                 <!--Optional:-->
+                                 <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                 <!--Optional:-->
+                                 <v91:Membership ProgramCode="?" BonusCode="?" MembershipTypeDesc="?" MembershipLevelDesc="?" AccountID="?" MembershipLevel="?">
+                                    <!--Optional:-->
+                                    <v91:MembershipID>?</v91:MembershipID>
+                                 </v91:Membership>
+                                 <!--Optional:-->
+                                 <v91:NamePrefix>?</v91:NamePrefix>
+                                 <!--Optional:-->
+                                 <v91:GivenName>?</v91:GivenName>
+                                 <!--Optional:-->
+                                 <v91:AltGivenName>?</v91:AltGivenName>
+                                 <!--Optional:-->
+                                 <v91:MiddleName>?</v91:MiddleName>
+                                 <!--Optional:-->
+                                 <v91:SurnamePrefix>?</v91:SurnamePrefix>
+                                 <!--Optional:-->
+                                 <v91:Surname>?</v91:Surname>
+                                 <!--Optional:-->
+                                 <v91:AltSurname>?</v91:AltSurname>
+                                 <!--Optional:-->
+                                 <v91:NameSuffix>?</v91:NameSuffix>
+                                 <!--Optional:-->
+                                 <v91:NameTitle>?</v91:NameTitle>
+                                 <!--Optional:-->
+                                 <v91:FullName>?</v91:FullName>
+                                 <!--Optional:-->
+                                 <v91:AltFullName>?</v91:AltFullName>
+                                 <!--Optional:-->
+                                 <v91:PhoneNumber>?</v91:PhoneNumber>
+                                 <!--Optional:-->
+                                 <v91:Email>?</v91:Email>
+                                 <!--Optional:-->
+                                 <v91:BirthDate>?</v91:BirthDate>
+                                 <!--Optional:-->
+                                 <v91:Language>?</v91:Language>
+                                 <!--Optional:-->
+                                 <v91:Nationality Code="?">?</v91:Nationality>
+                                 <!--Optional:-->
+                                 <v91:VIP VIPCode="?" VIPDescription="?"/>
+                                 <!--Optional:-->
+                                 <v91:Address ExcludeNoCity="?">
+                                    <!--Optional:-->
+                                    <v91:CityName>?</v91:CityName>
+                                    <!--Optional:-->
+                                    <v91:PostalCode>?</v91:PostalCode>
+                                    <!--Optional:-->
+                                    <v91:State>?</v91:State>
+                                    <!--Optional:-->
+                                    <v91:CountryName Code="?">?</v91:CountryName>
+                                    <!--Optional:-->
+                                    <v91:StreetAddress>?</v91:StreetAddress>
+                                 </v91:Address>
+                                 <!--Optional:-->
+                                 <v91:AccompanyGuests>
+                                    <!--Zero or more repetitions:-->
+                                    <v91:AccompanyGuest>
+                                       <!--Optional:-->
+                                       <v91:FirstName>?</v91:FirstName>
+                                       <!--Optional:-->
+                                       <v91:LastName>?</v91:LastName>
+                                       <!--Optional:-->
+                                       <v91:FullName>?</v91:FullName>
+                                       <!--Optional:-->
+                                       <v91:RegistrationCardNo>?</v91:RegistrationCardNo>
+                                       <!--Optional:-->
+                                       <v91:ProfileIDList>
+                                          <!--Zero or more repetitions:-->
+                                          <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                       </v91:ProfileIDList>
+                                    </v91:AccompanyGuest>
+                                 </v91:AccompanyGuests>
+                                 <!--Optional:-->
+                                 <v91:ExternalInfo>
+                                    <!--Optional:-->
+                                    <v91:GivenName>?</v91:GivenName>
+                                    <!--Optional:-->
+                                    <v91:Surname>?</v91:Surname>
+                                 </v91:ExternalInfo>
+                                 <!--Optional:-->
+                                 <v91:GuestLastStayInfo>
+                                    <!--Optional:-->
+                                    <v91:LastStayDate>?</v91:LastStayDate>
+                                    <!--Optional:-->
+                                    <v91:LastStayRoom>?</v91:LastStayRoom>
+                                    <!--Optional:-->
+                                    <v91:LastStayRate Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:TotalStay>?</v91:TotalStay>
+                                 </v91:GuestLastStayInfo>
+                                 <v91:GuestRestrictedCode>?</v91:GuestRestrictedCode>
+                                 <v91:GuestRestrictedReasonDesc>?</v91:GuestRestrictedReasonDesc>
+                                 <v91:GuestRestricted>?</v91:GuestRestricted>
+                                 <!--Optional:-->
+                                 <v91:RegistrationCardNo>?</v91:RegistrationCardNo>
+                              </v91:ResGuest>
+                              <!--Optional:-->
+                              <v91:SharedGuests>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:SharedGuest>
+                                    <!--Optional:-->
+                                    <v91:ProfileID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                    <!--Optional:-->
+                                    <v91:FirstName>?</v91:FirstName>
+                                    <!--Optional:-->
+                                    <v91:LastName>?</v91:LastName>
+                                    <!--Optional:-->
+                                    <v91:FullName>?</v91:FullName>
+                                 </v91:SharedGuest>
+                              </v91:SharedGuests>
+                              <!--Optional:-->
+                              <v91:AttachedProfiles>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:AttachedProfile ResProfileType="?">
+                                    <!--Optional:-->
+                                    <v91:Name>?</v91:Name>
+                                    <!--Optional:-->
+                                    <v91:ProfileIDList>
+                                       <!--Zero or more repetitions:-->
+                                       <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                    </v91:ProfileIDList>
+                                 </v91:AttachedProfile>
+                              </v91:AttachedProfiles>
+                              <!--Optional:-->
+                              <v91:ReservationPaymentMethod PaymentMethod="?" Description="?" FolioView="?">
+                                 <!--Optional:-->
+                                 <v91:PaymentCard CardType="?" CardNumber="?" CardNumberMasked="?" ExpirationDate="?" ExpirationDateMasked="?" ExpirationDateExpired="?" CardHolderName="?" AttachCreditCardToProfile="?" Processing="?" Swiped="?" CardNumberType="?">
+                                    <!--Optional:-->
+                                    <v91:CardId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                    <!--Optional:-->
+                                    <v91:CurrentAuthorizedAmount Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:ApprovalAmountNeeded Amount="?" CurrencyCode="?"/>
+                                 </v91:PaymentCard>
+                                 <!--Optional:-->
+                                 <v91:Balance Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:AuthorizationRule>
+                                    <!--Optional:-->
+                                    <v91:Code>?</v91:Code>
+                                    <!--Optional:-->
+                                    <v91:Amount Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:Percent>?</v91:Percent>
+                                 </v91:AuthorizationRule>
+                                 <!--Optional:-->
+                                 <v91:EmailFolioInfo EmailFolio="?">
+                                    <!--Optional:-->
+                                    <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                    <!--Optional:-->
+                                    <v91:Email CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" OrderSequence="?" EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?"/>
+                                 </v91:EmailFolioInfo>
+                              </v91:ReservationPaymentMethod>
+                              <!--Optional:-->
+                              <v91:Specials>?</v91:Specials>
+                              <!--Optional:-->
+                              <v91:LastPrivacyPromptDate>?</v91:LastPrivacyPromptDate>
+                              <!--Optional:-->
+                              <v91:DisplayColor>?</v91:DisplayColor>
+                              <!--Optional:-->
+                              <v91:ReservationIndicators>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:Indicator IndicatorName="?" Count="?"/>
+                              </v91:ReservationIndicators>
+                              <!--Optional:-->
+                              <v91:RoomStatus>?</v91:RoomStatus>
+                              <!--Optional:-->
+                              <v91:SearchMatches>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:SearchMatch Attribute="?" Value="?"/>
+                              </v91:SearchMatches>
+                              <!--Optional:-->
+                              <v91:SourceOfSale SourceType="?" SourceCode="?"/>
+                              <!--Optional:-->
+                              <v91:Waitlist ReasonCode="?" PriorityCode="?" Telephone="?">
+                                 <!--Optional:-->
+                                 <v91:ReasonDescription>?</v91:ReasonDescription>
+                                 <!--Optional:-->
+                                 <v91:PriorityDescription>?</v91:PriorityDescription>
+                                 <!--Optional:-->
+                                 <v91:Description>?</v91:Description>
+                              </v91:Waitlist>
+                              <!--Optional:-->
+                              <v91:Queue Priority="?" AvgQueueTimeToCheckIn="?" AvgQueueTimeCurrentReservations="?" QueueDate="?">
+                                 <v91:TimeSpan DurationInSeconds="?">
+                                    <!--Optional:-->
+                                    <v91:StartDate>?</v91:StartDate>
+                                    <!--Optional:-->
+                                    <v91:EndDate>?</v91:EndDate>
+                                    <!--Optional:-->
+                                    <v91:Duration>?</v91:Duration>
+                                 </v91:TimeSpan>
+                                 <!--Optional:-->
+                                 <v91:GuestTextInfo>
+                                    <!--Optional:-->
+                                    <v91:SentTime>?</v91:SentTime>
+                                    <!--Optional:-->
+                                    <v91:SentBy>?</v91:SentBy>
+                                 </v91:GuestTextInfo>
+                              </v91:Queue>
+                              <!--Optional:-->
+                              <v91:Housekeeping TurndownRequested="?" ServiceTime="?" ExpectedServiceTime="?" RoomStatus="?">
+                                 <!--Optional:-->
+                                 <v91:Instructions>?</v91:Instructions>
+                                 <!--Optional:-->
+                                 <v91:FacilityTaskInfo Date="?">
+                                    <!--Optional:-->
+                                    <v91:Task HotelCode="?" Code="?" Sequence="?">
+                                       <!--Optional:-->
+                                       <v91:Description>?</v91:Description>
+                                       <!--Optional:-->
+                                       <v91:Instructions>?</v91:Instructions>
+                                       <!--Optional:-->
+                                       <v91:FacilityDepartureTask>?</v91:FacilityDepartureTask>
+                                       <!--Optional:-->
+                                       <v91:LinenChange>?</v91:LinenChange>
+                                    </v91:Task>
+                                    <!--Optional:-->
+                                    <v91:Supplies>
+                                       <!--Zero or more repetitions:-->
+                                       <v91:FacilityCode Code="?">
+                                          <!--Optional:-->
+                                          <v91:Description>?</v91:Description>
+                                          <!--Optional:-->
+                                          <v91:Quantity>?</v91:Quantity>
+                                       </v91:FacilityCode>
+                                    </v91:Supplies>
+                                 </v91:FacilityTaskInfo>
+                                 <!--Optional:-->
+                                 <v91:LinenChange>?</v91:LinenChange>
+                              </v91:Housekeeping>
+                              <!--Optional:-->
+                              <v91:Cashiering FinanciallyResponsible="?" ProratedBilling="?" LastRoomAndTaxPostedDate="?" ReverseCheckInAllowed="?" ReverseAdvanceCheckInAllowed="?" TransactionsPosted="?">
+                                 <!--Optional:-->
+                                 <v91:RevenuesAndBalances>
+                                    <!--Optional:-->
+                                    <v91:TotalFixedCharge Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:TotalPayment Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:RoomRevenue Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:FoodAndBevRevenue Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:OtherRevenue Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:NonRevenue Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:TotalRevenue Amount="?" CurrencyCode="?"/>
+                                    <!--Optional:-->
+                                    <v91:Balance Amount="?" CurrencyCode="?"/>
+                                 </v91:RevenuesAndBalances>
+                                 <!--Optional:-->
+                                 <v91:BillingPrivileges PostingRestriction="?" PreStayCharging="?" PostStayCharging="?" FolioCloseDate="?" ScheduledCheckout="?" ScheduledCheckoutTime="?" DirectBillAuthorized="?" VideoCheckout="?" AllowAutoCheckin="?" AutoSettlement="?" AutoSettlementType="?" AutoSettlementFreq="?" CreditLimitAutoPay="?"/>
+                                 <!--Optional:-->
+                                 <v91:TaxType TaxExemptNo="?">
+                                    <!--Optional:-->
+                                    <v91:HotelCode>?</v91:HotelCode>
+                                    <!--Optional:-->
+                                    <v91:Code>?</v91:Code>
+                                    <!--Optional:-->
+                                    <v91:Description>?</v91:Description>
+                                    <v91:CollectingAgentTax>?</v91:CollectingAgentTax>
+                                    <v91:PrintAutoAdjust>?</v91:PrintAutoAdjust>
+                                    <v91:ReportExemptDays>?</v91:ReportExemptDays>
+                                    <v91:ReportTaxPerc>?</v91:ReportTaxPerc>
+                                 </v91:TaxType>
+                                 <!--Optional:-->
+                                 <v91:BedTaxReporting TaxRegistrationNo="?" VisaNumber="?" VisaIssueDate="?" VisaExpiryDate="?" TaxableDays="?"/>
+                                 <!--Optional:-->
+                                 <v91:FolioTexts>
+                                    <!--Zero or more repetitions:-->
+                                    <v91:FolioText Text="?" Row="?"/>
+                                 </v91:FolioTexts>
+                                 <!--Optional:-->
+                                 <v91:PeriodicFolio LastSettlementDate="?" LastFolioDate="?" Frequency="?"/>
+                                 <!--Optional:-->
+                                 <v91:CompAccounting CompType="?" Authorizer="?"/>
+                                 <!--Optional:-->
+                                 <v91:ResPreConfiguredRoutingInstruction RatePlanCode="?" ProfileType="?"/>
+                              </v91:Cashiering>
+                              <!--Optional:-->
+                              <v91:TaxType>
+                                 <!--Optional:-->
+                                 <v91:HotelCode>?</v91:HotelCode>
+                                 <!--Optional:-->
+                                 <v91:Code>?</v91:Code>
+                                 <!--Optional:-->
+                                 <v91:Description>?</v91:Description>
+                                 <v91:CollectingAgentTax>?</v91:CollectingAgentTax>
+                                 <v91:PrintAutoAdjust>?</v91:PrintAutoAdjust>
+                                 <v91:ReportExemptDays>?</v91:ReportExemptDays>
+                                 <v91:ReportTaxPerc>?</v91:ReportTaxPerc>
+                              </v91:TaxType>
+                              <!--Optional:-->
+                              <v91:Deposit HasPaid="?" HasOutstanding="?">
+                                 <!--Optional:-->
+                                 <v91:AmountRequired>?</v91:AmountRequired>
+                                 <!--Optional:-->
+                                 <v91:AmountPaid>?</v91:AmountPaid>
+                                 <!--Optional:-->
+                                 <v91:AmountOwed>?</v91:AmountOwed>
+                                 <!--Optional:-->
+                                 <v91:DueDate>?</v91:DueDate>
+                                 <!--Optional:-->
+                                 <v91:PostingDate>?</v91:PostingDate>
+                              </v91:Deposit>
+                              <!--Optional:-->
+                              <v91:AllowedActions>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:AllowedAction>?</v91:AllowedAction>
+                              </v91:AllowedActions>
+                              <!--Optional:-->
+                              <v91:RevenuesAndBalances>
+                                 <!--Optional:-->
+                                 <v91:TotalFixedCharge Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:TotalPayment Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:RoomRevenue Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:FoodAndBevRevenue Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:OtherRevenue Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:NonRevenue Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:TotalRevenue Amount="?" CurrencyCode="?"/>
+                                 <!--Optional:-->
+                                 <v91:Balance Amount="?" CurrencyCode="?"/>
+                              </v91:RevenuesAndBalances>
+                              <!--Zero or more repetitions:-->
+                              <v91:HotelInterfaceStatusList>
+                                 <v91:RoomExtension>?</v91:RoomExtension>
+                                 <v91:HotelInterface>
+                                    <v91:InterfaceId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                    <v91:HotelCode>?</v91:HotelCode>
+                                    <v91:InterfaceName>?</v91:InterfaceName>
+                                    <v91:InterfaceType>?</v91:InterfaceType>
+                                    <v91:Logo>?</v91:Logo>
+                                    <!--Optional:-->
+                                    <v91:MachineName>?</v91:MachineName>
+                                    <v91:Status>?</v91:Status>
+                                    <!--Optional:-->
+                                    <v91:ActiveFlag>?</v91:ActiveFlag>
+                                 </v91:HotelInterface>
+                                 <!--Zero or more repetitions:-->
+                                 <v91:InterfaceRights>
+                                    <v91:Right>?</v91:Right>
+                                    <v91:StatusCode>?</v91:StatusCode>
+                                    <!--Optional:-->
+                                    <v91:Description>?</v91:Description>
+                                    <v91:Category>?</v91:Category>
+                                 </v91:InterfaceRights>
+                              </v91:HotelInterfaceStatusList>
+                              <!--Optional:-->
+                              <v91:GuestPreferredCurrency>?</v91:GuestPreferredCurrency>
+                              <!--Optional:-->
+                              <v91:TurndownInfo>
+                                 <!--Optional:-->
+                                 <v91:Allowed>?</v91:Allowed>
+                                 <!--Optional:-->
+                                 <v91:Status>?</v91:Status>
+                              </v91:TurndownInfo>
+                              <!--Optional:-->
+                              <v91:MobileNotifications>
+                                 <!--Optional:-->
+                                 <v91:RoomReady>?</v91:RoomReady>
+                                 <!--Optional:-->
+                                 <v91:KeyReady>?</v91:KeyReady>
+                                 <!--Optional:-->
+                                 <v91:CheckoutMessageReceived>false</v91:CheckoutMessageReceived>
+                                 <!--Optional:-->
+                                 <v91:RequiresAction>false</v91:RequiresAction>
+                                 <!--Optional:-->
+                                 <v91:ErrorMessage>?</v91:ErrorMessage>
+                              </v91:MobileNotifications>
+                              <!--Optional:-->
+                              <v91:ResCommunication>
+                                 <!--Optional:-->
+                                 <v91:Telephones AllRowsFetched="?" TotalRows="?">
+                                    <!--Zero or more repetitions:-->
+                                    <v91:TelephoneInfo>
+                                       <!--Optional:-->
+                                       <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                       <!--Optional:-->
+                                       <v91:Telephone CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" PhoneTechType="?" PhoneUseType="?" PhoneUseTypeDescription="?" PhoneNumber="?" Extension="?" OrderSequence="?" PrimaryInd="?"/>
+                                    </v91:TelephoneInfo>
+                                 </v91:Telephones>
+                                 <!--Optional:-->
+                                 <v91:Emails AllRowsFetched="?" TotalRows="?">
+                                    <!--Zero or more repetitions:-->
+                                    <v91:EmailInfo>
+                                       <!--Optional:-->
+                                       <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                                       <!--Optional:-->
+                                       <v91:Email CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" OrderSequence="?" EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?"/>
+                                    </v91:EmailInfo>
+                                 </v91:Emails>
+                              </v91:ResCommunication>
+                              <!--Optional:-->
+                              <v91:AdvanceCheckIn>
+                                 <!--Optional:-->
+                                 <v91:AdvanceCheckedIn>?</v91:AdvanceCheckedIn>
+                                 <!--Optional:-->
+                                 <v91:ExpectedReturnTime>?</v91:ExpectedReturnTime>
+                                 <!--Optional:-->
+                                 <v91:ETRComments>?</v91:ETRComments>
+                              </v91:AdvanceCheckIn>
+                              <!--Optional:-->
+                              <v91:WelcomeOffer>?</v91:WelcomeOffer>
+                              <!--Optional:-->
+                              <v91:CancellationInfo Code="?" Date="?">
+                                 <!--Optional:-->
+                                 <v91:Description>?</v91:Description>
+                              </v91:CancellationInfo>
+                           </v91:ReservationInfo>
+                        </v91:FutureList>
+                     </v91:ReservationInfoList>
+                     <!--Optional:-->
+                     <v91:LastStayInfo>
+                        <!--Optional:-->
+                        <v91:LastVisit>?</v91:LastVisit>
+                        <!--Optional:-->
+                        <v91:LastRoom>?</v91:LastRoom>
+                        <!--Optional:-->
+                        <v91:LastRate Amount="?" CurrencyCode="?"/>
+                        <!--Optional:-->
+                        <v91:TotalStay>?</v91:TotalStay>
+                     </v91:LastStayInfo>
+                     <!--Optional:-->
+                     <v91:ProfileAccessType SharedLevel="?">
+                        <!--Optional:-->
+                        <v91:ChainCode>?</v91:ChainCode>
+                        <!--Optional:-->
+                        <v91:CROCode>?</v91:CROCode>
+                        <!--Optional:-->
+                        <v91:HotelCode>?</v91:HotelCode>
+                     </v91:ProfileAccessType>
+                     <!--Optional:-->
+                     <v91:ProfileRestrictions Restricted="?">
+                        <!--Optional:-->
+                        <v91:Reason>?</v91:Reason>
+                        <!--Optional:-->
+                        <v91:ReasonDescription>?</v91:ReasonDescription>
+                     </v91:ProfileRestrictions>
+                     <!--Optional:-->
+                     <v91:MailingActions Active="?" AllRowsFetched="?" TotalRows="?">
+                        <!--Zero or more repetitions:-->
+                        <v91:MailingAction Code="?" Description="?"/>
+                     </v91:MailingActions>
+                     <!--Optional:-->
+                     <v91:PrivacyInfo MarketResearchParticipation="?" InfoFromThirdParty="?" AutoEnrollLoyaltyProgram="?" AllowPhone="?" AllowSMS="?" AllowEmail="?" OptInMailingList="?" OptInMarketResearch="?" OptInThirdParty="?" OptInAutoEnrollmentMember="?" OptInPhone="?" OptInSms="?" OptInEmail="?"/>
+                     <!--Optional:-->
+                     <v91:Cashiering CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?">
+                        <!--Optional:-->
+                        <v91:DirectBillingList>
+                           <!--Zero or more repetitions:-->
+                           <v91:DirectBilling HotelCode="?" ARNumber="?"/>
+                        </v91:DirectBillingList>
+                        <!--Optional:-->
+                        <v91:AutoFolioSettlementType>?</v91:AutoFolioSettlementType>
+                        <!--Optional:-->
+                        <v91:PaymentDueDays>?</v91:PaymentDueDays>
+                        <!--Optional:-->
+                        <v91:TaxPercent1>?</v91:TaxPercent1>
+                        <!--Optional:-->
+                        <v91:TaxPercent2>?</v91:TaxPercent2>
+                        <!--Optional:-->
+                        <v91:TaxPercent3>?</v91:TaxPercent3>
+                        <!--Optional:-->
+                        <v91:TaxPercent4>?</v91:TaxPercent4>
+                        <!--Optional:-->
+                        <v91:TaxPercent5>?</v91:TaxPercent5>
+                        <!--Optional:-->
+                        <v91:ArNoCentral>?</v91:ArNoCentral>
+                        <!--Optional:-->
+                        <v91:ReferenceCurrency>?</v91:ReferenceCurrency>
+                     </v91:Cashiering>
+                     <!--Optional:-->
+                     <v91:CommissionInfoList>
+                        <!--Zero or more repetitions:-->
+                        <v91:CommissionInfo HotelCode="?" CommissionCode="?" BankAccount="?" CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?"/>
+                     </v91:CommissionInfoList>
+                     <!--Optional:-->
+                     <v91:UserDefinedFields>
+                        <!--Optional:-->
+                        <v91:CharacterUDFs>
+                           <!--Zero or more repetitions:-->
+                           <v91:UDF Name="?" Value="?" Altname="?"/>
+                        </v91:CharacterUDFs>
+                        <!--Optional:-->
+                        <v91:NumericUDFs>
+                           <!--Zero or more repetitions:-->
+                           <v91:UDF Name="?" Value="?" Altname="?"/>
+                        </v91:NumericUDFs>
+                        <!--Optional:-->
+                        <v91:DateUDFs>
+                           <!--Zero or more repetitions:-->
+                           <v91:UDF Name="?" Value="?" Altname="?"/>
+                        </v91:DateUDFs>
+                     </v91:UserDefinedFields>
+                     <!--Optional:-->
+                     <v91:WebUserAccounts>
+                        <!--Zero or more repetitions:-->
+                        <v91:WebUserAccounts LoginName="?" DomainCode="?" Locked="?" Inactive="?">
+                           <!--Optional:-->
+                           <v91:SecQuestion Code="?" Description="?"/>
+                           <!--Optional:-->
+                           <v91:SecAnswer>?</v91:SecAnswer>
+                           <!--Optional:-->
+                           <v91:Comments>?</v91:Comments>
+                           <!--Optional:-->
+                           <v91:History CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?">
+                              <!--Optional:-->
+                              <v91:LastLogin>?</v91:LastLogin>
+                              <!--Optional:-->
+                              <v91:LastPasswordChange>?</v91:LastPasswordChange>
+                              <!--Optional:-->
+                              <v91:InactiveDate>?</v91:InactiveDate>
+                           </v91:History>
+                           <!--Optional:-->
+                           <v91:NewLoginName>?</v91:NewLoginName>
+                           <!--Optional:-->
+                           <v91:NewPassword>?</v91:NewPassword>
+                           <!--Optional:-->
+                           <v91:AutoGeneratePassword>?</v91:AutoGeneratePassword>
+                        </v91:WebUserAccounts>
+                     </v91:WebUserAccounts>
+                     <!--Optional:-->
+                     <v91:TaxInfo>
+                        <!--Optional:-->
+                        <v91:Tax1No>?</v91:Tax1No>
+                        <!--Optional:-->
+                        <v91:Tax2No>?</v91:Tax2No>
+                        <!--Optional:-->
+                        <v91:TaxCategory>?</v91:TaxCategory>
+                        <!--Optional:-->
+                        <v91:TaxOffice>?</v91:TaxOffice>
+                        <!--Optional:-->
+                        <v91:TaxType>?</v91:TaxType>
+                     </v91:TaxInfo>
+                     <!--Optional:-->
+                     <v91:SalesInfo HotelCode="?">
+                        <!--Optional:-->
+                        <v91:Scope>?</v91:Scope>
+                        <!--Optional:-->
+                        <v91:ScopeCity>?</v91:ScopeCity>
+                        <!--Optional:-->
+                        <v91:AccountType>?</v91:AccountType>
+                        <!--Optional:-->
+                        <v91:AccountSource>?</v91:AccountSource>
+                        <!--Optional:-->
+                        <v91:IndustryCode>?</v91:IndustryCode>
+                        <!--Optional:-->
+                        <v91:BusinessSegments>?</v91:BusinessSegments>
+                        <!--Optional:-->
+                        <v91:Priority>?</v91:Priority>
+                        <!--Optional:-->
+                        <v91:RoomsPotential>?</v91:RoomsPotential>
+                        <!--Optional:-->
+                        <v91:ActionCode>?</v91:ActionCode>
+                        <!--Optional:-->
+                        <v91:CompetitionCode>?</v91:CompetitionCode>
+                        <!--Optional:-->
+                        <v91:Influence>?</v91:Influence>
+                        <!--Optional:-->
+                        <v91:PreferredRoom>?</v91:PreferredRoom>
+                     </v91:SalesInfo>
+                     <!--Optional:-->
+                     <v91:ECertificates>
+                        <!--Zero or more repetitions:-->
+                        <v91:ECertificate>
+                           <!--Optional:-->
+                           <v91:CertificateID>?</v91:CertificateID>
+                           <v91:VoucherNo>?</v91:VoucherNo>
+                           <!--Optional:-->
+                           <v91:CertificateNo>?</v91:CertificateNo>
+                           <v91:ECertificateInfo>
+                              <v91:CertificateType>?</v91:CertificateType>
+                              <!--Optional:-->
+                              <v91:MembershipType>?</v91:MembershipType>
+                              <!--Optional:-->
+                              <v91:AwardCode>?</v91:AwardCode>
+                              <!--Optional:-->
+                              <v91:PromotionCode>?</v91:PromotionCode>
+                              <!--Optional:-->
+                              <v91:VoucherBenefitCode>?</v91:VoucherBenefitCode>
+                              <!--Optional:-->
+                              <v91:Hotels Scope="?">
+                                 <!--Zero or more repetitions:-->
+                                 <v91:Code>?</v91:Code>
+                              </v91:Hotels>
+                              <!--Optional:-->
+                              <v91:Description>?</v91:Description>
+                              <!--Optional:-->
+                              <v91:LongDescription>?</v91:LongDescription>
+                              <!--Optional:-->
+                              <v91:Label>?</v91:Label>
+                              <!--Optional:-->
+                              <v91:MaxExtensionAllowed>?</v91:MaxExtensionAllowed>
+                              <v91:UsageCriteria>
+                                 <!--Optional:-->
+                                 <v91:Reservation>?</v91:Reservation>
+                                 <!--Optional:-->
+                                 <v91:Web>?</v91:Web>
+                                 <!--Optional:-->
+                                 <v91:WebAllowed>?</v91:WebAllowed>
+                                 <!--Optional:-->
+                                 <v91:Benefit>?</v91:Benefit>
+                                 <!--Optional:-->
+                                 <v91:Hotel>?</v91:Hotel>
+                                 <!--Optional:-->
+                                 <v91:VerifyCertificateNo>?</v91:VerifyCertificateNo>
+                                 <!--Optional:-->
+                                 <v91:CancelAllowed>?</v91:CancelAllowed>
+                                 <!--Optional:-->
+                                 <v91:GenerateInLieuCertificate>?</v91:GenerateInLieuCertificate>
+                              </v91:UsageCriteria>
+                              <!--Optional:-->
+                              <v91:Value Amount="?" CurrencyCode="?"/>
+                              <!--Optional:-->
+                              <v91:Cost Amount="?" CurrencyCode="?"/>
+                           </v91:ECertificateInfo>
+                           <!--Optional:-->
+                           <v91:ExpiryDate>?</v91:ExpiryDate>
+                           <!--Optional:-->
+                           <v91:NewExpiryDate>?</v91:NewExpiryDate>
+                           <v91:ProfileID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <!--Optional:-->
+                           <v91:ConsumptionDetail>
+                              <!--Optional:-->
+                              <v91:HotelCode>?</v91:HotelCode>
+                              <!--Optional:-->
+                              <v91:Source>?</v91:Source>
+                              <!--Optional:-->
+                              <v91:Surname>?</v91:Surname>
+                              <!--Optional:-->
+                              <v91:FirstName>?</v91:FirstName>
+                              <!--Optional:-->
+                              <v91:MiddleName>?</v91:MiddleName>
+                              <!--Optional:-->
+                              <v91:Email>?</v91:Email>
+                              <!--Optional:-->
+                              <v91:Date>?</v91:Date>
+                              <!--Optional:-->
+                              <v91:UserName>?</v91:UserName>
+                              <!--Optional:-->
+                              <v91:UserNotes>?</v91:UserNotes>
+                              <!--Optional:-->
+                              <v91:ReferenceID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                              <!--Optional:-->
+                              <v91:LocationType>?</v91:LocationType>
+                              <!--Optional:-->
+                              <v91:AuthCode>?</v91:AuthCode>
+                              <!--Optional:-->
+                              <v91:ServiceDate>?</v91:ServiceDate>
+                           </v91:ConsumptionDetail>
+                           <!--Optional:-->
+                           <v91:Status>?</v91:Status>
+                           <!--Optional:-->
+                           <v91:Printed>?</v91:Printed>
+                           <!--Optional:-->
+                           <v91:InactiveDate>?</v91:InactiveDate>
+                           <v91:AwardID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <!--Optional:-->
+                           <v91:DatabaseID>?</v91:DatabaseID>
+                           <!--Optional:-->
+                           <v91:Source>?</v91:Source>
+                           <!--Optional:-->
+                           <v91:IssueType>?</v91:IssueType>
+                           <!--Optional:-->
+                           <v91:IssueDate>?</v91:IssueDate>
+                           <!--Optional:-->
+                           <v91:AwardPoints>?</v91:AwardPoints>
+                           <!--Optional:-->
+                           <v91:GenerationDetail>
+                              <!--Optional:-->
+                              <v91:RuleId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                              <!--Optional:-->
+                              <v91:GenerationDetail>?</v91:GenerationDetail>
+                              <!--Optional:-->
+                              <v91:ReferenceValue>?</v91:ReferenceValue>
+                           </v91:GenerationDetail>
+                           <!--Optional:-->
+                           <v91:OriginalVoucherNo>?</v91:OriginalVoucherNo>
+                           <!--Optional:-->
+                           <v91:OriginalCertificateNo>?</v91:OriginalCertificateNo>
+                           <!--Optional:-->
+                           <v91:InLieuSeq>?</v91:InLieuSeq>
+                           <!--Optional:-->
+                           <v91:CancelRequestDate>?</v91:CancelRequestDate>
+                           <!--Optional:-->
+                           <v91:ExtensionCount>?</v91:ExtensionCount>
+                        </v91:ECertificate>
+                     </v91:ECertificates>
+                     <!--Optional:-->
+                     <v91:Subscriptions>
+                        <!--Zero or more repetitions:-->
+                        <v91:ProfileSubscription>
+                           <!--Optional:-->
+                           <v91:ProfileID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <!--Optional:-->
+                           <v91:ExternalProfileID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <!--Optional:-->
+                           <v91:ProfileInfo NameType="?">
+                              <!--Optional:-->
+                              <v91:Name>?</v91:Name>
+                              <!--Optional:-->
+                              <v91:FullName>?</v91:FullName>
+                              <!--Optional:-->
+                              <v91:NamePrefix>?</v91:NamePrefix>
+                              <!--Optional:-->
+                              <v91:GivenName>?</v91:GivenName>
+                              <!--Optional:-->
+                              <v91:MiddleName>?</v91:MiddleName>
+                              <!--Optional:-->
+                              <v91:NameSuffix>?</v91:NameSuffix>
+                              <!--Optional:-->
+                              <v91:NameTitle>?</v91:NameTitle>
+                              <v91:ProfileType>?</v91:ProfileType>
+                           </v91:ProfileInfo>
+                           <!--Optional:-->
+                           <v91:Distributed>?</v91:Distributed>
+                           <!--Optional:-->
+                           <v91:Force>?</v91:Force>
+                           <!--Optional:-->
+                           <v91:SubscriptionDate>?</v91:SubscriptionDate>
+                           <!--Optional:-->
+                           <v91:LastDistributionDate>?</v91:LastDistributionDate>
+                           <!--Optional:-->
+                           <v91:LastExternalUpdateDate>?</v91:LastExternalUpdateDate>
+                           <!--Optional:-->
+                           <v91:Inactive>?</v91:Inactive>
+                        </v91:ProfileSubscription>
+                     </v91:Subscriptions>
+                  </v91:Profile>
+               </v91:BlockProfile>
+            </v91:BlockProfiles>
+            <!--Optional:-->
+            <v91:BlockPackages>
+               <!--Zero or more repetitions:-->
+               <v91:BlockPackage PackageCode="?" RatePlanCode="?" StartDate="?" EndDate="?" PackageGroup="?">
+                  <!--Optional:-->
+                  <v91:PackageHeaderType>
+                     <!--Optional:-->
+                     <v91:PrimaryDetails>
+                        <!--Optional:-->
+                        <v91:Description>?</v91:Description>
+                        <!--Optional:-->
+                        <v91:ShortDescription>?</v91:ShortDescription>
+                        <!--Optional:-->
+                        <v91:ForecastGroup>?</v91:ForecastGroup>
+                        <!--Optional:-->
+                        <v91:BeginSellDate>?</v91:BeginSellDate>
+                        <!--Optional:-->
+                        <v91:EndSellDate>?</v91:EndSellDate>
+                     </v91:PrimaryDetails>
+                     <!--Optional:-->
+                     <v91:TransactionDetails>
+                        <!--Optional:-->
+                        <v91:Allowance>?</v91:Allowance>
+                        <!--Optional:-->
+                        <v91:Currency>?</v91:Currency>
+                        <!--Optional:-->
+                        <v91:PostingType>?</v91:PostingType>
+                        <!--Optional:-->
+                        <v91:CalculationRule>?</v91:CalculationRule>
+                        <!--Optional:-->
+                        <v91:PackagePostingRules>
+                           <!--Optional:-->
+                           <v91:TransactionCode Code="?" Type="?">
+                              <!--Optional:-->
+                              <v91:Description>?</v91:Description>
+                           </v91:TransactionCode>
+                           <!--Optional:-->
+                           <v91:OverageCode Code="?" Type="?">
+                              <!--Optional:-->
+                              <v91:Description>?</v91:Description>
+                           </v91:OverageCode>
+                           <!--Optional:-->
+                           <v91:ProfitCode Code="?" Type="?">
+                              <!--Optional:-->
+                              <v91:Description>?</v91:Description>
+                           </v91:ProfitCode>
+                           <!--Optional:-->
+                           <v91:LossCode Code="?" Type="?">
+                              <!--Optional:-->
+                              <v91:Description>?</v91:Description>
+                           </v91:LossCode>
+                           <!--Optional:-->
+                           <v91:AlternateCodesList>
+                              <!--Zero or more repetitions:-->
+                              <v91:AlternateCode Code="?" Type="?">
+                                 <!--Optional:-->
+                                 <v91:Description>?</v91:Description>
+                              </v91:AlternateCode>
+                           </v91:AlternateCodesList>
+                        </v91:PackagePostingRules>
+                     </v91:TransactionDetails>
+                     <!--Optional:-->
+                     <v91:PostingAttributes>
+                        <!--Optional:-->
+                        <v91:AddToRate>?</v91:AddToRate>
+                        <!--Optional:-->
+                        <v91:PrintSeparateLine>?</v91:PrintSeparateLine>
+                        <!--Optional:-->
+                        <v91:SellSeparate>?</v91:SellSeparate>
+                        <!--Optional:-->
+                        <v91:PostNextDay>?</v91:PostNextDay>
+                        <!--Optional:-->
+                        <v91:ForecastNextDay>?</v91:ForecastNextDay>
+                        <!--Optional:-->
+                        <v91:DeliveryTimeRequired>?</v91:DeliveryTimeRequired>
+                        <!--Optional:-->
+                        <v91:WebBookable>?</v91:WebBookable>
+                        <!--Optional:-->
+                        <v91:Formula>?</v91:Formula>
+                        <!--Optional:-->
+                        <v91:FormulaFunctionName>?</v91:FormulaFunctionName>
+                        <!--Optional:-->
+                        <v91:FormulaFunctionArguments>
+                           <!--Zero or more repetitions:-->
+                           <v91:FunctionArgument>
+                              <v91:Name>?</v91:Name>
+                              <v91:Value>?</v91:Value>
+                              <v91:Position>?</v91:Position>
+                              <v91:DataType>?</v91:DataType>
+                              <v91:Required>?</v91:Required>
+                           </v91:FunctionArgument>
+                        </v91:FormulaFunctionArguments>
+                        <!--Optional:-->
+                        <v91:StartTime>?</v91:StartTime>
+                        <!--Optional:-->
+                        <v91:EndTime>?</v91:EndTime>
+                        <!--Optional:-->
+                        <v91:Catering>?</v91:Catering>
+                        <!--Optional:-->
+                        <v91:PostingRhythm Type="?">
+                           <!--Optional:-->
+                           <v91:EveryXNightsStartingNightY StartOnNightY="?" PostEveryXNights="?"/>
+                           <!--Optional:-->
+                           <v91:CertainNightsOfTheWeek Sunday="?" Monday="?" Tuesday="?" Wednesday="?" Thursday="?" Friday="?" Saturday="?"/>
+                           <!--Optional:-->
+                           <v91:CustomStaySchedule Night1="?" Night2="?" Night3="?" Night4="?" Night5="?" Night6="?" Night7="?" Night8="?" Night9="?" Night10="?" Night11="?" Night12="?" Night13="?" Night14="?"/>
+                           <!--Optional:-->
+                           <v91:CustomNightSchedule Night1="?" Night2="?" Night3="?" Night4="?" Night5="?" Night6="?" Night7="?" Night8="?" Night9="?" Night10="?" Night11="?" Night12="?" Night13="?" Night14="?"/>
+                        </v91:PostingRhythm>
+                        <!--Optional:-->
+                        <v91:PriceCalculationRule>?</v91:PriceCalculationRule>
+                        <!--Optional:-->
+                        <v91:Ticket>?</v91:Ticket>
+                        <!--Optional:-->
+                        <v91:InventoryItems>
+                           <!--Zero or more repetitions:-->
+                           <v91:InventoryItem ItemId="?">
+                              <!--Optional:-->
+                              <v91:ArticleNumber>?</v91:ArticleNumber>
+                              <!--Optional:-->
+                              <v91:Description>?</v91:Description>
+                              <!--Optional:-->
+                              <v91:Quantity>?</v91:Quantity>
+                           </v91:InventoryItem>
+                        </v91:InventoryItems>
+                     </v91:PostingAttributes>
+                     <!--Optional:-->
+                     <v91:UsageDetails UsedInReservations="?" UsedInRates="?" UsedInHouseReservations="?">
+                        <!--Optional:-->
+                        <v91:Source>?</v91:Source>
+                     </v91:UsageDetails>
+                  </v91:PackageHeaderType>
+                  <!--Optional:-->
+                  <v91:NewTimeSpan>
+                     <!--Optional:-->
+                     <v91:StartDate>?</v91:StartDate>
+                     <!--Optional:-->
+                     <v91:EndDate>?</v91:EndDate>
+                     <!--Optional:-->
+                     <v91:Duration>?</v91:Duration>
+                  </v91:NewTimeSpan>
+                  <!--Optional:-->
+                  <v91:ConsumptionDetails DefaultQuantity="?" ExcludedQuantity="?" TotalQuantity="?" AllowanceConsumed="?"/>
+               </v91:BlockPackage>
+            </v91:BlockPackages>
+            <!--Optional:-->
+            <v91:InventoryItems>
+               <!--Zero or more repetitions:-->
+               <v91:Item URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?">
+                  <!--Optional:-->
+                  <v91:Item Code="?" Name="?" ItemPool="?" SellSeparate="?" SellInReservation="?" SellInEvent="?" RequiredForBooking="?" FixedCharge="?" OutsideStay="?" DefaultDuration="?">
+                     <!--Optional:-->
+                     <v91:Description>?</v91:Description>
+                     <!--Optional:-->
+                     <v91:AvailabilityPeriod StartTime="?" EndTime="?"/>
+                     <!--Optional:-->
+                     <v91:TimeSpan>
+                        <!--Optional:-->
+                        <v91:StartDate>?</v91:StartDate>
+                        <!--Optional:-->
+                        <v91:EndDate>?</v91:EndDate>
+                        <!--Optional:-->
+                        <v91:Duration>?</v91:Duration>
+                     </v91:TimeSpan>
+                     <!--Optional:-->
+                     <v91:Quantity>?</v91:Quantity>
+                     <!--Optional:-->
+                     <v91:ItemHoldID>?</v91:ItemHoldID>
+                  </v91:Item>
+                  <!--Optional:-->
+                  <v91:Quantity>?</v91:Quantity>
+                  <!--Optional:-->
+                  <v91:TimeSpan Start="?" End="?"/>
+                  <!--Optional:-->
+                  <v91:Source>
+                     <!--Optional:-->
+                     <v91:RatePlanCode>?</v91:RatePlanCode>
+                     <!--Optional:-->
+                     <v91:PackageCode>?</v91:PackageCode>
+                     <!--Optional:-->
+                     <v91:BlockID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  </v91:Source>
+               </v91:Item>
+            </v91:InventoryItems>
+            <!--Optional:-->
+            <v91:BlockStatistics>
+               <!--Optional:-->
+               <v91:AllocatedRoomStatistics>
+                  <!--Optional:-->
+                  <v91:RoomCount>?</v91:RoomCount>
+                  <!--Optional:-->
+                  <v91:RoomRevenue>?</v91:RoomRevenue>
+                  <!--Optional:-->
+                  <v91:AverageRate>?</v91:AverageRate>
+               </v91:AllocatedRoomStatistics>
+               <!--Optional:-->
+               <v91:ActualRoomStatistics>
+                  <!--Optional:-->
+                  <v91:RoomCount>?</v91:RoomCount>
+                  <!--Optional:-->
+                  <v91:RoomRevenue>?</v91:RoomRevenue>
+                  <!--Optional:-->
+                  <v91:AverageRate>?</v91:AverageRate>
+               </v91:ActualRoomStatistics>
+            </v91:BlockStatistics>
+            <!--Optional:-->
+            <v91:Comments AllRowsFetched="?" TotalRows="?">
+               <!--Zero or more repetitions:-->
+               <v91:CommentInfo>
+                  <!--Optional:-->
+                  <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  <!--Optional:-->
+                  <v91:Comment Type="?" TypeDescription="?" Internal="?" Confidential="?" OverrideInternal="?" ProtectDescription="?" HotelCode="?" ActionType="?" ActionDate="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?">
+                     <!--Optional:-->
+                     <v91:Text Formatted="?" TextFormat="?" Language="?">?</v91:Text>
+                     <!--Optional:-->
+                     <v91:Image>?</v91:Image>
+                     <!--Optional:-->
+                     <v91:URL>?</v91:URL>
+                     <!--Optional:-->
+                     <v91:CommentTitle>?</v91:CommentTitle>
+                     <!--Optional:-->
+                     <v91:NotificationLocation>?</v91:NotificationLocation>
+                  </v91:Comment>
+               </v91:CommentInfo>
+            </v91:Comments>
+            <!--Optional:-->
+            <v91:RoomAllocations StartDate="?" NumberOfDays="?" AllRowsFetched="?" TotalRows="?">
+               <!--Zero or more repetitions:-->
+               <v91:RoomAllocationType Allocation="?">
+                  <!--Zero or more repetitions:-->
+                  <v91:RoomAllocationInfo StayDate="?" ExtendedStay="?">
+                     <!--Zero or more repetitions:-->
+                     <v91:RoomGridDetails RoomType="?" GenericRoomType="?">
+                        <!--Optional:-->
+                        <v91:Inventory OnePerson="?" TwoPerson="?" ThreePerson="?" FourPerson="?" SellLimit="?"/>
+                        <!--Optional:-->
+                        <v91:Rate OnePerson="?" TwoPerson="?" ThreePerson="?" FourPerson="?" ExtraPerson="?"/>
+                     </v91:RoomGridDetails>
+                     <!--Zero or more repetitions:-->
+                     <v91:RoomGridInvSummary OnePerson="?" TwoPerson="?" ThreePerson="?" FourPerson="?" SellLimit="?"/>
+                     <!--Zero or more repetitions:-->
+                     <v91:AvailableRoomGridInvSummary OnePerson="?" TwoPerson="?" ThreePerson="?" FourPerson="?" SellLimit="?"/>
+                  </v91:RoomAllocationInfo>
+               </v91:RoomAllocationType>
+               <!--Optional:-->
+               <v91:MasterInfo>
+                  <!--Optional:-->
+                  <v91:RoomTypes>
+                     <!--Zero or more repetitions:-->
+                     <v91:RoomType RoomType="?" HotelCode="?" RoomClass="?" Description="?" Suite="?" Component="?" InvBlockCode="?" RoomViewCode="?" PromotionCode="?" RoomQualifierCode="?" RoomQualifierMatchIndicator="?" Available="?">
+                        <!--Optional:-->
+                        <v91:LongDescription>?</v91:LongDescription>
+                        <!--Optional:-->
+                        <v91:WebName>?</v91:WebName>
+                        <!--Optional:-->
+                        <v91:WebPage>?</v91:WebPage>
+                        <!--Optional:-->
+                        <v91:RoomFeatures>
+                           <!--Zero or more repetitions:-->
+                           <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+                        </v91:RoomFeatures>
+                        <!--Optional:-->
+                        <v91:RoomTypeAttributes>
+                           <!--Optional:-->
+                           <v91:DefaultOccupancy>?</v91:DefaultOccupancy>
+                           <!--Optional:-->
+                           <v91:MaxOccupancy>?</v91:MaxOccupancy>
+                           <!--Optional:-->
+                           <v91:NoOfPhysicalRooms>?</v91:NoOfPhysicalRooms>
+                        </v91:RoomTypeAttributes>
+                        <!--Optional:-->
+                        <v91:BookingChannelMappings>
+                           <!--1 or more repetitions:-->
+                           <v91:BookingChannelMapping BookingChannelCode="?" Code="?" Name="?" Description="?"/>
+                        </v91:BookingChannelMappings>
+                        <!--Optional:-->
+                        <v91:BedTypeCodes>
+                           <!--Zero or more repetitions:-->
+                           <v91:BedTypeCode>?</v91:BedTypeCode>
+                        </v91:BedTypeCodes>
+                     </v91:RoomType>
+                  </v91:RoomTypes>
+                  <!--Optional:-->
+                  <v91:GenericRoomTypes>
+                     <!--Zero or more repetitions:-->
+                     <v91:RoomType RoomType="?" HotelCode="?" RoomClass="?" Description="?" Suite="?" Component="?" InvBlockCode="?" RoomViewCode="?" PromotionCode="?" RoomQualifierCode="?" RoomQualifierMatchIndicator="?" Available="?">
+                        <!--Optional:-->
+                        <v91:LongDescription>?</v91:LongDescription>
+                        <!--Optional:-->
+                        <v91:WebName>?</v91:WebName>
+                        <!--Optional:-->
+                        <v91:WebPage>?</v91:WebPage>
+                        <!--Optional:-->
+                        <v91:RoomFeatures>
+                           <!--Zero or more repetitions:-->
+                           <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+                        </v91:RoomFeatures>
+                        <!--Optional:-->
+                        <v91:RoomTypeAttributes>
+                           <!--Optional:-->
+                           <v91:DefaultOccupancy>?</v91:DefaultOccupancy>
+                           <!--Optional:-->
+                           <v91:MaxOccupancy>?</v91:MaxOccupancy>
+                           <!--Optional:-->
+                           <v91:NoOfPhysicalRooms>?</v91:NoOfPhysicalRooms>
+                        </v91:RoomTypeAttributes>
+                        <!--Optional:-->
+                        <v91:BookingChannelMappings>
+                           <!--1 or more repetitions:-->
+                           <v91:BookingChannelMapping BookingChannelCode="?" Code="?" Name="?" Description="?"/>
+                        </v91:BookingChannelMappings>
+                        <!--Optional:-->
+                        <v91:BedTypeCodes>
+                           <!--Zero or more repetitions:-->
+                           <v91:BedTypeCode>?</v91:BedTypeCode>
+                        </v91:BedTypeCodes>
+                     </v91:RoomType>
+                  </v91:GenericRoomTypes>
+               </v91:MasterInfo>
+            </v91:RoomAllocations>
+            <!--Optional:-->
+            <v91:UserDefinedFields>
+               <!--Optional:-->
+               <v91:CharacterUDFs>
+                  <!--Zero or more repetitions:-->
+                  <v91:UDF Name="?" Value="?" Altname="?"/>
+               </v91:CharacterUDFs>
+               <!--Optional:-->
+               <v91:NumericUDFs>
+                  <!--Zero or more repetitions:-->
+                  <v91:UDF Name="?" Value="?" Altname="?"/>
+               </v91:NumericUDFs>
+               <!--Optional:-->
+               <v91:DateUDFs>
+                  <!--Zero or more repetitions:-->
+                  <v91:UDF Name="?" Value="?" Altname="?"/>
+               </v91:DateUDFs>
+            </v91:UserDefinedFields>
+            <!--Optional:-->
+            <v91:BlockIndicators>
+               <!--Zero or more repetitions:-->
+               <v91:Indicator IndicatorName="?" Count="?"/>
+            </v91:BlockIndicators>
+            <!--Optional:-->
+            <v91:Traces>
+               <!--Zero or more repetitions:-->
+               <v91:Trace CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?">
+                  <!--Optional:-->
+                  <v91:TimeInfo>
+                     <!--Optional:-->
+                     <v91:DateTimeSpan>
+                        <!--Optional:-->
+                        <v91:StartDateTime>?</v91:StartDateTime>
+                        <!--Optional:-->
+                        <v91:EndDateTime>?</v91:EndDateTime>
+                     </v91:DateTimeSpan>
+                     <!--Optional:-->
+                     <v91:TraceOn>?</v91:TraceOn>
+                     <!--Optional:-->
+                     <v91:TraceTime>?</v91:TraceTime>
+                     <!--Optional:-->
+                     <v91:EnteredBy>?</v91:EnteredBy>
+                  </v91:TimeInfo>
+                  <!--Optional:-->
+                  <v91:ReservationID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  <!--Optional:-->
+                  <v91:DepartmentID>?</v91:DepartmentID>
+                  <!--Optional:-->
+                  <v91:TraceText>?</v91:TraceText>
+                  <!--Optional:-->
+                  <v91:ResolveInfo>
+                     <!--Optional:-->
+                     <v91:ResolvedOn>?</v91:ResolvedOn>
+                     <!--Optional:-->
+                     <v91:ResolvedBy>?</v91:ResolvedBy>
+                  </v91:ResolveInfo>
+               </v91:Trace>
+            </v91:Traces>
+            <!--Optional:-->
+            <v91:Statistics>
+               <!--Zero or more repetitions:-->
+               <v91:StatisticsSummary StatisticType="?">
+                  <!--Optional:-->
+                  <v91:RoomsSold>?</v91:RoomsSold>
+                  <!--Optional:-->
+                  <v91:RevenueSummary>
+                     <!--Optional:-->
+                     <v91:RoomRevenue>?</v91:RoomRevenue>
+                     <!--Optional:-->
+                     <v91:FoodAndBeverageRevenue>?</v91:FoodAndBeverageRevenue>
+                     <!--Optional:-->
+                     <v91:OtherRevenue>?</v91:OtherRevenue>
+                     <!--Optional:-->
+                     <v91:CateringRevenue>?</v91:CateringRevenue>
+                     <!--Optional:-->
+                     <v91:CateringOtherRevenue>?</v91:CateringOtherRevenue>
+                     <!--Optional:-->
+                     <v91:TotalRevenue>?</v91:TotalRevenue>
+                     <!--Optional:-->
+                     <v91:NonRevenue>?</v91:NonRevenue>
+                  </v91:RevenueSummary>
+                  <!--Optional:-->
+                  <v91:AvgRoomRate>?</v91:AvgRoomRate>
+               </v91:StatisticsSummary>
+            </v91:Statistics>
+            <!--Optional:-->
+            <v91:BlockSecurity>
+               <!--Optional:-->
+               <v91:SecuredFromDIDisplayYn>?</v91:SecuredFromDIDisplayYn>
+               <!--Optional:-->
+               <v91:AllDescriptionDDSecuredYn>?</v91:AllDescriptionDDSecuredYn>
+               <!--Optional:-->
+               <v91:RatesSecuredfromGNRYn>?</v91:RatesSecuredfromGNRYn>
+               <!--Optional:-->
+               <v91:RatesSecuredfromAllDisplaysYn>?</v91:RatesSecuredfromAllDisplaysYn>
+               <!--Optional:-->
+               <v91:HousingInformationSecuredYn>?</v91:HousingInformationSecuredYn>
+            </v91:BlockSecurity>
+            <!--Optional:-->
+            <v91:RatePrograms>
+               <!--1 or more repetitions:-->
+               <v91:RateProgram>
+                  <v91:RoomPool>?</v91:RoomPool>
+                  <v91:Rates>
+                     <!--1 or more repetitions:-->
+                     <v91:Rate Commissionable="?" MobileCheckout="?" Primary="?" Sequence="?">
+                        <v91:RateCode>?</v91:RateCode>
+                        <v91:RateMarketCode Code="?" Description="?"/>
+                        <v91:RateAmounts OnePerson="?" TwoPerson="?" ThreePerson="?" FourPerson="?" ExtraPerson="?"/>
+                        <!--Optional:-->
+                        <v91:RoomTypes>
+                           <!--1 or more repetitions:-->
+                           <v91:RoomType>?</v91:RoomType>
+                        </v91:RoomTypes>
+                        <!--Optional:-->
+                        <v91:StartDate>?</v91:StartDate>
+                        <!--Optional:-->
+                        <v91:EndDate>?</v91:EndDate>
+                     </v91:Rate>
+                  </v91:Rates>
+               </v91:RateProgram>
+            </v91:RatePrograms>
+            <v91:ExternalAttributes>
+               <!--Optional:-->
+               <v91:HousingProtected>?</v91:HousingProtected>
+               <!--Optional:-->
+               <v91:EventType>?</v91:EventType>
+               <!--Optional:-->
+               <v91:GIID>?</v91:GIID>
+               <!--Optional:-->
+               <v91:RollEndDate>?</v91:RollEndDate>
+            </v91:ExternalAttributes>
+            <!--Optional:-->
+            <v91:GenericRoomAllocations StartDate="?" NumberOfDays="?" AllRowsFetched="?" TotalRows="?">
+               <!--Zero or more repetitions:-->
+               <v91:RoomAllocationType Allocation="?">
+                  <!--Zero or more repetitions:-->
+                  <v91:RoomAllocationInfo StayDate="?" ExtendedStay="?">
+                     <!--Zero or more repetitions:-->
+                     <v91:RoomGridDetails RoomType="?" GenericRoomType="?">
+                        <!--Optional:-->
+                        <v91:Inventory OnePerson="?" TwoPerson="?" ThreePerson="?" FourPerson="?" SellLimit="?"/>
+                        <!--Optional:-->
+                        <v91:Rate OnePerson="?" TwoPerson="?" ThreePerson="?" FourPerson="?" ExtraPerson="?"/>
+                     </v91:RoomGridDetails>
+                     <!--Zero or more repetitions:-->
+                     <v91:RoomGridInvSummary OnePerson="?" TwoPerson="?" ThreePerson="?" FourPerson="?" SellLimit="?"/>
+                     <!--Zero or more repetitions:-->
+                     <v91:AvailableRoomGridInvSummary OnePerson="?" TwoPerson="?" ThreePerson="?" FourPerson="?" SellLimit="?"/>
+                  </v91:RoomAllocationInfo>
+               </v91:RoomAllocationType>
+               <!--Optional:-->
+               <v91:MasterInfo>
+                  <!--Optional:-->
+                  <v91:RoomTypes>
+                     <!--Zero or more repetitions:-->
+                     <v91:RoomType RoomType="?" HotelCode="?" RoomClass="?" Description="?" Suite="?" Component="?" InvBlockCode="?" RoomViewCode="?" PromotionCode="?" RoomQualifierCode="?" RoomQualifierMatchIndicator="?" Available="?">
+                        <!--Optional:-->
+                        <v91:LongDescription>?</v91:LongDescription>
+                        <!--Optional:-->
+                        <v91:WebName>?</v91:WebName>
+                        <!--Optional:-->
+                        <v91:WebPage>?</v91:WebPage>
+                        <!--Optional:-->
+                        <v91:RoomFeatures>
+                           <!--Zero or more repetitions:-->
+                           <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+                        </v91:RoomFeatures>
+                        <!--Optional:-->
+                        <v91:RoomTypeAttributes>
+                           <!--Optional:-->
+                           <v91:DefaultOccupancy>?</v91:DefaultOccupancy>
+                           <!--Optional:-->
+                           <v91:MaxOccupancy>?</v91:MaxOccupancy>
+                           <!--Optional:-->
+                           <v91:NoOfPhysicalRooms>?</v91:NoOfPhysicalRooms>
+                        </v91:RoomTypeAttributes>
+                        <!--Optional:-->
+                        <v91:BookingChannelMappings>
+                           <!--1 or more repetitions:-->
+                           <v91:BookingChannelMapping BookingChannelCode="?" Code="?" Name="?" Description="?"/>
+                        </v91:BookingChannelMappings>
+                        <!--Optional:-->
+                        <v91:BedTypeCodes>
+                           <!--Zero or more repetitions:-->
+                           <v91:BedTypeCode>?</v91:BedTypeCode>
+                        </v91:BedTypeCodes>
+                     </v91:RoomType>
+                  </v91:RoomTypes>
+                  <!--Optional:-->
+                  <v91:GenericRoomTypes>
+                     <!--Zero or more repetitions:-->
+                     <v91:RoomType RoomType="?" HotelCode="?" RoomClass="?" Description="?" Suite="?" Component="?" InvBlockCode="?" RoomViewCode="?" PromotionCode="?" RoomQualifierCode="?" RoomQualifierMatchIndicator="?" Available="?">
+                        <!--Optional:-->
+                        <v91:LongDescription>?</v91:LongDescription>
+                        <!--Optional:-->
+                        <v91:WebName>?</v91:WebName>
+                        <!--Optional:-->
+                        <v91:WebPage>?</v91:WebPage>
+                        <!--Optional:-->
+                        <v91:RoomFeatures>
+                           <!--Zero or more repetitions:-->
+                           <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+                        </v91:RoomFeatures>
+                        <!--Optional:-->
+                        <v91:RoomTypeAttributes>
+                           <!--Optional:-->
+                           <v91:DefaultOccupancy>?</v91:DefaultOccupancy>
+                           <!--Optional:-->
+                           <v91:MaxOccupancy>?</v91:MaxOccupancy>
+                           <!--Optional:-->
+                           <v91:NoOfPhysicalRooms>?</v91:NoOfPhysicalRooms>
+                        </v91:RoomTypeAttributes>
+                        <!--Optional:-->
+                        <v91:BookingChannelMappings>
+                           <!--1 or more repetitions:-->
+                           <v91:BookingChannelMapping BookingChannelCode="?" Code="?" Name="?" Description="?"/>
+                        </v91:BookingChannelMappings>
+                        <!--Optional:-->
+                        <v91:BedTypeCodes>
+                           <!--Zero or more repetitions:-->
+                           <v91:BedTypeCode>?</v91:BedTypeCode>
+                        </v91:BedTypeCodes>
+                     </v91:RoomType>
+                  </v91:GenericRoomTypes>
+               </v91:MasterInfo>
+            </v91:GenericRoomAllocations>
+            <!--Optional:-->
+            <v91:AlternateDates>
+               <!--Zero or more repetitions:-->
+               <v91:BlockAlternateDate RoomCategory="?" Priority="?">
+                  <v91:AlternateBeginDate>?</v91:AlternateBeginDate>
+                  <!--Optional:-->
+                  <v91:BlockRates OnePerson="?" TwoPerson="?" ThreePerson="?" FourPerson="?" ExtraPerson="?"/>
+               </v91:BlockAlternateDate>
+            </v91:AlternateDates>
+         </v9:Block>
+         <!--Optional:-->
+         <v9:CancellationDetails>
+            <!--Optional:-->
+            <v91:CancellationNumber URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+            <!--Optional:-->
+            <v91:CancellationCode Code="?" Description="?"/>
+            <!--Optional:-->
+            <v91:CancellationDate>?</v91:CancellationDate>
+            <!--Optional:-->
+            <v91:CancellationInfo>?</v91:CancellationInfo>
+            <!--Optional:-->
+            <v91:Destination>?</v91:Destination>
+            <!--Optional:-->
+            <v91:LostToProperty>?</v91:LostToProperty>
+         </v9:CancellationDetails>
+         <!--Optional:-->
+         <v9:BlockNextStatusList>
+            <!--Zero or more repetitions:-->
+            <v91:BlockNextStatus>
+               <!--Optional:-->
+               <v91:BookingStatus>
+                  <!--Optional:-->
+                  <v91:Status Code="?" Description="?"/>
+                  <!--Optional:-->
+                  <v91:Color>?</v91:Color>
+               </v91:BookingStatus>
+               <!--Optional:-->
+               <v91:ParentBookingStatus>?</v91:ParentBookingStatus>
+               <!--Optional:-->
+               <v91:DeductInventory>?</v91:DeductInventory>
+               <!--Optional:-->
+               <v91:CatDeductInventory>?</v91:CatDeductInventory>
+               <!--Optional:-->
+               <v91:AllowPickup>?</v91:AllowPickup>
+               <!--Optional:-->
+               <v91:ReturnToInventory>?</v91:ReturnToInventory>
+               <!--Optional:-->
+               <v91:DefaultReservationType>?</v91:DefaultReservationType>
+               <!--Optional:-->
+               <v91:CancellationType>?</v91:CancellationType>
+            </v91:BlockNextStatus>
+         </v9:BlockNextStatusList>
+         <!--Optional:-->
+         <v9:BlockStatusChangeHistory>
+            <!--Zero or more repetitions:-->
+            <v91:BlockStatusHistory>
+               <!--Optional:-->
+               <v91:Sequence>?</v91:Sequence>
+               <!--Optional:-->
+               <v91:BookingStatus Code="?" Description="?"/>
+               <!--Optional:-->
+               <v91:ModifyDateTime>?</v91:ModifyDateTime>
+               <!--Optional:-->
+               <v91:ModifierID>?</v91:ModifierID>
+            </v91:BlockStatusHistory>
+         </v9:BlockStatusChangeHistory>
+         <!--Optional:-->
+         <v9:AnyActivePMReservations>?</v9:AnyActivePMReservations>
+      </v9:ChangeBlockStatusRS>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,39 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchCancellationCodesRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <!--Optional:-->
+         <v91:Success/>
+         <!--Optional:-->
+         <v91:Warnings>
+            <!--Zero or more repetitions:-->
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?">?</v91:Warning>
+         </v91:Warnings>
+         <!--Optional:-->
+         <v91:Errors>
+            <!--Zero or more repetitions:-->
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?">?</v91:Error>
+         </v91:Errors>
+         <!--Optional:-->
+         <v9:CancellationCodes>
+            <!--Zero or more repetitions:-->
+            <v91:CancellationCode>
+               <!--Optional:-->
+               <v91:Code>?</v91:Code>
+               <!--Optional:-->
+               <v91:Description>
+                  <!--Optional:-->
+                  <v91:DefaultText>?</v91:DefaultText>
+                  <!--Optional:-->
+                  <v91:TranslatedTexts>
+                     <!--Zero or more repetitions:-->
+                     <v91:Text Lang="?">?</v91:Text>
+                  </v91:TranslatedTexts>
+               </v91:Description>
+               <!--Optional:-->
+               <v91:DisplayOrder>?</v91:DisplayOrder>
+            </v91:CancellationCode>
+         </v9:CancellationCodes>
+      </v9:FetchCancellationCodesRS>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,45 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:LinkReservationsRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:LinkedReservations URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?">
+            <v91:ResInfo ResStatus="?" HotelCode="?" LinkResvType="?" ReverseCheckInAllowed="?" RoomNumberLocked="?" SuppressRate="?">
+               <v91:ReservationIDList>
+                  <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               </v91:ReservationIDList>
+               <v91:TimeSpan>
+                  <v91:StartDate></v91:StartDate>
+                  <v91:EndDate></v91:EndDate>
+                  <v91:Duration></v91:Duration>
+               </v91:TimeSpan>
+               <v91:GivenName></v91:GivenName>
+               <v91:Surname></v91:Surname>
+               <v91:Title></v91:Title>
+               <v91:RoomType></v91:RoomType>
+               <v91:Room></v91:Room>
+               <v91:RatePlanCode></v91:RatePlanCode>
+               <v91:Rate Amount="?" CurrencyCode="?"/>
+               <v91:Guarantee GuaranteeCode="?" ShortDescription="?" OnHold="?"/>
+               <v91:Balance Amount="?" CurrencyCode="?"/>
+               <v91:ReservationBlock HotelCode="?">
+                  <v91:BlockIDList>
+                     <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  </v91:BlockIDList>
+                  <v91:BlockName></v91:BlockName>
+               </v91:ReservationBlock>
+               <v91:DisplayColor></v91:DisplayColor>
+               <v91:AllowedActions>
+                  <v91:AllowedAction></v91:AllowedAction>
+               </v91:AllowedActions>
+            </v91:ResInfo>
+         </v9:LinkedReservations>
+      </v9:LinkReservationsRS>
+   </soapenv:Body>
+</soapenv:Envelope>

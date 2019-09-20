@@ -1,0 +1,44 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/integ/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchBusinessEventsRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:BusinessEventsList>
+            <v9:BusinessEventData>
+               <v91:BusinessEvent>
+                  <v91:Header>
+                     <v91:ModuleName></v91:ModuleName>
+                     <v91:ActionType></v91:ActionType>
+                     <v91:ActionId></v91:ActionId>
+                     <v91:PrimaryKey></v91:PrimaryKey>
+                     <v91:ParentActionId></v91:ParentActionId>
+                     <v91:PublisherId></v91:PublisherId>
+                     <v91:CreatedDateTime></v91:CreatedDateTime>
+                     <v91:HotelCode></v91:HotelCode>
+                  </v91:Header>
+                  <v91:Details>
+                     <v91:Detail>
+                        <v91:DataElement></v91:DataElement>
+                        <v91:OldValue></v91:OldValue>
+                        <v91:NewValue></v91:NewValue>
+                        <v91:ScopeFrom></v91:ScopeFrom>
+                        <v91:ScopeTo></v91:ScopeTo>
+                        <v91:ElementSequence></v91:ElementSequence>
+                        <v91:ElementType></v91:ElementType>
+                        <v91:ElementRole></v91:ElementRole>
+                        <v91:HotelCode></v91:HotelCode>
+                     </v91:Detail>
+                  </v91:Details>
+               </v91:BusinessEvent>
+               <v91:BusinessEventID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?" Status="?"/>
+            </v9:BusinessEventData>
+         </v9:BusinessEventsList>
+      </v9:FetchBusinessEventsRS>
+   </soapenv:Body>
+</soapenv:Envelope>

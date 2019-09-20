@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:name="http://webservices.micros.com/ows/5.1/Name.wsdl">
+   <soapenv:Header>
+      <OGHeader primaryLangID="E" timeStamp="KEYWORD_GMT_TIMESTAMP" transactionID="1100" xmlns="http://webservices.micros.com/og/4.3/Core/">
+         <Origin entityID="PROPCH1" systemType="WEB"/>
+         <Destination entityID="TI" systemType="ORS"/>
+         <Authentication>
+            <UserCredentials>
+               <UserName>SUPERVISOR</UserName>
+               <UserPassword>SCRUMBIZ10</UserPassword>
+               <Domain>NIRMAL</Domain>
+            </UserCredentials>
+         </Authentication>
+      </OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <name:InsertEmailRequest>
+         <name:NameID type="INTERNAL" source="OPERA">Var_NameID</name:NameID>
+         <name:NameEmail primary="false" displaySequence="1" emailType="P_EMAIL">test@gmail.com</name:NameEmail>
+      </name:InsertEmailRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Mar 22 15:03:47 IST 2019
+RSVUIAuto-0.0.1-SNAPSHOT.jar>=
+RSVUIAuto-0.0.1-SNAPSHOT-fat-tests.jar>=
+RSVUIAuto-0.0.1-SNAPSHOT-tests.jar>=
+RSVUIAuto-0.0.1-SNAPSHOT-jar-with-dependencies.jar>=
+RSVUIAuto-0.0.1-SNAPSHOT.pom>=

@@ -1,0 +1,8 @@
+<configData>
+<WSDLUrl>http://cloudsmoke12cws1.us.oracle.com:9004/OPERA9WS/o90_smoke12c/OXIIntegrationProcessorService/IntegrationProcessorService?wsdl</WSDLUrl>
+<DataSourceDirectory>D:\\git\\qaauto\\ws\\resources\\dataBank\\INT\\</DataSourceDirectory>
+<XSDDirectory>D:\\git\\qaauto\\ws\\resources\\objectRepo\\properties\\INT\\</XSDDirectory>
+<PropertyDirectory>D:\\git\\qaauto\\ws\\resources\\objectRepo\\xmlTemplates\\INT\\</PropertyDirectory>
+<ServiceName>IntegrationProcessor</ServiceName>
+<Operations>FetchBusinessEvents,FetchProcessInboundMessage,ProcessBusinessEvent,ProcessInboundMessage,ProcessScheduledEvent,UpdateBusinessEventsStatus</Operations>
+</configData>

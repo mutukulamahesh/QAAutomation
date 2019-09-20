@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Interfaces BAT Execution Reoport - 19.x LP"
+	verbose="1" allow-return-values="true">
+	<!-- Pass global parameters here -->
+	<test name="Interfaces BAT Suite on 19.x LP SSD" preserve-order="true">
+		<!-- Pass parameters here -->
+		<parameter name="environment" value="LAUNCHPAD_19x" />
+		<parameter name="runOnEntry" value="ES_01" />
+		<parameter name="wsLayer" value="SSD" />	
+		<!--  Possible Values ASP, NONASP, CENTRAL -->	
+		<parameter name="schema" value="ASP"/>
+		<parameter name="version" value="19.X"/>
+		<parameter name="testGroup" value="INTERFACES BAT RUN ON 19.x LP"/>
+		<groups>
+			<run>
+				<include name="BAT" />
+				<exclude name="ADS" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.*" />
+		</packages>
+	</test>
+</suite>

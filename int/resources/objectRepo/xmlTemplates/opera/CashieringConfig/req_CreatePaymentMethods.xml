@@ -1,0 +1,61 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreatePaymentMethodsRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:PaymentMethods>
+            <v91:PaymentMethod CalculatePoints="?" HotelCode="?" Inactive="?" OrderSequence="?" PaymentMethod="?">
+               <v91:Description/>
+               <v91:PaymentCard CardType="?" Processing="?">
+                  <v91:CardUsageRules AddressVerification="?" AuthorizationAtCheckin="?" AuthorizationDuringStay="?" AuthorizationReversal="?" AuthorizationSettlementAtCheckout="?" CVVCheck="?" ChipAndPin="?" PromptAtCheckin="?"/>
+                  <v91:Validation Rule="?">
+                     <v91:Length/>
+                     <v91:Prefix/>
+                     <v91:Ranges>
+                        <v91:Range>
+                           <v91:From/>
+                           <v91:To/>
+                        </v91:Range>
+                     </v91:Ranges>
+                     <v91:Formula/>
+                  </v91:Validation>
+                  <v91:MerchantNumber/>
+                  <v91:Option>
+                     <v91:RequireIssueNumber/>
+                     <v91:RequireStartDate/>
+                     <v91:Either/>
+                  </v91:Option>
+               </v91:PaymentCard>
+               <v91:PaymentMethodTransactionInfo TransactionCode="?" TransactionDisplay="?" TransactionGroup="?" TransactionSubGroup="?">
+                  <v91:Description/>
+                  <v91:PostingAmount>
+                     <v91:MinimumAmount Amount="?" CurrencyCode="?"/>
+                     <v91:MaximumAmount Amount="?" CurrencyCode="?"/>
+                  </v91:PostingAmount>
+                  <v91:Surcharge>
+                     <v91:Minimum Amount="?" CurrencyCode="?"/>
+                     <v91:Percentage/>
+                  </v91:Surcharge>
+               </v91:PaymentMethodTransactionInfo>
+               <v91:PaymentMethodUsage AccountsReceivable="?" Billing="?" Cash="?" CompAccounting="?" Deposit="?" Posting="?" Reservation="?"/>
+               <v91:CreditLimit Percentage="?">
+                  <v91:CreditLimit Amount="?" CurrencyCode="?"/>
+               </v91:CreditLimit>
+            </v91:PaymentMethod>
+         </v9:PaymentMethods>
+      </v9:CreatePaymentMethodsRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

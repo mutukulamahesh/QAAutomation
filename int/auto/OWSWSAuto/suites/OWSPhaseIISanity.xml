@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Opera Cloud 2.0 Integration Automation Suite for OWS Sanity"
+	verbose="1" allow-return-values="true">
+	<test name="2.0 OWS Phase II Sanity Suite" preserve-order="true">
+		<groups>
+			<run>
+				<include name="RegionalAvailability" />
+				<include name="ModifyBooking" />
+				<include name="QueryHotelInformation" />
+				<include name="QueueReservation" />
+				<include name="FetchQueueReservations" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.ws.soap.ows.information" />
+			<package name="com.oracle.ws.soap.ows.availability" />
+			<package name="com.oracle.ws.soap.ows.reservation"/>
+			<package name="com.oracle.ws.soap.ows.resvAdvanced"/>
+		</packages>
+	</test>
+</suite>

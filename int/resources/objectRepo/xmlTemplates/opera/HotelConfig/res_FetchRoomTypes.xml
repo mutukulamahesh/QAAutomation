@@ -1,0 +1,75 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchRoomTypesRS EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?" TotalPages="?" PageNumber="?" MaxFetchCount="?" AllRowsFetched="?" TotalRows="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:RoomTypesSummary HotelCode="?">
+            <v91:RoomTypeSummary RoomType="?" NumberOfRooms="?" Inactive="?">
+               <v91:RoomClass></v91:RoomClass>
+               <v91:ShortDescription></v91:ShortDescription>
+               <v91:ActiveDate></v91:ActiveDate>
+               <v91:Pseudo></v91:Pseudo>
+               <v91:SendToInterface></v91:SendToInterface>
+               <v91:SellSequence></v91:SellSequence>
+               <v91:Suite></v91:Suite>
+               <v91:MeetingRoom></v91:MeetingRoom>
+            </v91:RoomTypeSummary>
+         </v9:RoomTypesSummary>
+         <v9:RoomTypes HotelCode="?">
+            <v91:RoomType RoomType="?" NumberOfRooms="?" Inactive="?">
+               <v91:NewRoomType></v91:NewRoomType>
+               <v91:RoomClass></v91:RoomClass>
+               <v91:BedType></v91:BedType>
+               <v91:ShortDescription>
+                  <v91:DefaultText></v91:DefaultText>
+                  <v91:TranslatedTexts>
+                     <v91:Text Lang="?"></v91:Text>
+                  </v91:TranslatedTexts>
+               </v91:ShortDescription>
+               <v91:Description>
+                  <v91:DefaultText></v91:DefaultText>
+                  <v91:TranslatedTexts>
+                     <v91:Text Lang="?"></v91:Text>
+                  </v91:TranslatedTexts>
+               </v91:Description>
+               <v91:SmokingPreference></v91:SmokingPreference>
+               <v91:ActiveDate></v91:ActiveDate>
+               <v91:Pseudo></v91:Pseudo>
+               <v91:Suite editable="?"></v91:Suite>
+               <v91:MeetingRoom></v91:MeetingRoom>
+               <v91:SendToInterface></v91:SendToInterface>
+               <v91:SellSequence></v91:SellSequence>
+               <v91:Generic></v91:Generic>
+               <v91:Maintenance></v91:Maintenance>
+               <v91:DefaultOccupancy></v91:DefaultOccupancy>
+               <v91:MaxOccupancy></v91:MaxOccupancy>
+               <v91:MaxAdults></v91:MaxAdults>
+               <v91:MaxChildren></v91:MaxChildren>
+               <v91:HouseKeeping></v91:HouseKeeping>
+               <v91:InfoURL></v91:InfoURL>
+               <v91:AutoPopulate></v91:AutoPopulate>
+               <v91:AutoRoomAssign></v91:AutoRoomAssign>
+               <v91:AutoCheckin></v91:AutoCheckin>
+               <v91:RateFloor></v91:RateFloor>
+               <v91:Components>
+                  <v91:Component RoomType="?">
+                     <v91:Qty></v91:Qty>
+                     <v91:Description></v91:Description>
+                  </v91:Component>
+               </v91:Components>
+               <v91:Features>
+                  <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+               </v91:Features>
+               <v91:YieldStatus></v91:YieldStatus>
+               <v91:YieldCategory></v91:YieldCategory>
+            </v91:RoomType>
+         </v9:RoomTypes>
+      </v9:FetchRoomTypesRS>
+   </soapenv:Body>
+</soapenv:Envelope>

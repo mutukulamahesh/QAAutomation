@@ -1,0 +1,1785 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns:mem="http://webservices.micros.com/og/4.3/Membership/" xmlns:name="http://webservices.micros.com/og/4.3/Name/" xmlns:res="http://webservices.micros.com/ows/5.1/Reservation.wsdl" xmlns:res1="http://webservices.micros.com/og/4.3/Reservation/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:CreateBookingRequest allowDOWPackage="?" canHandleVaultedCreditCard="?" overrideInventoryCheck="?" overrideRestrictionCheck="?">
+         <res:HotelReservation DoNotMoveRoom="?" OptIn="?" OptInComplete="?" alertExists="?" alertsCount="?" allowPreRegisteration="?" attachPreferenceProfile="?" authorizer="?" checkInTime="?" checkOutTime="?" commentsCount="?" commentsExists="?" compRoutingAuthorizer="?" compRoutingFlag="?" computedReservationStatus="?" financialTransactionExists="?" group="?" inactiveDate="?" insertDate="?" insertUser="?" keyExpirationDate="?" marketSegment="?" messageExists="?" messagesCount="?" noPost="?" onBehalfFlag="?" originCode="?" preRegisterFlag="?" printRate="?" queueExists="?" queueNumber="?" redemReservationFlag="?" referralYN="?" remoteCo="?" reservationAction="?" reservationStatus="?" returningGuest="?" roomPreferenceExists="?" roomPreferencesCount="?" shareExists="?" sourceCode="?" specialsCount="?" specialsExists="?" totalCreditCardSurcharges="?" tracesCount="?" tracesExists="?" updateDate="?" updateUser="?" walkIn="?">
+            <res1:UniqueIDList>
+               <com:UniqueID source="?" type="?"/>
+            </res1:UniqueIDList>
+            <res1:ExternalSystemNumberList>
+               <res1:ExternalSystemNumber>
+                  <res1:ReferenceNumber/>
+                  <res1:LegNumber/>
+                  <res1:ReferenceType/>
+               </res1:ExternalSystemNumber>
+            </res1:ExternalSystemNumberList>
+            <res1:RoomStays>
+               <hot:RoomStay isAlternate="?">
+                  <hot:RatePlans>
+                     <hot:RatePlan asbRateCycle="?" awardType="?" blockName="?" commissionCode="?" commissionYn="?" effectiveDate="?" expirationDate="?" hasPackage="?" hold="?" mandatoryDeposit="?" postingRhythm="?" promotionCode="?" qualifyingIdType="?" qualifyingIdValue="?" rankRate="?" ratePlanCategory="?" ratePlanCode="?" ratePlanName="?" rateTypeIndicator="?" redemRate="?" suppressRate="?" taxInclusive="?">
+                        <hot:RatePlanDescription>
+                           <hot:Text formatted="?" language="?"/>
+                           <hot:Image/>
+                           <hot:URL/>
+                        </hot:RatePlanDescription>
+                        <hot:RatePlanShortDescription>
+                           <hot:Text formatted="?" language="?"/>
+                           <hot:Image/>
+                           <hot:URL/>
+                        </hot:RatePlanShortDescription>
+                        <hot:Commission currencyCode="?" percent="?">
+                           <hot:CommissionPayableAmount currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:Comment>
+                              <hot:Text formatted="?" language="?"/>
+                              <hot:Image/>
+                              <hot:URL/>
+                           </hot:Comment>
+                        </hot:Commission>
+                        <hot:AdditionalDetails>
+                           <hot:AdditionalDetail detailType="?" otherDetailType="?">
+                              <hot:AdditionalDetailDescription>
+                                 <hot:Text formatted="?" language="?"/>
+                                 <hot:Image/>
+                                 <hot:URL/>
+                              </hot:AdditionalDetailDescription>
+                           </hot:AdditionalDetail>
+                        </hot:AdditionalDetails>
+                        <hot:CancellationDateTime period="?"/>
+                        <hot:DepositRequired>
+                           <hot:DepositAmount currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:DueDate/>
+                           <hot:DepositDueAmount currencyCode="?" currencyText="?" decimals="?"/>
+                        </hot:DepositRequired>
+                        <hot:GdsFlags>
+                           <hot:LateArrivalTime/>
+                           <hot:CancellationCode/>
+                           <hot:GuarCancelFlag/>
+                        </hot:GdsFlags>
+                        <hot:GuaranteeDetails>
+                           <hot:Guarantee cancellationRequired="?" creditCardRequired="?" guaranteeType="?" mandatoryDeposit="?" paymentType="?" requirementCode="?">
+                              <hot:GuaranteesAccepted>
+                                 <hot:GuaranteeAccepted agentPhone="?">
+                                    <hot:GuaranteeCreditCard cardType="?" chipAndPin="?" otherCardType="?">
+                                       <com:cardID/>
+                                       <com:cardCode/>
+                                       <com:cardHolderName/>
+                                       <com:cardNumber/>
+                                       <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+                                       <com:seriesCode/>
+                                       <com:Track2/>
+                                       <com:effectiveDate/>
+                                       <com:expirationDate/>
+                                       <com:EncryptedSwipe>
+                                          <com:TrackIndicator/>
+                                          <com:SwiperType/>
+                                          <com:SwiperID/>
+                                          <com:MaskedPAN/>
+                                          <com:Track1/>
+                                          <com:Track2/>
+                                          <com:KeySerialNumber/>
+                                       </com:EncryptedSwipe>
+                                    </hot:GuaranteeCreditCard>
+                                    <hot:GuaranteeTravelAgent source="?" type="?"/>
+                                    <hot:GuaranteeCompany source="?" type="?"/>
+                                 </hot:GuaranteeAccepted>
+                              </hot:GuaranteesAccepted>
+                              <hot:Deadline/>
+                              <hot:GuaranteeDescription>
+                                 <hot:Text formatted="?" language="?"/>
+                                 <hot:Image/>
+                                 <hot:URL/>
+                              </hot:GuaranteeDescription>
+                           </hot:Guarantee>
+                        </hot:GuaranteeDetails>
+                        <hot:MealPlanCodes>
+                           <hot:Amenities>
+                              <hot:Amenity amenityCode="?" amenityType="?" availabilityFlag="?" otherFlag="?" otherType="?">
+                                 <hot:amenityDescription/>
+                              </hot:Amenity>
+                           </hot:Amenities>
+                        </hot:MealPlanCodes>
+                        <hot:Packages>
+                           <hot:Package addRateCombinedLine="?" addRateSeprateLine="?" calculationRule="?" discountRateAmount="?" discountRatePercent="?" endTime="?" includedInRate="?" minAdvanceBookingDays="?" packageCode="?" packageGroupCode="?" packageType="?" postingRhythm="?" postingRhythmNights="?" quantity="?" rateChangeIndicator="?" repeatPostingRhythm="?" sellSeparate="?" source="?" startTime="?" taxIncluded="?" totalDepositAmount="?">
+                              <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:PackageAmount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:TaxAmount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:Allowance currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:Description>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </hot:Description>
+                              <hot:ShortDescription>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </hot:ShortDescription>
+                              <hot:LongDescription>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </hot:LongDescription>
+                              <hot:PackageDetails dow="?" quantityAvailable="?" rateAvailable="?" restriction="?">
+                                 <hot:StartDate/>
+                                 <hot:EndDate/>
+                                 <hot:Allowance currencyCode="?" currencyText="?" decimals="?"/>
+                                 <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                                 <hot:TaxAmount currencyCode="?" currencyText="?" decimals="?"/>
+                                 <hot:Quantity/>
+                              </hot:PackageDetails>
+                              <hot:PackageCodes>
+                                 <hot:Code/>
+                                 <hot:Description>
+                                    <hot:Text formatted="?" language="?"/>
+                                    <hot:Image/>
+                                    <hot:URL/>
+                                 </hot:Description>
+                              </hot:PackageCodes>
+                              <hot:StartDate/>
+                              <hot:EndDate/>
+                           </hot:Package>
+		
+                           <hot:Package addRateCombinedLine="?" addRateSeprateLine="?" calculationRule="?" discountRateAmount="?" discountRatePercent="?" endTime="?" includedInRate="?" minAdvanceBookingDays="?" packageCode="?" packageGroupCode="?" packageType="?" postingRhythm="?" postingRhythmNights="?" quantity="?" rateChangeIndicator="?" repeatPostingRhythm="?" sellSeparate="?" source="?" startTime="?" taxIncluded="?" totalDepositAmount="?">
+                              <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:PackageAmount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:TaxAmount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:Allowance currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:Description>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </hot:Description>
+                              <hot:ShortDescription>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </hot:ShortDescription>
+                              <hot:LongDescription>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </hot:LongDescription>
+                              <hot:PackageDetails dow="?" quantityAvailable="?" rateAvailable="?" restriction="?">
+                                 <hot:StartDate/>
+                                 <hot:EndDate/>
+                                 <hot:Allowance currencyCode="?" currencyText="?" decimals="?"/>
+                                 <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                                 <hot:TaxAmount currencyCode="?" currencyText="?" decimals="?"/>
+                                 <hot:Quantity/>
+                              </hot:PackageDetails>
+                              <hot:PackageCodes>
+                                 <hot:Code/>
+                                 <hot:Description>
+                                    <hot:Text formatted="?" language="?"/>
+                                    <hot:Image/>
+                                    <hot:URL/>
+                                 </hot:Description>
+                              </hot:PackageCodes>
+                              <hot:StartDate/>
+                              <hot:EndDate/>
+                           </hot:Package>
+                        </hot:Packages>
+                        <hot:Discount>
+                           <hot:DiscountAmount/>
+                           <hot:DiscountType/>
+                           <hot:DiscountReason/>
+                        </hot:Discount>
+                     </hot:RatePlan>
+                  </hot:RatePlans>
+                  <hot:RoomTypes>
+                     <hot:RoomType effectiveDate="?" expirationDate="?" feature="?" invBlockCode="?" isRoom="?" minimumRoomsAvailable="?" numberOfUnits="?" pseudoRoom="?" roomClass="?" roomServiceStatus="?" roomStatus="?" roomToChargeCode="?" roomToChargeName="?" roomTypeCode="?" roomTypeName="?" upgradeFromCode="?">
+                        <hot:RoomTypeDescription>
+                           <hot:Text formatted="?" language="?"/>
+                           <hot:Image/>
+                           <hot:URL/>
+                        </hot:RoomTypeDescription>
+                        <hot:RoomTypeShortDescription>
+                           <hot:Text formatted="?" language="?"/>
+                           <hot:Image/>
+                           <hot:URL/>
+                        </hot:RoomTypeShortDescription>
+                        <hot:RoomNumber/>
+                        <hot:RoomToChargeDescription>
+                           <hot:Text formatted="?" language="?"/>
+                           <hot:Image/>
+                           <hot:URL/>
+                        </hot:RoomToChargeDescription>
+                        <hot:RoomToChargeShortDescription>
+                           <hot:Text formatted="?" language="?"/>
+                           <hot:Image/>
+                           <hot:URL/>
+                        </hot:RoomToChargeShortDescription>
+                        <hot:AmenityInfo>
+                           <hot:Amenities>
+                              <hot:Amenity amenityCode="?" amenityType="?" availabilityFlag="?" otherFlag="?" otherType="?">
+                                 <hot:amenityDescription/>
+                              </hot:Amenity>
+                           </hot:Amenities>
+                        </hot:AmenityInfo>
+                        <hot:RoomFeatures>
+                           <hot:Features AttachPreferenceToProfile="?" Description="?" Feature="?">
+                              <hot:FeatureID/>
+                           </hot:Features>
+                        </hot:RoomFeatures>
+                     </hot:RoomType>
+                  </hot:RoomTypes>
+                  <hot:RoomRates>
+                     <hot:RoomRate effectiveDate="?" expirationDate="?" hasPackage="?" pointsChangeIndicator="?" ratePlanCode="?" redemRate="?" roomTypeCode="?" suppressRate="?">
+                        <hot:Rates>
+                           <hot:Rate effectiveDate="?" expirationDate="?" otherRateOccurrence="?" rateChangeIndicator="?" rateOccurrence="?">
+                              <hot:Base currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:AdditionalGuestAmounts>
+                                 <hot:AdditionalGuestAmount additionalGuestType="?" otherAdditionalGuestType="?" quantity="?">
+                                    <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                                 </hot:AdditionalGuestAmount>
+                              </hot:AdditionalGuestAmounts>
+                              <hot:AdditionalBedAmounts>
+                                 <hot:AdditionalBedAmount extraBedType="?" otherExtraBedType="?" quantity="?">
+                                    <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                                 </hot:AdditionalBedAmount>
+                              </hot:AdditionalBedAmounts>
+                              <hot:GdsTotalPricingTaxes>
+                                 <hot:GdsTotalPricingTax decimals="?">
+                                    <hot:EffectiveStartDate/>
+                                    <hot:EffectiveEndDate/>
+                                    <hot:TaxOrFeeOrder/>
+                                    <hot:TaxOrFeeBasis/>
+                                    <hot:TaxOrFeeAmount/>
+                                    <hot:TaxOrFeeApplication/>
+                                    <hot:TaxOrFeeTypeCode/>
+                                    <hot:ChargeType/>
+                                    <hot:TaxDescription/>
+                                    <hot:CurrencyCode/>
+                                    <hot:TaxOrFeeIncluded/>
+                                 </hot:GdsTotalPricingTax>
+                              </hot:GdsTotalPricingTaxes>
+                              <hot:Points/>
+                           </hot:Rate>
+                        </hot:Rates>
+                        <hot:InvBlockDescription>
+                           <hot:Text formatted="?" language="?"/>
+                           <hot:Image/>
+                           <hot:URL/>
+                        </hot:InvBlockDescription>
+                        <hot:Total currencyCode="?" currencyText="?" decimals="?"/>
+                        <hot:GDSTotalPricing>
+                           <hot:TotalInclusiveRoomRate currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:TotalExclusiveRoomRate currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:TotalTax currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:TotalSurCharge currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:TaxQualifier/>
+                           <hot:MatchingQualifier/>
+                        </hot:GDSTotalPricing>
+                        <hot:TotalPoints/>
+                        <hot:Packages>
+                           <hot:Package addRateCombinedLine="?" addRateSeprateLine="?" calculationRule="?" discountRateAmount="?" discountRatePercent="?" endTime="?" includedInRate="?" minAdvanceBookingDays="?" packageCode="?" packageGroupCode="?" packageType="?" postingRhythm="?" postingRhythmNights="?" quantity="?" rateChangeIndicator="?" repeatPostingRhythm="?" sellSeparate="?" source="?" startTime="?" taxIncluded="?" totalDepositAmount="?">
+                              <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:PackageAmount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:TaxAmount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:Allowance currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:Description>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </hot:Description>
+                              <hot:ShortDescription>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </hot:ShortDescription>
+                              <hot:LongDescription>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </hot:LongDescription>
+                              <hot:PackageDetails dow="?" quantityAvailable="?" rateAvailable="?" restriction="?">
+                                 <hot:StartDate/>
+                                 <hot:EndDate/>
+                                 <hot:Allowance currencyCode="?" currencyText="?" decimals="?"/>
+                                 <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                                 <hot:TaxAmount currencyCode="?" currencyText="?" decimals="?"/>
+                                 <hot:Quantity/>
+                              </hot:PackageDetails>
+                              <hot:PackageCodes>
+                                 <hot:Code/>
+                                 <hot:Description>
+                                    <hot:Text formatted="?" language="?"/>
+                                    <hot:Image/>
+                                    <hot:URL/>
+                                 </hot:Description>
+                              </hot:PackageCodes>
+                              <hot:StartDate/>
+                              <hot:EndDate/>
+                           </hot:Package>
+                        </hot:Packages>
+                     </hot:RoomRate>
+					 <hot:RoomRate effectiveDate="?" expirationDate="?" hasPackage="?" pointsChangeIndicator="?" ratePlanCode="?" redemRate="?" roomTypeCode="?" suppressRate="?">
+                        <hot:Rates>
+                           <hot:Rate effectiveDate="?" expirationDate="?" otherRateOccurrence="?" rateChangeIndicator="?" rateOccurrence="?">
+                              <hot:Base currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:AdditionalGuestAmounts>
+                                 <hot:AdditionalGuestAmount additionalGuestType="?" otherAdditionalGuestType="?" quantity="?">
+                                    <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                                 </hot:AdditionalGuestAmount>
+                              </hot:AdditionalGuestAmounts>
+                              <hot:AdditionalBedAmounts>
+                                 <hot:AdditionalBedAmount extraBedType="?" otherExtraBedType="?" quantity="?">
+                                    <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                                 </hot:AdditionalBedAmount>
+                              </hot:AdditionalBedAmounts>
+                              <hot:GdsTotalPricingTaxes>
+                                 <hot:GdsTotalPricingTax decimals="?">
+                                    <hot:EffectiveStartDate/>
+                                    <hot:EffectiveEndDate/>
+                                    <hot:TaxOrFeeOrder/>
+                                    <hot:TaxOrFeeBasis/>
+                                    <hot:TaxOrFeeAmount/>
+                                    <hot:TaxOrFeeApplication/>
+                                    <hot:TaxOrFeeTypeCode/>
+                                    <hot:ChargeType/>
+                                    <hot:TaxDescription/>
+                                    <hot:CurrencyCode/>
+                                    <hot:TaxOrFeeIncluded/>
+                                 </hot:GdsTotalPricingTax>
+                              </hot:GdsTotalPricingTaxes>
+                              <hot:Points/>
+                           </hot:Rate>
+                        </hot:Rates>
+                        <hot:InvBlockDescription>
+                           <hot:Text formatted="?" language="?"/>
+                           <hot:Image/>
+                           <hot:URL/>
+                        </hot:InvBlockDescription>
+                        <hot:Total currencyCode="?" currencyText="?" decimals="?"/>
+                        <hot:GDSTotalPricing>
+                           <hot:TotalInclusiveRoomRate currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:TotalExclusiveRoomRate currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:TotalTax currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:TotalSurCharge currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:TaxQualifier/>
+                           <hot:MatchingQualifier/>
+                        </hot:GDSTotalPricing>
+                        <hot:TotalPoints/>
+                        <hot:Packages>
+                           <hot:Package addRateCombinedLine="?" addRateSeprateLine="?" calculationRule="?" discountRateAmount="?" discountRatePercent="?" endTime="?" includedInRate="?" minAdvanceBookingDays="?" packageCode="?" packageGroupCode="?" packageType="?" postingRhythm="?" postingRhythmNights="?" quantity="?" rateChangeIndicator="?" repeatPostingRhythm="?" sellSeparate="?" source="?" startTime="?" taxIncluded="?" totalDepositAmount="?">
+                              <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:PackageAmount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:TaxAmount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:Allowance currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:Description>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </hot:Description>
+                              <hot:ShortDescription>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </hot:ShortDescription>
+                              <hot:LongDescription>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </hot:LongDescription>
+                              <hot:PackageDetails dow="?" quantityAvailable="?" rateAvailable="?" restriction="?">
+                                 <hot:StartDate/>
+                                 <hot:EndDate/>
+                                 <hot:Allowance currencyCode="?" currencyText="?" decimals="?"/>
+                                 <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                                 <hot:TaxAmount currencyCode="?" currencyText="?" decimals="?"/>
+                                 <hot:Quantity/>
+                              </hot:PackageDetails>
+                              <hot:PackageCodes>
+                                 <hot:Code/>
+                                 <hot:Description>
+                                    <hot:Text formatted="?" language="?"/>
+                                    <hot:Image/>
+                                    <hot:URL/>
+                                 </hot:Description>
+                              </hot:PackageCodes>
+                              <hot:StartDate/>
+                              <hot:EndDate/>
+                           </hot:Package>
+                        </hot:Packages>
+                     </hot:RoomRate>
+                  </hot:RoomRates>
+                  <hot:GuestCounts isPerRoom="?">
+                     <hot:GuestCount age="?" ageQualifyingCode="?" count="?" otherAgeQualifyingCode="?"/>
+					 <hot:GuestCount age="?" ageQualifyingCode="?" count="?" otherAgeQualifyingCode="?"/>
+					 <hot:GuestCount age="?" ageQualifyingCode="?" count="?" otherAgeQualifyingCode="?"/>
+                     <hot:GuestCount age="?" ageQualifyingCode="?" count="?" otherAgeQualifyingCode="?"/>
+
+                  </hot:GuestCounts>
+                  <hot:TimeSpan>
+                     <hot:StartDate/>
+                     <hot:EndDate/>
+                     <hot:Duration/>
+                  </hot:TimeSpan>
+                  <hot:Guarantee cancellationRequired="?" creditCardRequired="?" guaranteeType="?" mandatoryDeposit="?" paymentType="?" requirementCode="?">
+                     <hot:GuaranteesAccepted>
+                        <hot:GuaranteeAccepted agentPhone="?">
+                           <hot:GuaranteeCreditCard cardType="?" chipAndPin="?" otherCardType="?">
+                              <com:cardID/>
+                              <com:cardCode/>
+                              <com:cardHolderName/>
+                              <com:cardNumber/>
+                              <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+                              <com:seriesCode/>
+                              <com:Track2/>
+                              <com:effectiveDate/>
+                              <com:expirationDate/>
+                              <com:EncryptedSwipe>
+                                 <com:TrackIndicator/>
+                                 <com:SwiperType/>
+                                 <com:SwiperID/>
+                                 <com:MaskedPAN/>
+                                 <com:Track1/>
+                                 <com:Track2/>
+                                 <com:KeySerialNumber/>
+                              </com:EncryptedSwipe>
+                           </hot:GuaranteeCreditCard>
+                           <hot:GuaranteeTravelAgent source="?" type="?"/>
+                           <hot:GuaranteeCompany source="?" type="?"/>
+                        </hot:GuaranteeAccepted>
+                     </hot:GuaranteesAccepted>
+                     <hot:Deadline/>
+                     <hot:GuaranteeDescription>
+                        <hot:Text formatted="?" language="?"/>
+                        <hot:Image/>
+                        <hot:URL/>
+                     </hot:GuaranteeDescription>
+                  </hot:Guarantee>
+                  <hot:Payment>
+                     <hot:PaymentsAccepted>
+                        <hot:PaymentType>
+                           <hot:PaymentCard cardType="?" chipAndPin="?" otherCardType="?">
+                              <com:cardID/>
+                              <com:cardCode/>
+                              <com:cardHolderName/>
+                              <com:cardNumber/>
+                              <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+                              <com:seriesCode/>
+                              <com:Track2/>
+                              <com:effectiveDate/>
+                              <com:expirationDate/>
+                              <com:EncryptedSwipe>
+                                 <com:TrackIndicator/>
+                                 <com:SwiperType/>
+                                 <com:SwiperID/>
+                                 <com:MaskedPAN/>
+                                 <com:Track1/>
+                                 <com:Track2/>
+                                 <com:KeySerialNumber/>
+                              </com:EncryptedSwipe>
+                           </hot:PaymentCard>
+                           <hot:PaymentVoucher voucherIssuedBy="?" voucherNumber="?" voucherValidDate="?"/>
+                           <hot:OtherPayment source="?" type="?" value="?"/>
+                        </hot:PaymentType>
+                     </hot:PaymentsAccepted>
+                     <hot:PaymentUsed>
+                        <hot:PaymentType>
+                           <hot:PaymentCard cardType="?" chipAndPin="?" otherCardType="?">
+                              <com:cardID/>
+                              <com:cardCode/>
+                              <com:cardHolderName/>
+                              <com:cardNumber/>
+                              <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+                              <com:seriesCode/>
+                              <com:Track2/>
+                              <com:effectiveDate/>
+                              <com:expirationDate/>
+                              <com:EncryptedSwipe>
+                                 <com:TrackIndicator/>
+                                 <com:SwiperType/>
+                                 <com:SwiperID/>
+                                 <com:MaskedPAN/>
+                                 <com:Track1/>
+                                 <com:Track2/>
+                                 <com:KeySerialNumber/>
+                              </com:EncryptedSwipe>
+                           </hot:PaymentCard>
+                           <hot:PaymentVoucher voucherIssuedBy="?" voucherNumber="?" voucherValidDate="?"/>
+                           <hot:OtherPayment source="?" type="?" value="?"/>
+                        </hot:PaymentType>
+                        <hot:Deposit currencyCode="?" currencyText="?" decimals="?"/>
+                     </hot:PaymentUsed>
+                  </hot:Payment>
+                  <hot:CreditCardDeposit>
+                     <hot:CreditCardPayment cardType="?" chipAndPin="?" otherCardType="?">
+                        <com:cardID/>
+                        <com:cardCode/>
+                        <com:cardHolderName/>
+                        <com:cardNumber/>
+                        <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+                        <com:seriesCode/>
+                        <com:Track2/>
+                        <com:effectiveDate/>
+                        <com:expirationDate/>
+                        <com:EncryptedSwipe>
+                           <com:TrackIndicator/>
+                           <com:SwiperType/>
+                           <com:SwiperID/>
+                           <com:MaskedPAN/>
+                           <com:Track1/>
+                           <com:Track2/>
+                           <com:KeySerialNumber/>
+                        </com:EncryptedSwipe>
+                        <hot:CIDNumber/>
+                        <hot:Address addressType="?" languageCode="?" otherAddressType="?">
+                           <com:AddressLine/>
+                           <com:cityName/>
+                           <com:stateProv/>
+                           <com:countryCode/>
+                           <com:postalCode/>
+                           <com:barCode/>
+                           <com:cityExtension/>
+                        </hot:Address>
+                        <hot:IssueNumber/>
+                        <hot:ApprovalCode/>
+                        <hot:DepositAmount currencyCode="?" currencyText="?" decimals="?"/>
+                     </hot:CreditCardPayment>
+                  </hot:CreditCardDeposit>
+                  <hot:CancelPenalties>
+                     <hot:CancelPenalty>
+                        <hot:Deadline/>
+                        <hot:PenaltyDescription>
+                           <hot:Text formatted="?" language="?"/>
+                           <hot:Image/>
+                           <hot:URL/>
+                        </hot:PenaltyDescription>
+                     </hot:CancelPenalty>
+                  </hot:CancelPenalties>
+                  <hot:CancelTerm cancelBy="?" cancelDate="?" cancelNumber="?" cancelReasonCode="?" cancelType="?" otherCancelType="?">
+                     <hot:CancelReason>
+                        <hot:Text formatted="?" language="?"/>
+                        <hot:Image/>
+                        <hot:URL/>
+                     </hot:CancelReason>
+                  </hot:CancelTerm>
+                  <hot:HotelReference chainCode="?" hotelCode="?"/>
+                  <hot:HotelContact>
+                     <hot:Addresses>
+                        <hot:Address addressType="?" languageCode="?" otherAddressType="?">
+                           <com:AddressLine/>
+                           <com:cityName/>
+                           <com:stateProv/>
+                           <com:countryCode/>
+                           <com:postalCode/>
+                           <com:barCode/>
+                           <com:cityExtension/>
+                        </hot:Address>
+                     </hot:Addresses>
+                     <hot:ContactEmails>
+                        <hot:ContactEmail/>
+                     </hot:ContactEmails>
+                     <hot:ContactPhones>
+                        <hot:Phone phoneRole="?" phoneType="?" primaryPhone="?">
+                           <com:PhoneNumber/>
+                           <com:PhoneData areaCode="?" countryAccessCode="?" extension="?" phoneNumber="?"/>
+                        </hot:Phone>
+                     </hot:ContactPhones>
+                     <hot:HotelInformation>
+                        <hot:HotelInfo hotelInfoType="?" otherHotelInfoType="?">
+                           <com:Text>
+                              <com:TextElement formatted="?" language="?"/>
+                           </com:Text>
+                           <com:Image/>
+                           <com:Url/>
+                        </hot:HotelInfo>
+                     </hot:HotelInformation>
+                     <hot:URIs>
+                        <hot:URI/>
+                     </hot:URIs>
+                     <hot:Vector>
+                        <hot:Direction otherVectorDirection="?" vectorDirection="?"/>
+                        <hot:Distance distanceUnit="?" otherDistanceUnit="?"/>
+                     </hot:Vector>
+                  </hot:HotelContact>
+                  <hot:Total currencyCode="?" currencyText="?" decimals="?"/>
+                  <hot:CurrentBalance currencyCode="?" currencyText="?" decimals="?"/>
+                  <hot:ResGuestRPHs>
+                     <hot:ResGuestRPH RPH="?"/>
+                  </hot:ResGuestRPHs>
+                  <hot:Comments>
+                     <hot:Comment commentOriginatorCode="?" guestViewable="?">
+                        <hot:Text formatted="?" language="?"/>
+                        <hot:Image/>
+                        <hot:URL/>
+                        <hot:CommentId/>
+                        <hot:InternalYn/>
+                        <hot:CommentType/>
+                     </hot:Comment>
+                  </hot:Comments>
+                  <hot:SpecialRequests>
+                     <hot:SpecialRequest requestCode="?">
+                        <hot:Text formatted="?" language="?"/>
+                        <hot:Image/>
+                        <hot:URL/>
+                        <hot:SpecialRequestId/>
+                     </hot:SpecialRequest>
+					 <hot:SpecialRequest requestCode="?">
+                        <hot:Text formatted="?" language="?"/>
+                        <hot:Image/>
+                        <hot:URL/>
+                        <hot:SpecialRequestId/>
+                     </hot:SpecialRequest>
+                  </hot:SpecialRequests>
+                  <hot:Packages>
+                     <hot:Package addRateCombinedLine="?" addRateSeprateLine="?" calculationRule="?" discountRateAmount="?" discountRatePercent="?" endTime="?" includedInRate="?" minAdvanceBookingDays="?" packageCode="?" packageGroupCode="?" packageType="?" postingRhythm="?" postingRhythmNights="?" quantity="?" rateChangeIndicator="?" repeatPostingRhythm="?" sellSeparate="?" source="?" startTime="?" taxIncluded="?" totalDepositAmount="?">
+                        <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                        <hot:PackageAmount currencyCode="?" currencyText="?" decimals="?"/>
+                        <hot:TaxAmount currencyCode="?" currencyText="?" decimals="?"/>
+                        <hot:Allowance currencyCode="?" currencyText="?" decimals="?"/>
+                        <hot:Description>
+                           <com:Text>
+                              <com:TextElement formatted="?" language="?"/>
+                           </com:Text>
+                           <com:Image/>
+                           <com:Url/>
+                        </hot:Description>
+                        <hot:ShortDescription>
+                           <com:Text>
+                              <com:TextElement formatted="?" language="?"/>
+                           </com:Text>
+                           <com:Image/>
+                           <com:Url/>
+                        </hot:ShortDescription>
+                        <hot:LongDescription>
+                           <com:Text>
+                              <com:TextElement formatted="?" language="?"/>
+                           </com:Text>
+                           <com:Image/>
+                           <com:Url/>
+                        </hot:LongDescription>
+                        <hot:PackageDetails dow="?" quantityAvailable="?" rateAvailable="?" restriction="?">
+                           <hot:StartDate/>
+                           <hot:EndDate/>
+                           <hot:Allowance currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:TaxAmount currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:Quantity/>
+                        </hot:PackageDetails>
+                        <hot:PackageCodes>
+                           <hot:Code/>
+                           <hot:Description>
+                              <hot:Text formatted="?" language="?"/>
+                              <hot:Image/>
+                              <hot:URL/>
+                           </hot:Description>
+                        </hot:PackageCodes>
+                        <hot:StartDate/>
+                        <hot:EndDate/>
+                     </hot:Package>
+					 <hot:Package addRateCombinedLine="?" addRateSeprateLine="?" calculationRule="?" discountRateAmount="?" discountRatePercent="?" endTime="?" includedInRate="?" minAdvanceBookingDays="?" packageCode="?" packageGroupCode="?" packageType="?" postingRhythm="?" postingRhythmNights="?" quantity="?" rateChangeIndicator="?" repeatPostingRhythm="?" sellSeparate="?" source="?" startTime="?" taxIncluded="?" totalDepositAmount="?">
+                        <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                        <hot:PackageAmount currencyCode="?" currencyText="?" decimals="?"/>
+                        <hot:TaxAmount currencyCode="?" currencyText="?" decimals="?"/>
+                        <hot:Allowance currencyCode="?" currencyText="?" decimals="?"/>
+                        <hot:Description>
+                           <com:Text>
+                              <com:TextElement formatted="?" language="?"/>
+                           </com:Text>
+                           <com:Image/>
+                           <com:Url/>
+                        </hot:Description>
+                        <hot:ShortDescription>
+                           <com:Text>
+                              <com:TextElement formatted="?" language="?"/>
+                           </com:Text>
+                           <com:Image/>
+                           <com:Url/>
+                        </hot:ShortDescription>
+                        <hot:LongDescription>
+                           <com:Text>
+                              <com:TextElement formatted="?" language="?"/>
+                           </com:Text>
+                           <com:Image/>
+                           <com:Url/>
+                        </hot:LongDescription>
+                        <hot:PackageDetails dow="?" quantityAvailable="?" rateAvailable="?" restriction="?">
+                           <hot:StartDate/>
+                           <hot:EndDate/>
+                           <hot:Allowance currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:TaxAmount currencyCode="?" currencyText="?" decimals="?"/>
+                           <hot:Quantity/>
+                        </hot:PackageDetails>
+                        <hot:PackageCodes>
+                           <hot:Code/>
+                           <hot:Description>
+                              <hot:Text formatted="?" language="?"/>
+                              <hot:Image/>
+                              <hot:URL/>
+                           </hot:Description>
+                        </hot:PackageCodes>
+                        <hot:StartDate/>
+                        <hot:EndDate/>
+                     </hot:Package>
+                  </hot:Packages>
+				  
+                  <hot:HotelExtendedInformation>
+                     <hot:HotelInformation>
+                        <hot:HotelInfo hotelInfoType="?" otherHotelInfoType="?">
+                           <com:Text>
+                              <com:TextElement formatted="?" language="?"/>
+                           </com:Text>
+                           <com:Image/>
+                           <com:Url/>
+                        </hot:HotelInfo>
+                     </hot:HotelInformation>
+                     <hot:PaymentMethods>
+                        <hot:PaymentType>
+                           <hot:PaymentCard cardType="?" chipAndPin="?" otherCardType="?">
+                              <com:cardID/>
+                              <com:cardCode/>
+                              <com:cardHolderName/>
+                              <com:cardNumber/>
+                              <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+                              <com:seriesCode/>
+                              <com:Track2/>
+                              <com:effectiveDate/>
+                              <com:expirationDate/>
+                              <com:EncryptedSwipe>
+                                 <com:TrackIndicator/>
+                                 <com:SwiperType/>
+                                 <com:SwiperID/>
+                                 <com:MaskedPAN/>
+                                 <com:Track1/>
+                                 <com:Track2/>
+                                 <com:KeySerialNumber/>
+                              </com:EncryptedSwipe>
+                           </hot:PaymentCard>
+                           <hot:PaymentVoucher voucherIssuedBy="?" voucherNumber="?" voucherValidDate="?"/>
+                           <hot:OtherPayment source="?" type="?" value="?"/>
+                        </hot:PaymentType>
+                     </hot:PaymentMethods>
+                     <hot:AmenityInfo>
+                        <hot:Amenities>
+                           <hot:Amenity amenityCode="?" amenityType="?" availabilityFlag="?" otherFlag="?" otherType="?">
+                              <hot:amenityDescription/>
+                           </hot:Amenity>
+                        </hot:Amenities>
+                     </hot:AmenityInfo>
+                     <hot:Position altitude="?" latitude="?" longitude="?"/>
+                     <hot:FacilityInfo dateOpened="?" dateRennovated="?">
+                        <hot:GuestRooms totalRooms="?">
+                           <hot:GuestRoom code="?" maxOccupancy="?">
+                              <hot:RoomDescription>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </hot:RoomDescription>
+                              <hot:AmenityInfo>
+                                 <hot:Amenities>
+                                    <hot:Amenity amenityCode="?" amenityType="?" availabilityFlag="?" otherFlag="?" otherType="?">
+                                       <hot:amenityDescription/>
+                                    </hot:Amenity>
+                                 </hot:Amenities>
+                              </hot:AmenityInfo>
+                           </hot:GuestRoom>
+                        </hot:GuestRooms>
+                        <hot:Restaurants>
+                           <hot:Restaurant MaxSeatingCapacity="?" MaxSingleParty="?" OfferBreakfast="?" OfferBrunch="?" OfferDinner="?" OfferLunch="?" RestaurantName="?">
+                              <hot:RestaurantDescription>
+                                 <hot:Text formatted="?" language="?"/>
+                                 <hot:Image/>
+                                 <hot:URL/>
+                              </hot:RestaurantDescription>
+                              <hot:RelativePosition>
+                                 <hot:Direction otherVectorDirection="?" vectorDirection="?"/>
+                                 <hot:Distance distanceUnit="?" otherDistanceUnit="?"/>
+                              </hot:RelativePosition>
+                              <hot:Cuisines>
+                                 <hot:Cuisine Code="?" Description="?"/>
+                              </hot:Cuisines>
+                              <hot:RestaurantContacts>
+                                 <hot:Address addressType="?" languageCode="?" otherAddressType="?">
+                                    <com:AddressLine/>
+                                    <com:cityName/>
+                                    <com:stateProv/>
+                                    <com:countryCode/>
+                                    <com:postalCode/>
+                                    <com:barCode/>
+                                    <com:cityExtension/>
+                                 </hot:Address>
+                              </hot:RestaurantContacts>
+                           </hot:Restaurant>
+                        </hot:Restaurants>
+                        <hot:MeetingRooms LargestRoomSpace="?" LargestSeatingCapacity="?" MeetingRoomCount="?" SecondLargestSeatingCapacity="?" SmallestRoomSpace="?" SmallestSeatingCapacity="?" TotalRoomSpace="?">
+                           <hot:MeetingRoom Irregular="?" MeetingRoomCapacity="?" PropertySystemName="?" RoomName="?" Sort="?">
+                              <hot:Codes>
+                                 <hot:Code Code="?">
+                                    <hot:Charge/>
+                                    <hot:Description>
+                                       <hot:Text formatted="?" language="?"/>
+                                       <hot:Image/>
+                                       <hot:URL/>
+                                    </hot:Description>
+                                 </hot:Code>
+                              </hot:Codes>
+                              <hot:Description>
+                                 <hot:Text formatted="?" language="?"/>
+                                 <hot:Image/>
+                                 <hot:URL/>
+                              </hot:Description>
+                           </hot:MeetingRoom>
+                        </hot:MeetingRooms>
+                        <hot:Attractions>
+                           <hot:Attraction>
+                              <hot:AttractionCode/>
+                              <hot:AttractionName/>
+                              <hot:AttractionType/>
+                              <hot:AttractionInformation>
+                                 <hot:AttractionInfo attractionInfoType="?" otherAttractionInfoType="?">
+                                    <com:Text>
+                                       <com:TextElement formatted="?" language="?"/>
+                                    </com:Text>
+                                    <com:Image/>
+                                    <com:Url/>
+                                 </hot:AttractionInfo>
+                              </hot:AttractionInformation>
+                              <hot:Distance/>
+                              <hot:DistanceType/>
+                              <hot:DrivingTime/>
+                              <hot:City/>
+                              <hot:State/>
+                              <hot:ZipCode/>
+                              <hot:HoursOfOperation/>
+                              <hot:Latitude/>
+                              <hot:Longitude/>
+                              <hot:PriceRange/>
+                              <hot:DisplaySequence/>
+                           </hot:Attraction>
+                        </hot:Attractions>
+                     </hot:FacilityInfo>
+                     <hot:AlternateProperties>
+                        <hot:HotelReference chainCode="?" hotelCode="?"/>
+                     </hot:AlternateProperties>
+                  </hot:HotelExtendedInformation>
+                  <hot:DailyChargePoints>
+                     <hot:Points>
+                        <hot:Dates>
+                           <hot:StartDate/>
+                           <hot:EndDate/>
+                           <hot:Duration/>
+                        </hot:Dates>
+                        <hot:Points/>
+                     </hot:Points>
+                  </hot:DailyChargePoints>
+                  <hot:MemberAwardInfo>
+                     <hot:awardType/>
+                     <hot:membershipID/>
+                     <hot:pointsUsedForReservation/>
+                     <hot:redemRateCode/>
+                     <hot:stayDate>
+                        <hot:StartDate/>
+                        <hot:EndDate/>
+                        <hot:Duration/>
+                     </hot:stayDate>
+                     <hot:overridePenalty/>
+                  </hot:MemberAwardInfo>
+                  <hot:ExpectedCharges TaxInclusive="?" TotalFixedCharges="?" TotalRoomRateAndPackages="?" TotalTaxesAndFees="?" decimals="?">
+                     <hot:ChargesForPostingDate PostingDate="?" TotalCharges="?">
+                        <hot:RoomRateAndPackages TotalCharges="?" decimals="?">
+                           <hot:Charges>
+                              <hot:Description/>
+                              <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:Code/>
+                              <hot:CodeType/>
+                           </hot:Charges>
+                        </hot:RoomRateAndPackages>
+                        <hot:TaxesAndFees TotalCharges="?" decimals="?">
+                           <hot:Charges>
+                              <hot:Description/>
+                              <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:Code/>
+                              <hot:CodeType/>
+                           </hot:Charges>
+                        </hot:TaxesAndFees>
+                        <hot:FixedCharges TotalCharges="?" decimals="?">
+                           <hot:FixedCharge articleId="?" beginDate="?" dateToExecute="?" dayToExecute="?" endDate="?" frequency="?" id="?" quantity="?" roomNights="?" supplement="?" transactionCode="?">
+                              <hot:Description/>
+                              <hot:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                              <hot:TaxesAndFees currencyCode="?" currencyText="?" decimals="?"/>
+                           </hot:FixedCharge>
+                        </hot:FixedCharges>
+                     </hot:ChargesForPostingDate>
+                  </hot:ExpectedCharges>
+                  <hot:GdsTotalPricing>
+                     <hot:TotalInclusiveRoomRate currencyCode="?" currencyText="?" decimals="?"/>
+                     <hot:TotalExclusiveRoomRate currencyCode="?" currencyText="?" decimals="?"/>
+                     <hot:TotalTax currencyCode="?" currencyText="?" decimals="?"/>
+                     <hot:TotalSurCharge currencyCode="?" currencyText="?" decimals="?"/>
+                     <hot:TaxQualifier/>
+                     <hot:MatchingQualifier/>
+                  </hot:GdsTotalPricing>
+                  <hot:Traces>
+                     <hot:Trace department="?" resolved="?">
+                        <hot:Text formatted="?" language="?"/>
+                        <hot:Image/>
+                        <hot:URL/>
+                        <hot:TraceId/>
+                        <hot:TraceDate/>
+                        <hot:TraceTime/>
+                        <hot:ResolvedOn/>
+                        <hot:ResolvedBy/>
+                     </hot:Trace>
+                  </hot:Traces>
+               </hot:RoomStay>
+            </res1:RoomStays>
+            <res1:ResGuests>
+               <res1:ResGuest ageQualifyingCode="?" arrivalTime="?" departureTime="?" otherAgeQualifyingCode="?" resGuestRPH="?">
+                  <res1:Profiles>
+                     <name:Profile active="?" customerValue="?" inactiveDate="?" insertDate="?" insertUser="?" languageCode="?" nameType="?" nationality="?" protected="?" protectedBy="?" taxExempt="?" updateDate="?" updateUser="?" vipCode="?" yieldMarketCode="?">
+                        <name:ProfileIDs>
+                           <com:UniqueID source="?" type="?"/>
+                        </name:ProfileIDs>
+                        <name:Customer birthDate="?" gender="?" profileType="?">
+                           <name:PersonName active="?" familiarName="?" nameOrdered="?">
+                              <com:nameTitle/>
+                              <com:firstName/>
+                              <com:middleName/>
+                              <com:lastName/>
+                              <com:nameSuffix/>
+                              <com:accountName2/>
+                              <com:accountName3/>
+                              <com:profession/>
+                           </name:PersonName>
+                           <name:NativeName active="?" familiarName="?" languageCode="?" nameOrdered="?">
+                              <com:nameTitle/>
+                              <com:firstName/>
+                              <com:middleName/>
+                              <com:lastName/>
+                              <com:nameSuffix/>
+                              <com:accountName2/>
+                              <com:accountName3/>
+                              <com:profession/>
+                           </name:NativeName>
+                           <name:BusinessTitle/>
+                           <name:GovernmentIDList>
+                              <com:GovernmentID countryOfIssue="?" displaySequence="?" documentID="?" documentNumber="?" documentType="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" primary="?" resort="?"/>
+                           </name:GovernmentIDList>
+                        </name:Customer>
+                        <name:Company commissionCode="?">
+                           <name:CompanyName/>
+                           <name:CompanyType/>
+                           <name:CompanyID/>
+                        </name:Company>
+                        <name:CreditCards>
+                           <name:NameCreditCard cardType="?" chipAndPin="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" otherCardType="?" primary="?" updateDate="?" updateUser="?">
+                              <com:cardID/>
+                              <com:cardCode/>
+                              <com:cardHolderName/>
+                              <com:cardNumber/>
+                              <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+                              <com:seriesCode/>
+                              <com:Track2/>
+                              <com:effectiveDate/>
+                              <com:expirationDate/>
+                              <com:EncryptedSwipe>
+                                 <com:TrackIndicator/>
+                                 <com:SwiperType/>
+                                 <com:SwiperID/>
+                                 <com:MaskedPAN/>
+                                 <com:Track1/>
+                                 <com:Track2/>
+                                 <com:KeySerialNumber/>
+                              </com:EncryptedSwipe>
+                           </name:NameCreditCard>
+                        </name:CreditCards>
+                        <name:Addresses>
+                           <name:NameAddress addressType="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" languageCode="?" operaId="?" otherAddressType="?" primary="?" updateDate="?" updateUser="?">
+                              <com:AddressLine/>
+                              <com:cityName/>
+                              <com:stateProv/>
+                              <com:countryCode/>
+                              <com:postalCode/>
+                              <com:barCode/>
+                              <com:cityExtension/>
+                           </name:NameAddress>
+                        </name:Addresses>
+                        <name:Blacklist flag="?"/>
+                        <name:Phones>
+                           <name:NamePhone displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" phoneRole="?" phoneType="?" primary="?" primaryPhone="?" updateDate="?" updateUser="?">
+                              <com:PhoneNumber/>
+                              <com:PhoneData areaCode="?" countryAccessCode="?" extension="?" phoneNumber="?"/>
+                           </name:NamePhone>
+                        </name:Phones>
+                        <name:EMails>
+                           <name:NameEmail displaySequence="?" emailFormat="?" emailType="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" primary="?" updateDate="?" updateUser="?"/>
+                        </name:EMails>
+                        <name:Preferences>
+                           <name:Preference inactiveDate="?" insertDate="?" insertUser="?" otherPreferenceType="?" preferenceType="?" preferenceValue="?" resortCode="?" updateDate="?" updateUser="?">
+                              <name:PreferenceDescription>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </name:PreferenceDescription>
+                           </name:Preference>
+                        </name:Preferences>
+                        <name:Memberships>
+                           <name:NameMembership central_setup_yn="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" membership_class="?" operaId="?" points_label="?" preferred="?" primary="?" status="?" updateDate="?" updateUser="?" usedInReservation="?">
+                              <com:membershipType/>
+                              <com:membershipNumber/>
+                              <com:membershipLevel/>
+                              <com:membershipNextLevel/>
+                              <com:memberName/>
+                              <com:effectiveDate/>
+                              <com:expirationDate/>
+                              <com:currentPoints/>
+                              <com:enrollmentCode/>
+                              <com:ResvNameId>
+                                 <com:UniqueID source="?" type="?"/>
+                              </com:ResvNameId>
+                              <com:membershipid source="?" type="?"/>
+                              <com:transferPoints/>
+                              <com:enrollmentSource/>
+                              <com:enrolledAt/>
+                              <com:awardPointsToExpires>
+                                 <com:AwardPointsToExpire expirationDate="?" expireByDate="?" totalToExpire="?"/>
+                              </com:awardPointsToExpires>
+                              <com:inactive/>
+                              <com:excludeBatchIndicator/>
+                           </name:NameMembership>
+                        </name:Memberships>
+                        <name:NegotiatedRates>
+                           <name:NegotiatedRate beginDate="?" commissionCode="?" displaySequence="?" endDate="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" rateCode="?" resortCode="?" updateDate="?" updateUser="?"/>
+                        </name:NegotiatedRates>
+                        <name:Comments>
+                           <name:Comment commentTitle="?" commentType="?" externalId="?" globalYn="?" inactiveDate="?" insertDate="?" insertUser="?" internalYn="?" operaId="?" updateDate="?" updateUser="?">
+                              <com:Text>
+                                 <com:TextElement formatted="?" language="?"/>
+                              </com:Text>
+                              <com:Image/>
+                              <com:Url/>
+                           </name:Comment>
+                        </name:Comments>
+                        <name:UserDefinedValues>
+                           <com:UserDefinedValue valueName="?">
+                              <com:CharacterValue/>
+                              <com:DateValue/>
+                              <com:NumericValue/>
+                           </com:UserDefinedValue>
+                           <com:UserDefinedValue valueName="?">
+                              <com:CharacterValue/>
+                              <com:DateValue/>
+                              <com:NumericValue/>
+                           </com:UserDefinedValue>
+                           <com:UserDefinedValue valueName="?">
+                              <com:CharacterValue/>
+                              <com:DateValue/>
+                              <com:NumericValue/>
+                           </com:UserDefinedValue>
+                        </name:UserDefinedValues>
+                        <name:Privacy>
+                           <name:PrivacyOption OptionType="?" OptionValue="?"/>
+                        </name:Privacy>
+                        <name:UserGroup groupType="?"/>
+                        <name:StayHistory>
+                           <name:LastStay/>
+                           <name:TotalNumberOfStays/>
+                           <name:LastRoomNumber/>
+                           <name:LastRate currencyCode="?" currencyText="?" decimals="?"/>
+                        </name:StayHistory>
+                        <name:Id countryOfIssue="?" displaySequence="?" documentID="?" documentNumber="?" documentType="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" primary="?" resort="?"/>
+                        <name:KeyWord>
+                           <name:KeyWord>
+                              <name:Type/>
+                              <name:Value/>
+                           </name:KeyWord>
+                        </name:KeyWord>
+                        <name:Features>
+                           <hot:Features AttachPreferenceToProfile="?" Description="?" Feature="?">
+                              <hot:FeatureID/>
+                           </hot:Features>
+                        </name:Features>
+                     </name:Profile>
+                  <name:Profile active="?" customerValue="?" inactiveDate="?" insertDate="?" insertUser="?" languageCode="?" nameType="?" nationality="?" protected="?" protectedBy="?" taxExempt="?" updateDate="?" updateUser="?" vipCode="?" yieldMarketCode="?">
+                        <name:ProfileIDs>
+                           <com:UniqueID source="?" type="?"/>
+                        </name:ProfileIDs>
+                        <name:Customer birthDate="?" gender="?" profileType="?">
+                           <name:PersonName active="?" familiarName="?" nameOrdered="?">
+                              <com:nameTitle/>
+                              <com:firstName/>
+                              <com:middleName/>
+                              <com:lastName/>
+                              <com:nameSuffix/>
+                              <com:accountName2/>
+                              <com:accountName3/>
+                              <com:profession/>
+                           </name:PersonName>
+                           <name:NativeName active="?" familiarName="?" languageCode="?" nameOrdered="?">
+                              <com:nameTitle/>
+                              <com:firstName/>
+                              <com:middleName/>
+                              <com:lastName/>
+                              <com:nameSuffix/>
+                              <com:accountName2/>
+                              <com:accountName3/>
+                              <com:profession/>
+                           </name:NativeName>
+                           <name:BusinessTitle/>
+                           <name:GovernmentIDList>
+                              <com:GovernmentID countryOfIssue="?" displaySequence="?" documentID="?" documentNumber="?" documentType="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" primary="?" resort="?"/>
+                           </name:GovernmentIDList>
+                        </name:Customer>
+                        <name:Company commissionCode="?">
+                           <name:CompanyName/>
+                           <name:CompanyType/>
+                           <name:CompanyID/>
+                        </name:Company>
+                        <name:CreditCards>
+                           <name:NameCreditCard cardType="?" chipAndPin="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" otherCardType="?" primary="?" updateDate="?" updateUser="?">
+                              <com:cardID/>
+                              <com:cardCode/>
+                              <com:cardHolderName/>
+                              <com:cardNumber/>
+                              <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+                              <com:seriesCode/>
+                              <com:Track2/>
+                              <com:effectiveDate/>
+                              <com:expirationDate/>
+                              <com:EncryptedSwipe>
+                                 <com:TrackIndicator/>
+                                 <com:SwiperType/>
+                                 <com:SwiperID/>
+                                 <com:MaskedPAN/>
+                                 <com:Track1/>
+                                 <com:Track2/>
+                                 <com:KeySerialNumber/>
+                              </com:EncryptedSwipe>
+                           </name:NameCreditCard>
+                        </name:CreditCards>
+                        <name:Addresses>
+                           <name:NameAddress addressType="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" languageCode="?" operaId="?" otherAddressType="?" primary="?" updateDate="?" updateUser="?">
+                              <com:AddressLine/>
+                              <com:cityName/>
+                              <com:stateProv/>
+                              <com:countryCode/>
+                              <com:postalCode/>
+                              <com:barCode/>
+                              <com:cityExtension/>
+                           </name:NameAddress>
+                        </name:Addresses>
+                        <name:Blacklist flag="?"/>
+                        <name:Phones>
+                           <name:NamePhone displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" phoneRole="?" phoneType="?" primary="?" primaryPhone="?" updateDate="?" updateUser="?">
+                              <com:PhoneNumber/>
+                              <com:PhoneData areaCode="?" countryAccessCode="?" extension="?" phoneNumber="?"/>
+                           </name:NamePhone>
+                        </name:Phones>
+                        <name:EMails>
+                           <name:NameEmail displaySequence="?" emailFormat="?" emailType="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" primary="?" updateDate="?" updateUser="?"/>
+                        </name:EMails>
+                        <name:Preferences>
+                           <name:Preference inactiveDate="?" insertDate="?" insertUser="?" otherPreferenceType="?" preferenceType="?" preferenceValue="?" resortCode="?" updateDate="?" updateUser="?">
+                              <name:PreferenceDescription>
+                                 <com:Text>
+                                    <com:TextElement formatted="?" language="?"/>
+                                 </com:Text>
+                                 <com:Image/>
+                                 <com:Url/>
+                              </name:PreferenceDescription>
+                           </name:Preference>
+                        </name:Preferences>
+                        <name:Memberships>
+                           <name:NameMembership central_setup_yn="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" membership_class="?" operaId="?" points_label="?" preferred="?" primary="?" status="?" updateDate="?" updateUser="?" usedInReservation="?">
+                              <com:membershipType/>
+                              <com:membershipNumber/>
+                              <com:membershipLevel/>
+                              <com:membershipNextLevel/>
+                              <com:memberName/>
+                              <com:effectiveDate/>
+                              <com:expirationDate/>
+                              <com:currentPoints/>
+                              <com:enrollmentCode/>
+                              <com:ResvNameId>
+                                 <com:UniqueID source="?" type="?"/>
+                              </com:ResvNameId>
+                              <com:membershipid source="?" type="?"/>
+                              <com:transferPoints/>
+                              <com:enrollmentSource/>
+                              <com:enrolledAt/>
+                              <com:awardPointsToExpires>
+                                 <com:AwardPointsToExpire expirationDate="?" expireByDate="?" totalToExpire="?"/>
+                              </com:awardPointsToExpires>
+                              <com:inactive/>
+                              <com:excludeBatchIndicator/>
+                           </name:NameMembership>
+                        </name:Memberships>
+                        <name:NegotiatedRates>
+                           <name:NegotiatedRate beginDate="?" commissionCode="?" displaySequence="?" endDate="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" rateCode="?" resortCode="?" updateDate="?" updateUser="?"/>
+                        </name:NegotiatedRates>
+                        <name:Comments>
+                           <name:Comment commentTitle="?" commentType="?" externalId="?" globalYn="?" inactiveDate="?" insertDate="?" insertUser="?" internalYn="?" operaId="?" updateDate="?" updateUser="?">
+                              <com:Text>
+                                 <com:TextElement formatted="?" language="?"/>
+                              </com:Text>
+                              <com:Image/>
+                              <com:Url/>
+                           </name:Comment>
+                        </name:Comments>
+                        <name:UserDefinedValues>
+                           <com:UserDefinedValue valueName="?">
+                              <com:CharacterValue/>
+                              <com:DateValue/>
+                              <com:NumericValue/>
+                           </com:UserDefinedValue>
+<com:UserDefinedValue valueName="?">
+                              <com:CharacterValue/>
+                              <com:DateValue/>
+                              <com:NumericValue/>
+                           </com:UserDefinedValue>
+<com:UserDefinedValue valueName="?">
+                              <com:CharacterValue/>
+                              <com:DateValue/>
+                              <com:NumericValue/>
+                           </com:UserDefinedValue>
+                        </name:UserDefinedValues>
+                        <name:Privacy>
+                           <name:PrivacyOption OptionType="?" OptionValue="?"/>
+                        </name:Privacy>
+                        <name:UserGroup groupType="?"/>
+                        <name:StayHistory>
+                           <name:LastStay/>
+                           <name:TotalNumberOfStays/>
+                           <name:LastRoomNumber/>
+                           <name:LastRate currencyCode="?" currencyText="?" decimals="?"/>
+                        </name:StayHistory>
+                        <name:Id countryOfIssue="?" displaySequence="?" documentID="?" documentNumber="?" documentType="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" primary="?" resort="?"/>
+                        <name:KeyWord>
+                           <name:KeyWord>
+                              <name:Type/>
+                              <name:Value/>
+                           </name:KeyWord>
+                        </name:KeyWord>
+                        <name:Features>
+                           <hot:Features AttachPreferenceToProfile="?" Description="?" Feature="?">
+                              <hot:FeatureID/>
+                           </hot:Features>
+                        </name:Features>
+                     </name:Profile></res1:Profiles>
+                  <res1:SpecialRequests>
+                     <hot:SpecialRequest requestCode="?">
+                        <hot:Text formatted="?" language="?"/>
+                        <hot:Image/>
+                        <hot:URL/>
+                        <hot:SpecialRequestId/>
+                     </hot:SpecialRequest>
+                  </res1:SpecialRequests>
+                  <res1:Comments>
+                     <hot:Comment commentOriginatorCode="?" guestViewable="?">
+                        <hot:Text formatted="?" language="?"/>
+                        <hot:Image/>
+                        <hot:URL/>
+                        <hot:CommentId/>
+                        <hot:InternalYn/>
+                        <hot:CommentType/>
+                     </hot:Comment>
+                  </res1:Comments>
+                  <res1:ArrivalTransport carrierCode="?" id="?" locationCode="?" time="?" transportationRequired="?" type="?"/>
+                  <res1:DepartureTransport carrierCode="?" id="?" locationCode="?" time="?" transportationRequired="?" type="?"/>
+                  <res1:GuestCounts isPerRoom="?">
+                     <hot:GuestCount age="?" ageQualifyingCode="?" count="?" otherAgeQualifyingCode="?"/>
+                  </res1:GuestCounts>
+                  <res1:InHouseTimeSpan>
+                     <hot:StartDate/>
+                     <hot:EndDate/>
+                     <hot:Duration/>
+                  </res1:InHouseTimeSpan>
+               </res1:ResGuest>
+            </res1:ResGuests>
+            <res1:WrittenConfInst address="?" addresseeName="?" languageId="?" telephone="?">
+               <res1:Email/>
+               <res1:OptionalEmail/>
+            </res1:WrittenConfInst>
+            <res1:ReservationHistory inactiveDate="?" insertDate="?" insertUser="?" transactions="?" updateDate="?" updateUser="?"/>
+            <res1:UserDefinedValues>
+               <com:UserDefinedValue valueName="?">
+                  <com:CharacterValue/>
+                  <com:DateValue/>
+                  <com:NumericValue/>
+               </com:UserDefinedValue>
+<com:UserDefinedValue valueName="?">
+                              <com:CharacterValue/>
+                              <com:DateValue/>
+                              <com:NumericValue/>
+                           </com:UserDefinedValue>
+<com:UserDefinedValue valueName="?">
+                              <com:CharacterValue/>
+                              <com:DateValue/>
+                              <com:NumericValue/>
+                           </com:UserDefinedValue>
+            </res1:UserDefinedValues>
+            <res1:Invoice FolioViewNo="?">
+               <res1:Address addressType="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" languageCode="?" operaId="?" otherAddressType="?" primary="?" updateDate="?" updateUser="?">
+                  <com:AddressLine/>
+                  <com:cityName/>
+                  <com:stateProv/>
+                  <com:countryCode/>
+                  <com:postalCode/>
+                  <com:barCode/>
+                  <com:cityExtension/>
+               </res1:Address>
+               <res1:Name active="?" familiarName="?" languageCode="?" nameOrdered="?">
+                  <com:nameTitle/>
+                  <com:firstName/>
+                  <com:middleName/>
+                  <com:lastName/>
+                  <com:nameSuffix/>
+                  <com:accountName2/>
+                  <com:accountName3/>
+                  <com:profession/>
+               </res1:Name>
+               <res1:ProfileIDs>
+                  <com:UniqueID source="?" type="?"/>
+               </res1:ProfileIDs>
+               <res1:BillNumber source="?" type="?"/>
+               <res1:BillItems Date="?" Description="?" Time="?" TransactionCode="?" TransactionNo="?">
+                  <res1:Account source="?" type="?"/>
+                  <res1:Amount currencyCode="?" currencyText="?" decimals="?"/>
+                  <res1:VatCode source="?" type="?"/>
+                  <res1:RevenueGroup/>
+                  <res1:Supplement/>
+                  <res1:Reference/>
+                  <res1:OriginalRoom/>
+                  <res1:Quantity/>
+               </res1:BillItems>
+               <res1:BillTaxes Description="?">
+                  <res1:VatAmount currencyCode="?" currencyText="?" decimals="?"/>
+                  <res1:VatAmountEuro currencyCode="?" currencyText="?" decimals="?"/>
+               </res1:BillTaxes>
+               <res1:CreditCardSurcharges CreditCardType="?" SurchargePercentage="?">
+                  <res1:SurchargeThreshold currencyCode="?" currencyText="?" decimals="?"/>
+                  <res1:SurchargeAmount currencyCode="?" currencyText="?" decimals="?"/>
+                  <res1:TaxAmount currencyCode="?" currencyText="?" decimals="?"/>
+                  <res1:TotalBillAmount currencyCode="?" currencyText="?" decimals="?"/>
+               </res1:CreditCardSurcharges>
+               <res1:CurrentBalance currencyCode="?" currencyText="?" decimals="?"/>
+            </res1:Invoice>
+            <res1:Preferences>
+               <name:Preference inactiveDate="?" insertDate="?" insertUser="?" otherPreferenceType="?" preferenceType="?" preferenceValue="?" resortCode="?" updateDate="?" updateUser="?">
+                  <name:PreferenceDescription>
+                     <com:Text>
+                        <com:TextElement formatted="?" language="?"/>
+                     </com:Text>
+                     <com:Image/>
+                     <com:Url/>
+                  </name:PreferenceDescription>
+               </name:Preference>
+            </res1:Preferences>
+            <res1:Alerts>
+               <res1:AlertId source="?" type="?"/>
+               <res1:Code/>
+               <res1:Area/>
+               <res1:Description/>
+               <res1:PrinterNotification/>
+               <res1:ScreenNotification/>
+               <res1:Global/>
+            </res1:Alerts>
+            <res1:PayRoutings Owner="?" Room="?" RoutingInstruction="?" Window="?"/>
+            <res1:PayMethods Owner="?" Window="?">
+               <hot:PaymentMethod source="?" type="?" value="?"/>
+            </res1:PayMethods>
+            <res1:AccompanyGuests>
+               <hot:AccompanyGuest>
+                  <hot:NameID source="?" type="?"/>
+                  <hot:FirstName/>
+                  <hot:LastName/>
+               </hot:AccompanyGuest>
+            </res1:AccompanyGuests>
+            <res1:ECertificate>
+               <mem:CertificateID source="?" type="?"/>
+               <mem:VoucherNumber/>
+               <mem:CertificateNumber/>
+               <mem:CertificateCode/>
+               <mem:HotelReference chainCode="?" hotelCode="?"/>
+               <mem:MembershipType/>
+               <mem:AwardType/>
+               <mem:PromotionCode/>
+               <mem:ShortDescription/>
+               <mem:LongDescription/>
+               <mem:ExpirationDate/>
+               <mem:ReservationCertificateYN/>
+               <mem:CertificateValue currencyCode="?" currencyText="?" decimals="?"/>
+               <mem:CertificateCost currencyCode="?" currencyText="?" decimals="?"/>
+               <mem:CertificateLabel/>
+               <mem:NameID source="?" type="?"/>
+               <mem:ConsumedAt/>
+               <mem:ConsumerLastName/>
+               <mem:ConsumerFirstName/>
+               <mem:ConsumerMiddleName/>
+               <mem:ConsumerEmail/>
+               <mem:ConsumptionDate/>
+               <mem:ConsumedHotelReference chainCode="?" hotelCode="?"/>
+               <mem:ConsumptionRefNo source="?" type="?"/>
+               <mem:ConsumptionRefType/>
+               <mem:ConsumptionLegNo source="?" type="?"/>
+               <mem:UserNotes/>
+               <mem:Status/>
+               <mem:PrintStatus/>
+               <mem:MembershipAwardID source="?" type="?"/>
+               <mem:IssueType/>
+               <mem:IssueSource/>
+               <mem:AwardPoints/>
+               <mem:InActiveDate/>
+               <mem:CertificateBeginDate/>
+               <mem:CertificateEndDate/>
+               <mem:CertificateExpriyMonths/>
+               <mem:WebConsumed/>
+               <mem:WebAllowed/>
+               <mem:PMSConsumed/>
+               <mem:Awards>
+                  <mem:AwardCode/>
+                  <mem:AwardBeginDate/>
+                  <mem:AwardEndDate/>
+                  <mem:Points>
+                     <mem:RequiredPointsInfo>
+                        <mem:PointsBeginDate/>
+                        <mem:PointsEndDate/>
+                        <mem:PointsRequired/>
+                        <mem:RuleSchedule>
+                           <mem:Code/>
+                           <mem:Description>
+                              <com:Text>
+                                 <com:TextElement formatted="?" language="?"/>
+                              </com:Text>
+                              <com:Image/>
+                              <com:Url/>
+                           </mem:Description>
+                           <mem:PointsSchedule>
+                              <mem:BeginDate/>
+                              <mem:EndDate/>
+                              <mem:PointsRequired/>
+                           </mem:PointsSchedule>
+                        </mem:RuleSchedule>
+                     </mem:RequiredPointsInfo>
+                  </mem:Points>
+               </mem:Awards>
+               <mem:Promotions>
+                  <mem:PromotionCode/>
+                  <mem:PromotionName/>
+                  <mem:Resort/>
+                  <mem:BookingDate>
+                     <hot:StartDate/>
+                     <hot:EndDate/>
+                     <hot:Duration/>
+                  </mem:BookingDate>
+                  <mem:StayDate>
+                     <hot:StartDate/>
+                     <hot:EndDate/>
+                     <hot:Duration/>
+                  </mem:StayDate>
+                  <mem:RateCode/>
+               </mem:Promotions>
+               <mem:Scope/>
+               <mem:HotelReferences chainCode="?" hotelCode="?"/>
+               <mem:ConsumptionLocationType/>
+            </res1:ECertificate>
+            <res1:ShareReservations>
+               <res1:ShareReservationDetails primary="?">
+                  <res1:UniqueIDList>
+                     <com:UniqueID source="?" type="?"/>
+                  </res1:UniqueIDList>
+                  <res1:Profile active="?" customerValue="?" inactiveDate="?" insertDate="?" insertUser="?" languageCode="?" nameType="?" nationality="?" protected="?" protectedBy="?" taxExempt="?" updateDate="?" updateUser="?" vipCode="?" yieldMarketCode="?">
+                     <name:ProfileIDs>
+                        <com:UniqueID source="?" type="?"/>
+                     </name:ProfileIDs>
+                     <name:Customer birthDate="?" gender="?" profileType="?">
+                        <name:PersonName active="?" familiarName="?" nameOrdered="?">
+                           <com:nameTitle/>
+                           <com:firstName/>
+                           <com:middleName/>
+                           <com:lastName/>
+                           <com:nameSuffix/>
+                           <com:accountName2/>
+                           <com:accountName3/>
+                           <com:profession/>
+                        </name:PersonName>
+                        <name:NativeName active="?" familiarName="?" languageCode="?" nameOrdered="?">
+                           <com:nameTitle/>
+                           <com:firstName/>
+                           <com:middleName/>
+                           <com:lastName/>
+                           <com:nameSuffix/>
+                           <com:accountName2/>
+                           <com:accountName3/>
+                           <com:profession/>
+                        </name:NativeName>
+                        <name:BusinessTitle/>
+                        <name:GovernmentIDList>
+                           <com:GovernmentID countryOfIssue="?" displaySequence="?" documentID="?" documentNumber="?" documentType="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" primary="?" resort="?"/>
+                        </name:GovernmentIDList>
+                     </name:Customer>
+                     <name:Company commissionCode="?">
+                        <name:CompanyName/>
+                        <name:CompanyType/>
+                        <name:CompanyID/>
+                     </name:Company>
+                     <name:CreditCards>
+                        <name:NameCreditCard cardType="?" chipAndPin="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" otherCardType="?" primary="?" updateDate="?" updateUser="?">
+                           <com:cardID/>
+                           <com:cardCode/>
+                           <com:cardHolderName/>
+                           <com:cardNumber/>
+                           <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+                           <com:seriesCode/>
+                           <com:Track2/>
+                           <com:effectiveDate/>
+                           <com:expirationDate/>
+                           <com:EncryptedSwipe>
+                              <com:TrackIndicator/>
+                              <com:SwiperType/>
+                              <com:SwiperID/>
+                              <com:MaskedPAN/>
+                              <com:Track1/>
+                              <com:Track2/>
+                              <com:KeySerialNumber/>
+                           </com:EncryptedSwipe>
+                        </name:NameCreditCard>
+                     </name:CreditCards>
+                     <name:Addresses>
+                        <name:NameAddress addressType="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" languageCode="?" operaId="?" otherAddressType="?" primary="?" updateDate="?" updateUser="?">
+                           <com:AddressLine/>
+                           <com:cityName/>
+                           <com:stateProv/>
+                           <com:countryCode/>
+                           <com:postalCode/>
+                           <com:barCode/>
+                           <com:cityExtension/>
+                        </name:NameAddress>
+                     </name:Addresses>
+                     <name:Blacklist flag="?"/>
+                     <name:Phones>
+                        <name:NamePhone displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" phoneRole="?" phoneType="?" primary="?" primaryPhone="?" updateDate="?" updateUser="?">
+                           <com:PhoneNumber/>
+                           <com:PhoneData areaCode="?" countryAccessCode="?" extension="?" phoneNumber="?"/>
+                        </name:NamePhone>
+                     </name:Phones>
+                     <name:EMails>
+                        <name:NameEmail displaySequence="?" emailFormat="?" emailType="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" primary="?" updateDate="?" updateUser="?"/>
+                     </name:EMails>
+                     <name:Preferences>
+                        <name:Preference inactiveDate="?" insertDate="?" insertUser="?" otherPreferenceType="?" preferenceType="?" preferenceValue="?" resortCode="?" updateDate="?" updateUser="?">
+                           <name:PreferenceDescription>
+                              <com:Text>
+                                 <com:TextElement formatted="?" language="?"/>
+                              </com:Text>
+                              <com:Image/>
+                              <com:Url/>
+                           </name:PreferenceDescription>
+                        </name:Preference>
+                     </name:Preferences>
+                     <name:Memberships>
+                        <name:NameMembership central_setup_yn="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" membership_class="?" operaId="?" points_label="?" preferred="?" primary="?" status="?" updateDate="?" updateUser="?" usedInReservation="?">
+                           <com:membershipType/>
+                           <com:membershipNumber/>
+                           <com:membershipLevel/>
+                           <com:membershipNextLevel/>
+                           <com:memberName/>
+                           <com:effectiveDate/>
+                           <com:expirationDate/>
+                           <com:currentPoints/>
+                           <com:enrollmentCode/>
+                           <com:ResvNameId>
+                              <com:UniqueID source="?" type="?"/>
+                           </com:ResvNameId>
+                           <com:membershipid source="?" type="?"/>
+                           <com:transferPoints/>
+                           <com:enrollmentSource/>
+                           <com:enrolledAt/>
+                           <com:awardPointsToExpires>
+                              <com:AwardPointsToExpire expirationDate="?" expireByDate="?" totalToExpire="?"/>
+                           </com:awardPointsToExpires>
+                           <com:inactive/>
+                           <com:excludeBatchIndicator/>
+                        </name:NameMembership>
+                     </name:Memberships>
+                     <name:NegotiatedRates>
+                        <name:NegotiatedRate beginDate="?" commissionCode="?" displaySequence="?" endDate="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" rateCode="?" resortCode="?" updateDate="?" updateUser="?"/>
+                     </name:NegotiatedRates>
+                     <name:Comments>
+                        <name:Comment commentTitle="?" commentType="?" externalId="?" globalYn="?" inactiveDate="?" insertDate="?" insertUser="?" internalYn="?" operaId="?" updateDate="?" updateUser="?">
+                           <com:Text>
+                              <com:TextElement formatted="?" language="?"/>
+                           </com:Text>
+                           <com:Image/>
+                           <com:Url/>
+                        </name:Comment>
+                     </name:Comments>
+                     <name:UserDefinedValues>
+                        <com:UserDefinedValue valueName="?">
+                           <com:CharacterValue/>
+                           <com:DateValue/>
+                           <com:NumericValue/>
+                        </com:UserDefinedValue>
+<com:UserDefinedValue valueName="?">
+                              <com:CharacterValue/>
+                              <com:DateValue/>
+                              <com:NumericValue/>
+                           </com:UserDefinedValue>
+<com:UserDefinedValue valueName="?">
+                              <com:CharacterValue/>
+                              <com:DateValue/>
+                              <com:NumericValue/>
+                           </com:UserDefinedValue>
+                     </name:UserDefinedValues>
+                     <name:Privacy>
+                        <name:PrivacyOption OptionType="?" OptionValue="?"/>
+                     </name:Privacy>
+                     <name:UserGroup groupType="?"/>
+                     <name:StayHistory>
+                        <name:LastStay/>
+                        <name:TotalNumberOfStays/>
+                        <name:LastRoomNumber/>
+                        <name:LastRate currencyCode="?" currencyText="?" decimals="?"/>
+                     </name:StayHistory>
+                     <name:Id countryOfIssue="?" displaySequence="?" documentID="?" documentNumber="?" documentType="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" primary="?" resort="?"/>
+                     <name:KeyWord>
+                        <name:KeyWord>
+                           <name:Type/>
+                           <name:Value/>
+                        </name:KeyWord>
+                     </name:KeyWord>
+                     <name:Features>
+                        <hot:Features AttachPreferenceToProfile="?" Description="?" Feature="?">
+                           <hot:FeatureID/>
+                        </hot:Features>
+                     </name:Features>
+                  </res1:Profile>
+                  <res1:GuestCounts isPerRoom="?">
+                     <hot:GuestCount age="?" ageQualifyingCode="?" count="?" otherAgeQualifyingCode="?"/>
+                  </res1:GuestCounts>
+                  <res1:ReservationGuarantee cancellationRequired="?" creditCardRequired="?" guaranteeType="?" mandatoryDeposit="?" paymentType="?" requirementCode="?">
+                     <hot:GuaranteesAccepted>
+                        <hot:GuaranteeAccepted agentPhone="?">
+                           <hot:GuaranteeCreditCard cardType="?" chipAndPin="?" otherCardType="?">
+                              <com:cardID/>
+                              <com:cardCode/>
+                              <com:cardHolderName/>
+                              <com:cardNumber/>
+                              <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+                              <com:seriesCode/>
+                              <com:Track2/>
+                              <com:effectiveDate/>
+                              <com:expirationDate/>
+                              <com:EncryptedSwipe>
+                                 <com:TrackIndicator/>
+                                 <com:SwiperType/>
+                                 <com:SwiperID/>
+                                 <com:MaskedPAN/>
+                                 <com:Track1/>
+                                 <com:Track2/>
+                                 <com:KeySerialNumber/>
+                              </com:EncryptedSwipe>
+                           </hot:GuaranteeCreditCard>
+                           <hot:GuaranteeTravelAgent source="?" type="?"/>
+                           <hot:GuaranteeCompany source="?" type="?"/>
+                        </hot:GuaranteeAccepted>
+                     </hot:GuaranteesAccepted>
+                     <hot:Deadline/>
+                     <hot:GuaranteeDescription>
+                        <hot:Text formatted="?" language="?"/>
+                        <hot:Image/>
+                        <hot:URL/>
+                     </hot:GuaranteeDescription>
+                  </res1:ReservationGuarantee>
+               </res1:ShareReservationDetails>
+            </res1:ShareReservations>
+            <res1:Miscellaneous>
+               <res1:CustomerValue/>
+               <res1:PartyCode/>
+            </res1:Miscellaneous>
+            <res1:ReservationVouchers>
+               <res1:ReservationVoucherInfo>
+                  <res1:CertificateID source="?" type="?"/>
+                  <res1:VoucherNumber/>
+                  <res1:CertificateNumber/>
+                  <res1:VoucherDescription formatted="?" language="?"/>
+                  <res1:CertificateCode/>
+                  <res1:StayDate/>
+                  <res1:VoucherType/>
+                  <res1:RateCode/>
+               </res1:ReservationVoucherInfo>
+            </res1:ReservationVouchers>
+            <res1:ReservationPayments>
+               <res1:ReservationPaymentInfo PaymentType="?" Window="?">
+                  <res1:CreditCard cardType="?" chipAndPin="?" otherCardType="?">
+                     <com:cardID/>
+                     <com:cardCode/>
+                     <com:cardHolderName/>
+                     <com:cardNumber/>
+                     <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+                     <com:seriesCode/>
+                     <com:Track2/>
+                     <com:effectiveDate/>
+                     <com:expirationDate/>
+                     <com:EncryptedSwipe>
+                        <com:TrackIndicator/>
+                        <com:SwiperType/>
+                        <com:SwiperID/>
+                        <com:MaskedPAN/>
+                        <com:Track1/>
+                        <com:Track2/>
+                        <com:KeySerialNumber/>
+                     </com:EncryptedSwipe>
+                  </res1:CreditCard>
+               </res1:ReservationPaymentInfo>
+            </res1:ReservationPayments>
+         </res:HotelReservation>
+         <res:ExternalSystemNumber>
+            <res1:ReferenceNumber/>
+            <res1:LegNumber/>
+            <res1:ReferenceType/>
+         </res:ExternalSystemNumber>
+      </res:CreateBookingRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

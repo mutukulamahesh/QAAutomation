@@ -1,0 +1,140 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CombineShareReservationsRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Criteria>
+            <v91:CombineShareInstruction DistributionType="?" OverrideInventoryCheck="?" OverrideMaxOccupancyCheck="?" RoomMoveCheckedinResv="?">
+               <v91:RateChangeInstruction RateChange="?">
+                  <v91:Discount Amount="?" CurrencyCode="?" DiscountCode="?" Percent="?">
+                     <v91:DiscountReason/>
+                  </v91:Discount>
+               </v91:RateChangeInstruction>
+               <v91:EffectiveRates>
+                  <v91:EffectiveRate End="?" OverrideFloorAmount="?" Start="?">
+                     <v91:OnePersonRate/>
+                     <v91:TwoPersonRate/>
+                     <v91:ThreePersonRate/>
+                     <v91:FourPersonRate/>
+                     <v91:FivePersonRate/>
+                     <v91:ExtraPersonRate/>
+                     <v91:ExtraChildRate/>
+                     <v91:OneChildRate/>
+                     <v91:TwoChildrenRate/>
+                     <v91:ThreeChildrenRate/>
+                     <v91:FourChildrenRate/>
+                     <v91:RateByAgeBuckets>
+                        <v91:RateByAgeBucket MaximumAge="?" MinimumAge="?">
+                           <v91:RateAmount/>
+                        </v91:RateByAgeBucket>
+                     </v91:RateByAgeBuckets>
+                     <v91:MinimumChildrenForFreeStay/>
+                     <v91:PointsRequired/>
+                     <v91:HotelCode/>
+                     <v91:RatePlanCode/>
+                     <v91:RoomType/>
+                     <v91:NumberOfRooms/>
+                     <v91:AmountBeforeTax/>
+                  </v91:EffectiveRate>
+               </v91:EffectiveRates>
+               <v91:OverrideInstruction Date="?" Type="?" UserID="?">
+                  <v91:Description/>
+               </v91:OverrideInstruction>
+            </v91:CombineShareInstruction>
+            <v91:HotelCode/>
+            <v91:ShareToReservation>
+               <v91:ReservationIDList>
+                  <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               </v91:ReservationIDList>
+               <v91:DailyRates>
+                  <v91:DailyRate AmountAfterTax="?" AmountBeforeTax="?" Code="?" CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?" End="?" RateOverride="?" Start="?">
+                     <v91:Taxes Amount="?" CurrencyCode="?">
+                        <v91:Tax Amount="?" Code="?" CurrencyCode="?" Type="?">
+                           <v91:Description/>
+                        </v91:Tax>
+                     </v91:Taxes>
+                     <v91:Fees Amount="?" CurrencyCode="?">
+                        <v91:Fee Amount="?" Code="?" CurrencyCode="?" Type="?">
+                           <v91:Description/>
+                        </v91:Fee>
+                     </v91:Fees>
+                     <v91:Description/>
+                     <v91:Discount Amount="?" CurrencyCode="?" DiscountCode="?" Percent="?">
+                        <v91:DiscountReason/>
+                     </v91:Discount>
+                  </v91:DailyRate>
+               </v91:DailyRates>
+            </v91:ShareToReservation>
+            <v91:ExistingReservationID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            <v91:NewReservations>
+               <v91:NewReservation>
+                  <v91:NewSharerID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                  <v91:GuestCounts Adults="?" Children="?">
+                     <v91:ChildAges>
+                        <v91:Child Age="?"/>
+                     </v91:ChildAges>
+                     <v91:ChildBuckets Bucket1Count="?" Bucket2Count="?" Bucket3Count="?" Bucket4Count="?" Bucket5Count="?"/>
+                  </v91:GuestCounts>
+                  <v91:ReservationPaymentMethod Description="?" FolioView="?" PaymentMethod="?">
+                     <v91:PaymentCard AttachCreditCardToProfile="?" CardHolderName="?" CardNumber="?" CardNumberMasked="?" CardNumberType="?" CardType="?" ExpirationDate="?" ExpirationDateExpired="?" ExpirationDateMasked="?" Processing="?" Swiped="?">
+                        <v91:CardId ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                        <v91:CurrentAuthorizedAmount Amount="?" CurrencyCode="?"/>
+                        <v91:ApprovalAmountNeeded Amount="?" CurrencyCode="?"/>
+                     </v91:PaymentCard>
+                     <v91:Balance Amount="?" CurrencyCode="?"/>
+                     <v91:AuthorizationRule>
+                        <v91:Code/>
+                        <v91:Amount Amount="?" CurrencyCode="?"/>
+                        <v91:Percent/>
+                     </v91:AuthorizationRule>
+                     <v91:EmailFolioInfo EmailFolio="?">
+                        <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                        <v91:Email CreateDateTime="?" CreatorID="?" EmailAddress="?" EmailFormat="?" LastModifierID="?" LastModifyDateTime="?" OrderSequence="?" PrimaryInd="?" PurgeDate="?" Type="?" TypeDescription="?"/>
+                     </v91:EmailFolioInfo>
+                  </v91:ReservationPaymentMethod>
+                  <v91:Guarantee GuaranteeCode="?" OnHold="?" ShortDescription="?"/>
+                  <v91:DailyRates>
+                     <v91:DailyRate AmountAfterTax="?" AmountBeforeTax="?" Code="?" CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?" End="?" RateOverride="?" Start="?">
+                        <v91:Taxes Amount="?" CurrencyCode="?">
+                           <v91:Tax Amount="?" Code="?" CurrencyCode="?" Type="?">
+                              <v91:Description/>
+                           </v91:Tax>
+                        </v91:Taxes>
+                        <v91:Fees Amount="?" CurrencyCode="?">
+                           <v91:Fee Amount="?" Code="?" CurrencyCode="?" Type="?">
+                              <v91:Description/>
+                           </v91:Fee>
+                        </v91:Fees>
+                        <v91:Description/>
+                        <v91:Discount Amount="?" CurrencyCode="?" DiscountCode="?" Percent="?">
+                           <v91:DiscountReason/>
+                        </v91:Discount>
+                     </v91:DailyRate>
+                  </v91:DailyRates>
+                  <v91:TimeSpan>
+                     <v91:StartDate/>
+                     <v91:EndDate/>
+                     <v91:Duration/>
+                  </v91:TimeSpan>
+               </v91:NewReservation>
+            </v91:NewReservations>
+            <v91:FetchInstructions ReturnShareReservations="?">
+               <v91:FetchInstruction/>
+            </v91:FetchInstructions>
+         </v9:Criteria>
+      </v9:CombineShareReservationsRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

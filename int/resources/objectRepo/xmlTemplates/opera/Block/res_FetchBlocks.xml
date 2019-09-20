@@ -1,0 +1,107 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchBlocksRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:BlockSummaries TotalPages="?" AllRowsFetched="?" TotalRows="?" PageNumber="?" MaxFetchCount="?">
+            <v91:BlockInfo>
+               <v91:BlockIDList>
+                  <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               </v91:BlockIDList>
+               <v91:Block CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?">
+                  <v91:HotelCode></v91:HotelCode>
+                  <v91:BlockCode></v91:BlockCode>
+                  <v91:BlockName></v91:BlockName>
+                  <v91:BlockStatus>
+                     <v91:Status Code="?" Description="?"/>
+                     <v91:Color></v91:Color>
+                  </v91:BlockStatus>
+                  <v91:Status></v91:Status>
+                  <v91:RateCode></v91:RateCode>
+                  <v91:CateringStatus>
+                     <v91:Status Code="?" Description="?"/>
+                     <v91:Color></v91:Color>
+                  </v91:CateringStatus>
+                  <v91:StartDate></v91:StartDate>
+                  <v91:EndDate></v91:EndDate>
+                  <v91:ShoulderStartDate></v91:ShoulderStartDate>
+                  <v91:ShoulderEndDate></v91:ShoulderEndDate>
+                  <v91:InventoryControl></v91:InventoryControl>
+                  <v91:HotelUse HotelUseOnly="?">
+                     <v91:HotelUseReason></v91:HotelUseReason>
+                  </v91:HotelUse>
+                  <v91:SearchMatches>
+                     <v91:SearchMatch Attribute="?" Value="?"/>
+                  </v91:SearchMatches>
+                  <v91:BlockIndicators>
+                     <v91:Indicator IndicatorName="?" Count="?"/>
+                  </v91:BlockIndicators>
+                  <v91:TourCode></v91:TourCode>
+                  <v91:Rooms></v91:Rooms>
+                  <v91:PrimaryOwners LockBlockOwners="?" LockRoomsOwners="?" LockCateringOwners="?">
+                     <v91:Owner Primary="?" Ownership="?">
+                        <v91:Hotel Code="?" Description="?"/>
+                        <v91:UserID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                        <v91:UserName></v91:UserName>
+                        <v91:OwnerCode></v91:OwnerCode>
+                        <v91:ProfileID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                        <v91:Name NameType="?" Language="?" ExternalSystem="?">
+                           <v91:NamePrefix></v91:NamePrefix>
+                           <v91:GivenName></v91:GivenName>
+                           <v91:MiddleName></v91:MiddleName>
+                           <v91:Surname></v91:Surname>
+                           <v91:NameSuffix></v91:NameSuffix>
+                           <v91:NameTitle></v91:NameTitle>
+                           <v91:NameTitleSuffix></v91:NameTitleSuffix>
+                           <v91:EnvelopeGreeting></v91:EnvelopeGreeting>
+                           <v91:Salutation></v91:Salutation>
+                        </v91:Name>
+                        <v91:Department Code="?" Description="?"/>
+                        <v91:Email>
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <v91:Email CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" OrderSequence="?" EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?"/>
+                        </v91:Email>
+                        <v91:Phone>
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <v91:Telephone CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" PhoneTechType="?" PhoneUseType="?" PhoneUseTypeDescription="?" PhoneNumber="?" Extension="?" OrderSequence="?" PrimaryInd="?"/>
+                        </v91:Phone>
+                        <v91:Relationship Code="?" Description="?"/>
+                     </v91:Owner>
+                  </v91:PrimaryOwners>
+                  <v91:BlockClassification></v91:BlockClassification>
+                  <v91:Synchronized></v91:Synchronized>
+                  <v91:GroupName></v91:GroupName>
+                  <v91:TentativeBlock></v91:TentativeBlock>
+                  <v91:CustomFields>
+                     <v91:CustomCharUDFs>
+                        <v91:CustomUDF Name="?" Value="?" Altname="?"/>
+                     </v91:CustomCharUDFs>
+                     <v91:CustomNumericUDFs>
+                        <v91:CustomUDF Name="?" Value="?" Altname="?"/>
+                     </v91:CustomNumericUDFs>
+                     <v91:CustomDateUDFs>
+                        <v91:CustomUDF Name="?" Value="?" Altname="?"/>
+                     </v91:CustomDateUDFs>
+                  </v91:CustomFields>
+               </v91:Block>
+            </v91:BlockInfo>
+         </v9:BlockSummaries>
+         <v9:MasterInfoList>
+            <v9:MasterInfo CodeType="?">
+               <v91:CodeInfo HotelCode="?" Code="?">
+                  <v91:Description></v91:Description>
+                  <v91:AddtionalCodeInfo>
+                     <v91:Code Name="?" Value="?"/>
+                  </v91:AddtionalCodeInfo>
+               </v91:CodeInfo>
+            </v9:MasterInfo>
+         </v9:MasterInfoList>
+      </v9:FetchBlocksRS>
+   </soapenv:Body>
+</soapenv:Envelope>

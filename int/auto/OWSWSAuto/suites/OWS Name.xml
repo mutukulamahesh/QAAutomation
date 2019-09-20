@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Opera Integration Automation Suite for OWS Name" verbose="1"
+	allow-return-values="true">
+	<parameter name="emailFrom" value="operaInterfacesAutomationExecution_notifier_noreply@oracle.com" />
+	<parameter name="emailTo" value="uday.vangala@oracle.com;santhoshi.basana@oracle.com" />
+	<parameter name="emailCC" value="santhoshi.basana@oracle.com" />
+	<parameter name="smtpHost" value="internal-mail-router.oracle.com" />
+	<parameter name="smtpPort" value="25" />
+	
+	<test name="OWS Suite 19.x LP" preserve-order="true">
+		<!-- Pass parameters here-->
+		<parameter name="environment" value="LAUNCHPAD_19x" />
+		<parameter name="runOnEntry" value="ES_01" />
+		<parameter name="wsLayer" value="OEDS" />	
+		<!--  Possible Values ASP, NONASP, CENTRAL	-->
+		<parameter name="schema" value="ASP"/>
+		<parameter name="testGroup" value="OWS Suite for Profile"/>
+		<groups>
+			<run>
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.ows.profile" /> 
+		</packages>
+	</test>
+</suite>

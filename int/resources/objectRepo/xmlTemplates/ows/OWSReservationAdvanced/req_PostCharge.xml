@@ -1,0 +1,36 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:res="http://webservices.micros.com/og/4.3/ResvAdvanced/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:PostChargeRequest Account="?" Article="?">
+         <res:Posting Charge="?" FolioViewNo="?" LongInfo="?" PostDate="?" PostTime="?" Quantity="?" ReasonCode="?" ShortInfo="?" StationID="?" UserID="?">
+            <res:ReservationRequestBase>
+               <res:HotelReference chainCode="?" hotelCode="?"/>
+               <res:KeyTrack Key1Track="?" Key2Track="?" Key3Track="?" Key4Track="?"/>
+               <res:ReservationID>
+                  <com:UniqueID source="?" type="?"/>
+               </res:ReservationID>
+               <res:CheckOutTime/>
+            </res:ReservationRequestBase>
+         </res:Posting>
+      </res:PostChargeRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

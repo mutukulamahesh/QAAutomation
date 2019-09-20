@@ -1,0 +1,42 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:res="http://webservices.micros.com/og/4.3/ResvAdvanced/" xmlns:res1="http://webservices.micros.com/og/4.3/Reservation/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="?" primaryLangID="?" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:InvoiceRequest>
+         <res:ReservationRequest>
+            <res:HotelReference chainCode="?" hotelCode="?"/>
+            <res:KeyTrack Key1Track="?" Key2Track="?" Key3Track="?" Key4Track="?"/>
+            <res:ReservationID>
+               <com:UniqueID source="?" type="?"/>
+            </res:ReservationID>
+            <res:CheckOutTime/>
+         </res:ReservationRequest>
+         <res:ExternalSystemNumber>
+            <res1:ReferenceNumber/>
+            <res1:LegNumber/>
+            <res1:ReferenceType/>
+         </res:ExternalSystemNumber>
+         <res:Printer PrinterEmulation="?" PrinterName="?" StationID="?" UserID="?"/>
+         <res:ReturnFixedCharges/>
+         <res:BillingWindow/>
+      </res:InvoiceRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,186 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns:name="http://webservices.micros.com/og/4.3/Name/" xmlns:res="http://webservices.micros.com/ows/5.1/Reservation.wsdl">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:DeleteAccompanyGuestRequest>
+         <res:HotelReference chainCode="?" hotelCode="?"/>
+         <res:ConfirmationNumber source="?" type="?"/>
+         <res:GDSID source="?" type="?"/>
+         <res:LegNumber source="?" type="?"/>
+         <res:Profile active="?" customerValue="?" inactiveDate="?" insertDate="?" insertUser="?" languageCode="?" nameType="?" nationality="?" protected="?" protectedBy="?" taxExempt="?" updateDate="?" updateUser="?" vipCode="?" yieldMarketCode="?">
+            <name:ProfileIDs>
+               <com:UniqueID source="?" type="?"/>
+            </name:ProfileIDs>
+            <name:Customer birthDate="?" gender="?" profileType="?">
+               <name:PersonName active="?" familiarName="?" nameOrdered="?">
+                  <com:nameTitle/>
+                  <com:firstName/>
+                  <com:middleName/>
+                  <com:lastName/>
+                  <com:nameSuffix/>
+                  <com:accountName2/>
+                  <com:accountName3/>
+                  <com:profession/>
+               </name:PersonName>
+               <name:NativeName active="?" familiarName="?" languageCode="?" nameOrdered="?">
+                  <com:nameTitle/>
+                  <com:firstName/>
+                  <com:middleName/>
+                  <com:lastName/>
+                  <com:nameSuffix/>
+                  <com:accountName2/>
+                  <com:accountName3/>
+                  <com:profession/>
+               </name:NativeName>
+               <name:BusinessTitle/>
+               <name:GovernmentIDList>
+                  <com:GovernmentID countryOfIssue="?" displaySequence="?" documentID="?" documentNumber="?" documentType="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" primary="?" resort="?"/>
+               </name:GovernmentIDList>
+            </name:Customer>
+            <name:Company commissionCode="?">
+               <name:CompanyName/>
+               <name:CompanyType/>
+               <name:CompanyID/>
+            </name:Company>
+            <name:CreditCards>
+               <name:NameCreditCard cardType="?" chipAndPin="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" otherCardType="?" primary="?" updateDate="?" updateUser="?">
+                  <com:cardID/>
+                  <com:cardCode/>
+                  <com:cardHolderName/>
+                  <com:cardNumber/>
+                  <com:VaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+                  <com:seriesCode/>
+                  <com:Track2/>
+                  <com:effectiveDate/>
+                  <com:expirationDate/>
+                  <com:EncryptedSwipe>
+                     <com:TrackIndicator/>
+                     <com:SwiperType/>
+                     <com:SwiperID/>
+                     <com:MaskedPAN/>
+                     <com:Track1/>
+                     <com:Track2/>
+                     <com:KeySerialNumber/>
+                  </com:EncryptedSwipe>
+               </name:NameCreditCard>
+            </name:CreditCards>
+            <name:Addresses>
+               <name:NameAddress addressType="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" languageCode="?" operaId="?" otherAddressType="?" primary="?" updateDate="?" updateUser="?">
+                  <com:AddressLine/>
+                  <com:cityName/>
+                  <com:stateProv/>
+                  <com:countryCode/>
+                  <com:postalCode/>
+                  <com:barCode/>
+                  <com:cityExtension/>
+               </name:NameAddress>
+            </name:Addresses>
+            <name:Blacklist flag="?"/>
+            <name:Phones>
+               <name:NamePhone displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" phoneRole="?" phoneType="?" primary="?" primaryPhone="?" updateDate="?" updateUser="?">
+                  <com:PhoneNumber/>
+                  <com:PhoneData areaCode="?" countryAccessCode="?" extension="?" phoneNumber="?"/>
+               </name:NamePhone>
+            </name:Phones>
+            <name:EMails>
+               <name:NameEmail displaySequence="?" emailFormat="?" emailType="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" primary="?" updateDate="?" updateUser="?"/>
+            </name:EMails>
+            <name:Preferences>
+               <name:Preference inactiveDate="?" insertDate="?" insertUser="?" otherPreferenceType="?" preferenceType="?" preferenceValue="?" resortCode="?" updateDate="?" updateUser="?">
+                  <name:PreferenceDescription>
+                     <com:Text>
+                        <com:TextElement formatted="?" language="?"/>
+                     </com:Text>
+                     <com:Image/>
+                     <com:Url/>
+                  </name:PreferenceDescription>
+               </name:Preference>
+            </name:Preferences>
+            <name:Memberships>
+               <name:NameMembership central_setup_yn="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" membership_class="?" operaId="?" points_label="?" preferred="?" primary="?" status="?" updateDate="?" updateUser="?" usedInReservation="?">
+                  <com:membershipType/>
+                  <com:membershipNumber/>
+                  <com:membershipLevel/>
+                  <com:membershipNextLevel/>
+                  <com:memberName/>
+                  <com:effectiveDate/>
+                  <com:expirationDate/>
+                  <com:currentPoints/>
+                  <com:enrollmentCode/>
+                  <com:ResvNameId>
+                     <com:UniqueID source="?" type="?"/>
+                  </com:ResvNameId>
+                  <com:membershipid source="?" type="?"/>
+                  <com:transferPoints/>
+                  <com:enrollmentSource/>
+                  <com:enrolledAt/>
+                  <com:awardPointsToExpires>
+                     <com:AwardPointsToExpire expirationDate="?" expireByDate="?" totalToExpire="?"/>
+                  </com:awardPointsToExpires>
+                  <com:inactive/>
+                  <com:excludeBatchIndicator/>
+               </name:NameMembership>
+            </name:Memberships>
+            <name:NegotiatedRates>
+               <name:NegotiatedRate beginDate="?" commissionCode="?" displaySequence="?" endDate="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" rateCode="?" resortCode="?" updateDate="?" updateUser="?"/>
+            </name:NegotiatedRates>
+            <name:Comments>
+               <name:Comment commentTitle="?" commentType="?" externalId="?" globalYn="?" inactiveDate="?" insertDate="?" insertUser="?" internalYn="?" operaId="?" updateDate="?" updateUser="?">
+                  <com:Text>
+                     <com:TextElement formatted="?" language="?"/>
+                  </com:Text>
+                  <com:Image/>
+                  <com:Url/>
+               </name:Comment>
+            </name:Comments>
+            <name:UserDefinedValues>
+               <com:UserDefinedValue valueName="?">
+                  <com:CharacterValue/>
+                  <com:DateValue/>
+                  <com:NumericValue/>
+               </com:UserDefinedValue>
+            </name:UserDefinedValues>
+            <name:Privacy>
+               <name:PrivacyOption OptionType="?" OptionValue="?"/>
+            </name:Privacy>
+            <name:UserGroup groupType="?"/>
+            <name:StayHistory>
+               <name:LastStay/>
+               <name:TotalNumberOfStays/>
+               <name:LastRoomNumber/>
+               <name:LastRate currencyCode="?" currencyText="?" decimals="?"/>
+            </name:StayHistory>
+            <name:Id countryOfIssue="?" displaySequence="?" documentID="?" documentNumber="?" documentType="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" primary="?" resort="?"/>
+            <name:KeyWord>
+               <name:KeyWord>
+                  <name:Type/>
+                  <name:Value/>
+               </name:KeyWord>
+            </name:KeyWord>
+            <name:Features>
+               <hot:Features AttachPreferenceToProfile="?" Description="?" Feature="?">
+                  <hot:FeatureID/>
+               </hot:Features>
+            </name:Features>
+         </res:Profile>
+      </res:DeleteAccompanyGuestRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

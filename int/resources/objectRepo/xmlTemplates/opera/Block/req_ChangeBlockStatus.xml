@@ -1,0 +1,45 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:ChangeBlockStatusRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" VerificationOnly="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:BlocksStatus/>
+         <v9:ChangeBlockStatus CancelAllPMReservations="?" OverbookAll="?">
+            <v91:HotelCode/>
+            <v91:BlockID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            <v91:CurrentBlockStatus/>
+            <v91:NewBlockStatus/>
+            <v91:ReservationType/>
+            <v91:CancellationDetails>
+               <v91:CancellationNumber ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               <v91:CancellationCode Code="?" Description="?"/>
+               <v91:CancellationDate/>
+               <v91:CancellationInfo/>
+               <v91:Destination/>
+               <v91:LostToProperty/>
+            </v91:CancellationDetails>
+            <v91:PMReservationsCancellationDetails>
+               <v91:CancellationNumber ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               <v91:CancellationCode Code="?" Description="?"/>
+               <v91:CancellationDate/>
+               <v91:CancellationInfo/>
+               <v91:Destination/>
+               <v91:LostToProperty/>
+            </v91:PMReservationsCancellationDetails>
+         </v9:ChangeBlockStatus>
+      </v9:ChangeBlockStatusRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Opera Integration Automation Suite for OWS" verbose="1"
+	allow-return-values="true">
+	<!-- Pass global parameters here Environment - LAUNCHPAD\TEAM\VAB -->
+
+	<parameter name="emailFrom"
+		value="operaInterfacesAutomationExecution_notifier_noreply@oracle.com" />
+	<parameter name="emailTo"
+		value="uday.vangala@oracle.com;" />
+	<parameter name="emailCC" value="uday.vangala@oracle.com;" />
+	<parameter name="smtpHost" value="internal-mail-router.oracle.com" />
+	<parameter name="smtpPort" value="25" />
+	<test name="OWS Suite for Reservation" preserve-order="true">
+		<!-- Pass parameters here -->
+		<parameter name="environment" value="TeamEnv" />
+		<parameter name="runOnEntry" value="ES_03" />
+		<parameter name="wsLayer" value="OEDS" />
+		<parameter name="schema" value="CENTRAL" />
+		<parameter name="version" value="19.1" />
+		<parameter name="testGroup" value="OWS Suite for Reservation" />
+		<groups>
+			<run>
+				<!-- <include name="QueryHotelInformation_TC001"/> -->
+				<include name="UpdateName_TC001"/>
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.ows.*">
+			</package>
+
+		</packages>
+	</test>
+</suite>

@@ -1,0 +1,36 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchGuaranteeCodeSchedulesRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?" TotalPages="?" PageNumber="?" MaxFetchCount="?" AllRowsFetched="?" TotalRows="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:GuaranteeCodeSchedules>
+            <v91:GuaranteeCodeSchedule HotelCode="?">
+               <v91:ScheduleId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               <v91:ScheduleDetail Sequence="?" Override="?" Inactive="?">
+                  <v91:TimeSpan>
+                     <v91:StartDate></v91:StartDate>
+                     <v91:EndDate></v91:EndDate>
+                     <v91:Duration></v91:Duration>
+                  </v91:TimeSpan>
+                  <v91:GuaranteeCode Code="?" Description="?"/>
+                  <v91:ApplicableCodes>
+                     <v91:HotelCode></v91:HotelCode>
+                     <v91:RatePlanCode></v91:RatePlanCode>
+                     <v91:GuaranteeCode></v91:GuaranteeCode>
+                     <v91:BlockId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:BlockCode></v91:BlockCode>
+                     <v91:CreditRating></v91:CreditRating>
+                     <v91:SeasonCode></v91:SeasonCode>
+                  </v91:ApplicableCodes>
+               </v91:ScheduleDetail>
+            </v91:GuaranteeCodeSchedule>
+         </v9:GuaranteeCodeSchedules>
+      </v9:FetchGuaranteeCodeSchedulesRS>
+   </soapenv:Body>
+</soapenv:Envelope>

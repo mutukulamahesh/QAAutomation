@@ -1,0 +1,97 @@
+<soapenv:Envelope xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://htng.org/PWS/2008B/SingleGuestItinerary/Activity/Types" xmlns:typ1="http://htng.org/PWS/2008B/SingleGuestItinerary/Common/Types">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:ActivityLookupResponse>
+         <typ:Result resultStatusFlag="?" code="?">
+            <typ1:Text>
+               <typ1:TextElement language="?"></typ1:TextElement>
+            </typ1:Text>
+            <typ1:IDs>
+               <typ1:UniqueID source="?"></typ1:UniqueID>
+            </typ1:IDs>
+         </typ:Result>
+         <typ:ActivityLookupList>
+            <typ:ActivityLookup externalSystemId="?">
+               <typ:ProfileID>
+                  <typ1:UniqueID source="?"></typ1:UniqueID>
+               </typ:ProfileID>
+               <typ:PersonName nameOrdered="?" familiarName="?">
+                  <typ1:NameTitle></typ1:NameTitle>
+                  <typ1:FirstName></typ1:FirstName>
+                  <typ1:MiddleName></typ1:MiddleName>
+                  <typ1:LastName></typ1:LastName>
+                  <typ1:NameSuffix></typ1:NameSuffix>
+               </typ:PersonName>
+               <typ:Address addressType="?" otherAddressType="?">
+                  <typ1:AddressLine></typ1:AddressLine>
+                  <typ1:CityName></typ1:CityName>
+                  <typ1:StateProv></typ1:StateProv>
+                  <typ1:CountryCode></typ1:CountryCode>
+                  <typ1:PostalCode></typ1:PostalCode>
+               </typ:Address>
+               <typ:Phone phoneType="?" phoneRole="?">
+                  <typ1:PhoneNumber></typ1:PhoneNumber>
+                  <typ1:PhoneData>
+                     <typ1:CountryAccessCode></typ1:CountryAccessCode>
+                     <typ1:AreaCode></typ1:AreaCode>
+                     <typ1:PhoneNumber></typ1:PhoneNumber>
+                     <typ1:Extension></typ1:Extension>
+                  </typ1:PhoneData>
+               </typ:Phone>
+               <typ:TimeSpan>
+                  <typ1:Start></typ1:Start>
+                  <typ1:End></typ1:End>
+               </typ:TimeSpan>
+               <typ:Activities>
+                  <typ:Activity status="?">
+                     <typ:ActivityIDs>
+                        <typ1:UniqueID source="?"></typ1:UniqueID>
+                     </typ:ActivityIDs>
+                     <typ:ActivityType></typ:ActivityType>
+                     <typ:Location></typ:Location>
+                     <typ:Name language="?"></typ:Name>
+                     <typ:NumberOfPersons></typ:NumberOfPersons>
+                     <typ:TimeSpan>
+                        <typ1:Start></typ1:Start>
+                        <typ1:End></typ1:End>
+                     </typ:TimeSpan>
+                     <typ:Duration>
+                        <typ1:Start></typ1:Start>
+                        <typ1:End></typ1:End>
+                     </typ:Duration>
+                     <typ:Description language="?"></typ:Description>
+                     <typ:Note language="?"></typ:Note>
+                     <typ:GroupCode></typ:GroupCode>
+                     <typ:Amount currencyCode="?"></typ:Amount>
+                     <typ:DepositRequired currencyCode="?" collectedBy="?"></typ:DepositRequired>
+                     <typ:InactiveDate></typ:InactiveDate>
+                     <typ:Participants>
+                        <typ:Participant nameOrdered="?" familiarName="?">
+                           <typ1:NameTitle></typ1:NameTitle>
+                           <typ1:FirstName></typ1:FirstName>
+                           <typ1:MiddleName></typ1:MiddleName>
+                           <typ1:LastName></typ1:LastName>
+                           <typ1:NameSuffix></typ1:NameSuffix>
+                        </typ:Participant>
+                     </typ:Participants>
+                     <typ:URLLink></typ:URLLink>
+                     <typ:Extensions>
+                        <typ:ActivitySpecific></typ:ActivitySpecific>
+                     </typ:Extensions>
+                  </typ:Activity>
+               </typ:Activities>
+               <typ:Membership>
+                  <typ1:MembershipType></typ1:MembershipType>
+                  <typ1:MembershipNumber></typ1:MembershipNumber>
+                  <typ1:MembershipLevel></typ1:MembershipLevel>
+                  <typ1:MemberName></typ1:MemberName>
+                  <typ1:EffectiveDate></typ1:EffectiveDate>
+                  <typ1:ExpirationDate></typ1:ExpirationDate>
+                  <typ1:CurrentPoints></typ1:CurrentPoints>
+               </typ:Membership>
+               <typ:ResortId></typ:ResortId>
+            </typ:ActivityLookup>
+         </typ:ActivityLookupList>
+      </typ:ActivityLookupResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

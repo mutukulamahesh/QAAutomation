@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title> Opera Cloud Test Automation Execution Report</title>
+		
+		<style type="text/css">
+			body {
+			font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant: normal;
+			}
+			table {
+					border-collapse: collapse;
+					width: 60%;
+				 }
+
+				th, td {
+				  text-align: center;
+				  padding: 6px;
+				}
+		
+				tr:nth-child(even){background-color: #f2f2f2}
+				
+				th {
+				  background-color: #505050;
+				  color: white;
+				}
+				
+				h3 {
+					font-family: Helvetica, Arial, sans-serif;
+					font-weight: bold;
+					font-size: 1.6em;
+					line-height: 1em;
+					color: blue;
+				}
+							
+				.pass {
+					color: green;
+				}
+				
+				.fail {
+					color: red;
+				}
+				
+				.blocked {
+					color: orange;
+				}
+						
+				.testGroup {
+					color: black;
+					background-color: #D3D3D3;
+					text-align: left;
+				}
+		
+		</style>
+	</head>
+	<body>
+	<br/>
+	<center>
+			<h3 class=".inset-text"> var_TestSuiteName </h3>
+	</center>
+	<br/>
+	<br/>	
+	<table  align='center' cellpadding=0 cellspacing=0 border=1>
+		<tr align='center'  style='font-weight: bold;color: #DC143C'>
+			<th>Executed By</th>
+			<th>Total Time Taken (Current Run)</th>
+		</tr>
+		<tr>
+				<td align='center'> var_ExecutedBy</td> 
+				<td align='center'> var_TimeTaken</td>
+		</tr>
+	</table>
+	<br/>
+	<table  align='center' cellpadding=0 cellspacing=0 border=1>
+		<tr align='center'  style='font-weight: bold;color: #DC143C'>
+			<th>Total TCs </th>
+			<th>Passed TCs</th>
+			<th>Failed TCs</th>
+			<th>Blocked TCs</th>
+			<th>Error TCs</th>
+		</tr>
+		<tr>
+				<td align='center'> var_TotalTCs </td> 
+				<td align='center'> var_PassedTCs </td>
+				<td align='center'> var_FailedTCs </td>
+				<td align='center'> var_BlockedTCs </td>
+				<td align='center'> var_ErrorTCs </td>
+		</tr>
+	</table>
+	<br/>
+	<table  align='center' cellpadding=0 cellspacing=0 border=1>
+			<tr align='center'  style='font-weight: bold;color: #DC143C'>
+				<th>S No</th>
+				<th>Test Case </th>
+				<th>Result</th>
+				<th>Execution Time</th>
+			</tr>
+			
+				var_TestCaseBody
+			
+	</table>
+							
+	</body>
+</html>
+<br/>

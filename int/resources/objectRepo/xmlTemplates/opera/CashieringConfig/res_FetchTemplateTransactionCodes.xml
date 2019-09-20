@@ -1,0 +1,138 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchTemplateTransactionCodesRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:TransactionCodes>
+            <v91:TransactionCode Code="?" CompTransaction="?">
+               <v91:Classification>
+                  <v91:Type></v91:Type>
+                  <v91:TransactionType Code="?" TaxCode="?"/>
+                  <v91:Group Code="?" Description="?"/>
+                  <v91:Subgroup Code="?" Description="?"/>
+                  <v91:FiscalTransactionType></v91:FiscalTransactionType>
+               </v91:Classification>
+               <v91:Description>
+                  <v91:DefaultText></v91:DefaultText>
+                  <v91:TranslatedTexts>
+                     <v91:Text Lang="?"></v91:Text>
+                  </v91:TranslatedTexts>
+               </v91:Description>
+               <v91:PaymentSetup PaymentType="?">
+                  <v91:Usage AR="?" Cashier="?" Comp="?" Deposit="?" InterHotelPayment="?" InterHotelDeposit="?"/>
+                  <v91:Card DisplayCode="?" InterfaceCode="?">
+                     <v91:ProcessingType></v91:ProcessingType>
+                     <v91:AccountReceivable URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?">
+                        <v91:Name></v91:Name>
+                        <v91:AccountNo></v91:AccountNo>
+                     </v91:AccountReceivable>
+                     <v91:Commission></v91:Commission>
+                  </v91:Card>
+                  <v91:IRS8300Reporting></v91:IRS8300Reporting>
+                  <v91:RoundingFactor></v91:RoundingFactor>
+                  <v91:GenerateTaxInvoice></v91:GenerateTaxInvoice>
+               </v91:PaymentSetup>
+               <v91:TrxSetup>
+                  <v91:GeneratesType></v91:GeneratesType>
+                  <v91:TaxInclusive></v91:TaxInclusive>
+                  <v91:Revenue></v91:Revenue>
+                  <v91:ManualPosting></v91:ManualPosting>
+                  <v91:UseForPaidout></v91:UseForPaidout>
+                  <v91:RedeemMembershipPoints></v91:RedeemMembershipPoints>
+                  <v91:IncludeInDepositRule></v91:IncludeInDepositRule>
+                  <v91:DepositPostingOnly></v91:DepositPostingOnly>
+                  <v91:PostingRule></v91:PostingRule>
+                  <v91:DepositType></v91:DepositType>
+                  <v91:CheckNoRequired></v91:CheckNoRequired>
+                  <v91:InterHotelSales></v91:InterHotelSales>
+                  <v91:PostCovers></v91:PostCovers>
+                  <v91:NonTaxable></v91:NonTaxable>
+                  <v91:Inactive></v91:Inactive>
+                  <v91:OwnershipStatus></v91:OwnershipStatus>
+               </v91:TrxSetup>
+               <v91:AdjustmentCode></v91:AdjustmentCode>
+               <v91:ServiceRecoveryAdjustmentCode></v91:ServiceRecoveryAdjustmentCode>
+               <v91:Amounts Currency="?">
+                  <v91:DefaultPrice></v91:DefaultPrice>
+                  <v91:MinAmount></v91:MinAmount>
+                  <v91:MaxAmount></v91:MaxAmount>
+               </v91:Amounts>
+               <v91:GeneratesSetup>
+                  <v91:AddBaseAmtTo Bucket1="?" Bucket2="?" Bucket3="?"/>
+                  <v91:Generates>
+                     <v91:Generate Code="?" Description="?">
+                        <v91:GenerateId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                        <v91:Rule>
+                           <v91:Percentage Amount="?" CalculatedOn="?" UseTaxBracket="?"/>
+                           <v91:FlatAmount Amount="?"/>
+                           <v91:UDF></v91:UDF>
+                           <v91:UDFFunctionName></v91:UDFFunctionName>
+                           <v91:UDFFunctionArguments>
+                              <v91:FunctionArgument>
+                                 <v91:Name></v91:Name>
+                                 <v91:Value></v91:Value>
+                                 <v91:Position></v91:Position>
+                                 <v91:DataType></v91:DataType>
+                                 <v91:Required></v91:Required>
+                              </v91:FunctionArgument>
+                           </v91:UDFFunctionArguments>
+                           <v91:TaxTypeBased>
+                              <v91:TaxType Code="?" Description="?">
+                                 <v91:Schedule StartDate="?">
+                                    <v91:Rule>
+                                       <v91:Percentage Amount="?" CalculatedOn="?" UseTaxBracket="?"/>
+                                       <v91:FlatAmount Amount="?"/>
+                                       <v91:UDF>
+                                          <v91:UDF></v91:UDF>
+                                          <v91:UDFFunctionName></v91:UDFFunctionName>
+                                          <v91:UDFFunctionArguments>
+                                             <v91:FunctionArgument>
+                                                <v91:Name></v91:Name>
+                                                <v91:Value></v91:Value>
+                                                <v91:Position></v91:Position>
+                                                <v91:DataType></v91:DataType>
+                                                <v91:Required></v91:Required>
+                                             </v91:FunctionArgument>
+                                          </v91:UDFFunctionArguments>
+                                       </v91:UDF>
+                                       <v91:DoNotPost/>
+                                       <v91:RoundingMethod></v91:RoundingMethod>
+                                    </v91:Rule>
+                                 </v91:Schedule>
+                              </v91:TaxType>
+                           </v91:TaxTypeBased>
+                           <v91:RoundingMethod></v91:RoundingMethod>
+                           <v91:Posting ApplicableDays="?" AdjustmentType="?"/>
+                        </v91:Rule>
+                        <v91:AddGeneratedAmtTo Bucket1="?" Bucket2="?" Bucket3="?"/>
+                        <v91:Level></v91:Level>
+                     </v91:Generate>
+                  </v91:Generates>
+               </v91:GeneratesSetup>
+               <v91:GLMapping>
+                  <v91:ItemID></v91:ItemID>
+                  <v91:DepartmentCode></v91:DepartmentCode>
+                  <v91:AccountCode></v91:AccountCode>
+                  <v91:AccountDescription></v91:AccountDescription>
+                  <v91:CurrencyCode></v91:CurrencyCode>
+                  <v91:StatCode></v91:StatCode>
+                  <v91:ProductCode></v91:ProductCode>
+                  <v91:ChargeCode></v91:ChargeCode>
+                  <v91:AccountingCategory></v91:AccountingCategory>
+               </v91:GLMapping>
+               <v91:AssociatedTransactionCodes>
+                  <v91:AssociatedTransactionCode Code="?" Description="?"/>
+               </v91:AssociatedTransactionCodes>
+               <v91:AllowServiceRecovery></v91:AllowServiceRecovery>
+               <v91:UniversalProductCode></v91:UniversalProductCode>
+            </v91:TransactionCode>
+         </v9:TransactionCodes>
+      </v9:FetchTemplateTransactionCodesRS>
+   </soapenv:Body>
+</soapenv:Envelope>

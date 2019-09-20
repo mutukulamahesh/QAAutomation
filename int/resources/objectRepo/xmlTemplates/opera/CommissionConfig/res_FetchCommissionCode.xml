@@ -1,0 +1,60 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchCommissionCodeRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:CommissionCodeDetail>
+            <v91:CommissionCodeInfo>
+               <v91:HotelCode></v91:HotelCode>
+               <v91:CommissionCode></v91:CommissionCode>
+               <v91:Description></v91:Description>
+               <v91:Sequence></v91:Sequence>
+               <v91:CommissionCodeHoldStatus>
+                  <v91:HoldAlways></v91:HoldAlways>
+                  <v91:HoldPrepaid></v91:HoldPrepaid>
+                  <v91:HoldAccountReceivables></v91:HoldAccountReceivables>
+               </v91:CommissionCodeHoldStatus>
+               <v91:ReservationHistoryRecords>
+                  <v91:PerNight></v91:PerNight>
+                  <v91:PerStay></v91:PerStay>
+                  <v91:CommissionAmount Amount="?" CurrencyCode="?"/>
+                  <v91:WeekEndCommissionAmount Amount="?" CurrencyCode="?"/>
+                  <v91:CommissionType></v91:CommissionType>
+               </v91:ReservationHistoryRecords>
+               <v91:CommissionCalculation>
+                  <v91:RevenueBasedCommission>
+                     <v91:CommissionCodeTransactionInfo>
+                        <v91:TransactionCode></v91:TransactionCode>
+                        <v91:TransactionCodeDesc></v91:TransactionCodeDesc>
+                        <v91:BasedOnNetAmount></v91:BasedOnNetAmount>
+                        <v91:CommissionPaidDetails>
+                           <v91:PerNight></v91:PerNight>
+                           <v91:PerStay></v91:PerStay>
+                           <v91:CommissionAmount Amount="?" CurrencyCode="?"/>
+                           <v91:WeekEndCommissionAmount Amount="?" CurrencyCode="?"/>
+                           <v91:CommissionType></v91:CommissionType>
+                        </v91:CommissionPaidDetails>
+                     </v91:CommissionCodeTransactionInfo>
+                  </v91:RevenueBasedCommission>
+                  <v91:ReservationBasedCommission>
+                     <v91:CommissionPaidDetails>
+                        <v91:PerNight></v91:PerNight>
+                        <v91:PerStay></v91:PerStay>
+                        <v91:CommissionAmount Amount="?" CurrencyCode="?"/>
+                        <v91:WeekEndCommissionAmount Amount="?" CurrencyCode="?"/>
+                        <v91:CommissionType></v91:CommissionType>
+                     </v91:CommissionPaidDetails>
+                  </v91:ReservationBasedCommission>
+               </v91:CommissionCalculation>
+               <v91:TaxPercentage></v91:TaxPercentage>
+            </v91:CommissionCodeInfo>
+         </v9:CommissionCodeDetail>
+      </v9:FetchCommissionCodeRS>
+   </soapenv:Body>
+</soapenv:Envelope>

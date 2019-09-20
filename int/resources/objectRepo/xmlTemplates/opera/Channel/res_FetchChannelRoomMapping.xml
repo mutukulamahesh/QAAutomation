@@ -1,0 +1,142 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/par/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchChannelRoomMappingRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:ChannelRoomMappingsSummary TotalPages="?" AllRowsFetched="?" TotalRows="?" PageNumber="?" MaxFetchCount="?">
+            <v91:ChannelRoomMappingSummary BookingChannelCode="?" HotelCode="?" RoomType="?" ChannelRoomType="?" BeginDate="?">
+               <v91:EndDate></v91:EndDate>
+               <v91:Description>
+                  <v91:RoomTypeDescription>
+                     <v91:EnhancedDescription>
+                        <v91:EnhancedDescriptionLine1>
+                           <v91:DefaultText></v91:DefaultText>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"></v91:Text>
+                           </v91:TranslatedTexts>
+                        </v91:EnhancedDescriptionLine1>
+                        <v91:EnhancedDescriptionLine2>
+                           <v91:DefaultText></v91:DefaultText>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"></v91:Text>
+                           </v91:TranslatedTexts>
+                        </v91:EnhancedDescriptionLine2>
+                        <v91:EnhancedDescriptionLine3>
+                           <v91:DefaultText></v91:DefaultText>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"></v91:Text>
+                           </v91:TranslatedTexts>
+                        </v91:EnhancedDescriptionLine3>
+                     </v91:EnhancedDescription>
+                     <v91:HTMLSupportedDescription>
+                        <v91:Description></v91:Description>
+                        <v91:ShortDescription></v91:ShortDescription>
+                     </v91:HTMLSupportedDescription>
+                     <v91:Description></v91:Description>
+                  </v91:RoomTypeDescription>
+                  <v91:GlobalDescription>
+                     <v91:EnhancedDescriptionLine1>
+                        <v91:DefaultText></v91:DefaultText>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"></v91:Text>
+                        </v91:TranslatedTexts>
+                     </v91:EnhancedDescriptionLine1>
+                     <v91:EnhancedDescriptionLine2>
+                        <v91:DefaultText></v91:DefaultText>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"></v91:Text>
+                        </v91:TranslatedTexts>
+                     </v91:EnhancedDescriptionLine2>
+                     <v91:EnhancedDescriptionLine3>
+                        <v91:DefaultText></v91:DefaultText>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"></v91:Text>
+                        </v91:TranslatedTexts>
+                     </v91:EnhancedDescriptionLine3>
+                  </v91:GlobalDescription>
+                  <v91:CustomDescription>
+                     <v91:EnhancedDescription>
+                        <v91:EnhancedDescriptionLine1>
+                           <v91:DefaultText></v91:DefaultText>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"></v91:Text>
+                           </v91:TranslatedTexts>
+                        </v91:EnhancedDescriptionLine1>
+                        <v91:EnhancedDescriptionLine2>
+                           <v91:DefaultText></v91:DefaultText>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"></v91:Text>
+                           </v91:TranslatedTexts>
+                        </v91:EnhancedDescriptionLine2>
+                        <v91:EnhancedDescriptionLine3>
+                           <v91:DefaultText></v91:DefaultText>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"></v91:Text>
+                           </v91:TranslatedTexts>
+                        </v91:EnhancedDescriptionLine3>
+                     </v91:EnhancedDescription>
+                     <v91:HTMLSupportedDescription>
+                        <v91:Description></v91:Description>
+                        <v91:ShortDescription></v91:ShortDescription>
+                     </v91:HTMLSupportedDescription>
+                     <v91:Description></v91:Description>
+                  </v91:CustomDescription>
+               </v91:Description>
+               <v91:AlternateChannelRoomType></v91:AlternateChannelRoomType>
+               <v91:ChannelRoomTypeOrder></v91:ChannelRoomTypeOrder>
+               <v91:SellSequence></v91:SellSequence>
+               <v91:Active></v91:Active>
+               <v91:BedTypeCode></v91:BedTypeCode>
+               <v91:BaseAllocation></v91:BaseAllocation>
+               <v91:NoOfRateRoomsMapped></v91:NoOfRateRoomsMapped>
+            </v91:ChannelRoomMappingSummary>
+         </v9:ChannelRoomMappingsSummary>
+         <v9:MasterInfo>
+            <v91:BookingChannelsInfo>
+               <v91:BookingChannelInfo BookingChannelCode="?" Name="?" BookingChannelType="?">
+                  <v91:HotelMappings>
+                     <v91:HotelMapping HotelCode="?" Code="?" Name="?" Description="?"/>
+                  </v91:HotelMappings>
+                  <v91:ConfigurationParameters>
+                     <v91:Parameter>
+                        <v91:ParameterName></v91:ParameterName>
+                        <v91:ParameterValue></v91:ParameterValue>
+                     </v91:Parameter>
+                  </v91:ConfigurationParameters>
+               </v91:BookingChannelInfo>
+            </v91:BookingChannelsInfo>
+            <v91:SourceDescriptions>
+               <v91:SourceDescriptions HotelCode="?" RoomType="?">
+                  <v91:Description></v91:Description>
+                  <v91:GlobalDescription>
+                     <v91:EnhancedDescriptionLine1>
+                        <v91:DefaultText></v91:DefaultText>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"></v91:Text>
+                        </v91:TranslatedTexts>
+                     </v91:EnhancedDescriptionLine1>
+                     <v91:EnhancedDescriptionLine2>
+                        <v91:DefaultText></v91:DefaultText>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"></v91:Text>
+                        </v91:TranslatedTexts>
+                     </v91:EnhancedDescriptionLine2>
+                     <v91:EnhancedDescriptionLine3>
+                        <v91:DefaultText></v91:DefaultText>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"></v91:Text>
+                        </v91:TranslatedTexts>
+                     </v91:EnhancedDescriptionLine3>
+                  </v91:GlobalDescription>
+               </v91:SourceDescriptions>
+            </v91:SourceDescriptions>
+         </v9:MasterInfo>
+      </v9:FetchChannelRoomMappingRS>
+   </soapenv:Body>
+</soapenv:Envelope>

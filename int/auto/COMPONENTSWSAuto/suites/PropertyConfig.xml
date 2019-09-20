@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Property Configuration Suite" verbose="1"
+    allow-return-values="true">
+    
+    	<parameter name="emailFrom" value="operaInterfacesAutomationExecution_notifier_noreply@oracle.com" />
+	<parameter name="emailTo" value="vaishali.dihenia@oracle.com;tejal.patel@oracle.com;radhika.kutadi@oracle.com;rashi.saluja@oracle.com" />
+	<parameter name="emailCC" value="santhoshi.basana@oracle.com" />
+	<parameter name="smtpHost" value="internal-mail-router.oracle.com" />
+	<parameter name="smtpPort" value="25" />
+	
+    	<!-- Pass global parameters here -->
+   	<test name="OperaConfig">
+   		<parameter name="environment" value="LAUNCHPAD_19x" />
+		<parameter name="runOnEntry" value="ES_01" />
+		<parameter name="wsLayer" value="WS" />	
+		<!--  Possible Values ASP, NONASP, CENTRAL	-->
+		<parameter name="schema" value="ASP"/>
+		<parameter name="version" value="19.x"/>
+		<parameter name="testGroup" value="OPERA PROPERTY CONFIGURATION"/>
+        <groups>        
+            <run>
+                <include name="OperaConfig"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="ws.preSetup" />
+        </packages>
+    </test> 
+    
+   <test name="Channel1">
+  		 <parameter name="environment" value="LAUNCHPAD_19x" />
+		<parameter name="runOnEntry" value="ES_01" />
+		<parameter name="wsLayer" value="WS" />	
+		<!--  Possible Values ASP, NONASP, CENTRAL	-->
+		<parameter name="schema" value="ASP"/>
+		<parameter name="version" value="19.x"/>
+		<parameter name="testGroup" value="OPERA PROPERTY CONFIGURATION"/>
+  	    <parameter name="Channel" value="WEBCHNL"/>
+        <groups>        
+            <run>
+                <include name="OWS" />
+            </run>
+        </groups>
+        <packages>
+            <package name="ws.preSetup" />
+        </packages>
+    </test>
+    
+  <!--   <test name="Channel2">
+    <parameter name="Channel" value="PROPCH2"/>
+        <groups>        
+            <run>
+                <include name="OWS" />
+            </run>
+        </groups>
+        <packages>
+            <package name="ws.preSetup" />
+        </packages>
+    </test>  -->
+    
+   <!--  <test name="Interface1">
+    Pass parameters here
+	<parameter name="runOnEntry" value="ES_01" />
+	<parameter name="wsLayer" value="SSD" />
+	<parameter name="interfaceName" value="MTECHNG"/>
+        <groups>        
+            <run>
+                <include name="createConversionCodes" />
+            </run>
+        </groups>
+        <packages>
+            <package name="com.oracle.hgbu.opera.qaauto.ws.components.configuration" />
+        </packages>
+    </test> -->
+    
+   <!--  <test name="Interface2">
+    <parameter name="Interface" value="SPASOFT"/>
+        <groups>        
+            <run>
+                <include name="HTNG" />
+            </run>
+        </groups>
+        <packages>
+            <package name="ws.preSetup" />
+        </packages>
+    </test> -->
+    
+    <test name="WriteResults">
+        <groups>        
+            <run>
+                <include name="WriteResults" />
+            </run>
+        </groups>
+        <packages>
+            <package name="ws.preSetup" />
+        </packages>
+    </test> 
+</suite>

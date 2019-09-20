@@ -1,0 +1,37 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateHotelRestaurantsRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:HotelRestaurants>
+            <v91:HotelRestaurant HotelCode="?" OrderBy="?" RestaurantCode="?">
+               <v91:RestaurantName/>
+               <v91:RestaurantType/>
+               <v91:Hours/>
+               <v91:PriceRange/>
+               <v91:Comments/>
+               <v91:Category/>
+               <v91:TimeSpan>
+                  <v91:StartDate/>
+                  <v91:EndDate/>
+                  <v91:Duration/>
+               </v91:TimeSpan>
+               <v91:NewRestaurantCode/>
+            </v91:HotelRestaurant>
+         </v9:HotelRestaurants>
+      </v9:CreateHotelRestaurantsRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,56 @@
+<soapenv:Envelope xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://htng.org/PWS/2008B/SingleGuestItinerary/Name/Types" xmlns:typ1="http://htng.org/PWS/2008B/SingleGuestItinerary/Common/Types">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:LookupRequest>
+         <typ:Lookup>
+            <typ:ProfileIDs>
+               <typ1:UniqueID source="?"/>
+            </typ:ProfileIDs>
+            <typ:PersonName familiarName="?" nameOrdered="?">
+               <typ1:NameTitle/>
+               <typ1:FirstName/>
+               <typ1:MiddleName/>
+               <typ1:LastName/>
+               <typ1:NameSuffix/>
+            </typ:PersonName>
+            <typ:Membership>
+               <typ1:MembershipType/>
+               <typ1:MembershipNumber/>
+               <typ1:MembershipLevel/>
+               <typ1:MemberName/>
+               <typ1:EffectiveDate/>
+               <typ1:ExpirationDate/>
+               <typ1:CurrentPoints/>
+            </typ:Membership>
+            <typ:Address addressType="?" otherAddressType="?">
+               <typ1:AddressLine/>
+               <typ1:CityName/>
+               <typ1:StateProv/>
+               <typ1:CountryCode/>
+               <typ1:PostalCode/>
+            </typ:Address>
+            <typ:GovernmentIDs>
+               <typ1:GovernmentID>
+                  <typ1:DocumentType/>
+                  <typ1:DocumentNumber/>
+                  <typ1:EffectiveDate/>
+                  <typ1:ExpirationDate/>
+                  <typ1:PlaceOfIssue/>
+                  <typ1:CountryOfIssue/>
+               </typ1:GovernmentID>
+            </typ:GovernmentIDs>
+            <typ:birthDate/>
+            <typ:ResortId/>
+            <typ:Phone phoneRole="?" phoneType="?">
+               <typ1:PhoneNumber/>
+               <typ1:PhoneData>
+                  <typ1:CountryAccessCode/>
+                  <typ1:AreaCode/>
+                  <typ1:PhoneNumber/>
+                  <typ1:Extension/>
+               </typ1:PhoneData>
+            </typ:Phone>
+         </typ:Lookup>
+      </typ:LookupRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,63 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:name="http://webservices.micros.com/ows/5.1/Name.wsdl" xmlns:name1="http://webservices.micros.com/og/4.3/Name/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <name:UpdateNameRequest>
+         <name:NameID source="?" type="?"/>
+         <name:PersonName active="?" familiarName="?" nameOrdered="?">
+            <com:nameTitle/>
+            <com:firstName/>
+            <com:middleName/>
+            <com:lastName/>
+            <com:nameSuffix/>
+            <com:accountName2/>
+            <com:accountName3/>
+            <com:profession/>
+         </name:PersonName>
+         <name:NativeName active="?" familiarName="?" languageCode="?" nameOrdered="?">
+            <com:nameTitle/>
+            <com:firstName/>
+            <com:middleName/>
+            <com:lastName/>
+            <com:nameSuffix/>
+            <com:accountName2/>
+            <com:accountName3/>
+            <com:profession/>
+         </name:NativeName>
+         <name:Birthdate/>
+         <name:Gender/>
+         <name:nationality/>
+         <name:vipCode/>
+         <name:Language/>
+         <name:Id countryOfIssue="?" displaySequence="?" documentID="?" documentNumber="?" documentType="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" primary="?" resort="?"/>
+         <name:KeyWord>
+            <name1:Type/>
+            <name1:Value/>
+         </name:KeyWord>
+         <name:Company commissionCode="?">
+            <name1:CompanyName/>
+            <name1:CompanyType/>
+            <name1:CompanyID/>
+         </name:Company>
+         <name:Activate/>
+      </name:UpdateNameRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

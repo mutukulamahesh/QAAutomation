@@ -1,0 +1,86 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:name="http://webservices.micros.com/ows/5.1/Name.wsdl" xmlns:name1="http://webservices.micros.com/og/4.3/Name/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <name:RegisterNameRequest loginName="?" password="?">
+         <name:PersonName active="?" familiarName="?" nameOrdered="?">
+            <com:nameTitle/>
+            <com:firstName/>
+            <com:middleName/>
+            <com:lastName/>
+            <com:nameSuffix/>
+            <com:accountName2/>
+            <com:accountName3/>
+            <com:profession/>
+         </name:PersonName>
+         <name:NativeName active="?" familiarName="?" languageCode="?" nameOrdered="?">
+            <com:nameTitle/>
+            <com:firstName/>
+            <com:middleName/>
+            <com:lastName/>
+            <com:nameSuffix/>
+            <com:accountName2/>
+            <com:accountName3/>
+            <com:profession/>
+         </name:NativeName>
+         <name:Birthdate/>
+         <name:Gender/>
+         <name:Address addressType="?" languageCode="?" otherAddressType="?">
+            <com:AddressLine/>
+			<com:AddressLine/>
+			<com:AddressLine/>
+			<com:AddressLine/>
+            <com:cityName/>
+            <com:stateProv/>
+            <com:countryCode/>
+            <com:postalCode/>
+            <com:barCode/>
+            <com:cityExtension/>
+         </name:Address>
+         <name:Phone phoneRole="?" phoneType="?" primaryPhone="?">
+            <com:PhoneNumber/>
+            <com:PhoneData areaCode="?" countryAccessCode="?" extension="?" phoneNumber="?"/>
+         </name:Phone>
+         <name:Passport countryOfIssue="?" displaySequence="?" documentID="?" documentNumber="?" documentType="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" primary="?" resort="?"/>
+         <name:nationality/>
+         <name:vipCode/>
+         <name:Id countryOfIssue="?" displaySequence="?" documentID="?" documentNumber="?" documentType="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" primary="?" resort="?"/>
+         <name:KeyWord>
+            <name1:Type/>
+            <name1:Value/>
+         </name:KeyWord>
+         <name:Company commissionCode="?">
+            <name1:CompanyName/>
+            <name1:CompanyType/>
+            <name1:CompanyID/>
+         </name:Company>
+         <name:Position/>
+         <name:Department/>
+         <name:Privacy>
+            <name1:PrivacyOption OptionType="?" OptionValue="?"/>
+         </name:Privacy>
+         <name:ActionCode/>
+         <name:Email displaySequence="?" emailFormat="?" emailType="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" operaId="?" primary="?" updateDate="?" updateUser="?"/>
+         <name:NameType/>
+         <name:Language/>
+      </name:RegisterNameRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,223 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchReservationsRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Criteria Discrepancy="?" HotelCode="?" MarkAsRecentlyAccessed="?" MaxFetchCount="?" PageNumber="?" SearchType="?">
+            <v91:MultipleHotelsSearchList>
+               <v91:HotelCode/>
+            </v91:MultipleHotelsSearchList>
+            <v91:SuperSearch/>
+            <v91:ReservationIDList>
+               <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            </v91:ReservationIDList>
+            <v91:Reservations>
+               <v91:ReservationID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            </v91:Reservations>
+            <v91:StayCriteria Nights="?">
+               <v91:DateCriterias>
+                  <v91:Arrival End="?" Start="?"/>
+                  <v91:Departure End="?" Start="?"/>
+                  <v91:StayOn End="?" Start="?"/>
+                  <v91:CreatedOn End="?" Start="?"/>
+                  <v91:DepositDate End="?" Start="?"/>
+                  <v91:ExpectedArrivalTime End="?" Start="?"/>
+                  <v91:DepositDueDate End="?" Start="?"/>
+                  <v91:ExpectedReturnTime End="?" Start="?"/>
+               </v91:DateCriterias>
+            </v91:StayCriteria>
+            <v91:AttachedProfiles>
+               <v91:AttachedProfile ResProfileType="?">
+                  <v91:Name/>
+                  <v91:ProfileIDList>
+                     <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                  </v91:ProfileIDList>
+               </v91:AttachedProfile>
+            </v91:AttachedProfiles>
+            <v91:ResGuest>
+               <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               <v91:Membership>
+                  <v91:MembershipID/>
+                  <v91:MembershipLevel>
+                     <v91:Code/>
+                  </v91:MembershipLevel>
+                  <v91:MembershipType>
+                     <v91:Code/>
+                  </v91:MembershipType>
+                  <v91:AssociatedReservationsOnly/>
+               </v91:Membership>
+               <v91:Surname/>
+               <v91:GivenName/>
+               <v91:FromName/>
+               <v91:ToName/>
+               <v91:Address ExcludeNoCity="?">
+                  <v91:CityName/>
+                  <v91:PostalCode/>
+                  <v91:State/>
+                  <v91:CountryName Code="?"/>
+                  <v91:StreetAddress/>
+               </v91:Address>
+               <v91:VIPStatusList AnyVIPStatus="?">
+                  <v91:VIPStatus Code="?"/>
+               </v91:VIPStatusList>
+               <v91:FromRegistrationCardNo/>
+               <v91:ToRegistrationCardNo/>
+            </v91:ResGuest>
+            <v91:GuaranteeCode/>
+            <v91:PaymentMethod/>
+            <v91:DiscountApplied/>
+            <v91:CreatedBy/>
+            <v91:RateCandidates>
+               <v91:RatePlanCode>
+                  <v91:Code/>
+               </v91:RatePlanCode>
+               <v91:MarketCode/>
+               <v91:BookingChannelCode/>
+               <v91:Promotions>
+                  <v91:Promotion CouponCode="?" PromotionCode="?" PromotionName="?"/>
+               </v91:Promotions>
+               <v91:SourceCode>
+                  <v91:Code/>
+               </v91:SourceCode>
+               <v91:MarketCodes>
+                  <v91:Code/>
+               </v91:MarketCodes>
+            </v91:RateCandidates>
+            <v91:BlockCriteria ExcludeBlockReservations="?">
+               <v91:HotelCode/>
+               <v91:BlockName/>
+               <v91:Blocks>
+                  <v91:BlockID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               </v91:Blocks>
+            </v91:BlockCriteria>
+            <v91:CustomReference/>
+            <v91:RecordLocator/>
+            <v91:OrderByList>
+               <v91:OrderBy AttributeName="?" OrderType="?"/>
+            </v91:OrderByList>
+            <v91:RoomCriteria IncludeResWithRoom="?" IncludeResWithoutRoom="?">
+               <v91:RoomNumber/>
+               <v91:NumberOfRooms/>
+               <v91:RoomTypes>
+                  <v91:RoomType/>
+               </v91:RoomTypes>
+               <v91:Features>
+                  <v91:RoomFeature Code="?" Description="?" OrderSequence="?" Quantity="?"/>
+               </v91:Features>
+               <v91:Specials AvailableQuantity="?" CreateDateTime="?" CreatorID="?" LastModifierID="?" LastModifyDateTime="?" MaxQuantity="?" MaxResortUsedQuantity="?" OrderValue="?" PrefType="?" PrefTypeDescription="?" PurgeDate="?" ReservationPreference="?">
+                  <v91:Preference ExcludedPreferencesCount="?" PreferenceId="?">
+                     <v91:PrefValue/>
+                     <v91:Description/>
+                     <v91:Global/>
+                     <v91:Source/>
+                     <v91:Hotels/>
+                  </v91:Preference>
+               </v91:Specials>
+               <v91:SmokingPreference ExcludedPreferencesCount="?" PreferenceId="?">
+                  <v91:PrefValue/>
+                  <v91:Description/>
+                  <v91:Global/>
+                  <v91:Source/>
+                  <v91:Hotels/>
+               </v91:SmokingPreference>
+               <v91:Floor AvailableQuantity="?" CreateDateTime="?" CreatorID="?" LastModifierID="?" LastModifyDateTime="?" MaxQuantity="?" MaxResortUsedQuantity="?" OrderValue="?" PrefType="?" PrefTypeDescription="?" PurgeDate="?" ReservationPreference="?">
+                  <v91:Preference ExcludedPreferencesCount="?" PreferenceId="?">
+                     <v91:PrefValue/>
+                     <v91:Description/>
+                     <v91:Global/>
+                     <v91:Source/>
+                     <v91:Hotels/>
+                  </v91:Preference>
+               </v91:Floor>
+               <v91:RoomStatus>
+                  <v91:RoomStatus/>
+               </v91:RoomStatus>
+               <v91:RoomClassList>
+                  <v91:Code/>
+               </v91:RoomClassList>
+               <v91:RoomRange FromRoomNumber="?" ToRoomNumber="?"/>
+            </v91:RoomCriteria>
+            <v91:Communication/>
+            <v91:FetchInstructions>
+               <v91:FetchInstruction/>
+            </v91:FetchInstructions>
+            <v91:AllowedActions>
+               <v91:AllowedAction/>
+            </v91:AllowedActions>
+            <v91:AdditionalCriteria AllowPreRegistration="?" ExcludeNoPost="?" ExcludePMRooms="?" HasDepositBalance="?" HasDepositPolicy="?" HasOpenBalance="?" HasOpenFolio="?" IncludeScheduledCheckOut="?" Linked="?" Unlinked="?">
+               <v91:StayClassification ActualArrivals="?" ActualDepartures="?" ComplimentaryReservations="?" DayOfArrivalCancels="?" DayUse="?" EarlyDepartures="?" ExpectedArrivals="?" ExpectedDepartures="?" ExtendedStays="?" HouseUseReservations="?" Stayovers="?">
+                  <v91:SearchDate/>
+               </v91:StayClassification>
+               <v91:RoomRouting>
+                  <v91:ForReservation ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               </v91:RoomRouting>
+               <v91:ViewByAttachedProfile/>
+               <v91:PeriodicFolioType>
+                  <v91:PeriodicFolio/>
+                  <v91:NumberOfDays/>
+               </v91:PeriodicFolioType>
+               <v91:AutoFolioSettlementCriteria>
+                  <v91:FolioSettlementTypes/>
+                  <v91:DefaultDays/>
+                  <v91:DaysSinceLastAutoSettled/>
+                  <v91:DateSinceLastAutoSettled/>
+               </v91:AutoFolioSettlementCriteria>
+            </v91:AdditionalCriteria>
+            <v91:ExcludedReservations PseudoRoomReservations="?">
+               <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               <v91:VIPStatusList AnyVIPStatus="?">
+                  <v91:VIPStatus Code="?"/>
+               </v91:VIPStatusList>
+               <v91:Specials AvailableQuantity="?" CreateDateTime="?" CreatorID="?" LastModifierID="?" LastModifyDateTime="?" MaxQuantity="?" MaxResortUsedQuantity="?" OrderValue="?" PrefType="?" PrefTypeDescription="?" PurgeDate="?" ReservationPreference="?">
+                  <v91:Preference ExcludedPreferencesCount="?" PreferenceId="?">
+                     <v91:PrefValue/>
+                     <v91:Description/>
+                     <v91:Global/>
+                     <v91:Source/>
+                     <v91:Hotels/>
+                  </v91:Preference>
+               </v91:Specials>
+               <v91:AdvanceCheckedIn/>
+            </v91:ExcludedReservations>
+            <v91:FetchSummaryInstructions>
+               <v91:FetchSummaryInstruction/>
+            </v91:FetchSummaryInstructions>
+            <v91:GamingInfo>
+               <v91:PlayerID/>
+               <v91:BalanceFrom/>
+               <v91:BalanceTo/>
+               <v91:CompBalanceFrom/>
+               <v91:CompBalanceTo/>
+            </v91:GamingInfo>
+            <v91:SearchTypes>
+               <v91:SearchType/>
+            </v91:SearchTypes>
+            <v91:ReservationStatuses>
+               <v91:ReservationStatus/>
+            </v91:ReservationStatuses>
+            <v91:Transportation>
+               <v91:Code/>
+               <v91:WildCard/>
+            </v91:Transportation>
+            <v91:RoomReadyStatusType>
+               <v91:RoomReadyStatus/>
+            </v91:RoomReadyStatusType>
+            <v91:CheckoutMessageReceived/>
+            <v91:OptedForCommunication/>
+         </v9:Criteria>
+      </v9:FetchReservationsRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

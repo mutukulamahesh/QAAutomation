@@ -1,0 +1,50 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:name="http://webservices.micros.com/ows/5.1/Name.wsdl">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <name:UpdateGuestCardRequest>
+         <name:NameMembership central_setup_yn="?" displaySequence="?" externalId="?" inactiveDate="?" insertDate="?" insertUser="?" membership_class="?" operaId="?" points_label="?" preferred="?" primary="?" status="?" updateDate="?" updateUser="?" usedInReservation="?">
+            <com:membershipType/>
+            <com:membershipNumber/>
+            <com:membershipLevel/>
+            <com:membershipNextLevel/>
+            <com:memberName/>
+            <com:effectiveDate/>
+            <com:expirationDate/>
+            <com:currentPoints/>
+            <com:enrollmentCode/>
+            <com:ResvNameId>
+               <com:UniqueID source="?" type="?"/>
+            </com:ResvNameId>
+            <com:membershipid source="?" type="?"/>
+            <com:transferPoints/>
+            <com:enrollmentSource/>
+            <com:enrolledAt/>
+            <com:awardPointsToExpires>
+               <com:AwardPointsToExpire expirationDate="?" expireByDate="?" totalToExpire="?"/>
+            </com:awardPointsToExpires>
+            <com:inactive/>
+            <com:excludeBatchIndicator/>
+         </name:NameMembership>
+         <name:ReActivateMembership/>
+      </name:UpdateGuestCardRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

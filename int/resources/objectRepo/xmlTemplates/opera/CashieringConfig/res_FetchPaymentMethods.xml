@@ -1,0 +1,54 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchPaymentMethodsRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?" TotalPages="?" PageNumber="?" MaxFetchCount="?" AllRowsFetched="?" TotalRows="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:PaymentMethods>
+            <v91:PaymentMethod HotelCode="?" PaymentMethod="?" CalculatePoints="?" Inactive="?" OrderSequence="?">
+               <v91:Description></v91:Description>
+               <v91:PaymentCard CardType="?" Processing="?">
+                  <v91:CardUsageRules AuthorizationAtCheckin="?" AuthorizationDuringStay="?" AuthorizationReversal="?" AuthorizationSettlementAtCheckout="?" CVVCheck="?" AddressVerification="?" PromptAtCheckin="?" ChipAndPin="?"/>
+                  <v91:Validation Rule="?">
+                     <v91:Length></v91:Length>
+                     <v91:Prefix></v91:Prefix>
+                     <v91:Ranges>
+                        <v91:Range>
+                           <v91:From></v91:From>
+                           <v91:To></v91:To>
+                        </v91:Range>
+                     </v91:Ranges>
+                     <v91:Formula></v91:Formula>
+                  </v91:Validation>
+                  <v91:MerchantNumber></v91:MerchantNumber>
+                  <v91:Option>
+                     <v91:RequireIssueNumber></v91:RequireIssueNumber>
+                     <v91:RequireStartDate></v91:RequireStartDate>
+                     <v91:Either></v91:Either>
+                  </v91:Option>
+               </v91:PaymentCard>
+               <v91:PaymentMethodTransactionInfo TransactionCode="?" TransactionGroup="?" TransactionSubGroup="?" TransactionDisplay="?">
+                  <v91:Description></v91:Description>
+                  <v91:PostingAmount>
+                     <v91:MinimumAmount Amount="?" CurrencyCode="?"/>
+                     <v91:MaximumAmount Amount="?" CurrencyCode="?"/>
+                  </v91:PostingAmount>
+                  <v91:Surcharge>
+                     <v91:Minimum Amount="?" CurrencyCode="?"/>
+                     <v91:Percentage></v91:Percentage>
+                  </v91:Surcharge>
+               </v91:PaymentMethodTransactionInfo>
+               <v91:PaymentMethodUsage Billing="?" AccountsReceivable="?" Deposit="?" CompAccounting="?" Reservation="?" Posting="?" Cash="?"/>
+               <v91:CreditLimit Percentage="?">
+                  <v91:CreditLimit Amount="?" CurrencyCode="?"/>
+               </v91:CreditLimit>
+            </v91:PaymentMethod>
+         </v9:PaymentMethods>
+      </v9:FetchPaymentMethodsRS>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,118 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:res="http://webservices.micros.com/og/4.3/ResvAdvanced/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:name="http://webservices.micros.com/og/4.3/Name/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/">
+   <soapenv:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="E" channelValidation="true" terminalID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName></core:UserName>
+               <core:UserPassword></core:UserPassword>
+               <core:Domain></core:Domain>
+               <core:SecurityId></core:SecurityId>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key></core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:FetchQueueReservationsResponse>
+         <res:Result resultStatusFlag="?">
+            <com:Text>
+               <com:TextElement formatted="?" language="?"></com:TextElement>
+            </com:Text>
+            <com:IDs>
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <com:OperaErrorCode></com:OperaErrorCode>
+         </res:Result>
+         <res:QueueDetails>
+            <res:QueueDatas>
+               <res:Guests gender="?" birthDate="?" profileType="?">
+                  <name:PersonName nameOrdered="?" familiarName="?" active="?">
+                     <com:nameTitle></com:nameTitle>
+                     <com:firstName></com:firstName>
+                     <com:middleName></com:middleName>
+                     <com:lastName></com:lastName>
+                     <com:nameSuffix></com:nameSuffix>
+                     <com:accountName2></com:accountName2>
+                     <com:accountName3></com:accountName3>
+                     <com:profession></com:profession>
+                  </name:PersonName>
+                  <name:NativeName nameOrdered="?" familiarName="?" active="?" languageCode="?">
+                     <com:nameTitle></com:nameTitle>
+                     <com:firstName></com:firstName>
+                     <com:middleName></com:middleName>
+                     <com:lastName></com:lastName>
+                     <com:nameSuffix></com:nameSuffix>
+                     <com:accountName2></com:accountName2>
+                     <com:accountName3></com:accountName3>
+                     <com:profession></com:profession>
+                  </name:NativeName>
+                  <name:BusinessTitle></name:BusinessTitle>
+                  <name:GovernmentIDList>
+                     <com:GovernmentID documentType="?" documentNumber="?" effectiveDate="?" expirationDate="?" placeOfIssue="?" countryOfIssue="?" documentID="?" resort="?" primary="?" displaySequence="?"/>
+                  </name:GovernmentIDList>
+               </res:Guests>
+               <res:RoomStay roomTypeCode="?" roomClass="?" feature="?" upgradeFromCode="?" invBlockCode="?" numberOfUnits="?" isRoom="?" effectiveDate="?" expirationDate="?" roomTypeName="?" roomToChargeCode="?" roomToChargeName="?" roomStatus="?" pseudoRoom="?" roomServiceStatus="?" minimumRoomsAvailable="?">
+                  <hot:RoomTypeDescription>
+                     <hot:Text formatted="?" language="?"></hot:Text>
+                     <hot:Image></hot:Image>
+                     <hot:URL></hot:URL>
+                  </hot:RoomTypeDescription>
+                  <hot:RoomTypeShortDescription>
+                     <hot:Text formatted="?" language="?"></hot:Text>
+                     <hot:Image></hot:Image>
+                     <hot:URL></hot:URL>
+                  </hot:RoomTypeShortDescription>
+                  <hot:RoomNumber></hot:RoomNumber>
+                  <hot:RoomToChargeDescription>
+                     <hot:Text formatted="?" language="?"></hot:Text>
+                     <hot:Image></hot:Image>
+                     <hot:URL></hot:URL>
+                  </hot:RoomToChargeDescription>
+                  <hot:RoomToChargeShortDescription>
+                     <hot:Text formatted="?" language="?"></hot:Text>
+                     <hot:Image></hot:Image>
+                     <hot:URL></hot:URL>
+                  </hot:RoomToChargeShortDescription>
+                  <hot:AmenityInfo>
+                     <hot:Amenities>
+                        <hot:Amenity amenityCode="?" amenityType="?" otherType="?" availabilityFlag="?" otherFlag="?">
+                           <hot:amenityDescription></hot:amenityDescription>
+                        </hot:Amenity>
+                     </hot:Amenities>
+                  </hot:AmenityInfo>
+                  <hot:RoomFeatures>
+                     <hot:Features Feature="?" Description="?" AttachPreferenceToProfile="?">
+                        <hot:FeatureID></hot:FeatureID>
+                     </hot:Features>
+                  </hot:RoomFeatures>
+               </res:RoomStay>
+               <res:FrontOfficeStatus></res:FrontOfficeStatus>
+               <res:RoomStatus></res:RoomStatus>
+               <res:VipCode></res:VipCode>
+               <res:ReservationRequest>
+                  <res:HotelReference chainCode="?" hotelCode="?"></res:HotelReference>
+                  <res:KeyTrack Key1Track="?" Key2Track="?" Key3Track="?" Key4Track="?"/>
+                  <res:ReservationID>
+                     <com:UniqueID type="?" source="?"></com:UniqueID>
+                  </res:ReservationID>
+                  <res:CheckOutTime></res:CheckOutTime>
+               </res:ReservationRequest>
+               <res:TimeInQueue></res:TimeInQueue>
+            </res:QueueDatas>
+         </res:QueueDetails>
+         <res:QueueMessage></res:QueueMessage>
+         <res:QueueTime>
+            <res:CurrentQueueTime></res:CurrentQueueTime>
+            <res:ActualQueueTime></res:ActualQueueTime>
+            <res:TotalRooms></res:TotalRooms>
+         </res:QueueTime>
+      </res:FetchQueueReservationsResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

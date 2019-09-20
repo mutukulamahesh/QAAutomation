@@ -1,0 +1,35 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/oxi/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchConversionCodeMappingsRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:ConversionCodeMappings>
+            <v91:ConversionCodeMapping>
+               <v91:HotelCode></v91:HotelCode>
+               <v91:InterfaceID></v91:InterfaceID>
+               <v91:ConversionCode></v91:ConversionCode>
+               <v91:UDFCode></v91:UDFCode>
+               <v91:ID></v91:ID>
+               <v91:OperaValue></v91:OperaValue>
+               <v91:ExternalValue></v91:ExternalValue>
+               <v91:OperaColumn></v91:OperaColumn>
+               <v91:ExternalFieldName></v91:ExternalFieldName>
+               <v91:ProfileType></v91:ProfileType>
+               <v91:OperaToExternalDefault></v91:OperaToExternalDefault>
+               <v91:ExternalToOperaDefault></v91:ExternalToOperaDefault>
+               <v91:OverrideExternalDefault></v91:OverrideExternalDefault>
+               <v91:OverrideOperaDefault></v91:OverrideOperaDefault>
+               <v91:Active></v91:Active>
+               <v91:IFCCreated></v91:IFCCreated>
+               <v91:MasterValue></v91:MasterValue>
+            </v91:ConversionCodeMapping>
+         </v9:ConversionCodeMappings>
+      </v9:FetchConversionCodeMappingsRS>
+   </soapenv:Body>
+</soapenv:Envelope>

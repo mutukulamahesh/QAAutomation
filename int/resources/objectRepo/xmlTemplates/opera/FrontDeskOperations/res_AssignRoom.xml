@@ -1,0 +1,77 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/fof/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:AssignRoomRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:OldRates>
+            <v91:DailyRate AmountBeforeTax="?" AmountAfterTax="?" Code="?" RateOverride="?" CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?" Start="?" End="?">
+               <v91:Taxes Amount="?" CurrencyCode="?">
+                  <v91:Tax Type="?" Code="?" Amount="?" CurrencyCode="?">
+                     <v91:Description></v91:Description>
+                  </v91:Tax>
+               </v91:Taxes>
+               <v91:Fees Amount="?" CurrencyCode="?">
+                  <v91:Fee Type="?" Code="?" Amount="?" CurrencyCode="?">
+                     <v91:Description></v91:Description>
+                  </v91:Fee>
+               </v91:Fees>
+               <v91:Description></v91:Description>
+               <v91:Discount Percent="?" DiscountCode="?" Amount="?" CurrencyCode="?">
+                  <v91:DiscountReason></v91:DiscountReason>
+               </v91:Discount>
+            </v91:DailyRate>
+         </v9:OldRates>
+         <v9:NewRates>
+            <v91:DailyRate AmountBeforeTax="?" AmountAfterTax="?" Code="?" RateOverride="?" CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?" Start="?" End="?">
+               <v91:Taxes Amount="?" CurrencyCode="?">
+                  <v91:Tax Type="?" Code="?" Amount="?" CurrencyCode="?">
+                     <v91:Description></v91:Description>
+                  </v91:Tax>
+               </v91:Taxes>
+               <v91:Fees Amount="?" CurrencyCode="?">
+                  <v91:Fee Type="?" Code="?" Amount="?" CurrencyCode="?">
+                     <v91:Description></v91:Description>
+                  </v91:Fee>
+               </v91:Fees>
+               <v91:Description></v91:Description>
+               <v91:Discount Percent="?" DiscountCode="?" Amount="?" CurrencyCode="?">
+                  <v91:DiscountReason></v91:DiscountReason>
+               </v91:Discount>
+            </v91:DailyRate>
+         </v9:NewRates>
+         <v9:EffectiveRates>
+            <v91:EffectiveRate OverrideFloorAmount="?" Start="?" End="?">
+               <v91:OnePersonRate></v91:OnePersonRate>
+               <v91:TwoPersonRate></v91:TwoPersonRate>
+               <v91:ThreePersonRate></v91:ThreePersonRate>
+               <v91:FourPersonRate></v91:FourPersonRate>
+               <v91:FivePersonRate></v91:FivePersonRate>
+               <v91:ExtraPersonRate></v91:ExtraPersonRate>
+               <v91:ExtraChildRate></v91:ExtraChildRate>
+               <v91:OneChildRate></v91:OneChildRate>
+               <v91:TwoChildrenRate></v91:TwoChildrenRate>
+               <v91:ThreeChildrenRate></v91:ThreeChildrenRate>
+               <v91:FourChildrenRate></v91:FourChildrenRate>
+               <v91:RateByAgeBuckets>
+                  <v91:RateByAgeBucket MinimumAge="?" MaximumAge="?">
+                     <v91:RateAmount></v91:RateAmount>
+                  </v91:RateByAgeBucket>
+               </v91:RateByAgeBuckets>
+               <v91:MinimumChildrenForFreeStay></v91:MinimumChildrenForFreeStay>
+               <v91:PointsRequired></v91:PointsRequired>
+               <v91:HotelCode></v91:HotelCode>
+               <v91:RatePlanCode></v91:RatePlanCode>
+               <v91:RoomType></v91:RoomType>
+               <v91:NumberOfRooms></v91:NumberOfRooms>
+               <v91:AmountBeforeTax></v91:AmountBeforeTax>
+            </v91:EffectiveRate>
+         </v9:EffectiveRates>
+      </v9:AssignRoomRS>
+   </soapenv:Body>
+</soapenv:Envelope>

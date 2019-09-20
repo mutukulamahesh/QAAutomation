@@ -1,0 +1,23 @@
+   <soapenv:Header xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                <wsse:Security>
+                        <wsu:Timestamp wsu:Id="TS-DDB31B729A6665C467152111192216663">
+                                <wsu:Created>{WS_GMT_TIMESTAMP}</wsu:Created>
+                                <wsu:Expires>2022-02-11T00:24:31.191Z</wsu:Expires>
+                        </wsu:Timestamp>                       
+                        <wsse:UsernameToken wsu:Id="UsernameToken-DDB31B729A6665C467152111192211057">
+                                <wsse:Username>{WS_USERNAME}</wsse:Username>
+                                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">{WS_PASSWORD}</wsse:Password>
+                                <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">mKIb5Ije+zQsMc3Rq1GP1w==</wsse:Nonce>
+                                <wsu:Created>{WS_GMT_TIMESTAMP}</wsu:Created>
+                        </wsse:UsernameToken>
+                </wsse:Security>
+                <wsa:Action>http://htng.org/PWS/2008B/SingleGuestItinerary#FetchProfile</wsa:Action>
+                <wsa:From>
+                        <wsa:Address>{WS_FROMADDRESS}</wsa:Address>
+                </wsa:From>
+                <wsa:MessageID>urn:uuid:{WS_MSGID}</wsa:MessageID>
+                <wsa:ReplyTo>
+                        <wsa:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:Address>
+                </wsa:ReplyTo>
+                <wsa:To>http://www.micros.com/HTNGActivity/</wsa:To>
+        </soapenv:Header>

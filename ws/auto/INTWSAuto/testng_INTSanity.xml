@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Opera Interface Processor Suite" verbose="1"
+	allow-return-values="true">
+	<!-- Pass global parameters here -->
+	<parameter name="environment" value="LAUNCHPAD" />
+	<!--  ONLY WS and SSD are allowed for the below parameter -->
+	<parameter name="wsLayer" value="WS" />
+	<test name="Opera Interface Processor Suite against Property 1" preserve-order="true">
+	<!-- Pass parameters here -->
+		<parameter name="runOnEntry" value="ES_01" />
+		<!--  Include groups that are to be considered during automation run -->
+		<groups>
+			<run>
+				<include name="FetchBusinessEvents" />
+			</run>
+		</groups>
+		<!-- Classes having the test cases matching with the above given group. Packages can also be defined instead of classes.  -->
+		<classes>
+			<class
+				name="com.oracle.hgbu.opera.qaauto.ws.testcases.integrationprocessor.FetchBusinessEventsTest" />
+		</classes>
+	</test>
+</suite>
+

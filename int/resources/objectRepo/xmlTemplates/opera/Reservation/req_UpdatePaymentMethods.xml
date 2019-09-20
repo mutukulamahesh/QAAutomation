@@ -1,0 +1,42 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:UpdatePaymentMethodsRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:HotelCode/>
+         <v91:ReservationID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+         <v9:ReservationPaymentMethods>
+            <v91:ReservationPaymentMethod Description="?" FolioView="?" PaymentMethod="?">
+               <v91:PaymentCard AttachCreditCardToProfile="?" CardHolderName="?" CardNumber="?" CardNumberMasked="?" CardNumberType="?" CardType="?" ExpirationDate="?" ExpirationDateExpired="?" ExpirationDateMasked="?" Processing="?" Swiped="?">
+                  <v91:CardId ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                  <v91:CurrentAuthorizedAmount Amount="?" CurrencyCode="?"/>
+                  <v91:ApprovalAmountNeeded Amount="?" CurrencyCode="?"/>
+               </v91:PaymentCard>
+               <v91:Balance Amount="?" CurrencyCode="?"/>
+               <v91:AuthorizationRule>
+                  <v91:Code/>
+                  <v91:Amount Amount="?" CurrencyCode="?"/>
+                  <v91:Percent/>
+               </v91:AuthorizationRule>
+               <v91:EmailFolioInfo EmailFolio="?">
+                  <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                  <v91:Email CreateDateTime="?" CreatorID="?" EmailAddress="?" EmailFormat="?" LastModifierID="?" LastModifyDateTime="?" OrderSequence="?" PrimaryInd="?" PurgeDate="?" Type="?" TypeDescription="?"/>
+               </v91:EmailFolioInfo>
+            </v91:ReservationPaymentMethod>
+         </v9:ReservationPaymentMethods>
+      </v9:UpdatePaymentMethodsRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

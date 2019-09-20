@@ -1,0 +1,34 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/inv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:HoldItemInventoryRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:HoldItemInfo HotelCode="?">
+            <v91:HeldById ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            <v91:HeldBy/>
+            <v91:ItemHoldID/>
+            <v91:ItemId ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            <v91:ItemCode/>
+            <v91:TimeSpan>
+               <v91:StartDate/>
+               <v91:EndDate/>
+               <v91:Duration/>
+            </v91:TimeSpan>
+            <v91:Count/>
+         </v9:HoldItemInfo>
+      </v9:HoldItemInventoryRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

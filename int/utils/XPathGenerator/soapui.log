@@ -1,0 +1,155 @@
+2018-12-01 01:54:22,110 WARN  [SoapUI] Missing folder [D:\git\qaauto\int\utils\XPathGenerator\.\ext] for external libraries
+2018-12-01 01:54:22,229 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\sbasana\soapui-settings.xml]
+2018-12-01 01:54:22,693 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/int/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
+2018-12-01 01:54:22,710 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/int/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
+2018-12-01 01:54:22,716 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/int/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
+2018-12-01 01:54:22,718 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/int/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
+2018-12-01 01:54:22,724 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/int/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
+2018-12-01 01:54:22,725 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/int/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
+2018-12-01 01:54:22,727 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/int/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
+2018-12-01 01:54:22,729 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/int/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
+2018-12-01 01:54:22,733 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/int/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
+2018-12-01 01:54:22,737 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/int/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
+2018-12-01 01:54:28,977 INFO  [SchemaUtils] Loading schema types from [http://cloudqa12cws1.us.oracle.com:9004/OPERA9WS/cloudqa/OperaPropertyOperationsServices/CashieringService?wsdl]
+2018-12-01 01:54:28,978 INFO  [SchemaUtils] Getting schema http://cloudqa12cws1.us.oracle.com:9004/OPERA9WS/cloudqa/OperaPropertyOperationsServices/CashieringService?wsdl
+2018-12-01 01:54:28,986 INFO  [SchemaUtils] Getting schema http://cloudqa12cws1.us.oracle.com:9004/OPERA9WS/cloudqa/OperaPropertyOperationsServices/CashieringService?xsd=1
+2018-12-01 01:54:28,987 INFO  [SchemaUtils] Getting schema http://cloudqa12cws1.us.oracle.com:9004/OPERA9WS/cloudqa/OperaPropertyOperationsServices/CashieringService?xsd=2
+2018-12-01 01:54:29,003 INFO  [SchemaUtils] Getting schema http://cloudqa12cws1.us.oracle.com:9004/OPERA9WS/cloudqa/OperaPropertyOperationsServices/CashieringService?xsd=4
+2018-12-01 01:54:29,004 INFO  [SchemaUtils] Getting schema http://cloudqa12cws1.us.oracle.com:9004/OPERA9WS/cloudqa/OperaPropertyOperationsServices/CashieringService?xsd=3
+2018-12-01 01:54:29,431 INFO  [WsdlImporter] Finding importer for {http://micros/opera/ws/fof/v9_00}CashieringPortBinding
+2018-12-01 01:54:29,434 INFO  [WsdlImporter] Importing binding {http://micros/opera/ws/fof/v9_00}CashieringPortBinding
+2018-12-01 01:54:29,448 INFO  [Soap11HttpBindingImporter] importing endpoint http://cloudqa12cws1.us.oracle.com:9004/OPERA9WS/cloudqa/OperaPropertyOperationsServices/CashieringService
+2018-12-01 01:54:29,469 INFO  [Soap11HttpBindingImporter] importing operation AcquireCashierLock
+2018-12-01 01:54:29,479 INFO  [Soap11HttpBindingImporter] importing operation AdjustTransactions
+2018-12-01 01:54:29,480 INFO  [Soap11HttpBindingImporter] importing operation ApplyFinalPostings
+2018-12-01 01:54:29,481 INFO  [Soap11HttpBindingImporter] importing operation ApplyFlexibleBenefitPostings
+2018-12-01 01:54:29,482 INFO  [Soap11HttpBindingImporter] importing operation AttachDepositPolicyToPayment
+2018-12-01 01:54:29,482 INFO  [Soap11HttpBindingImporter] importing operation AuthorizeCreditCardAmount
+2018-12-01 01:54:29,483 INFO  [Soap11HttpBindingImporter] importing operation BatchAdvanceFolio
+2018-12-01 01:54:29,483 INFO  [Soap11HttpBindingImporter] importing operation BatchAutoCheckoutResv
+2018-12-01 01:54:29,484 INFO  [Soap11HttpBindingImporter] importing operation BatchAutoSettlement
+2018-12-01 01:54:29,485 INFO  [Soap11HttpBindingImporter] importing operation BatchCCSettlements
+2018-12-01 01:54:29,485 INFO  [Soap11HttpBindingImporter] importing operation BreakCashierLock
+2018-12-01 01:54:29,486 INFO  [Soap11HttpBindingImporter] importing operation CalculateAdditionalTaxes
+2018-12-01 01:54:29,486 INFO  [Soap11HttpBindingImporter] importing operation CalculateForeignCurrency
+2018-12-01 01:54:29,487 INFO  [Soap11HttpBindingImporter] importing operation ChangeBedTaxInfo
+2018-12-01 01:54:29,488 INFO  [Soap11HttpBindingImporter] importing operation ChangeBillingCharge
+2018-12-01 01:54:29,488 INFO  [Soap11HttpBindingImporter] importing operation ChangeBillingPayment
+2018-12-01 01:54:29,489 INFO  [Soap11HttpBindingImporter] importing operation ChangeCCSettlement
+2018-12-01 01:54:29,490 INFO  [Soap11HttpBindingImporter] importing operation ChangeForEarlyDeparture
+2018-12-01 01:54:29,490 INFO  [Soap11HttpBindingImporter] importing operation ChangePayeeTaxNumber
+2018-12-01 01:54:29,491 INFO  [Soap11HttpBindingImporter] importing operation ChangeRoutingInstructions
+2018-12-01 01:54:29,491 INFO  [Soap11HttpBindingImporter] importing operation CheckoutReservation
+2018-12-01 01:54:29,492 INFO  [Soap11HttpBindingImporter] importing operation CheckPostBillingCharges
+2018-12-01 01:54:29,492 INFO  [Soap11HttpBindingImporter] importing operation CheckPostRateCode
+2018-12-01 01:54:29,493 INFO  [Soap11HttpBindingImporter] importing operation ClearCache
+2018-12-01 01:54:29,493 INFO  [Soap11HttpBindingImporter] importing operation CloseCashier
+2018-12-01 01:54:29,493 INFO  [Soap11HttpBindingImporter] importing operation CloseReservationFolio
+2018-12-01 01:54:29,494 INFO  [Soap11HttpBindingImporter] importing operation ConvertFolio
+2018-12-01 01:54:29,494 INFO  [Soap11HttpBindingImporter] importing operation CreateBedTaxInfo
+2018-12-01 01:54:29,495 INFO  [Soap11HttpBindingImporter] importing operation CreateFixedCharges
+2018-12-01 01:54:29,495 INFO  [Soap11HttpBindingImporter] importing operation CreatePrepaidCards
+2018-12-01 01:54:29,496 INFO  [Soap11HttpBindingImporter] importing operation CreateProforma
+2018-12-01 01:54:29,496 INFO  [Soap11HttpBindingImporter] importing operation CreateRoutingInstructions
+2018-12-01 01:54:29,497 INFO  [Soap11HttpBindingImporter] importing operation CreateStoredFolioDetails
+2018-12-01 01:54:29,497 INFO  [Soap11HttpBindingImporter] importing operation DetachDepositPolicyFromPayment
+2018-12-01 01:54:29,498 INFO  [Soap11HttpBindingImporter] importing operation ExtendCashierLock
+2018-12-01 01:54:29,498 INFO  [Soap11HttpBindingImporter] importing operation FetchAdvancePaymentBalance
+2018-12-01 01:54:29,499 INFO  [Soap11HttpBindingImporter] importing operation FetchAlertNotices
+2018-12-01 01:54:29,499 INFO  [Soap11HttpBindingImporter] importing operation FetchAuthorizationHistory
+2018-12-01 01:54:29,500 INFO  [Soap11HttpBindingImporter] importing operation FetchAuthorizersCreditInfo
+2018-12-01 01:54:29,500 INFO  [Soap11HttpBindingImporter] importing operation FetchBalanceInfo
+2018-12-01 01:54:29,501 INFO  [Soap11HttpBindingImporter] importing operation FetchBatchCCSettlements
+2018-12-01 01:54:29,501 INFO  [Soap11HttpBindingImporter] importing operation FetchBatchCCSettlementsStatus
+2018-12-01 01:54:29,502 INFO  [Soap11HttpBindingImporter] importing operation FetchBedTaxInfo
+2018-12-01 01:54:29,502 INFO  [Soap11HttpBindingImporter] importing operation FetchBillingInstructionCodes
+2018-12-01 01:54:29,503 INFO  [Soap11HttpBindingImporter] importing operation FetchCashierClosure
+2018-12-01 01:54:29,503 INFO  [Soap11HttpBindingImporter] importing operation FetchCashierClosureInfo
+2018-12-01 01:54:29,503 INFO  [Soap11HttpBindingImporter] importing operation FetchCashierClosureReportsList
+2018-12-01 01:54:29,504 INFO  [Soap11HttpBindingImporter] importing operation FetchCashierReportPostings
+2018-12-01 01:54:29,504 INFO  [Soap11HttpBindingImporter] importing operation FetchCashierTransactions
+2018-12-01 01:54:29,505 INFO  [Soap11HttpBindingImporter] importing operation FetchCCAuthorizationInstructions
+2018-12-01 01:54:29,505 INFO  [Soap11HttpBindingImporter] importing operation FetchCCSurchargeInfo
+2018-12-01 01:54:29,506 INFO  [Soap11HttpBindingImporter] importing operation FetchCheckDetails
+2018-12-01 01:54:29,506 INFO  [Soap11HttpBindingImporter] importing operation FetchCompAccountingJournal
+2018-12-01 01:54:29,507 INFO  [Soap11HttpBindingImporter] importing operation FetchCompRoutingInstructions
+2018-12-01 01:54:29,507 INFO  [Soap11HttpBindingImporter] importing operation FetchCompTrxAuthorizers
+2018-12-01 01:54:29,507 INFO  [Soap11HttpBindingImporter] importing operation FetchCreditLimitOveragePayments
+2018-12-01 01:54:29,507 INFO  [Soap11HttpBindingImporter] importing operation FetchDepositFolio
+2018-12-01 01:54:29,508 INFO  [Soap11HttpBindingImporter] importing operation FetchDepositFolioTransactionDetails
+2018-12-01 01:54:29,508 INFO  [Soap11HttpBindingImporter] importing operation FetchDepositMaturityInfo
+2018-12-01 01:54:29,508 INFO  [Soap11HttpBindingImporter] importing operation FetchFinancialPostings
+2018-12-01 01:54:29,509 INFO  [Soap11HttpBindingImporter] importing operation FetchFixedCharges
+2018-12-01 01:54:29,509 INFO  [Soap11HttpBindingImporter] importing operation FetchFolio
+2018-12-01 01:54:29,509 INFO  [Soap11HttpBindingImporter] importing operation FetchFolioHistory
+2018-12-01 01:54:29,509 INFO  [Soap11HttpBindingImporter] importing operation FetchFolioPrinters
+2018-12-01 01:54:29,510 INFO  [Soap11HttpBindingImporter] importing operation FetchFolioTaxPaymentsInfo
+2018-12-01 01:54:29,510 INFO  [Soap11HttpBindingImporter] importing operation FetchFolioTransactionDetails
+2018-12-01 01:54:29,510 INFO  [Soap11HttpBindingImporter] importing operation FetchFolioTypeNameInfo
+2018-12-01 01:54:29,510 INFO  [Soap11HttpBindingImporter] importing operation FetchFolioTypes
+2018-12-01 01:54:29,511 INFO  [Soap11HttpBindingImporter] importing operation FetchGamingRequestStatusInfo
+2018-12-01 01:54:29,511 INFO  [Soap11HttpBindingImporter] importing operation FetchGuestsTransactions
+2018-12-01 01:54:29,511 INFO  [Soap11HttpBindingImporter] importing operation FetchHotelRevenue
+2018-12-01 01:54:29,511 INFO  [Soap11HttpBindingImporter] importing operation FetchPostingActivityDetail
+2018-12-01 01:54:29,512 INFO  [Soap11HttpBindingImporter] importing operation FetchPostingsForRefresh
+2018-12-01 01:54:29,512 INFO  [Soap11HttpBindingImporter] importing operation FetchPostingSummary
+2018-12-01 01:54:29,512 INFO  [Soap11HttpBindingImporter] importing operation FetchReceiptHistory
+2018-12-01 01:54:29,512 INFO  [Soap11HttpBindingImporter] importing operation FetchReservationPackageOptions
+2018-12-01 01:54:29,513 INFO  [Soap11HttpBindingImporter] importing operation FetchResvRevenueBucketTotals
+2018-12-01 01:54:29,513 INFO  [Soap11HttpBindingImporter] importing operation FetchRoundingDifference
+2018-12-01 01:54:29,513 INFO  [Soap11HttpBindingImporter] importing operation FetchRoutingInstructions
+2018-12-01 01:54:29,514 INFO  [Soap11HttpBindingImporter] importing operation FetchStoredFolioDetails
+2018-12-01 01:54:29,514 INFO  [Soap11HttpBindingImporter] importing operation FetchTrxCodes
+2018-12-01 01:54:29,514 INFO  [Soap11HttpBindingImporter] importing operation GenerateFiscalInformationFolio
+2018-12-01 01:54:29,515 INFO  [Soap11HttpBindingImporter] importing operation GenerateFolio
+2018-12-01 01:54:29,515 INFO  [Soap11HttpBindingImporter] importing operation LinkReservationPackageAllowance
+2018-12-01 01:54:29,515 INFO  [Soap11HttpBindingImporter] importing operation Ping
+2018-12-01 01:54:29,515 INFO  [Soap11HttpBindingImporter] importing operation PostAdvanceRoomCharges
+2018-12-01 01:54:29,516 INFO  [Soap11HttpBindingImporter] importing operation PostArticlesSale
+2018-12-01 01:54:29,516 INFO  [Soap11HttpBindingImporter] importing operation PostBillingCharges
+2018-12-01 01:54:29,516 INFO  [Soap11HttpBindingImporter] importing operation PostBillingChargesInBatch
+2018-12-01 01:54:29,517 INFO  [Soap11HttpBindingImporter] importing operation PostBillingCheckCharges
+2018-12-01 01:54:29,517 INFO  [Soap11HttpBindingImporter] importing operation PostBillingPayment
+2018-12-01 01:54:29,517 INFO  [Soap11HttpBindingImporter] importing operation PostCreditBill
+2018-12-01 01:54:29,518 INFO  [Soap11HttpBindingImporter] importing operation PostDepositFolio
+2018-12-01 01:54:29,518 INFO  [Soap11HttpBindingImporter] importing operation PostDepositPayment
+2018-12-01 01:54:29,518 INFO  [Soap11HttpBindingImporter] importing operation PostFBAReimbursement
+2018-12-01 01:54:29,518 INFO  [Soap11HttpBindingImporter] importing operation PostFBASettlement
+2018-12-01 01:54:29,519 INFO  [Soap11HttpBindingImporter] importing operation PostForeignCurrencyExchange
+2018-12-01 01:54:29,519 INFO  [Soap11HttpBindingImporter] importing operation PostPasserBySale
+2018-12-01 01:54:29,519 INFO  [Soap11HttpBindingImporter] importing operation PostRateCode
+2018-12-01 01:54:29,519 INFO  [Soap11HttpBindingImporter] importing operation PostReversePayment
+2018-12-01 01:54:29,520 INFO  [Soap11HttpBindingImporter] importing operation ProcessReservationDeposit
+2018-12-01 01:54:29,520 INFO  [Soap11HttpBindingImporter] importing operation ProcessRoomRoutingRefresh
+2018-12-01 01:54:29,520 INFO  [Soap11HttpBindingImporter] importing operation RedeemPrepaidCards
+2018-12-01 01:54:29,521 INFO  [Soap11HttpBindingImporter] importing operation RegisterManualAuthorization
+2018-12-01 01:54:29,521 INFO  [Soap11HttpBindingImporter] importing operation RegisterVaultTransaction
+2018-12-01 01:54:29,521 INFO  [Soap11HttpBindingImporter] importing operation ReinstateCheckedOutReservation
+2018-12-01 01:54:29,521 INFO  [Soap11HttpBindingImporter] importing operation ReleaseCashierLock
+2018-12-01 01:54:29,522 INFO  [Soap11HttpBindingImporter] importing operation ReloadPrepaidCards
+2018-12-01 01:54:29,522 INFO  [Soap11HttpBindingImporter] importing operation RemoveBedTaxInfo
+2018-12-01 01:54:29,522 INFO  [Soap11HttpBindingImporter] importing operation RemoveFixedCharges
+2018-12-01 01:54:29,523 INFO  [Soap11HttpBindingImporter] importing operation RemovePrepaidCards
+2018-12-01 01:54:29,523 INFO  [Soap11HttpBindingImporter] importing operation RemoveRoutingInstructions
+2018-12-01 01:54:29,523 INFO  [Soap11HttpBindingImporter] importing operation ReservationDepositTransfer
+2018-12-01 01:54:29,523 INFO  [Soap11HttpBindingImporter] importing operation ReverseARInvoice
+2018-12-01 01:54:29,524 INFO  [Soap11HttpBindingImporter] importing operation ReverseCertificatePostings
+2018-12-01 01:54:29,524 INFO  [Soap11HttpBindingImporter] importing operation ReverseFlexibleBenefitPosting
+2018-12-01 01:54:29,524 INFO  [Soap11HttpBindingImporter] importing operation ReverseFolioTaxPayment
+2018-12-01 01:54:29,525 INFO  [Soap11HttpBindingImporter] importing operation SplitAndTransferTransaction
+2018-12-01 01:54:29,525 INFO  [Soap11HttpBindingImporter] importing operation SplitTransaction
+2018-12-01 01:54:29,525 INFO  [Soap11HttpBindingImporter] importing operation SubmitBatchDeposit
+2018-12-01 01:54:29,525 INFO  [Soap11HttpBindingImporter] importing operation SubmitCompTransaction
+2018-12-01 01:54:29,526 INFO  [Soap11HttpBindingImporter] importing operation SubmitCreditLimitOveragePayments
+2018-12-01 01:54:29,526 INFO  [Soap11HttpBindingImporter] importing operation TransferFolioToWindow
+2018-12-01 01:54:29,526 INFO  [Soap11HttpBindingImporter] importing operation TransferTransactionToReservation
+2018-12-01 01:54:29,527 INFO  [Soap11HttpBindingImporter] importing operation TransferTransactionToWindow
+2018-12-01 01:54:29,527 INFO  [Soap11HttpBindingImporter] importing operation TransitionDepositToGuestFolio
+2018-12-01 01:54:29,527 INFO  [Soap11HttpBindingImporter] importing operation UnlinkReservationPackageAllowance
+2018-12-01 01:54:29,527 INFO  [Soap11HttpBindingImporter] importing operation UpdateFixedCharges
+2018-12-01 01:54:29,528 INFO  [Soap11HttpBindingImporter] importing operation ValidateCreditBill
+2018-12-01 01:54:29,528 INFO  [Soap11HttpBindingImporter] importing operation ValidateDepositFolio
+2018-12-01 01:54:29,528 INFO  [Soap11HttpBindingImporter] importing operation ValidateTrxCode
+2018-12-01 01:54:29,529 INFO  [Soap11HttpBindingImporter] importing operation VerifyForEarlyDeparture
+2018-12-01 01:54:29,529 INFO  [Soap11HttpBindingImporter] importing operation VoidBillingCheckCharges
+2018-12-01 01:54:29,529 INFO  [Soap11HttpBindingImporter] importing operation VoidFolio

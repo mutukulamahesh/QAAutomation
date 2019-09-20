@@ -1,0 +1,41 @@
+<soapenv:Envelope xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://htng.org/PWSWG/2006/08/SingleGuestItinerary/Reservation/Types" xmlns:typ1="http://htng.org/PWSWG/2006/08/SingleGuestItinerary/Activity/Types" xmlns:typ2="http://htng.org/PWSWG/2006/08/SingleGuestItinerary/Common/Types">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:ReservationLookupRequest>
+         <typ:ReservationLookupData otherReservationStatus="?" reservationStatus="?">
+            <typ:ReservationID source="?"/>
+            <typ:ProfileID source="?"/>
+            <typ:RoomNumber/>
+            <typ:DateRange>
+               <typ1:Start/>
+               <typ1:End/>
+            </typ:DateRange>
+            <typ:ProfileInfo familiarName="?" nameOrdered="?">
+               <typ2:NameTitle/>
+               <typ2:FirstName/>
+               <typ2:MiddleName/>
+               <typ2:LastName/>
+               <typ2:NameSuffix/>
+            </typ:ProfileInfo>
+            <typ:ReservationAddress addressType="?" otherAddressType="?">
+               <typ2:AddressLine/>
+               <typ2:CityName/>
+               <typ2:StateProv/>
+               <typ2:CountryCode/>
+               <typ2:PostalCode/>
+            </typ:ReservationAddress>
+            <typ:MembershipID>
+               <typ2:MembershipType/>
+               <typ2:MembershipNumber/>
+               <typ2:MembershipLevel/>
+               <typ2:MemberName/>
+               <typ2:EffectiveDate/>
+               <typ2:ExpirationDate/>
+               <typ2:CurrentPoints/>
+            </typ:MembershipID>
+            <typ:ConfirmationNo/>
+            <typ:ResortId/>
+         </typ:ReservationLookupData>
+      </typ:ReservationLookupRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

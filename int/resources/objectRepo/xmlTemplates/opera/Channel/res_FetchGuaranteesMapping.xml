@@ -1,0 +1,32 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/par/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchGuaranteesMappingRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?" TotalPages="?" AllRowsFetched="?" TotalRows="?" PageNumber="?" MaxFetchCount="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:GuaranteesMapping>
+            <v91:Guarantee>
+               <v91:SystemInfo SystemCode="?" SystemType="?" SystemSubType="?" Inactive="?">
+                  <v91:SystemName></v91:SystemName>
+                  <v91:WebsiteURL></v91:WebsiteURL>
+                  <v91:IconURL></v91:IconURL>
+               </v91:SystemInfo>
+               <v91:LocalSystemCode></v91:LocalSystemCode>
+               <v91:ExternalSystemCode></v91:ExternalSystemCode>
+               <v91:Description></v91:Description>
+               <v91:DateRange>
+                  <v91:StartDate></v91:StartDate>
+                  <v91:EndDate></v91:EndDate>
+                  <v91:Duration></v91:Duration>
+               </v91:DateRange>
+               <v91:RequirementCode></v91:RequirementCode>
+            </v91:Guarantee>
+         </v9:GuaranteesMapping>
+      </v9:FetchGuaranteesMappingRS>
+   </soapenv:Body>
+</soapenv:Envelope>

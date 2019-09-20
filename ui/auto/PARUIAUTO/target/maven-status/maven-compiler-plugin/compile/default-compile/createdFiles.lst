@@ -1,0 +1,3 @@
+com\oracle\hgbu\opera\qaauto\ui\crm\testcases\rates\Rates.class
+com\oracle\hgbu\opera\qaauto\ui\crm\testcases\rates\CRMRatesTestRunner.class
+com\oracle\hgbu\opera\qaauto\ui\crm\component\rates\RatesPage.class

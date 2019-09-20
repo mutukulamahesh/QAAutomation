@@ -1,0 +1,102 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/par/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchHotelAvailabilityRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:AvailRequestSegments>
+            <v9:AvailRequestSegment CRO="?" ChainCode="?" HotelCode="?" IncludeClosedRates="?" IncludeDefaultRatePlanSet="?" InitialRatePlanSet="?" MaxFetchCount="?" PageBack="?" PagePointerKey="?" RatePlanSet="?" RedeemAwards="?">
+               <v91:RoomStay>
+                  <v91:TimeSpan>
+                     <v91:StartDate/>
+                     <v91:EndDate/>
+                     <v91:Duration/>
+                  </v91:TimeSpan>
+                  <v91:Quantity/>
+                  <v91:GuestCounts Adults="?" Children="?">
+                     <v91:ChildAges>
+                        <v91:Child Age="?"/>
+                     </v91:ChildAges>
+                     <v91:ChildBuckets Bucket1Count="?" Bucket2Count="?" Bucket3Count="?" Bucket4Count="?" Bucket5Count="?"/>
+                  </v91:GuestCounts>
+                  <v91:FullStayTimeSpan>
+                     <v91:StartDate/>
+                     <v91:EndDate/>
+                     <v91:Duration/>
+                  </v91:FullStayTimeSpan>
+               </v91:RoomStay>
+               <v91:MinRate Amount="?" CurrencyCode="?"/>
+               <v91:MaxRate Amount="?" CurrencyCode="?"/>
+               <v91:RatePlanCandidates ElectronicCertificate="?" PrevailingRate="?" RateCategory="?" RateClass="?" RateGroup="?" YieldMarketCode="?">
+                  <v91:RatePlanDescription/>
+                  <v91:RatePlans>
+                     <v91:RatePlan RatePlanCode="?" RatePlanID="?" RatePlanLevel="?"/>
+                  </v91:RatePlans>
+                  <v91:Promotions>
+                     <v91:Promotion CouponCode="?" PromotionCode="?" PromotionName="?"/>
+                  </v91:Promotions>
+               </v91:RatePlanCandidates>
+               <v91:RoomStayCandidates RoomQualifierCode="?">
+                  <v91:RoomTypes>
+                     <v91:RoomType/>
+                  </v91:RoomTypes>
+                  <v91:RoomClasses>
+                     <v91:RoomClass/>
+                  </v91:RoomClasses>
+                  <v91:BedTypes>
+                     <v91:BedType/>
+                  </v91:BedTypes>
+                  <v91:Features>
+                     <v91:Feature/>
+                  </v91:Features>
+               </v91:RoomStayCandidates>
+               <v91:ResGuestID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               <v91:ResAttachedProfiles>
+                  <v91:AttachedProfile ResProfileType="?">
+                     <v91:Name/>
+                     <v91:ProfileIDList>
+                        <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                     </v91:ProfileIDList>
+                  </v91:AttachedProfile>
+               </v91:ResAttachedProfiles>
+               <v91:InvBlock Code="?" Name="?">
+                  <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               </v91:InvBlock>
+               <v91:HotelReservation>
+                  <v91:HotelReservationId ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                  <v91:TimeSpan>
+                     <v91:StartDate/>
+                     <v91:EndDate/>
+                     <v91:Duration/>
+                  </v91:TimeSpan>
+                  <v91:RatePlanCode/>
+                  <v91:RoomType/>
+               </v91:HotelReservation>
+               <v91:FetchInstructions RatePlanInfo="?" ResGuaranteeInfo="?" ReturnAllRates="?" RoomTypeInfo="?"/>
+               <v91:MembershipIDNo/>
+               <v91:MembershipCardNo/>
+               <v91:MembershipLevel/>
+               <v91:MembershipType/>
+               <v91:SmokingPreferences>
+                  <v91:SmokingPreference/>
+               </v91:SmokingPreferences>
+               <v91:ChannelSummaryInfo MessageID="?" SummaryOnly="?">
+                  <v91:BookingChannel ChannelCode="?" ChannelName="?" ChannelType="?"/>
+               </v91:ChannelSummaryInfo>
+            </v9:AvailRequestSegment>
+         </v9:AvailRequestSegments>
+      </v9:FetchHotelAvailabilityRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

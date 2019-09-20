@@ -1,0 +1,41 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/fof/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:AdvanceCheckInReservationRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Reservation OptedForCommunication="?">
+            <v91:HotelCode/>
+            <v91:ReservationID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            <v91:ExpectedReturnTime/>
+            <v91:ETRComments/>
+            <v91:ResCommunication>
+               <v91:Telephones AllRowsFetched="?" TotalRows="?">
+                  <v91:TelephoneInfo>
+                     <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                     <v91:Telephone CreateDateTime="?" CreatorID="?" Extension="?" LastModifierID="?" LastModifyDateTime="?" OrderSequence="?" PhoneNumber="?" PhoneTechType="?" PhoneUseType="?" PhoneUseTypeDescription="?" PrimaryInd="?" PurgeDate="?"/>
+                  </v91:TelephoneInfo>
+               </v91:Telephones>
+               <v91:Emails AllRowsFetched="?" TotalRows="?">
+                  <v91:EmailInfo>
+                     <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                     <v91:Email CreateDateTime="?" CreatorID="?" EmailAddress="?" EmailFormat="?" LastModifierID="?" LastModifyDateTime="?" OrderSequence="?" PrimaryInd="?" PurgeDate="?" Type="?" TypeDescription="?"/>
+                  </v91:EmailInfo>
+               </v91:Emails>
+            </v91:ResCommunication>
+         </v9:Reservation>
+      </v9:AdvanceCheckInReservationRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

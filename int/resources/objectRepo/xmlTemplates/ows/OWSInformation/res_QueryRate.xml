@@ -1,0 +1,171 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:inf="http://webservices.micros.com/ows/5.1/Information.wsdl" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/">
+   <soap:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="?" channelValidation="?" terminalID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName></core:UserName>
+               <core:UserPassword></core:UserPassword>
+               <core:Domain></core:Domain>
+               <core:SecurityId></core:SecurityId>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key></core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soap:Header>
+   <soap:Body>
+      <inf:RateResponse>
+         <inf:Result resultStatusFlag="?">
+            <com:Text>
+               <com:TextElement formatted="?" language="?"></com:TextElement>
+            </com:Text>
+            <com:IDs>
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <com:OperaErrorCode></com:OperaErrorCode>
+            <hot:GDSError errorCode="?" elementId="?"></hot:GDSError>
+         </inf:Result>
+         <inf:RateResult ratePlanCategory="?" ratePlanCode="?" promotionCode="?" qualifyingIdType="?" qualifyingIdValue="?" effectiveDate="?" expirationDate="?" hold="?" commissionYn="?" mandatoryDeposit="?" suppressRate="?" ratePlanName="?" awardType="?" redemRate="?" commissionCode="?" asbRateCycle="?" hasPackage="?" taxInclusive="?" blockName="?" rankRate="?" rateTypeIndicator="?" postingRhythm="?" repeatPostingRhythm="?" discountRateAmount="?" discountRatePercent="?" postingRhythmNights="?">
+            <hot:RatePlanDescription>
+               <hot:Image></hot:Image>
+               <hot:URL></hot:URL>
+               <hot:Text formatted="?" language="?"></hot:Text>
+            </hot:RatePlanDescription>
+            <hot:RatePlanShortDescription>
+               <hot:Image></hot:Image>
+               <hot:URL></hot:URL>
+               <hot:Text formatted="?" language="?"></hot:Text>
+            </hot:RatePlanShortDescription>
+            <hot:Commission percent="?" currencyCode="?">
+               <hot:CommissionPayableAmount currencyCode="?" decimals="?" currencyText="?"></hot:CommissionPayableAmount>
+               <hot:Comment>
+                  <hot:Image></hot:Image>
+                  <hot:URL></hot:URL>
+                  <hot:Text formatted="?" language="?"></hot:Text>
+               </hot:Comment>
+            </hot:Commission>
+            <hot:AdditionalDetails>
+               <hot:AdditionalDetail detailType="?" otherDetailType="?">
+                  <hot:AdditionalDetailDescription>
+                     <hot:Image></hot:Image>
+                     <hot:URL></hot:URL>
+                     <hot:Text formatted="?" language="?"></hot:Text>
+                  </hot:AdditionalDetailDescription>
+               </hot:AdditionalDetail>
+            </hot:AdditionalDetails>
+            <hot:CancellationDateTime period="?"></hot:CancellationDateTime>
+            <hot:DepositRequired>
+               <hot:DepositAmount currencyCode="?" decimals="?" currencyText="?"></hot:DepositAmount>
+               <hot:DueDate></hot:DueDate>
+               <hot:DepositDueAmount currencyCode="?" decimals="?" currencyText="?"></hot:DepositDueAmount>
+            </hot:DepositRequired>
+            <hot:GdsFlags>
+               <hot:LateArrivalTime></hot:LateArrivalTime>
+               <hot:CancellationCode></hot:CancellationCode>
+               <hot:GuarCancelFlag></hot:GuarCancelFlag>
+            </hot:GdsFlags>
+            <hot:GuaranteeDetails>
+               <hot:Guarantee guaranteeType="?" mandatoryDeposit="?" cancellationRequired="?" creditCardRequired="?" paymentType="?" requirementCode="?">
+                  <hot:GuaranteesAccepted>
+                     <hot:GuaranteeAccepted agentPhone="?">
+                        <hot:GuaranteeCreditCard cardType="?" otherCardType="?" chipAndPin="?">
+                           <com:cardID></com:cardID>
+                           <com:cardCode></com:cardCode>
+                           <com:cardHolderName></com:cardHolderName>
+                           <com:cardNumber></com:cardNumber>
+                           <com:VaultedCardData vaultedCardID="?" lastFourDigits="?"/>
+                           <com:seriesCode></com:seriesCode>
+                           <com:Track2></com:Track2>
+                           <com:effectiveDate></com:effectiveDate>
+                           <com:expirationDate></com:expirationDate>
+                           <com:EncryptedSwipe>
+                              <com:TrackIndicator></com:TrackIndicator>
+                              <com:SwiperType></com:SwiperType>
+                              <com:SwiperID></com:SwiperID>
+                              <com:MaskedPAN></com:MaskedPAN>
+                              <com:Track1></com:Track1>
+                              <com:Track2></com:Track2>
+                              <com:KeySerialNumber></com:KeySerialNumber>
+                           </com:EncryptedSwipe>
+                        </hot:GuaranteeCreditCard>
+                        <hot:GuaranteeTravelAgent type="?" source="?"></hot:GuaranteeTravelAgent>
+                        <hot:GuaranteeCompany type="?" source="?"></hot:GuaranteeCompany>
+                     </hot:GuaranteeAccepted>
+                  </hot:GuaranteesAccepted>
+                  <hot:Deadline></hot:Deadline>
+                  <hot:GuaranteeDescription>
+                     <hot:Image></hot:Image>
+                     <hot:URL></hot:URL>
+                     <hot:Text formatted="?" language="?"></hot:Text>
+                  </hot:GuaranteeDescription>
+               </hot:Guarantee>
+            </hot:GuaranteeDetails>
+            <hot:MealPlanCodes>
+               <hot:Amenities>
+                  <hot:Amenity amenityCode="?" amenityType="?" otherType="?" availabilityFlag="?" otherFlag="?">
+                     <hot:amenityDescription></hot:amenityDescription>
+                  </hot:Amenity>
+               </hot:Amenities>
+            </hot:MealPlanCodes>
+            <hot:Packages>
+               <hot:Package packageCode="?" calculationRule="?" postingRhythm="?" quantity="?" includedInRate="?" addRateSeprateLine="?" addRateCombinedLine="?" startTime="?" endTime="?" sellSeparate="?" totalDepositAmount="?" source="?" taxIncluded="?" packageType="?" packageGroupCode="?" rateChangeIndicator="?" minAdvanceBookingDays="?">
+                  <hot:Amount currencyCode="?" decimals="?" currencyText="?"></hot:Amount>
+                  <hot:PackageAmount currencyCode="?" decimals="?" currencyText="?"></hot:PackageAmount>
+                  <hot:TaxAmount currencyCode="?" decimals="?" currencyText="?"></hot:TaxAmount>
+                  <hot:Allowance currencyCode="?" decimals="?" currencyText="?"></hot:Allowance>
+                  <hot:Description>
+                     <com:Image></com:Image>
+                     <com:Url></com:Url>
+                     <com:Text>
+                        <com:TextElement formatted="?" language="?"></com:TextElement>
+                     </com:Text>
+                  </hot:Description>
+                  <hot:ShortDescription>
+                     <com:Image></com:Image>
+                     <com:Url></com:Url>
+                     <com:Text>
+                        <com:TextElement formatted="?" language="?"></com:TextElement>
+                     </com:Text>
+                  </hot:ShortDescription>
+                  <hot:LongDescription>
+                     <com:Image></com:Image>
+                     <com:Url></com:Url>
+                     <com:Text>
+                        <com:TextElement formatted="?" language="?"></com:TextElement>
+                     </com:Text>
+                  </hot:LongDescription>
+                  <hot:PackageDetails dow="?" restriction="?" quantityAvailable="?" rateAvailable="?">
+                     <hot:StartDate></hot:StartDate>
+                     <hot:EndDate></hot:EndDate>
+                     <hot:Allowance currencyCode="?" decimals="?" currencyText="?"></hot:Allowance>
+                     <hot:Amount currencyCode="?" decimals="?" currencyText="?"></hot:Amount>
+                     <hot:TaxAmount currencyCode="?" decimals="?" currencyText="?"></hot:TaxAmount>
+                     <hot:Quantity></hot:Quantity>
+                  </hot:PackageDetails>
+                  <hot:PackageCodes>
+                     <hot:Code></hot:Code>
+                     <hot:Description>
+                        <hot:Image></hot:Image>
+                        <hot:URL></hot:URL>
+                        <hot:Text formatted="?" language="?"></hot:Text>
+                     </hot:Description>
+                  </hot:PackageCodes>
+                  <hot:StartDate></hot:StartDate>
+                  <hot:EndDate></hot:EndDate>
+               </hot:Package>
+            </hot:Packages>
+            <hot:Discount>
+               <hot:DiscountAmount></hot:DiscountAmount>
+               <hot:DiscountType></hot:DiscountType>
+               <hot:DiscountReason></hot:DiscountReason>
+            </hot:Discount>
+         </inf:RateResult>
+      </inf:RateResponse>
+   </soap:Body>
+</soap:Envelope>

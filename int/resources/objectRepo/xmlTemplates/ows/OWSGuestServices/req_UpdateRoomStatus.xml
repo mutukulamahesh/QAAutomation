@@ -1,0 +1,43 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:gues="http://webservices.micros.com/og/4.3/GuestServices/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="?" primaryLangID="?" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <gues:UpdateRoomStatusRequest>
+         <gues:HotelReference chainCode="?" hotelCode="?"/>
+         <gues:RoomNumber/>
+         <gues:RoomStatus/>
+         <gues:TurnDownStatus/>
+         <gues:GuestServiceStatus/>
+         <gues:RoomRepair>
+            <gues:RepairDate>
+               <hot:StartDate/>
+               <hot:Duration/>
+               <hot:EndDate/>
+            </gues:RepairDate>
+            <gues:ReturnStatus/>
+            <gues:RepairStatus/>
+            <gues:RepairReason/>
+            <gues:RepairType/>
+            <gues:RepairRemarks/>
+         </gues:RoomRepair>
+      </gues:UpdateRoomStatusRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

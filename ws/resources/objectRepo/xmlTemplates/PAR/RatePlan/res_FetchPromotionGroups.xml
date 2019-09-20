@@ -1,0 +1,59 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/par/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchPromotionGroupsRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:PromotionGroups TotalPages="?" AllRowsFetched="?" TotalRows="?" PageNumber="?" MaxFetchCount="?">
+            <v9:PromotionGroups>
+               <v91:PromotionGroup HotelCode="?" PromotionGroup="?">
+                  <v91:Plan></v91:Plan>
+                  <v91:Name></v91:Name>
+                  <v91:Type></v91:Type>
+                  <v91:Airline></v91:Airline>
+                  <v91:Revenue></v91:Revenue>
+                  <v91:PromotionCodes PromotionCode="?">
+                     <v91:PromotionCodeDetails>
+                        <v91:PromotionName>
+                           <v91:DefaultText></v91:DefaultText>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"></v91:Text>
+                           </v91:TranslatedTexts>
+                        </v91:PromotionName>
+                        <v91:PromotionGroup></v91:PromotionGroup>
+                        <v91:PromotionGroupName></v91:PromotionGroupName>
+                        <v91:Description></v91:Description>
+                        <v91:BookingDate>
+                           <v91:StartDate></v91:StartDate>
+                           <v91:EndDate></v91:EndDate>
+                           <v91:Duration></v91:Duration>
+                        </v91:BookingDate>
+                        <v91:StayDate>
+                           <v91:StartDate></v91:StartDate>
+                           <v91:EndDate></v91:EndDate>
+                           <v91:Duration></v91:Duration>
+                        </v91:StayDate>
+                        <v91:Category></v91:Category>
+                        <v91:CategoryDesc></v91:CategoryDesc>
+                        <v91:PromoInstructions></v91:PromoInstructions>
+                        <v91:PromoInformation></v91:PromoInformation>
+                        <v91:UpgradeAllowed></v91:UpgradeAllowed>
+                        <v91:UpdateOutsideBookingDate></v91:UpdateOutsideBookingDate>
+                        <v91:CheckInOutTime>
+                           <v91:StartDateTime></v91:StartDateTime>
+                           <v91:EndDateTime></v91:EndDateTime>
+                        </v91:CheckInOutTime>
+                        <v91:InactiveDate></v91:InactiveDate>
+                     </v91:PromotionCodeDetails>
+                  </v91:PromotionCodes>
+               </v91:PromotionGroup>
+            </v9:PromotionGroups>
+         </v9:PromotionGroups>
+      </v9:FetchPromotionGroupsRS>
+   </soapenv:Body>
+</soapenv:Envelope>

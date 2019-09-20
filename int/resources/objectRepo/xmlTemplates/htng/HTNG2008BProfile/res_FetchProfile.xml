@@ -1,0 +1,143 @@
+<soapenv:Envelope xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://htng.org/PWS/2008B/SingleGuestItinerary/Name/Types" xmlns:typ1="http://htng.org/PWS/2008B/SingleGuestItinerary/Common/Types">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:FetchProfileResponse>
+         <typ:Result resultStatusFlag="?" code="?">
+            <typ1:Text>
+               <typ1:TextElement language="?"></typ1:TextElement>
+            </typ1:Text>
+            <typ1:IDs>
+               <typ1:UniqueID source="?"></typ1:UniqueID>
+            </typ1:IDs>
+         </typ:Result>
+         <typ:Profile nameType="?" protected="?" languageCode="?" nationality="?" vipCode="?" taxExempt="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+            <typ:IDs>
+               <typ1:UniqueID source="?"></typ1:UniqueID>
+            </typ:IDs>
+            <typ:Customer gender="?" birthDate="?">
+               <typ:PersonName nameOrdered="?" familiarName="?">
+                  <typ1:NameTitle></typ1:NameTitle>
+                  <typ1:FirstName></typ1:FirstName>
+                  <typ1:MiddleName></typ1:MiddleName>
+                  <typ1:LastName></typ1:LastName>
+                  <typ1:NameSuffix></typ1:NameSuffix>
+               </typ:PersonName>
+               <typ:BusinessTitle></typ:BusinessTitle>
+               <typ:GovernmentIDList>
+                  <typ1:GovernmentID>
+                     <typ1:DocumentType></typ1:DocumentType>
+                     <typ1:DocumentNumber></typ1:DocumentNumber>
+                     <typ1:EffectiveDate></typ1:EffectiveDate>
+                     <typ1:ExpirationDate></typ1:ExpirationDate>
+                     <typ1:PlaceOfIssue></typ1:PlaceOfIssue>
+                     <typ1:CountryOfIssue></typ1:CountryOfIssue>
+                  </typ1:GovernmentID>
+               </typ:GovernmentIDList>
+            </typ:Customer>
+            <typ:Company commissionCode="?">
+               <typ:CompanyName></typ:CompanyName>
+            </typ:Company>
+            <typ:CreditCards>
+               <typ:NameCreditCard cardType="?" otherCardType="?" primary="?" displaySequence="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <typ1:CardCode></typ1:CardCode>
+                  <typ1:CardHolderName></typ1:CardHolderName>
+                  <typ1:CardNumber></typ1:CardNumber>
+                  <typ1:SeriesCode></typ1:SeriesCode>
+                  <typ1:EffectiveDate></typ1:EffectiveDate>
+                  <typ1:ExpirationDate></typ1:ExpirationDate>
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"></typ1:UniqueID>
+                  </typ:IDs>
+               </typ:NameCreditCard>
+            </typ:CreditCards>
+            <typ:Addresses>
+               <typ:NameAddress addressType="?" otherAddressType="?" primary="?" displaySequence="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <typ1:AddressLine></typ1:AddressLine>
+                  <typ1:CityName></typ1:CityName>
+                  <typ1:StateProv></typ1:StateProv>
+                  <typ1:CountryCode></typ1:CountryCode>
+                  <typ1:PostalCode></typ1:PostalCode>
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"></typ1:UniqueID>
+                  </typ:IDs>
+               </typ:NameAddress>
+            </typ:Addresses>
+            <typ:Blacklist flag="?"></typ:Blacklist>
+            <typ:Phones>
+               <typ:NamePhone phoneType="?" phoneRole="?" primary="?" displaySequence="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <typ1:PhoneNumber></typ1:PhoneNumber>
+                  <typ1:PhoneData>
+                     <typ1:CountryAccessCode></typ1:CountryAccessCode>
+                     <typ1:AreaCode></typ1:AreaCode>
+                     <typ1:PhoneNumber></typ1:PhoneNumber>
+                     <typ1:Extension></typ1:Extension>
+                  </typ1:PhoneData>
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"></typ1:UniqueID>
+                  </typ:IDs>
+               </typ:NamePhone>
+            </typ:Phones>
+            <typ:Preferences>
+               <typ1:Preference insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <typ1:ResortCode></typ1:ResortCode>
+                  <typ1:Type></typ1:Type>
+                  <typ1:OtherType></typ1:OtherType>
+                  <typ1:Value></typ1:Value>
+                  <typ1:Description>
+                     <typ1:Text>
+                        <typ1:TextElement language="?"></typ1:TextElement>
+                     </typ1:Text>
+                     <typ1:Image></typ1:Image>
+                     <typ1:Url></typ1:Url>
+                  </typ1:Description>
+                  <typ1:Preferred></typ1:Preferred>
+                  <typ1:Mode></typ1:Mode>
+                  <typ1:IDs>
+                     <typ1:UniqueID source="?"></typ1:UniqueID>
+                  </typ1:IDs>
+               </typ1:Preference>
+            </typ:Preferences>
+            <typ:Memberships>
+               <typ:NameMembership primary="?" displaySequence="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <typ1:MembershipType></typ1:MembershipType>
+                  <typ1:MembershipNumber></typ1:MembershipNumber>
+                  <typ1:MembershipLevel></typ1:MembershipLevel>
+                  <typ1:MemberName></typ1:MemberName>
+                  <typ1:EffectiveDate></typ1:EffectiveDate>
+                  <typ1:ExpirationDate></typ1:ExpirationDate>
+                  <typ1:CurrentPoints></typ1:CurrentPoints>
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"></typ1:UniqueID>
+                  </typ:IDs>
+               </typ:NameMembership>
+            </typ:Memberships>
+            <typ:NegotiatedRates>
+               <typ:NegotiatedRate resortCode="?" rateCode="?" commissionCode="?" beginDate="?" endDate="?" displaySequence="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <typ:IDs>
+                     <typ1:UniqueID source="?"></typ1:UniqueID>
+                  </typ:IDs>
+               </typ:NegotiatedRate>
+            </typ:NegotiatedRates>
+            <typ:Comments>
+               <typ:Comment commentType="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+                  <typ1:Text>
+                     <typ1:TextElement language="?"></typ1:TextElement>
+                  </typ1:Text>
+                  <typ1:Image></typ1:Image>
+                  <typ1:Url></typ1:Url>
+               </typ:Comment>
+            </typ:Comments>
+            <typ:UserDefinedValues>
+               <typ1:UserDefinedValue valueName="?">
+                  <typ1:CharacterValue></typ1:CharacterValue>
+                  <typ1:DateValue></typ1:DateValue>
+                  <typ1:NumericValue></typ1:NumericValue>
+               </typ1:UserDefinedValue>
+            </typ:UserDefinedValues>
+            <typ:PrivacyList>
+               <typ:PrivacyOption OptionType="?" OptionValue="?"/>
+            </typ:PrivacyList>
+         </typ:Profile>
+      </typ:FetchProfileResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,52 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns:mem="http://webservices.micros.com/og/4.3/Membership/" xmlns:name="http://webservices.micros.com/og/4.3/Name/" xmlns:res="http://webservices.micros.com/ows/5.1/Reservation.wsdl" xmlns:res1="http://webservices.micros.com/og/4.3/Reservation/">
+   <soapenv:Header>
+      <OGHeader primaryLangID="E" timeStamp="2004-03-22T15:25:01.4625000-05:00" transactionID="5555" xmlns="http://webservices.micros.com/og/4.3/Core/">
+         <Origin entityID="WEST" systemType="WEB"/>
+         <Destination entityID="WEST" systemType="ORS"/>
+         <Authentication>
+            <UserCredentials>
+               <UserName>SUPERVISOR</UserName>
+               <UserPassword>SMPAREPO</UserPassword>
+               <Domain>CASINO</Domain>
+            </UserCredentials>
+         </Authentication>
+      </OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:ModifyBookingRequest>
+         <res:HotelReservation>
+            <res1:UniqueIDList>
+               <com:UniqueID source="RESVID" type="INTERNAL">2212713020</com:UniqueID>
+            </res1:UniqueIDList>
+            <res1:RoomStays>
+               <hot:RoomStay>
+                  <hot:RatePlans>
+                     <hot:RatePlan ratePlanCode="RATE001"/>
+                  </hot:RatePlans>
+                  <hot:RoomTypes>
+                     <hot:RoomType numberOfUnits="1" roomTypeCode="SUK"/>
+                  </hot:RoomTypes>
+                  <hot:RoomRates>
+                     <hot:RoomRate ratePlanCode="RATE001" roomTypeCode="SUK">
+                        <hot:Total currencyCode="USD">50</hot:Total>
+                     </hot:RoomRate>
+                  </hot:RoomRates>
+                  <hot:Guarantee guaranteeType="4P"/>
+                  <hot:HotelReference chainCode="GEN" hotelCode="CASINO"/>
+               </hot:RoomStay>
+            </res1:RoomStays>
+            <res1:ResGuests>
+               <res1:ResGuest resGuestRPH="0">
+                  <res1:Profiles>
+                     <name:Profile>
+                        <name:ProfileIDs>
+                           <com:UniqueID source="OPERA" type="INTERNAL">2204527637</com:UniqueID>
+                        </name:ProfileIDs>
+                     </name:Profile>
+                  </res1:Profiles>
+               </res1:ResGuest>
+            </res1:ResGuests>
+         </res:HotelReservation>
+      </res:ModifyBookingRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

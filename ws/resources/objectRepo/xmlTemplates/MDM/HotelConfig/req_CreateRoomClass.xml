@@ -1,0 +1,42 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateRoomClassRQ EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:OperaContext>
+            <v91:UserLanguage></v91:UserLanguage>
+            <v91:CROCode></v91:CROCode>
+            <v91:HotelCode></v91:HotelCode>
+            <v91:Language></v91:Language>
+            <v91:RunningApplication></v91:RunningApplication>
+            <v91:TerminalId></v91:TerminalId>
+            <v91:LogLevel></v91:LogLevel>
+            <v91:ExternalSystem></v91:ExternalSystem>
+            <v91:Override></v91:Override>
+            <v91:TargetExternalSystem></v91:TargetExternalSystem>
+            <v91:UseLocal></v91:UseLocal>
+            <v91:ExternalData></v91:ExternalData>
+         </v91:OperaContext>
+         <v9:RoomClass Code="?" Inactive="?" HotelCode="?">
+            <v91:Description>
+               <v91:DefaultText></v91:DefaultText>
+               <v91:TranslatedTexts>
+                  <v91:Text Lang="?"></v91:Text>
+               </v91:TranslatedTexts>
+            </v91:Description>
+            <v91:Sequence></v91:Sequence>
+            <v91:RoomTypes HotelCode="?">
+               <v91:RoomTypeSummary RoomType="?" NumberOfRooms="?" Inactive="?">
+                  <v91:RoomClass></v91:RoomClass>
+                  <v91:ShortDescription></v91:ShortDescription>
+                  <v91:ActiveDate></v91:ActiveDate>
+                  <v91:Pseudo></v91:Pseudo>
+                  <v91:SendToInterface></v91:SendToInterface>
+                  <v91:SellSequence></v91:SellSequence>
+                  <v91:Suite></v91:Suite>
+                  <v91:MeetingRoom></v91:MeetingRoom>
+               </v91:RoomTypeSummary>
+            </v91:RoomTypes>
+         </v9:RoomClass>
+      </v9:CreateRoomClassRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

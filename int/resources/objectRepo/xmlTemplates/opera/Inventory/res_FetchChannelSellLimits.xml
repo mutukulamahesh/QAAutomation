@@ -1,0 +1,30 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/inv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchChannelSellLimitsRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:SellLimits>
+            <v91:SellLimit>
+               <v91:SellLimitID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               <v91:HotelCode></v91:HotelCode>
+               <v91:BookingChannelCode></v91:BookingChannelCode>
+               <v91:ChannelRoomType></v91:ChannelRoomType>
+               <v91:DateRange Sunday="?" Monday="?" Tuesday="?" Wednesday="?" Thursday="?" Friday="?" Saturday="?">
+                  <v91:TimeSpan>
+                     <v91:StartDate></v91:StartDate>
+                     <v91:EndDate></v91:EndDate>
+                     <v91:Duration></v91:Duration>
+                  </v91:TimeSpan>
+               </v91:DateRange>
+               <v91:NumberOfRooms></v91:NumberOfRooms>
+            </v91:SellLimit>
+         </v9:SellLimits>
+      </v9:FetchChannelSellLimitsRS>
+   </soapenv:Body>
+</soapenv:Envelope>

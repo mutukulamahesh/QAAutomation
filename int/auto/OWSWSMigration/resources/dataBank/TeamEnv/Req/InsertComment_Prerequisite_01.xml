@@ -1,0 +1,25 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:name="http://webservices.micros.com/ows/5.1/Name.wsdl" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:name1="http://webservices.micros.com/og/4.3/Name/">
+   <soapenv:Header>
+      <OGHeader primaryLangID="E" timeStamp="KEYWORD_GMT_TIMESTAMP" transactionID="1100" xmlns="http://webservices.micros.com/og/4.3/Core/">
+         <Origin entityID="PROPCH1" systemType="WEB"/>
+         <Destination entityID="TI" systemType="ORS"/>
+         <Authentication>
+            <UserCredentials>
+               <UserName>SUPERVISOR</UserName>
+               <UserPassword>SCRUMBIZ10</UserPassword>
+               <Domain>NIRMAL</Domain>
+            </UserCredentials>
+         </Authentication>
+      </OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <name:InsertCommentRequest>
+         <name:NameID type="INTERNAL" source="OPERA">Var_NameID</name:NameID>
+         <name:Comment>
+            <com:Text>
+               <com:TextElement>Language Assistance Test</com:TextElement>
+            </com:Text>
+         </name:Comment>
+      </name:InsertCommentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

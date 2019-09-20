@@ -1,0 +1,68 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:name="http://webservices.micros.com/ows/5.1/Name.wsdl" xmlns:com="http://webservices.micros.com/og/4.3/Common/">
+   <soapenv:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="E" channelValidation="true" terminalID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName></core:UserName>
+               <core:UserPassword></core:UserPassword>
+               <core:Domain></core:Domain>
+               <core:SecurityId></core:SecurityId>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key></core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <name:InsertClaimResponse>
+         <name:Result resultStatusFlag="?">
+            <com:Text>
+               <com:TextElement formatted="?" language="?"></com:TextElement>
+            </com:Text>
+            <com:IDs>
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <com:OperaErrorCode></com:OperaErrorCode>
+         </name:Result>
+         <name:NameID type="?" source="?"></name:NameID>
+         <name:ClaimsList>
+            <com:ClaimsInfo>
+               <com:ClaimId></com:ClaimId>
+               <com:ClaimDate></com:ClaimDate>
+               <com:ClaimType></com:ClaimType>
+               <com:RecordType></com:RecordType>
+               <com:Resort></com:Resort>
+               <com:ClaimStatus></com:ClaimStatus>
+               <com:FinalStatus></com:FinalStatus>
+               <com:ClaimInformation></com:ClaimInformation>
+               <com:CloseDate></com:CloseDate>
+               <com:ClaimSource></com:ClaimSource>
+               <com:CallerName></com:CallerName>
+               <com:Owner></com:Owner>
+               <com:NameID type="?" source="?"></com:NameID>
+               <com:MembershipID type="?" source="?"></com:MembershipID>
+               <com:MembershipType></com:MembershipType>
+               <com:MembershipCardNumber></com:MembershipCardNumber>
+               <com:PmsReferenceNumber></com:PmsReferenceNumber>
+               <com:OrsReferenceNumber></com:OrsReferenceNumber>
+               <com:ClaimComments>
+                  <com:ClaimCommentsInfo>
+                     <com:Sequence></com:Sequence>
+                     <com:ClaimDate></com:ClaimDate>
+                     <com:ClaimActivity></com:ClaimActivity>
+                     <com:Comments></com:Comments>
+                  </com:ClaimCommentsInfo>
+               </com:ClaimComments>
+               <com:StartDate></com:StartDate>
+               <com:EndDate></com:EndDate>
+            </com:ClaimsInfo>
+         </name:ClaimsList>
+      </name:InsertClaimResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

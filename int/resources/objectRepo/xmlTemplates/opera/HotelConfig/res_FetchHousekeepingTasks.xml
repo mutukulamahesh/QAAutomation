@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchHousekeepingTasksRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:Tasks>
+            <v91:Task HotelCode="?">
+               <v91:Code></v91:Code>
+               <v91:Description></v91:Description>
+               <v91:Instructions></v91:Instructions>
+               <v91:Sequence></v91:Sequence>
+               <v91:Color></v91:Color>
+               <v91:LinenChange></v91:LinenChange>
+               <v91:GuestRequested></v91:GuestRequested>
+               <v91:DefaultDepartureTask></v91:DefaultDepartureTask>
+               <v91:Protected></v91:Protected>
+               <v91:AppliedCreditsPercentage></v91:AppliedCreditsPercentage>
+               <v91:Inactive></v91:Inactive>
+            </v91:Task>
+         </v9:Tasks>
+      </v9:FetchHousekeepingTasksRS>
+   </soapenv:Body>
+</soapenv:Envelope>

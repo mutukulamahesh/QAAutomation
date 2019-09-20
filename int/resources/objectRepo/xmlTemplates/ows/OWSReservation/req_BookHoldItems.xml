@@ -1,0 +1,33 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:res="http://webservices.micros.com/ows/5.1/Reservation.wsdl">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:BookHoldItemsRequest>
+         <res:ItemHoldIDList>
+            <com:UniqueID source="?" type="?"/>
+         <com:UniqueID source="?" type="?"/><com:UniqueID source="?" type="?"/></res:ItemHoldIDList>
+         <res:HotelReference chainCode="?" hotelCode="?"/>
+         <res:ConfirmationNumber source="?" type="?"/>
+         <res:ResvNameId source="?" type="?"/>
+         <res:LegNumber source="?" type="?"/>
+      </res:BookHoldItemsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

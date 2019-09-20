@@ -1,0 +1,50 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchBlockRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Criteria HotelCode="?" MarkAsRecentlyAccessed="?">
+            <v91:BlockIDList>
+               <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            </v91:BlockIDList>
+            <v91:FetchInstructions>
+               <v91:FetchInstruction>
+                  <v91:Instruction/>
+                  <v91:AdditionalCriteria FetchAllocatedRoomTypes="?">
+                     <v91:StartDate/>
+                     <v91:NumberOfDays/>
+                     <v91:GuestCounts Adults="?" Children="?">
+                        <v91:ChildAges>
+                           <v91:Child Age="?"/>
+                        </v91:ChildAges>
+                        <v91:ChildBuckets Bucket1Count="?" Bucket2Count="?" Bucket3Count="?" Bucket4Count="?" Bucket5Count="?"/>
+                     </v91:GuestCounts>
+                     <v91:ExistingReservationId ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                     <v91:RoomAllocationCriterion>
+                        <v91:RoomAllocationCriteria/>
+                     </v91:RoomAllocationCriterion>
+                     <v91:AllocationRoomTypes>
+                        <v91:RoomType/>
+                     </v91:AllocationRoomTypes>
+                     <v91:RatePlanCode/>
+                     <v91:CurrencyCode/>
+                  </v91:AdditionalCriteria>
+               </v91:FetchInstruction>
+            </v91:FetchInstructions>
+         </v9:Criteria>
+      </v9:FetchBlockRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

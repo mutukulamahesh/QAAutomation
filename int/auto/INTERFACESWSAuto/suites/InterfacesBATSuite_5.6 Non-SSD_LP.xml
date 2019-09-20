@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Opera Integration Automation Suite for Interfaces BAT on 5.6 LP"
+	verbose="1" allow-return-values="true">
+	<test name="ADS BAT Suite 5.6.x LP Central" preserve-order="true">
+		<!-- Pass parameters here -->
+		<parameter name="environment" value="LAUNCHPAD_5.6.x_CENTRAL" />
+		<parameter name="runOnEntry" value="ES_02" />
+		<parameter name="wsLayer" value="OEDS" />	
+		<!-- Possible Values ASP, NONASP, CENTRAL	-->
+		<parameter name="schema" value="CENTRAL"/>
+		<parameter name="testGroup" value="INTERFACES BAT RUN ON 5.6.x LP CENTRAL"/>
+		<groups>
+			<run>
+				<include name="bat" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.ads.*" />
+		</packages>
+	</test> 
+	<test name="OWS BAT Suite 5.6.x LP Central" preserve-order="true">
+		<!-- Pass parameters here -->
+		<parameter name="environment" value="LAUNCHPAD_5.6.x_CENTRAL" />
+		<parameter name="runOnEntry" value="ES_01" />
+		<parameter name="wsLayer" value="OEDS" />	
+		<!-- Possible Values ASP, NONASP, CENTRAL	-->
+		<parameter name="schema" value="CENTRAL"/>
+		<parameter name="testGroup" value="INTERFACES BAT RUN ON 5.6.x LP CENTRAL"/>
+		<groups>
+			<run>
+				<include name="bat" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.ows.*" />
+		</packages>
+	</test> 
+	<test name="ADS BAT Suite 5.6.x LP ASP" preserve-order="true">
+		<!-- Pass parameters here -->
+		<parameter name="environment" value="LAUNCHPAD_5.6.x_ASP" />
+		<parameter name="runOnEntry" value="ES_02" />
+		<parameter name="wsLayer" value="OEDS" />	
+		<!--  Possible Values ASP, NONASP, CENTRAL -->	
+		<parameter name="schema" value="ASP"/>
+		<parameter name="testGroup" value="INTERFACES BAT RUN ON 5.6.x LP ASP"/>
+		<groups>
+			<run>
+				<include name="bat" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.ads.*" />
+		</packages>
+	</test>
+	<test name="OWS BAT Suite 5.6.x LP ASP" preserve-order="true">
+		<!-- Pass parameters here -->
+		<parameter name="environment" value="LAUNCHPAD_5.6.x_ASP" />
+		<parameter name="runOnEntry" value="ES_01" />
+		<parameter name="wsLayer" value="OEDS" />	
+		<!--  Possible Values ASP, NONASP, CENTRAL -->	
+		<parameter name="schema" value="ASP"/>
+		<parameter name="testGroup" value="INTERFACES BAT RUN ON 5.6.x LP ASP"/>
+		<groups>
+			<run>
+				<include name="bat" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.ows.*" />
+		</packages>
+	</test>
+</suite>
+

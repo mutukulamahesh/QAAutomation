@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Entered ABBASU on username]]>
+    </line>
+    <line>
+      <![CDATA[Entered Username: ]]>
+    </line>
+    <line>
+      <![CDATA[Entered Welcome!23 on password]]>
+    </line>
+    <line>
+      <![CDATA[Entered Password ]]>
+    </line>
+    <line>
+      <![CDATA[Selected Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Logged In the Application]]>
+    </line>
+    <line>
+      <![CDATA[Landed In Home Page with User: Hello, Abhishek!]]>
+    </line>
+    <line>
+      <![CDATA[Landed in property:: SK003 - Resort of SK003]]>
+    </line>
+    <line>
+      <![CDATA[Selected Inventory Menu]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Manage Restrictions from Inventory Menu]]>
+    </line>
+    <line>
+      <![CDATA[Entered 01-20-2019 on startDate]]>
+    </line>
+    <line>
+      <![CDATA[Set the value of  rateCode  as RESTRICT]]>
+    </line>
+    <line>
+      <![CDATA[Provided Rate Code - RESTRICT]]>
+    </line>
+    <line>
+      <![CDATA[Returned the value of element  Days as  (2 Days)]]>
+    </line>
+    <line>
+      <![CDATA[Restricted rate code is present for correct no of days2]]>
+    </line>
+    <line>
+      <![CDATA[Returned the value of element  ActiveDate as  01/20/2019]]>
+    </line>
+    <line>
+      <![CDATA[Begin Date for Restricted rate code is correctly populatedActual begin date-> 01-20-2019 begin date from calender->  01/20/2019]]>
+    </line>
+    <line>
+      <![CDATA[Entered ABBASU on username]]>
+    </line>
+    <line>
+      <![CDATA[Entered Username: ]]>
+    </line>
+    <line>
+      <![CDATA[Entered Welcome!23 on password]]>
+    </line>
+    <line>
+      <![CDATA[Entered Password ]]>
+    </line>
+    <line>
+      <![CDATA[Selected Login Button]]>
+    </line>
+    <line>
+      <![CDATA[Logged In the Application]]>
+    </line>
+    <line>
+      <![CDATA[Landed In Home Page with User: Hello, Abhishek!]]>
+    </line>
+    <line>
+      <![CDATA[Landed in property:: SK003 - Resort of SK003]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on mainMenu]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on AboutOperaCloudMenu]]>
+    </line>
+    <line>
+      <![CDATA[Returned the value of element  operaVersion as  19.3.0.0]]>
+    </line>
+    <line>
+      <![CDATA[Returned the value of element  operaUiGITHash as  7563786d4e2b600ea2475289c36b79e78532c2d8]]>
+    </line>
+    <line>
+      <![CDATA[Returned the value of element  operaWSGITHash as  7563786d4e2b600ea2475289c36b79e78532c2d8]]>
+    </line>
+    <line>
+      <![CDATA[Logged Out from the Application]]>
+    </line>
+    <line>
+      <![CDATA[Logout :: Failed]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="95380" started-at="2019-03-08T09:28:51Z" finished-at="2019-03-08T09:30:26Z">
+    <groups>
+      <group name="SANITY">
+        <method signature="Rates.VerifyCloseRates()[pri:4, instance:com.oracle.hgbu.opera.qaauto.ui.crm.testcases.rates.Rates@7fac631b]" name="VerifyCloseRates" class="com.oracle.hgbu.opera.qaauto.ui.crm.testcases.rates.Rates"/>
+      </group> <!-- SANITY -->
+    </groups>
+    <test name="Default test" duration-ms="95380" started-at="2019-03-08T09:28:51Z" finished-at="2019-03-08T09:30:26Z">
+      <class name="com.oracle.hgbu.opera.qaauto.ui.crm.testcases.rates.Rates">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.oracle.hgbu.opera.qaauto.ui.crm.testcases.rates.Rates@7fac631b]" name="startReport" is-config="true" duration-ms="338" started-at="2019-03-08T09:28:50Z" finished-at="2019-03-08T09:28:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="beforeMethod([Ljava.lang.Object;, java.lang.reflect.Method)[pri:0, instance:com.oracle.hgbu.opera.qaauto.ui.crm.testcases.rates.Rates@7fac631b]" name="beforeMethod" is-config="true" duration-ms="67851" started-at="2019-03-08T09:28:51Z" finished-at="2019-03-08T09:29:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6f012914]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.oracle.hgbu.opera.qaauto.ui.crm.testcases.rates.Rates.VerifyCloseRates() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Entered ABBASU on username]]>
+            </line>
+            <line>
+              <![CDATA[Entered Username: ]]>
+            </line>
+            <line>
+              <![CDATA[Entered Welcome!23 on password]]>
+            </line>
+            <line>
+              <![CDATA[Entered Password ]]>
+            </line>
+            <line>
+              <![CDATA[Selected Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Logged In the Application]]>
+            </line>
+            <line>
+              <![CDATA[Landed In Home Page with User: Hello, Abhishek!]]>
+            </line>
+            <line>
+              <![CDATA[Landed in property:: SK003 - Resort of SK003]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="VerifyCloseRates()[pri:4, instance:com.oracle.hgbu.opera.qaauto.ui.crm.testcases.rates.Rates@7fac631b]" name="VerifyCloseRates" duration-ms="27504" started-at="2019-03-08T09:29:58Z" finished-at="2019-03-08T09:30:26Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Selected Inventory Menu]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on Manage Restrictions from Inventory Menu]]>
+            </line>
+            <line>
+              <![CDATA[Entered 01-20-2019 on startDate]]>
+            </line>
+            <line>
+              <![CDATA[Set the value of  rateCode  as RESTRICT]]>
+            </line>
+            <line>
+              <![CDATA[Provided Rate Code - RESTRICT]]>
+            </line>
+            <line>
+              <![CDATA[Returned the value of element  Days as  (2 Days)]]>
+            </line>
+            <line>
+              <![CDATA[Restricted rate code is present for correct no of days2]]>
+            </line>
+            <line>
+              <![CDATA[Returned the value of element  ActiveDate as  01/20/2019]]>
+            </line>
+            <line>
+              <![CDATA[Begin Date for Restricted rate code is correctly populatedActual begin date-> 01-20-2019 begin date from calender->  01/20/2019]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyCloseRates -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.oracle.hgbu.opera.qaauto.ui.crm.testcases.rates.Rates@7fac631b]" name="getResult" is-config="true" duration-ms="2" started-at="2019-03-08T09:30:26Z" finished-at="2019-03-08T09:30:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyCloseRates status=SUCCESS method=Rates.VerifyCloseRates()[pri:4, instance:com.oracle.hgbu.opera.qaauto.ui.crm.testcases.rates.Rates@7fac631b] output=Selected Inventory Menu]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="FAIL" signature="endReport()[pri:0, instance:com.oracle.hgbu.opera.qaauto.ui.crm.testcases.rates.Rates@7fac631b]" name="endReport" is-config="true" duration-ms="104059" started-at="2019-03-08T09:30:26Z" finished-at="2019-03-08T09:32:10Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
+System info: host: 'SWATIJ-IN', ip: '10.8.239.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.3.1', revision: '5234b325d5', time: '2017-03-10 09:10:29 +0000'
+System info: host: 'SWATIJ-IN', ip: '10.8.239.185', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:130)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:661)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:343)
+at com.oracle.hgbu.opera.qaauto.ui.utilities.Utils.getScreenshot(Utils.java:2662)
+at com.oracle.hgbu.opera.qaauto.ui.utilities.Utils.tearDown(Utils.java:460)
+at com.oracle.hgbu.opera.qaauto.ui.utilities.Utils.endReport(Utils.java:249)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:425)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Entered ABBASU on username]]>
+            </line>
+            <line>
+              <![CDATA[Entered Username: ]]>
+            </line>
+            <line>
+              <![CDATA[Entered Welcome!23 on password]]>
+            </line>
+            <line>
+              <![CDATA[Entered Password ]]>
+            </line>
+            <line>
+              <![CDATA[Selected Login Button]]>
+            </line>
+            <line>
+              <![CDATA[Logged In the Application]]>
+            </line>
+            <line>
+              <![CDATA[Landed In Home Page with User: Hello, Abhishek!]]>
+            </line>
+            <line>
+              <![CDATA[Landed in property:: SK003 - Resort of SK003]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on mainMenu]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on AboutOperaCloudMenu]]>
+            </line>
+            <line>
+              <![CDATA[Returned the value of element  operaVersion as  19.3.0.0]]>
+            </line>
+            <line>
+              <![CDATA[Returned the value of element  operaUiGITHash as  7563786d4e2b600ea2475289c36b79e78532c2d8]]>
+            </line>
+            <line>
+              <![CDATA[Returned the value of element  operaWSGITHash as  7563786d4e2b600ea2475289c36b79e78532c2d8]]>
+            </line>
+            <line>
+              <![CDATA[Logged Out from the Application]]>
+            </line>
+            <line>
+              <![CDATA[Logout :: Failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.oracle.hgbu.opera.qaauto.ui.crm.testcases.rates.Rates -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

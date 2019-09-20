@@ -1,0 +1,39 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchBlockAvailabilityRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:HotelCode/>
+         <v9:BlockAvailabilityCriteria OverrideRateCode="?">
+            <v91:BlockID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            <v91:ArrivalDate/>
+            <v91:Nights/>
+            <v91:Adults/>
+            <v91:Children/>
+            <v91:Rooms/>
+            <v91:RatePlanCode/>
+            <v91:ExistingReservationId ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            <v91:AllocationRoomTypes>
+               <v91:RoomType/>
+            </v91:AllocationRoomTypes>
+            <v91:FetchAllocatedRoomTypes>
+               <v91:FetchAllocatedRoomType/>
+            </v91:FetchAllocatedRoomTypes>
+            <v91:RoomTypeCount/>
+         </v9:BlockAvailabilityCriteria>
+      </v9:FetchBlockAvailabilityRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,62 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:inf="http://webservices.micros.com/ows/5.1/Information.wsdl" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/">
+   <soap:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="?" channelValidation="?" terminalID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName></core:UserName>
+               <core:UserPassword></core:UserPassword>
+               <core:Domain></core:Domain>
+               <core:SecurityId></core:SecurityId>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key></core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soap:Header>
+   <soap:Body>
+      <inf:ChainInformationResponse>
+         <inf:Result resultStatusFlag="?">
+            <com:Text>
+               <com:TextElement formatted="?" language="?"></com:TextElement>
+            </com:Text>
+            <com:IDs>
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <com:OperaErrorCode></com:OperaErrorCode>
+            <hot:GDSError errorCode="?" elementId="?"></hot:GDSError>
+         </inf:Result>
+         <inf:ChainInformation>
+            <hot:Addresses>
+               <hot:Address addressType="?" otherAddressType="?" languageCode="?">
+                  <com:AddressLine></com:AddressLine>
+                  <com:cityName></com:cityName>
+                  <com:stateProv></com:stateProv>
+                  <com:countryCode></com:countryCode>
+                  <com:postalCode></com:postalCode>
+                  <com:barCode></com:barCode>
+                  <com:cityExtension></com:cityExtension>
+               </hot:Address>
+            </hot:Addresses>
+            <hot:ContactEmails>
+               <hot:Email></hot:Email>
+            </hot:ContactEmails>
+            <hot:ContactPhones>
+               <hot:Phone phoneType="?" phoneRole="?" primaryPhone="?">
+                  <com:PhoneData countryAccessCode="?" areaCode="?" phoneNumber="?" extension="?"/>
+                  <com:PhoneNumber></com:PhoneNumber>
+               </hot:Phone>
+            </hot:ContactPhones>
+            <hot:MarketingText></hot:MarketingText>
+            <hot:LoyaltyProgram></hot:LoyaltyProgram>
+            <hot:BookingConditions></hot:BookingConditions>
+            <hot:AcceptFrequenFlyerCard></hot:AcceptFrequenFlyerCard>
+         </inf:ChainInformation>
+      </inf:ChainInformationResponse>
+   </soap:Body>
+</soap:Envelope>

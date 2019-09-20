@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Opera Integration Automation Suite for HTNG"
+	verbose="1" allow-return-values="true">
+	<test name="HTNG 2008B Ext Suite" preserve-order="true">
+		<packages>
+			<package name="com.oracle.ws.soap.htng.v2008b.ext" />
+		</packages>
+	</test>
+</suite>

@@ -1,0 +1,218 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:inf="http://webservices.micros.com/ows/5.1/Information.wsdl" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/">
+   <soap:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="?" channelValidation="?" terminalID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName></core:UserName>
+               <core:UserPassword></core:UserPassword>
+               <core:Domain></core:Domain>
+               <core:SecurityId></core:SecurityId>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key></core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soap:Header>
+   <soap:Body>
+      <inf:HotelInformationResponse>
+         <inf:Result resultStatusFlag="?">
+            <com:Text>
+               <com:TextElement formatted="?" language="?"></com:TextElement>
+            </com:Text>
+            <com:IDs>
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <com:OperaErrorCode></com:OperaErrorCode>
+            <hot:GDSError errorCode="?" elementId="?"></hot:GDSError>
+         </inf:Result>
+         <inf:HotelInformation>
+            <inf:HotelInformation chainCode="?" hotelCode="?"></inf:HotelInformation>
+            <inf:HotelContactInformation>
+               <hot:Addresses>
+                  <hot:Address addressType="?" otherAddressType="?" languageCode="?">
+                     <com:AddressLine></com:AddressLine>
+                     <com:cityName></com:cityName>
+                     <com:stateProv></com:stateProv>
+                     <com:countryCode></com:countryCode>
+                     <com:postalCode></com:postalCode>
+                     <com:barCode></com:barCode>
+                     <com:cityExtension></com:cityExtension>
+                  </hot:Address>
+               </hot:Addresses>
+               <hot:ContactEmails>
+                  <hot:ContactEmail></hot:ContactEmail>
+               </hot:ContactEmails>
+               <hot:ContactPhones>
+                  <hot:Phone phoneType="?" phoneRole="?" primaryPhone="?">
+                     <com:PhoneData countryAccessCode="?" areaCode="?" phoneNumber="?" extension="?"/>
+                     <com:PhoneNumber></com:PhoneNumber>
+                  </hot:Phone>
+               </hot:ContactPhones>
+               <hot:HotelInformation>
+                  <hot:HotelInfo hotelInfoType="?" otherHotelInfoType="?">
+                     <com:Image></com:Image>
+                     <com:Url></com:Url>
+                     <com:Text>
+                        <com:TextElement formatted="?" language="?"></com:TextElement>
+                     </com:Text>
+                  </hot:HotelInfo>
+               </hot:HotelInformation>
+               <hot:URIs>
+                  <hot:URI></hot:URI>
+               </hot:URIs>
+               <hot:Vector>
+                  <hot:Direction vectorDirection="?" otherVectorDirection="?"/>
+                  <hot:Distance distanceUnit="?" otherDistanceUnit="?"></hot:Distance>
+               </hot:Vector>
+            </inf:HotelContactInformation>
+            <inf:HotelExtendedInformation>
+               <hot:HotelInformation>
+                  <hot:HotelInfo hotelInfoType="?" otherHotelInfoType="?">
+                     <com:Image></com:Image>
+                     <com:Url></com:Url>
+                     <com:Text>
+                        <com:TextElement formatted="?" language="?"></com:TextElement>
+                     </com:Text>
+                  </hot:HotelInfo>
+               </hot:HotelInformation>
+               <hot:PaymentMethods>
+                  <hot:PaymentType>
+                     <hot:PaymentVoucher voucherNumber="?" voucherIssuedBy="?" voucherValidDate="?"/>
+                     <hot:PaymentCard cardType="?" otherCardType="?" chipAndPin="?">
+                        <com:cardID></com:cardID>
+                        <com:cardCode></com:cardCode>
+                        <com:cardHolderName></com:cardHolderName>
+                        <com:cardNumber></com:cardNumber>
+                        <com:VaultedCardData vaultedCardID="?" lastFourDigits="?"/>
+                        <com:seriesCode></com:seriesCode>
+                        <com:Track2></com:Track2>
+                        <com:effectiveDate></com:effectiveDate>
+                        <com:expirationDate></com:expirationDate>
+                        <com:EncryptedSwipe>
+                           <com:TrackIndicator></com:TrackIndicator>
+                           <com:SwiperType></com:SwiperType>
+                           <com:SwiperID></com:SwiperID>
+                           <com:MaskedPAN></com:MaskedPAN>
+                           <com:Track1></com:Track1>
+                           <com:Track2></com:Track2>
+                           <com:KeySerialNumber></com:KeySerialNumber>
+                        </com:EncryptedSwipe>
+                     </hot:PaymentCard>
+                     <hot:OtherPayment type="?" value="?" source="?"/>
+                  </hot:PaymentType>
+               </hot:PaymentMethods>
+               <hot:AmenityInfo>
+                  <hot:Amenities>
+                     <hot:Amenity amenityCode="?" amenityType="?" otherType="?" availabilityFlag="?" otherFlag="?">
+                        <hot:amenityDescription></hot:amenityDescription>
+                     </hot:Amenity>
+                  </hot:Amenities>
+               </hot:AmenityInfo>
+               <hot:Position latitude="?" longitude="?" altitude="?"/>
+               <hot:FacilityInfo dateOpened="?" dateRennovated="?">
+                  <hot:GuestRooms totalRooms="?">
+                     <hot:GuestRoom code="?" maxOccupancy="?">
+                        <hot:RoomDescription>
+                           <com:Image></com:Image>
+                           <com:Url></com:Url>
+                           <com:Text>
+                              <com:TextElement formatted="?" language="?"></com:TextElement>
+                           </com:Text>
+                        </hot:RoomDescription>
+                        <hot:AmenityInfo>
+                           <hot:Amenities>
+                              <hot:Amenity amenityCode="?" amenityType="?" otherType="?" availabilityFlag="?" otherFlag="?">
+                                 <hot:amenityDescription></hot:amenityDescription>
+                              </hot:Amenity>
+                           </hot:Amenities>
+                        </hot:AmenityInfo>
+                     </hot:GuestRoom>
+                  </hot:GuestRooms>
+                  <hot:Restaurants>
+                     <hot:Restaurant RestaurantName="?" MaxSeatingCapacity="?" MaxSingleParty="?" OfferBreakfast="?" OfferLunch="?" OfferDinner="?" OfferBrunch="?">
+                        <hot:RestaurantDescription>
+                           <hot:Image></hot:Image>
+                           <hot:URL></hot:URL>
+                           <hot:Text formatted="?" language="?"></hot:Text>
+                        </hot:RestaurantDescription>
+                        <hot:RelativePosition>
+                           <hot:Direction vectorDirection="?" otherVectorDirection="?"/>
+                           <hot:Distance distanceUnit="?" otherDistanceUnit="?"></hot:Distance>
+                        </hot:RelativePosition>
+                        <hot:Cuisines>
+                           <hot:Cuisine Code="?" Description="?"/>
+                        </hot:Cuisines>
+                        <hot:RestaurantContacts>
+                           <hot:Address addressType="?" otherAddressType="?" languageCode="?">
+                              <com:AddressLine></com:AddressLine>
+                              <com:cityName></com:cityName>
+                              <com:stateProv></com:stateProv>
+                              <com:countryCode></com:countryCode>
+                              <com:postalCode></com:postalCode>
+                              <com:barCode></com:barCode>
+                              <com:cityExtension></com:cityExtension>
+                           </hot:Address>
+                        </hot:RestaurantContacts>
+                     </hot:Restaurant>
+                  </hot:Restaurants>
+                  <hot:MeetingRooms MeetingRoomCount="?" SmallestRoomSpace="?" LargestRoomSpace="?" TotalRoomSpace="?" LargestSeatingCapacity="?" SecondLargestSeatingCapacity="?" SmallestSeatingCapacity="?">
+                     <hot:MeetingRoom Irregular="?" PropertySystemName="?" RoomName="?" Sort="?" MeetingRoomCapacity="?">
+                        <hot:Codes>
+                           <hot:Code Code="?">
+                              <hot:Charge></hot:Charge>
+                              <hot:Description>
+                                 <hot:Image></hot:Image>
+                                 <hot:URL></hot:URL>
+                                 <hot:Text formatted="?" language="?"></hot:Text>
+                              </hot:Description>
+                           </hot:Code>
+                        </hot:Codes>
+                        <hot:Description>
+                           <hot:Image></hot:Image>
+                           <hot:URL></hot:URL>
+                           <hot:Text formatted="?" language="?"></hot:Text>
+                        </hot:Description>
+                     </hot:MeetingRoom>
+                  </hot:MeetingRooms>
+                  <hot:Attractions>
+                     <hot:Attraction>
+                        <hot:AttractionCode></hot:AttractionCode>
+                        <hot:AttractionName></hot:AttractionName>
+                        <hot:AttractionType></hot:AttractionType>
+                        <hot:AttractionInformation>
+                           <hot:AttractionInfo attractionInfoType="?" otherAttractionInfoType="?">
+                              <com:Image></com:Image>
+                              <com:Url></com:Url>
+                              <com:Text>
+                                 <com:TextElement formatted="?" language="?"></com:TextElement>
+                              </com:Text>
+                           </hot:AttractionInfo>
+                        </hot:AttractionInformation>
+                        <hot:Distance></hot:Distance>
+                        <hot:DistanceType></hot:DistanceType>
+                        <hot:DrivingTime></hot:DrivingTime>
+                        <hot:City></hot:City>
+                        <hot:State></hot:State>
+                        <hot:ZipCode></hot:ZipCode>
+                        <hot:HoursOfOperation></hot:HoursOfOperation>
+                        <hot:Latitude></hot:Latitude>
+                        <hot:Longitude></hot:Longitude>
+                        <hot:PriceRange></hot:PriceRange>
+                        <hot:DisplaySequence></hot:DisplaySequence>
+                     </hot:Attraction>
+                  </hot:Attractions>
+               </hot:FacilityInfo>
+               <hot:AlternateProperties>
+                  <hot:HotelReference chainCode="?" hotelCode="?"></hot:HotelReference>
+               </hot:AlternateProperties>
+            </inf:HotelExtendedInformation>
+         </inf:HotelInformation>
+      </inf:HotelInformationResponse>
+   </soap:Body>
+</soap:Envelope>

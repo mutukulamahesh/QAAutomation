@@ -1,0 +1,78 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/par/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateChannelsRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Channels>
+            <v91:Channel>
+               <v91:SystemInfo Inactive="?" SystemCode="?" SystemSubType="?" SystemType="?">
+                  <v91:SystemName/>
+                  <v91:WebsiteURL/>
+                  <v91:IconURL/>
+               </v91:SystemInfo>
+               <v91:SellBy/>
+               <v91:AddOnLicense/>
+               <v91:RateLevels>
+                  <v91:RateLevel>
+                     <v91:RateLevelCode Code="?" Description="?"/>
+                  </v91:RateLevel>
+               </v91:RateLevels>
+               <v91:RateCategories>
+                  <v91:RateCategory>
+                     <v91:RateCategoryCode Code="?" Description="?"/>
+                     <v91:ShoppingCategory/>
+                     <v91:Negotiated/>
+                     <v91:Inactive/>
+                  </v91:RateCategory>
+               </v91:RateCategories>
+               <v91:RoomTypes>
+                  <v91:RoomType>
+                     <v91:RoomTypeCode Code="?" Description="?"/>
+                     <v91:InactiveDate/>
+                  </v91:RoomType>
+               </v91:RoomTypes>
+               <v91:Carriers>
+                  <v91:Carrier>
+                     <v91:CarrierCode Code="?" Description="?"/>
+                     <v91:Merchant/>
+                     <v91:Inactive/>
+                  </v91:Carrier>
+               </v91:Carriers>
+               <v91:ErrorCodes>
+                  <v91:Error>
+                     <v91:ErrorCode Code="?" Description="?"/>
+                     <v91:ErrorPrefix/>
+                     <v91:ErrorSuffix/>
+                     <v91:BookingResponse/>
+                     <v91:DateRange>
+                        <v91:StartDate/>
+                        <v91:EndDate/>
+                        <v91:Duration/>
+                     </v91:DateRange>
+                     <v91:ManualProcess/>
+                  </v91:Error>
+               </v91:ErrorCodes>
+               <v91:Parameters>
+                  <v91:Parameter>
+                     <v91:ParameterName/>
+                     <v91:ParameterValue/>
+                  </v91:Parameter>
+               </v91:Parameters>
+            </v91:Channel>
+         </v9:Channels>
+      </v9:CreateChannelsRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,110 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchRoomsSummaryRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:Rooms TotalPages="?" PageNumber="?" MaxFetchCount="?" AllRowsFetched="?" TotalRows="?">
+            <v9:RoomsSummary HotelCode="?" NoOfRooms="?">
+               <v91:RoomSummary RoomNumber="?">
+                  <v91:RoomType RoomType="?">
+                     <v91:Pseudo></v91:Pseudo>
+                     <v91:Suite></v91:Suite>
+                     <v91:RoomClass></v91:RoomClass>
+                     <v91:HouseKeeping></v91:HouseKeeping>
+                     <v91:SmokingPreference></v91:SmokingPreference>
+                     <v91:Building></v91:Building>
+                     <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                  </v91:RoomType>
+                  <v91:Floor></v91:Floor>
+                  <v91:FloorDescription></v91:FloorDescription>
+                  <v91:RoomFeatures>
+                     <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+                  </v91:RoomFeatures>
+                  <v91:RoomDescription></v91:RoomDescription>
+                  <v91:Description>
+                     <v91:DefaultText></v91:DefaultText>
+                     <v91:TranslatedTexts>
+                        <v91:Text Lang="?"></v91:Text>
+                     </v91:TranslatedTexts>
+                  </v91:Description>
+                  <v91:SmokingPreference></v91:SmokingPreference>
+                  <v91:SmokingPreferenceDescription></v91:SmokingPreferenceDescription>
+                  <v91:Building></v91:Building>
+                  <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                  <v91:RoomComponents>
+                     <v91:RoomComponent RoomType="?">
+                        <v91:Qty></v91:Qty>
+                        <v91:Description></v91:Description>
+                        <v91:Rooms>
+                           <v91:Room RoomNumber="?">
+                              <v91:RoomType RoomType="?">
+                                 <v91:Pseudo></v91:Pseudo>
+                                 <v91:Suite></v91:Suite>
+                                 <v91:RoomClass></v91:RoomClass>
+                                 <v91:HouseKeeping></v91:HouseKeeping>
+                                 <v91:SmokingPreference></v91:SmokingPreference>
+                                 <v91:Building></v91:Building>
+                                 <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                              </v91:RoomType>
+                              <v91:Floor></v91:Floor>
+                              <v91:FloorDescription></v91:FloorDescription>
+                              <v91:RoomFeatures>
+                                 <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+                              </v91:RoomFeatures>
+                              <v91:RoomDescription></v91:RoomDescription>
+                              <v91:Description>
+                                 <v91:DefaultText></v91:DefaultText>
+                                 <v91:TranslatedTexts>
+                                    <v91:Text Lang="?"></v91:Text>
+                                 </v91:TranslatedTexts>
+                              </v91:Description>
+                              <v91:SmokingPreference></v91:SmokingPreference>
+                              <v91:SmokingPreferenceDescription></v91:SmokingPreferenceDescription>
+                              <v91:Building></v91:Building>
+                              <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                           </v91:Room>
+                        </v91:Rooms>
+                     </v91:RoomComponent>
+                  </v91:RoomComponents>
+                  <v91:ConnectingRooms>
+                     <v91:Room RoomNumber="?">
+                        <v91:RoomType RoomType="?">
+                           <v91:Pseudo></v91:Pseudo>
+                           <v91:Suite></v91:Suite>
+                           <v91:RoomClass></v91:RoomClass>
+                           <v91:HouseKeeping></v91:HouseKeeping>
+                           <v91:SmokingPreference></v91:SmokingPreference>
+                           <v91:Building></v91:Building>
+                           <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                        </v91:RoomType>
+                        <v91:Floor></v91:Floor>
+                        <v91:FloorDescription></v91:FloorDescription>
+                        <v91:RoomFeatures>
+                           <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+                        </v91:RoomFeatures>
+                        <v91:RoomDescription></v91:RoomDescription>
+                        <v91:Description>
+                           <v91:DefaultText></v91:DefaultText>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"></v91:Text>
+                           </v91:TranslatedTexts>
+                        </v91:Description>
+                        <v91:SmokingPreference></v91:SmokingPreference>
+                        <v91:SmokingPreferenceDescription></v91:SmokingPreferenceDescription>
+                        <v91:Building></v91:Building>
+                        <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                     </v91:Room>
+                  </v91:ConnectingRooms>
+                  <v91:SellSequence></v91:SellSequence>
+               </v91:RoomSummary>
+            </v9:RoomsSummary>
+         </v9:Rooms>
+      </v9:FetchRoomsSummaryRS>
+   </soapenv:Body>
+</soapenv:Envelope>

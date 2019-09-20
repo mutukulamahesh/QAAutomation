@@ -1,0 +1,67 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:res="http://webservices.micros.com/ows/5.1/Reservation.wsdl" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/">
+   <soap:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="?" channelValidation="?" terminalID="?"> 
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>        
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+        
+         <core:Intermediaries>
+           
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+        
+         <core:Authentication>
+           
+            <core:UserCredentials>
+              
+               <core:UserName>?</core:UserName>
+              
+               <core:UserPassword>?</core:UserPassword>
+              
+               <core:Domain>?</core:Domain>
+              
+               <core:SecurityId>?</core:SecurityId>
+            </core:UserCredentials>
+           
+            <core:Licence>
+              
+               <core:Key>?</core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soap:Header>
+   <soap:Body>
+      <res:FetchHoldItemsResponse>
+        
+         <res:Result resultStatusFlag="?">
+           
+            <com:Text>
+               
+               <com:TextElement formatted="?" language="?">?</com:TextElement>
+            </com:Text>
+           
+            <com:IDs>
+               
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+           
+            <com:OperaErrorCode>?</com:OperaErrorCode>
+           
+            <hot:GDSError errorCode="?" elementId="?">?</hot:GDSError>
+         </res:Result>
+        
+         <res:HoldInventoryItemElements>
+            
+            <hot:HoldInventoryItemElement ItemStartDate="?" ItemEndDate="?">
+              
+               <hot:ItemCode>?</hot:ItemCode>
+              
+               <hot:ItemName>?</hot:ItemName>
+              
+               <hot:Quantity>?</hot:Quantity>
+              
+               <hot:ItemHoldID type="?" source="?">?</hot:ItemHoldID>
+            </hot:HoldInventoryItemElement>
+         </res:HoldInventoryItemElements>
+      </res:FetchHoldItemsResponse>
+   </soap:Body>
+</soap:Envelope>

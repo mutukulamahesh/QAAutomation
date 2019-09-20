@@ -1,0 +1,40 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchConfigBankAccountsRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:BankAccounts>
+            <v91:BankAccount>
+               <v91:HotelCode></v91:HotelCode>
+               <v91:BankAccountID></v91:BankAccountID>
+               <v91:BankAccountNumber></v91:BankAccountNumber>
+               <v91:BankCode></v91:BankCode>
+               <v91:BranchCode></v91:BranchCode>
+               <v91:BankName></v91:BankName>
+               <v91:RoutingNumber></v91:RoutingNumber>
+               <v91:PaymentMethod></v91:PaymentMethod>
+               <v91:Format></v91:Format>
+               <v91:NextCheckNumber></v91:NextCheckNumber>
+               <v91:MinProcessingAmount></v91:MinProcessingAmount>
+               <v91:Currency></v91:Currency>
+               <v91:CheckStubLines></v91:CheckStubLines>
+               <v91:Language></v91:Language>
+               <v91:SourceImportDirectory></v91:SourceImportDirectory>
+               <v91:TargetImportDirectory></v91:TargetImportDirectory>
+               <v91:EditCheckNumber></v91:EditCheckNumber>
+               <v91:ValidateIATANumber></v91:ValidateIATANumber>
+               <v91:Default></v91:Default>
+               <v91:DefaultForCurrency></v91:DefaultForCurrency>
+               <v91:PositivePayExport></v91:PositivePayExport>
+               <v91:Report1099></v91:Report1099>
+            </v91:BankAccount>
+         </v9:BankAccounts>
+      </v9:FetchConfigBankAccountsRS>
+   </soapenv:Body>
+</soapenv:Envelope>

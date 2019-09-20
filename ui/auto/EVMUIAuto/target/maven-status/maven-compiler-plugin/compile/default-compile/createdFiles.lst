@@ -1,0 +1,6 @@
+com\oracle\hgbu\opera\qaauto\ui\evm\component\events\EventPage.class
+com\oracle\hgbu\opera\qaauto\ui\evm\component\events\EventComponents.class
+com\oracle\hgbu\opera\qaauto\ui\evm\testcases\events\Events.class
+com\oracle\hgbu\opera\qaauto\ui\evm\component\events\BlockPage.class
+com\oracle\hgbu\opera\qaauto\ui\evm\testcases\events\Blocks.class
+com\oracle\hgbu\opera\qaauto\ui\evm\testcases\events\EVMTestRunner.class

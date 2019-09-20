@@ -1,0 +1,150 @@
+<soapenv:Envelope xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://htng.org/PWS/2008B/SingleGuestItinerary/Activity/Types" xmlns:typ1="http://htng.org/PWS/2008B/SingleGuestItinerary/Common/Types">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:ActivityLookupResponse>
+         <typ:Result resultStatusFlag="?" code="?">
+            <!--Optional:-->
+            <typ1:Text>
+               <!--1 or more repetitions:-->
+               <typ1:TextElement language="?">?</typ1:TextElement>
+            </typ1:Text>
+            <!--Optional:-->
+            <typ1:IDs>
+               <!--Zero or more repetitions:-->
+               <typ1:UniqueID source="?">?</typ1:UniqueID>
+            </typ1:IDs>
+         </typ:Result>
+         <typ:ActivityLookupList>
+            <!--1 or more repetitions:-->
+            <typ:ActivityLookup externalSystemId="?">
+               <!--Optional:-->
+               <typ:ProfileID>
+                  <!--Zero or more repetitions:-->
+                  <typ1:UniqueID source="?">?</typ1:UniqueID>
+               </typ:ProfileID>
+               <!--Optional:-->
+               <typ:PersonName nameOrdered="?" familiarName="?">
+                  <!--Zero or more repetitions:-->
+                  <typ1:NameTitle>?</typ1:NameTitle>
+                  <!--Optional:-->
+                  <typ1:FirstName>?</typ1:FirstName>
+                  <!--Zero or more repetitions:-->
+                  <typ1:MiddleName>?</typ1:MiddleName>
+                  <typ1:LastName>?</typ1:LastName>
+                  <!--Zero or more repetitions:-->
+                  <typ1:NameSuffix>?</typ1:NameSuffix>
+               </typ:PersonName>
+               <!--Optional:-->
+               <typ:Address addressType="?" otherAddressType="?">
+                  <!--0 to 5 repetitions:-->
+                  <typ1:AddressLine>?</typ1:AddressLine>
+                  <!--Optional:-->
+                  <typ1:CityName>?</typ1:CityName>
+                  <!--Optional:-->
+                  <typ1:StateProv>?</typ1:StateProv>
+                  <!--Optional:-->
+                  <typ1:CountryCode>?</typ1:CountryCode>
+                  <!--Optional:-->
+                  <typ1:PostalCode>?</typ1:PostalCode>
+               </typ:Address>
+               <!--Optional:-->
+               <typ:Phone phoneType="?" phoneRole="?">
+                  <!--You have a CHOICE of the next 2 items at this level-->
+                  <typ1:PhoneNumber>?</typ1:PhoneNumber>
+                  <typ1:PhoneData>
+                     <typ1:CountryAccessCode>?</typ1:CountryAccessCode>
+                     <typ1:AreaCode>?</typ1:AreaCode>
+                     <typ1:PhoneNumber>?</typ1:PhoneNumber>
+                     <typ1:Extension>?</typ1:Extension>
+                  </typ1:PhoneData>
+               </typ:Phone>
+               <!--Optional:-->
+               <typ:TimeSpan>
+                  <typ1:Start>?</typ1:Start>
+                  <!--Optional:-->
+                  <typ1:End>?</typ1:End>
+               </typ:TimeSpan>
+               <!--Optional:-->
+               <typ:Activities>
+                  <!--Zero or more repetitions:-->
+                  <typ:Activity status="?">
+                     <typ:ActivityIDs>
+                        <!--Zero or more repetitions:-->
+                        <typ1:UniqueID source="?">?</typ1:UniqueID>
+                     </typ:ActivityIDs>
+                     <typ:ActivityType>?</typ:ActivityType>
+                     <typ:Location>?</typ:Location>
+                     <!--1 or more repetitions:-->
+                     <typ:Name language="?">?</typ:Name>
+                     <!--Optional:-->
+                     <typ:NumberOfPersons>?</typ:NumberOfPersons>
+                     <typ:TimeSpan>
+                        <typ1:Start>?</typ1:Start>
+                        <!--Optional:-->
+                        <typ1:End>?</typ1:End>
+                     </typ:TimeSpan>
+                     <!--Optional:-->
+                     <typ:Duration>
+                        <typ1:Start>?</typ1:Start>
+                        <!--Optional:-->
+                        <typ1:End>?</typ1:End>
+                     </typ:Duration>
+                     <!--Zero or more repetitions:-->
+                     <typ:Description language="?">?</typ:Description>
+                     <!--Zero or more repetitions:-->
+                     <typ:Note language="?">?</typ:Note>
+                     <!--Optional:-->
+                     <typ:GroupCode>?</typ:GroupCode>
+                     <!--Optional:-->
+                     <typ:Amount currencyCode="?">?</typ:Amount>
+                     <!--Optional:-->
+                     <typ:DepositRequired currencyCode="?" collectedBy="?">?</typ:DepositRequired>
+                     <!--Optional:-->
+                     <typ:InactiveDate>?</typ:InactiveDate>
+                     <!--Optional:-->
+                     <typ:Participants>
+                        <!--Zero or more repetitions:-->
+                        <typ:Participant nameOrdered="?" familiarName="?">
+                           <!--Zero or more repetitions:-->
+                           <typ1:NameTitle>?</typ1:NameTitle>
+                           <!--Optional:-->
+                           <typ1:FirstName>?</typ1:FirstName>
+                           <!--Zero or more repetitions:-->
+                           <typ1:MiddleName>?</typ1:MiddleName>
+                           <typ1:LastName>?</typ1:LastName>
+                           <!--Zero or more repetitions:-->
+                           <typ1:NameSuffix>?</typ1:NameSuffix>
+                        </typ:Participant>
+                     </typ:Participants>
+                     <!--Optional:-->
+                     <typ:URLLink>?</typ:URLLink>
+                     <!--Optional:-->
+                     <typ:Extensions>
+                        <!--Zero or more repetitions:-->
+                        <typ:ActivitySpecific>?</typ:ActivitySpecific>
+                     </typ:Extensions>
+                  </typ:Activity>
+               </typ:Activities>
+               <!--Optional:-->
+               <typ:Membership>
+                  <!--Optional:-->
+                  <typ1:MembershipType>?</typ1:MembershipType>
+                  <typ1:MembershipNumber>?</typ1:MembershipNumber>
+                  <!--Optional:-->
+                  <typ1:MembershipLevel>?</typ1:MembershipLevel>
+                  <!--Optional:-->
+                  <typ1:MemberName>?</typ1:MemberName>
+                  <!--Optional:-->
+                  <typ1:EffectiveDate>?</typ1:EffectiveDate>
+                  <!--Optional:-->
+                  <typ1:ExpirationDate>?</typ1:ExpirationDate>
+                  <!--Optional:-->
+                  <typ1:CurrentPoints>?</typ1:CurrentPoints>
+               </typ:Membership>
+               <!--Optional:-->
+               <typ:ResortId>?</typ:ResortId>
+            </typ:ActivityLookup>
+         </typ:ActivityLookupList>
+      </typ:ActivityLookupResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

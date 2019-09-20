@@ -1,0 +1,22 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:ChangeGuestMessagesRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:GuestMessages>
+            <v91:GuestMessage CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?">
+               <v91:Message MessageDate="?" TypeOfMessage="?" Recipient="?" Operator="?">
+                  <v91:MessageText></v91:MessageText>
+               </v91:Message>
+               <v91:Delivery DeliveryStatus="?" DeliveryDate="?" DeliveredBy="?" PrintDate="?" TextMessageSentDate="?" TextMessageSentBy="?" TextMessageSentById="?" TextMessageRecipientNo="?"/>
+            </v91:GuestMessage>
+         </v9:GuestMessages>
+      </v9:ChangeGuestMessagesRS>
+   </soapenv:Body>
+</soapenv:Envelope>

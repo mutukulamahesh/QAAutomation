@@ -1,0 +1,40 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/par/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateCurrenciesMappingRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Currencies>
+            <v91:Currency>
+               <v91:SystemInfo Inactive="?" SystemCode="?" SystemSubType="?" SystemType="?">
+                  <v91:SystemName/>
+                  <v91:WebsiteURL/>
+                  <v91:IconURL/>
+               </v91:SystemInfo>
+               <v91:LocalSystemCode/>
+               <v91:ExternalSystemCode/>
+               <v91:Description/>
+               <v91:DateRange>
+                  <v91:StartDate/>
+                  <v91:EndDate/>
+                  <v91:Duration/>
+               </v91:DateRange>
+               <v91:LanyonDecimalPosition/>
+               <v91:ChannelDecimalPosition/>
+            </v91:Currency>
+         </v9:Currencies>
+      </v9:CreateCurrenciesMappingRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

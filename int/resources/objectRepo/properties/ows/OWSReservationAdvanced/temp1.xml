@@ -1,0 +1,58 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:res="http://webservices.micros.com/og/4.3/ResvAdvanced/" xmlns:com="http://webservices.micros.com/og/4.3/Common/">
+   <soapenv:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="?" channelValidation="?" terminalID="?">
+         <!--Optional:-->
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <!--Optional:-->
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <!--Optional:-->
+         <core:Intermediaries>
+            <!--Zero or more repetitions:-->
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <!--Optional:-->
+         <core:Authentication>
+            <!--Optional:-->
+            <core:UserCredentials>
+               <!--Optional:-->
+               <core:UserName>?</core:UserName>
+               <!--Optional:-->
+               <core:UserPassword>?</core:UserPassword>
+               <!--Optional:-->
+               <core:Domain>?</core:Domain>
+               <!--Optional:-->
+               <core:SecurityId>?</core:SecurityId>
+            </core:UserCredentials>
+            <!--Optional:-->
+            <core:Licence>
+               <!--Optional:-->
+               <core:Key>?</core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:MakePaymentResponse receiptNo="?">
+         <!--Optional:-->
+         <res:ReservationID>
+            <!--Zero or more repetitions:-->
+            <com:UniqueID type="?" source="?">?</com:UniqueID>
+         </res:ReservationID>
+         <!--Optional:-->
+         <res:Result resultStatusFlag="?">
+            <!--Optional:-->
+            <com:Text>
+               <!--Zero or more repetitions:-->
+               <com:TextElement formatted="?" language="?">?</com:TextElement>
+            </com:Text>
+            <!--Optional:-->
+            <com:IDs>
+               <!--Zero or more repetitions:-->
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <!--Optional:-->
+            <com:OperaErrorCode>?</com:OperaErrorCode>
+         </res:Result>
+      </res:MakePaymentResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

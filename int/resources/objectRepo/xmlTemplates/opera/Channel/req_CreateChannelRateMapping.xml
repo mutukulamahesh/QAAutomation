@@ -1,0 +1,171 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/par/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateChannelRateMappingRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:ChannelRateMappings ignoreChannelRateWarning="?">
+            <v9:ChannelRateMapping BookingChannelCode="?" ChannelRatePlanCode="?" HasChannelNegotiatedRates="?" HasNegotiatedRates="?" HotelCode="?" RatePlanCode="?">
+               <v91:Description>
+                  <v91:RateCodeDescription>
+                     <v91:EnhancedDescription>
+                        <v91:EnhancedDescriptionLine1>
+                           <v91:DefaultText/>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"/>
+                           </v91:TranslatedTexts>
+                        </v91:EnhancedDescriptionLine1>
+                        <v91:EnhancedDescriptionLine2>
+                           <v91:DefaultText/>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"/>
+                           </v91:TranslatedTexts>
+                        </v91:EnhancedDescriptionLine2>
+                        <v91:EnhancedDescriptionLine3>
+                           <v91:DefaultText/>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"/>
+                           </v91:TranslatedTexts>
+                        </v91:EnhancedDescriptionLine3>
+                        <v91:Description>
+                           <v91:DefaultText/>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"/>
+                           </v91:TranslatedTexts>
+                        </v91:Description>
+                     </v91:EnhancedDescription>
+                     <v91:HTMLSupportedDescription>
+                        <v91:DefaultText/>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"/>
+                        </v91:TranslatedTexts>
+                     </v91:HTMLSupportedDescription>
+                     <v91:Description>
+                        <v91:DefaultText/>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"/>
+                        </v91:TranslatedTexts>
+                     </v91:Description>
+                  </v91:RateCodeDescription>
+                  <v91:GlobalDescription>
+                     <v91:EnhancedDescriptionLine1>
+                        <v91:DefaultText/>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"/>
+                        </v91:TranslatedTexts>
+                     </v91:EnhancedDescriptionLine1>
+                     <v91:EnhancedDescriptionLine2>
+                        <v91:DefaultText/>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"/>
+                        </v91:TranslatedTexts>
+                     </v91:EnhancedDescriptionLine2>
+                     <v91:EnhancedDescriptionLine3>
+                        <v91:DefaultText/>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"/>
+                        </v91:TranslatedTexts>
+                     </v91:EnhancedDescriptionLine3>
+                     <v91:Description>
+                        <v91:DefaultText/>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"/>
+                        </v91:TranslatedTexts>
+                     </v91:Description>
+                  </v91:GlobalDescription>
+                  <v91:CustomDescription>
+                     <v91:EnhancedDescription>
+                        <v91:EnhancedDescriptionLine1>
+                           <v91:DefaultText/>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"/>
+                           </v91:TranslatedTexts>
+                        </v91:EnhancedDescriptionLine1>
+                        <v91:EnhancedDescriptionLine2>
+                           <v91:DefaultText/>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"/>
+                           </v91:TranslatedTexts>
+                        </v91:EnhancedDescriptionLine2>
+                        <v91:EnhancedDescriptionLine3>
+                           <v91:DefaultText/>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"/>
+                           </v91:TranslatedTexts>
+                        </v91:EnhancedDescriptionLine3>
+                        <v91:Description>
+                           <v91:DefaultText/>
+                           <v91:TranslatedTexts>
+                              <v91:Text Lang="?"/>
+                           </v91:TranslatedTexts>
+                        </v91:Description>
+                     </v91:EnhancedDescription>
+                     <v91:HTMLSupportedDescription>
+                        <v91:DefaultText/>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"/>
+                        </v91:TranslatedTexts>
+                     </v91:HTMLSupportedDescription>
+                     <v91:Description>
+                        <v91:DefaultText/>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"/>
+                        </v91:TranslatedTexts>
+                     </v91:Description>
+                  </v91:CustomDescription>
+                  <v91:ShortDescription>
+                     <v91:DefaultText/>
+                     <v91:TranslatedTexts>
+                        <v91:Text Lang="?"/>
+                     </v91:TranslatedTexts>
+                  </v91:ShortDescription>
+               </v91:Description>
+               <v91:ChannelRatePlanWebName/>
+               <v91:ChannelRatePlanCategory/>
+               <v91:RateLevel/>
+               <v91:RateTierAttr RateTier="?"/>
+               <v91:BlockRateIndicator/>
+               <v91:PromotionCode/>
+               <v91:ChannelRatePlanOrder/>
+               <v91:AllowRateUpdate/>
+               <v91:AllowRestrictionUpdate/>
+               <v91:RegionalAvailAttr AllowRegionalAvail="?" InclInRegionalAvail="?"/>
+               <v91:BeginDate/>
+               <v91:EndDate/>
+               <v91:CarrierInfo CarrierCode="?" ReturnToSGA="?"/>
+               <v91:NewChannelRatePlanCode/>
+               <v91:RoomTypes>
+                  <v91:RoomType/>
+               </v91:RoomTypes>
+               <v91:RatePlanInfo>
+                  <v91:Description>
+                     <v91:DefaultText/>
+                     <v91:TranslatedTexts>
+                        <v91:Text Lang="?"/>
+                     </v91:TranslatedTexts>
+                  </v91:Description>
+                  <v91:StartSellDate/>
+                  <v91:EndSellDate/>
+                  <v91:SellSequence/>
+                  <v91:PrivilegedRate/>
+                  <v91:PrivilegedRateRestriction/>
+                  <v91:BaseType/>
+                  <v91:LockStatus/>
+               </v91:RatePlanInfo>
+            </v9:ChannelRateMapping>
+         </v9:ChannelRateMappings>
+      </v9:CreateChannelRateMappingRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

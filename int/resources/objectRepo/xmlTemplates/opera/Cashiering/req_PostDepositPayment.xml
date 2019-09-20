@@ -1,0 +1,78 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/fof/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:PostDepositPaymentRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Criteria FolioWindowNo="?" OverrideInventoryCheck="?" UpdateReservationPaymentMethod="?" v91:CashierID="?">
+            <v91:HotelCode/>
+            <v91:PaymentMethod Description="?" FolioView="?" PaymentMethod="?" Track2Data="?">
+               <v91:PaymentCard AttachCreditCardToProfile="?" CardHolderName="?" CardNumber="?" CardNumberMasked="?" CardNumberType="?" CardType="?" ExpirationDate="?" ExpirationDateExpired="?" ExpirationDateMasked="?" Processing="?" Swiped="?">
+                  <v91:CardId ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                  <v91:CurrentAuthorizedAmount Amount="?" CurrencyCode="?"/>
+                  <v91:ApprovalAmountNeeded Amount="?" CurrencyCode="?"/>
+               </v91:PaymentCard>
+               <v91:Balance Amount="?" CurrencyCode="?"/>
+               <v91:AuthorizationRule>
+                  <v91:Code/>
+                  <v91:Amount Amount="?" CurrencyCode="?"/>
+                  <v91:Percent/>
+               </v91:AuthorizationRule>
+               <v91:EmailFolioInfo EmailFolio="?">
+                  <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                  <v91:Email CreateDateTime="?" CreatorID="?" EmailAddress="?" EmailFormat="?" LastModifierID="?" LastModifyDateTime="?" OrderSequence="?" PrimaryInd="?" PurgeDate="?" Type="?" TypeDescription="?"/>
+               </v91:EmailFolioInfo>
+               <v91:AuthorizationApproval ApprovalCode="?" OriginalAuthSequence="?" VendorTranId="?">
+                  <v91:ApprovalAmount Amount="?" CurrencyCode="?"/>
+               </v91:AuthorizationApproval>
+            </v91:PaymentMethod>
+            <v91:PostingAmount Amount="?" CurrencyCode="?"/>
+            <v91:PostingReference/>
+            <v91:PostingRemark/>
+            <v91:Comments/>
+            <v91:ApplyCCSurcharge/>
+            <v91:ManualPaymentTaxInfo FolioWindowNo="?" TransactionCode="?" TransactionDate="?" TransactionDescription="?" TransactionNo="?">
+               <v91:TaxInvoiceNo/>
+               <v91:PaymentType/>
+               <v91:Amount Amount="?" CurrencyCode="?"/>
+               <v91:TaxableAmount Amount="?" CurrencyCode="?"/>
+               <v91:NonTaxableAmount Amount="?" CurrencyCode="?"/>
+               <v91:AvailableCredit Amount="?" CurrencyCode="?"/>
+               <v91:PaymentDate/>
+            </v91:ManualPaymentTaxInfo>
+            <v91:CreditablePaymentTaxes>
+               <v91:Tax FolioWindowNo="?" TransactionCode="?" TransactionDate="?" TransactionDescription="?" TransactionNo="?">
+                  <v91:TaxInvoiceNo/>
+                  <v91:PaymentType/>
+                  <v91:Amount Amount="?" CurrencyCode="?"/>
+                  <v91:TaxableAmount Amount="?" CurrencyCode="?"/>
+                  <v91:NonTaxableAmount Amount="?" CurrencyCode="?"/>
+                  <v91:AvailableCredit Amount="?" CurrencyCode="?"/>
+                  <v91:PaymentDate/>
+               </v91:Tax>
+            </v91:CreditablePaymentTaxes>
+            <v91:TerminalId/>
+            <v91:OverrideInsufficientCC/>
+            <v91:ChangeDueAmount Amount="?" CurrencyCode="?"/>
+            <v91:OverrideARCreditLimit/>
+            <v91:ApplyCurrencyTaxes/>
+            <v91:ReservationID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            <v91:GuaranteeCode/>
+            <v91:DepositPolicyID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            <v91:ProfileID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+         </v9:Criteria>
+      </v9:PostDepositPaymentRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

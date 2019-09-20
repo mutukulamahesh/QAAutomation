@@ -1,0 +1,693 @@
+      <FIDELIO_HotelResRQ altLanguageId="?" canHandleVaultedCreditCard="?" echoToken="?" otherPriority="?" primaryLanguageId="?" priority="?" securityToken="?" sequenceNmbr="?" target="Production" timeStamp="?" version="?">
+         <POS>
+            <Source ERSPUserId="?" agentCity="?" agentCountry="?" agentDutyCode="?" agentSine="?" airportCode="?" carrierCode="?" currency="?" firstDepartPoint="?" otherSourceType="?" pseudoCityCode="?" sourceType="?">
+               <UniqueId discoveryUrl="?" id="?" idType="?" instance="?" otherIdType="?" url="?"/>
+               <Position altitude="?" latitude="?" longitude="?"/>
+               <BookingChannel otherType="?" primary="?" type="?"/>
+            </Source>
+         <Source ERSPUserId="?" agentCity="?" agentCountry="?" agentDutyCode="?" agentSine="?" airportCode="?" carrierCode="?" currency="?" firstDepartPoint="?" otherSourceType="?" pseudoCityCode="?" sourceType="?">
+               <UniqueId discoveryUrl="?" id="?" idType="?" instance="?" otherIdType="?" url="?"/>
+               <Position altitude="?" latitude="?" longitude="?"/>
+               <BookingChannel otherType="?" primary="?" type="?"/>
+            </Source><Source ERSPUserId="?" agentCity="?" agentCountry="?" agentDutyCode="?" agentSine="?" airportCode="?" carrierCode="?" currency="?" firstDepartPoint="?" otherSourceType="?" pseudoCityCode="?" sourceType="?">
+               <UniqueId discoveryUrl="?" id="?" idType="?" instance="?" otherIdType="?" url="?"/>
+               <Position altitude="?" latitude="?" longitude="?"/>
+               <BookingChannel otherType="?" primary="?" type="?"/>
+            </Source><Source ERSPUserId="?" agentCity="?" agentCountry="?" agentDutyCode="?" agentSine="?" airportCode="?" carrierCode="?" currency="?" firstDepartPoint="?" otherSourceType="?" pseudoCityCode="?" sourceType="?">
+               <UniqueId discoveryUrl="?" id="?" idType="?" instance="?" otherIdType="?" url="?"/>
+               <Position altitude="?" latitude="?" longitude="?"/>
+               <BookingChannel otherType="?" primary="?" type="?"/>
+            </Source></POS>
+         <UniqueId discoveryUrl="?" id="?" idType="?" instance="?" otherIdType="?" url="?"/>
+         <HotelReservations>
+            <HotelReservation areaId="?" brandCode="?" chainCode="?" cityCode="?" countryCode="?" hotelCode="?" hotelName="?" otherReservationActionType="?" otherReservationStatusType="?" reservationActionType="?" reservationStatusType="?">
+               <HotelReservationIDs>
+                  <HotelReservationID forGuest="false" idSource="?" idSourceType="?" idType="?" idValue="?" otherIdType="?" resGuestRPH="?"/>
+               </HotelReservationIDs>
+               <RoomStays>
+                  <RoomStay channelCode="?" commissionPlanCode="?" complementary="?" complementaryCode="?" inventoryBlockCode="?" marketSegmentCode="?" numberOfGuestsPerRoom="?" numberOfRooms="?" otherReservationActionType="?" otherReservationStatusType="?" promotionCode="?" reservationActionType="?" reservationStatusType="?" roomId="?" roomLocation="?" roomStayRPH="?" roomType="?" roomTypeCode="?" shareCode="?" sourceOfBusinessCode="?" tourNumber="?">
+                     <StayDateRange>
+                        <HardDateRange endDate="?" los="?" startDate="?"/>
+                        <SoftDateRange arrivalDOW="?" departureDOW="?" earliestEndDate="?" earliestStartDate="?" latestEndDate="?" latestStartDate="?" maxLos="?" minLos="?"/>
+                     </StayDateRange>
+                     <GuestCounts guestOccupancyIndicator="EachRoom" isPerRoom="?">
+                        <GuestCount ageQualifyingCode="?" count="?" otherAgeQualifyingCode="?"/>
+                     </GuestCounts>
+                     <RatePlans>
+                        <RatePlan confidential="?" ratePlanCategory="?" ratePlanCode="?" ratePlanRPH="?">
+                           <RatePlanDescription>
+                              <Text formatted="?" language="?"/>
+                              <Image/>
+                              <Url/>
+                           </RatePlanDescription>
+                           <TimeSpan duration="?" end="?" start="?"/>
+                           <Rates>
+                              <Rate amountGuaranteed="?" isComp="false" isOverride="false" isTaxExempt="false" rateRPH="?">
+                                 <Amount currency="?" currencyFactor="?"/>
+                                 <RateBasisUnits rateBasisUnitType="?"/>
+                                 <TimeSpan duration="?" end="?" start="?"/>
+                                 <ExtraBeds>
+                                    <ExtraBed extraBedType="?" otherType="?" quantity="?">
+                                       <Amount currency="?" currencyFactor="?"/>
+                                    </ExtraBed>
+                                 </ExtraBeds>
+                                 <ExtraPersons>
+                                    <ExtraPerson extraPersonType="?" otherType="?" quantity="?">
+                                       <Amount currency="?" currencyFactor="?"/>
+                                    </ExtraPerson>
+                                 </ExtraPersons>
+                              </Rate>
+                           </Rates>
+                        </RatePlan>
+                     </RatePlans>
+                     <AnticipatedSettlementRPHs>
+                        <AnticipatedSettlementRPH/>
+                     </AnticipatedSettlementRPHs>
+                     <ResGuestRPHs>
+                        <ResGuestRPH/>
+                     </ResGuestRPHs>
+                     <AccompanyingGuestRPHs>
+                        <AccompanyingGuestRPH/>
+                     </AccompanyingGuestRPHs>
+                     <SelectedMembershipRPHs>
+                        <SelectedMembershipRPH/>
+                     </SelectedMembershipRPHs>
+                     <ResCommentRPHs>
+                        <ResCommentRPH/>
+                     </ResCommentRPHs>
+                     <SpecialRequestRPHs>
+                        <SpecialRequestRPH/>
+                     </SpecialRequestRPHs>
+                     <ServiceRPHs>
+                        <ServiceRPH/>
+                     </ServiceRPHs>
+                     <VendorPolicies>
+                        <VendorPolicy otherPolicyType="?" policyType="?">
+                           <Text formatted="?" language="?"/>
+                           <Image/>
+                           <Url/>
+                        </VendorPolicy>
+                     </VendorPolicies>
+                     <Discounts>
+                        <Discount currency="?" currencyFactor="?" discountReason="?"/>
+                     </Discounts>
+                     <GuaranteeDeposits>
+                        <GuaranteeDeposit>
+                           <Deposit>
+                              <PaymentInstructions>
+                                 <PaymentInstruction otherPaymentMethod="?" paymentMethod="?" resCreditCardRPH="?">
+                                    <Payment cancelIfNotRecieved="?" paid="?">
+                                       <DueDate>
+                                          <duration/>
+                                          <dateTime/>
+                                       </DueDate>
+                                       <Amount currency="?" currencyFactor="?"/>
+                                    </Payment>
+                                 </PaymentInstruction>
+                              </PaymentInstructions>
+                           </Deposit>
+                           <Guarantee dropTime="?" guaranteeCode="?" guaranteeInformation="?" guaranteeType="?" resCreditCardRPH="?" resProfileRPH="?">
+                              <ResCommentRPHs>
+                                 <ResCommentRPH/>
+                              </ResCommentRPHs>
+                           </Guarantee>
+                        </GuaranteeDeposit>
+                     </GuaranteeDeposits>
+                     <CancelPenalties>
+                        <CancelPenalty>
+                           <CancelByDate>
+                              <duration/>
+                              <dateTime/>
+                           </CancelByDate>
+                           <ResCommentRPHs>
+                              <ResCommentRPH/>
+                           </ResCommentRPHs>
+                           <Amount currency="?" currencyFactor="?"/>
+                        </CancelPenalty>
+                     </CancelPenalties>
+                     <CancelDetails>
+                        <CancelDetail cancelCode="?" cancelDate="?" cancelNumber="?" cancelReasonCode="?">
+                           <Text formatted="?" language="?"/>
+                           <Image/>
+                           <Url/>
+                        </CancelDetail>
+                     </CancelDetails>
+                     <PaymentInstructions>
+                        <PaymentInstruction otherPaymentMethod="?" paymentMethod="?" resCreditCardRPH="?">
+                           <Payment cancelIfNotRecieved="?" paid="?">
+                              <DueDate>
+                                 <duration/>
+                                 <dateTime/>
+                              </DueDate>
+                              <Amount currency="?" currencyFactor="?"/>
+                           </Payment>
+                        </PaymentInstruction>
+                     </PaymentInstructions>
+                     <ExpectedCharges TaxInclusive="?" TotalRoomRateAndPackages="?" TotalTaxesAndFees="?">
+                        <ChargesForPostingDate PostingDate="?" TotalCharges="?">
+                           <RoomRateAndPackages TotalCharges="?">
+                              <Charges>
+                                 <Description/>
+                                 <Amount currency="?" currencyFactor="?"/>
+                              </Charges>
+                           </RoomRateAndPackages>
+                           <TaxesAndFees TotalCharges="?">
+                              <Charges>
+                                 <Description/>
+                                 <Amount currency="?" currencyFactor="?"/>
+                              </Charges>
+                           </TaxesAndFees>
+                        </ChargesForPostingDate>
+                     </ExpectedCharges>
+                  </RoomStay>
+               </RoomStays>
+               <Services>
+                  <Service inclusive="?" inventoryBlockCode="?" otherPricingType="?" priceGuaranteed="?" quantity="?" ratePlanCode="?" reservationStatusType="?" serviceInventoryCode="?" servicePricingType="?" serviceRPH="?">
+                     <AnticipatedSettlementRPHs>
+                        <AnticipatedSettlementRPH/>
+                     </AnticipatedSettlementRPHs>
+                     <ResCommentRPHs>
+                        <ResCommentRPH/>
+                     </ResCommentRPHs>
+                     <SelectedMembershipRPHs>
+                        <SelectedMembershipRPH/>
+                     </SelectedMembershipRPHs>
+                     <TimeSpan duration="?" end="?" start="?"/>
+                     <Price currency="?" currencyFactor="?"/>
+                     <GuaranteeDeposits>
+                        <GuaranteeDeposit>
+                           <Deposit>
+                              <PaymentInstructions>
+                                 <PaymentInstruction otherPaymentMethod="?" paymentMethod="?" resCreditCardRPH="?">
+                                    <Payment cancelIfNotRecieved="?" paid="?">
+                                       <DueDate>
+                                          <duration/>
+                                          <dateTime/>
+                                       </DueDate>
+                                       <Amount currency="?" currencyFactor="?"/>
+                                    </Payment>
+                                 </PaymentInstruction>
+                              </PaymentInstructions>
+                           </Deposit>
+                           <Guarantee dropTime="?" guaranteeCode="?" guaranteeInformation="?" guaranteeType="?" resCreditCardRPH="?" resProfileRPH="?">
+                              <ResCommentRPHs>
+                                 <ResCommentRPH/>
+                              </ResCommentRPHs>
+                           </Guarantee>
+                        </GuaranteeDeposit>
+                     </GuaranteeDeposits>
+                     <CancelPenalties>
+                        <CancelPenalty>
+                           <CancelByDate>
+                              <duration/>
+                              <dateTime/>
+                           </CancelByDate>
+                           <ResCommentRPHs>
+                              <ResCommentRPH/>
+                           </ResCommentRPHs>
+                           <Amount currency="?" currencyFactor="?"/>
+                        </CancelPenalty>
+                     </CancelPenalties>
+                     <PaymentInstructions>
+                        <PaymentInstruction otherPaymentMethod="?" paymentMethod="?" resCreditCardRPH="?">
+                           <Payment cancelIfNotRecieved="?" paid="?">
+                              <DueDate>
+                                 <duration/>
+                                 <dateTime/>
+                              </DueDate>
+                              <Amount currency="?" currencyFactor="?"/>
+                           </Payment>
+                        </PaymentInstruction>
+                     </PaymentInstructions>
+                     <GuestCounts guestOccupancyIndicator="EachRoom" isPerRoom="?">
+                        <GuestCount ageQualifyingCode="?" count="?" otherAgeQualifyingCode="?"/>
+                     </GuestCounts>
+                     <ResGuestRPHs>
+                        <ResGuestRPH/>
+                     </ResGuestRPHs>
+                  </Service>
+               </Services>
+               <ResGuests>
+                  <ResGuest ageQualifyingCode="?" arrivalTime="?" departureTime="?" gropupEventCode="?" primary="?" resGuestRPH="?">
+                     <ProfileRPHs>
+                        <ProfileRPH/>
+                     </ProfileRPHs>
+                     <SpecialRequestRPHs>
+                        <SpecialRequestRPH/>
+                     </SpecialRequestRPHs>
+                     <ResCommentRPHs>
+                        <ResCommentRPH/>
+                     </ResCommentRPHs>
+                     <ServiceRPHs>
+                        <ServiceRPH/>
+                     </ServiceRPHs>
+                     <InHouseTimpeSpan>
+                        <HardDateRange endDate="?" los="?" startDate="?"/>
+                        <SoftDateRange arrivalDOW="?" departureDOW="?" earliestEndDate="?" earliestStartDate="?" latestEndDate="?" latestStartDate="?" maxLos="?" minLos="?"/>
+                     </InHouseTimpeSpan>
+                     <ArrivalTransport carrierId="?" locationCode="?" transportDate="?" transportId="?" transportRequired="?" transportTime="?" transportType="?"/>
+                     <DepartureTransport carrierId="?" locationCode="?" transportDate="?" transportId="?" transportRequired="?" transportTime="?" transportType="?"/>
+                     <GuestCounts guestOccupancyIndicator="EachRoom" isPerRoom="?">
+                        <GuestCount ageQualifyingCode="?" count="?" otherAgeQualifyingCode="?"/>
+                     </GuestCounts>
+                  </ResGuest>
+               </ResGuests>
+               <GuestCounts guestOccupancyIndicator="EachRoom" isPerRoom="?">
+                  <GuestCount ageQualifyingCode="?" count="?" otherAgeQualifyingCode="?"/>
+               </GuestCounts>
+               <StayDateRange>
+                  <HardDateRange endDate="?" los="?" startDate="?"/>
+                  <SoftDateRange arrivalDOW="?" departureDOW="?" earliestEndDate="?" earliestStartDate="?" latestEndDate="?" latestStartDate="?" maxLos="?" minLos="?"/>
+               </StayDateRange>
+               <SelectedMemberships>
+                  <SelectedMembership accountId="?" awardDate="?" awardNumber="?" bonusCode="?" membershipCategory="?" pointsEarned="?" profileIdOnAward="?" programCode="?" programType="?" selectedMembershipRPH="?">
+                     <Amount currency="?" currencyFactor="?"/>
+                  </SelectedMembership>
+               </SelectedMemberships>
+               <ResComments>
+                  <ResComment commentDate="?" commentOriginatorCode="?" commentType="?" guestViewable="?" resCommentRPH="?">
+                     <Text formatted="?" language="?"/>
+                     <Image/>
+                     <Url/>
+                  </ResComment>
+               </ResComments>
+               <SpecialRequests>
+                  <SpecialRequest quantity="?" requestCode="?" requestComment="?" requestType="?" responseValue="?" specialRequestRPH="?"/>
+               </SpecialRequests>
+               <ResCreditCards>
+                  <ResCreditCard cardCode="?" cardHolderName="?" cardNumber="?" cardType="?" effectiveDate="?" expirationDate="?" lastFourDigits="?" primary="?" resCreditCardRPH="?" seriesCode="?" vaultedCardID="?">
+                     <BillingAddress bldgRoom="?" city="?" cityCode="?" countryCode="?" postalCode="?" stateProv="?">
+                        <addressLine/>
+                     </BillingAddress>
+                     <CardIssuerName issuerId="?"/>
+                  </ResCreditCard>
+               </ResCreditCards>
+               <ResProfiles>
+                  <ResProfile otherProfileType="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" profileType="?" resProfileRPH="?">
+                     <ProfileIds>
+                        <ProfileId forGuest="false" idSource="?" idSourceType="?" idType="?" idValue="?" otherIdType="?" resGuestRPH="?"/>
+                     </ProfileIds>
+                     <Accesses>
+                        <Access accessUserId="?" actionDate="?" actionSystemId="?" actionType="?">
+                           <AccessPerson>
+                              <namePrefix/>
+                              <givenName/>
+                              <middleName/>
+                              <nameSuffix/>
+                              <surnamePrefix/>
+                              <surname/>
+                              <nameTitle/>
+                              <nameOrdered/>
+                           </AccessPerson>
+                           <accessComment/>
+                        </Access>
+                     </Accesses>
+                     <Customer currency="?" dateOfBirth="?" deceased="No" gender="?" lockOutType="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                        <PersonName>
+                           <namePrefix/>
+                           <givenName/>
+                           <middleName/>
+                           <nameSuffix/>
+                           <surnamePrefix/>
+                           <surname/>
+                           <nameTitle/>
+                           <nameOrdered/>
+                        </PersonName>
+                        <NativeName languageCode="?">
+                           <namePrefix/>
+                           <givenName/>
+                           <middleName/>
+                           <nameSuffix/>
+                           <surnamePrefix/>
+                           <surname/>
+                           <nameTitle/>
+                           <nameOrdered/>
+                        </NativeName>
+                        <Telephones privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <Telephone otherPhoneType="?" phoneUseType="?" primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                              <PhoneNumber/>
+                              <PhoneData PIN="?" areaCityCode="?" countryAccessCode="?" extension="?" phoneNumber="?" phoneTechType="?"/>
+                           </Telephone>
+                        </Telephones>
+                        <EMails privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <EMail emailType="?" primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?"/>
+                        </EMails>
+                        <Addresses privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <Address addressType="?" otherAddressType="?" primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                              <AddressData bldgRoom="?" city="?" cityCode="?" countryCode="?" postalCode="?" stateProv="?">
+                                 <addressLine/>
+                              </AddressData>
+                              <Text formatted="?" language="?"/>
+                           </Address>
+                        </Addresses>
+                        <URLs privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <URL primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?"/>
+                        </URLs>
+                        <Citizenships>
+                           <Citizenship countryCode="?" countryName="?" default="?"/>
+                        </Citizenships>
+                        <PetInfo/>
+                        <PaymentForms privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <PaymentForm privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                              <CreditCards privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                 <CreditCard cardCode="?" cardHolderName="?" cardNumber="?" cardType="?" effectiveDate="?" expirationDate="?" lastFourDigits="?" primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" seriesCode="?" vaultedCardID="?">
+                                    <BillingAddress bldgRoom="?" city="?" cityCode="?" countryCode="?" postalCode="?" stateProv="?">
+                                       <addressLine/>
+                                    </BillingAddress>
+                                    <CardIssuerName issuerId="?"/>
+                                 </CreditCard>
+                              </CreditCards>
+                              <BankAccounts privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                 <BankAccount accountNumber="?" accountType="?" bankId="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                    <accountNames/>
+                                 </BankAccount>
+                              </BankAccounts>
+                              <DirectBills privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                 <DirectBill privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                    <CompanyName codeContext="?" companyIdCode="?"/>
+                                    <Address bldgRoom="?" city="?" cityCode="?" countryCode="?" postalCode="?" stateProv="?">
+                                       <addressLine/>
+                                    </Address>
+                                 </DirectBill>
+                              </DirectBills>
+                              <Vouchers privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                 <Voucher effectiveDate="?" expirationDate="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" seriesCode="?"/>
+                              </Vouchers>
+                           </PaymentForm>
+                        </PaymentForms>
+                        <RelatedTravelers privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <RelatedTraveler privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" relationsip="?">
+                              <UniqueId discoveryUrl="?" id="?" idType="?" instance="?" otherIdType="?" url="?"/>
+                              <PersonName>
+                                 <namePrefix/>
+                                 <givenName/>
+                                 <middleName/>
+                                 <nameSuffix/>
+                                 <surnamePrefix/>
+                                 <surname/>
+                                 <nameTitle/>
+                                 <nameOrdered/>
+                              </PersonName>
+                           </RelatedTraveler>
+                        </RelatedTravelers>
+                        <ContactPersons privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <ContactPerson RPH="?" contactType="?" default="?" emergencyFlag="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" relation="?">
+                              <PersonName>
+                                 <namePrefix/>
+                                 <givenName/>
+                                 <middleName/>
+                                 <nameSuffix/>
+                                 <surnamePrefix/>
+                                 <surname/>
+                                 <nameTitle/>
+                                 <nameOrdered/>
+                              </PersonName>
+                              <Addresses>
+                                 <Address addressType="?" otherAddressType="?" primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                    <AddressData bldgRoom="?" city="?" cityCode="?" countryCode="?" postalCode="?" stateProv="?">
+                                       <addressLine/>
+                                    </AddressData>
+                                    <Text formatted="?" language="?"/>
+                                 </Address>
+                              </Addresses>
+                              <Telephones>
+                                 <Telephone otherPhoneType="?" phoneUseType="?" primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                    <PhoneNumber/>
+                                    <PhoneData PIN="?" areaCityCode="?" countryAccessCode="?" extension="?" phoneNumber="?" phoneTechType="?"/>
+                                 </Telephone>
+                              </Telephones>
+                              <EMails>
+                                 <EMail emailType="?" primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?"/>
+                              </EMails>
+                              <CompanyNames>
+                                 <CompanyName codeContext="?" companyIdCode="?"/>
+                              </CompanyNames>
+                              <EmployeeInfos>
+                                 <EmployeeInfo employeeId="?" employeeLevel="?" employeeStatusType="?" employeeTitle="?"/>
+                              </EmployeeInfos>
+                              <URLs>
+                                 <URL primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?"/>
+                              </URLs>
+                           </ContactPerson>
+                        </ContactPersons>
+                        <Documents privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <Document dateOfBirth="?" documentId="?" documentType="?" effectiveDate="?" expirationDate="?" gender="?" holderName="?" issuanceLocation="?" issuingAuthority="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                              <documentLimitations/>
+                           </Document>
+                        </Documents>
+                        <CustomerLoyaltyPrograms privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <CustomerLoyaltyProgram expireDate="?" loyaltyLevel="?" membershipId="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" programId="?" programType="?" signUpDate="?" singleVendorIndicator="?" travelSector="?"/>
+                        </CustomerLoyaltyPrograms>
+                     </Customer>
+                     <CompanyInfo privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                        <CompanyName codeContext="?" companyIdCode="?"/>
+                        <Addresses>
+                           <Address addressType="?" otherAddressType="?" primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                              <AddressData bldgRoom="?" city="?" cityCode="?" countryCode="?" postalCode="?" stateProv="?">
+                                 <addressLine/>
+                              </AddressData>
+                              <Text formatted="?" language="?"/>
+                           </Address>
+                        </Addresses>
+                        <Telephones>
+                           <Telephone otherPhoneType="?" phoneUseType="?" primary="?">
+                              <PhoneNumber/>
+                              <PhoneData PIN="?" areaCityCode="?" countryAccessCode="?" extension="?" phoneNumber="?" phoneTechType="?"/>
+                           </Telephone>
+                        </Telephones>
+                        <EMails>
+                           <EMail emailType="?" primary="?"/>
+                        </EMails>
+                        <URLs>
+                           <URL/>
+                        </URLs>
+                        <BusinessLocales>
+                           <BusinessLocale default="?">
+                              <Address bldgRoom="?" city="?" cityCode="?" countryCode="?" postalCode="?" stateProv="?">
+                                 <addressLine/>
+                              </Address>
+                           </BusinessLocale>
+                        </BusinessLocales>
+                        <PaymentForms privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <PaymentForm privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                              <CreditCards privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                 <CreditCard cardCode="?" cardHolderName="?" cardNumber="?" cardType="?" effectiveDate="?" expirationDate="?" lastFourDigits="?" primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" seriesCode="?" vaultedCardID="?">
+                                    <BillingAddress bldgRoom="?" city="?" cityCode="?" countryCode="?" postalCode="?" stateProv="?">
+                                       <addressLine/>
+                                    </BillingAddress>
+                                    <CardIssuerName issuerId="?"/>
+                                 </CreditCard>
+                              </CreditCards>
+                              <BankAccounts privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                 <BankAccount accountNumber="?" accountType="?" bankId="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                    <accountNames/>
+                                 </BankAccount>
+                              </BankAccounts>
+                              <DirectBills privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                 <DirectBill privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                    <CompanyName codeContext="?" companyIdCode="?"/>
+                                    <Address bldgRoom="?" city="?" cityCode="?" countryCode="?" postalCode="?" stateProv="?">
+                                       <addressLine/>
+                                    </Address>
+                                 </DirectBill>
+                              </DirectBills>
+                              <Vouchers privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                 <Voucher effectiveDate="?" expirationDate="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" seriesCode="?"/>
+                              </Vouchers>
+                           </PaymentForm>
+                        </PaymentForms>
+                        <ContactPersons privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <ContactPerson RPH="?" contactType="?" default="?" emergencyFlag="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" relation="?">
+                              <PersonName>
+                                 <namePrefix/>
+                                 <givenName/>
+                                 <middleName/>
+                                 <nameSuffix/>
+                                 <surnamePrefix/>
+                                 <surname/>
+                                 <nameTitle/>
+                                 <nameOrdered/>
+                              </PersonName>
+                              <Addresses>
+                                 <Address addressType="?" otherAddressType="?" primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                    <AddressData bldgRoom="?" city="?" cityCode="?" countryCode="?" postalCode="?" stateProv="?">
+                                       <addressLine/>
+                                    </AddressData>
+                                    <Text formatted="?" language="?"/>
+                                 </Address>
+                              </Addresses>
+                              <Telephones>
+                                 <Telephone otherPhoneType="?" phoneUseType="?" primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                    <PhoneNumber/>
+                                    <PhoneData PIN="?" areaCityCode="?" countryAccessCode="?" extension="?" phoneNumber="?" phoneTechType="?"/>
+                                 </Telephone>
+                              </Telephones>
+                              <EMails>
+                                 <EMail emailType="?" primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?"/>
+                              </EMails>
+                              <CompanyNames>
+                                 <CompanyName codeContext="?" companyIdCode="?"/>
+                              </CompanyNames>
+                              <EmployeeInfos>
+                                 <EmployeeInfo employeeId="?" employeeLevel="?" employeeStatusType="?" employeeTitle="?"/>
+                              </EmployeeInfos>
+                              <URLs>
+                                 <URL primary="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?"/>
+                              </URLs>
+                           </ContactPerson>
+                        </ContactPersons>
+                        <TravelArrangers privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <TravelArranger contactRPH="?" default="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" travelArrangerType="?">
+                              <CompanyName codeContext="?" companyIdCode="?"/>
+                           </TravelArranger>
+                        </TravelArrangers>
+                        <LoyaltyPrograms>
+                           <LoyaltyProgram expireDate="?" loyaltyLevel="?" membershipId="?" programId="?" programType="?" signUpDate="?" singleVendorIndicator="?" travelSector="?"/>
+                        </LoyaltyPrograms>
+                     </CompanyInfo>
+                     <Preferences privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                        <PreferenceCollection privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" travelType="?">
+                           <PreferenceElement prefCode="?" prefLevel="?" prefType="?" preferenceRPH="?" priortiy="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" value="?">
+                              <prefDescription>
+                                 <Text formatted="?" language="?"/>
+                                 <Image/>
+                                 <Url/>
+                              </prefDescription>
+                           </PreferenceElement>
+                        </PreferenceCollection>
+                     </Preferences>
+                     <Affiliations privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                        <Affiliation privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <Organizations>
+                              <Organization default="?" expirationDate="?" organizationType="?">
+                                 <OrganizationMemberName orgMemberId="?" orgMemberLevel="?" orgMemberTitle="?">
+                                    <PersonName>
+                                       <namePrefix/>
+                                       <givenName/>
+                                       <middleName/>
+                                       <nameSuffix/>
+                                       <surnamePrefix/>
+                                       <surname/>
+                                       <nameTitle/>
+                                       <nameOrdered/>
+                                    </PersonName>
+                                 </OrganizationMemberName>
+                                 <OrganizationName>
+                                    <CompanyName codeContext="?" companyIdCode="?"/>
+                                 </OrganizationName>
+                                 <RelatedOrganizationName/>
+                                 <TravelArrangers privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                    <TravelArranger contactRPH="?" default="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" travelArrangerType="?">
+                                       <CompanyName codeContext="?" companyIdCode="?"/>
+                                    </TravelArranger>
+                                 </TravelArrangers>
+                              </Organization>
+                           </Organizations>
+                           <Employers>
+                              <Employer default="?" expirationDate="?" officeType="?">
+                                 <CompanyName codeContext="?" companyIdCode="?"/>
+                                 <RelatedEmployers>
+                                    <RelatedEmployer>
+                                       <CompanyName codeContext="?" companyIdCode="?"/>
+                                    </RelatedEmployer>
+                                 </RelatedEmployers>
+                                 <EmployeeInfo employeeId="?" employeeLevel="?" employeeStatusType="?" employeeTitle="?"/>
+                                 <internalRefNumber/>
+                                 <TravelArrangers privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                                    <TravelArranger contactRPH="?" default="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" travelArrangerType="?">
+                                       <CompanyName codeContext="?" companyIdCode="?"/>
+                                    </TravelArranger>
+                                 </TravelArrangers>
+                                 <LoyaltyPrograms>
+                                    <LoyaltyProgram expireDate="?" loyaltyLevel="?" membershipId="?" programId="?" programType="?" signUpDate="?" singleVendorIndicator="?" travelSector="?"/>
+                                 </LoyaltyPrograms>
+                              </Employer>
+                           </Employers>
+                           <TravelArrangers privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                              <TravelArranger contactRPH="?" default="?" privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?" travelArrangerType="?">
+                                 <CompanyName codeContext="?" companyIdCode="?"/>
+                              </TravelArranger>
+                           </TravelArrangers>
+                           <TravelClubs>
+                              <TravelClub expirationDate="?">
+                                 <TravelClubName>
+                                    <CompanyName codeContext="?" companyIdCode="?"/>
+                                 </TravelClubName>
+                                 <ClubMemberName clubMemberId="?">
+                                    <PersonName>
+                                       <namePrefix/>
+                                       <givenName/>
+                                       <middleName/>
+                                       <nameSuffix/>
+                                       <surnamePrefix/>
+                                       <surname/>
+                                       <nameTitle/>
+                                       <nameOrdered/>
+                                    </PersonName>
+                                 </ClubMemberName>
+                              </TravelClub>
+                           </TravelClubs>
+                           <InsurancePlans>
+                              <Insurance RPH="?" carrier="?" effectiveDate="?" expirationDate="?" insuranceType="?" insuredName="?" policyNumber="?" underwriter="?"/>
+                           </InsurancePlans>
+                           <TPA_Extensions/>
+                        </Affiliation>
+                     </Affiliations>
+                     <Agreements privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                        <Agreement privacyIndicator="?" privacyMarketingIndicator="?" privacySynchIndicator="?">
+                           <Certifications>
+                              <Certification certificationId="?" certificationType="?" effectiveDate="?" expirationDate="?"/>
+                           </Certifications>
+                           <AllianceConsortiums>
+                              <AllianceConsortium allianceId="?" effectiveDate="?" expirationDate="?">
+                                 <AllianceMembers>
+                                    <AllianceMember memberCode="?">
+                                       <CompanyName codeContext="?" companyIdCode="?"/>
+                                    </AllianceMember>
+                                 </AllianceMembers>
+                              </AllianceConsortium>
+                           </AllianceConsortiums>
+                           <CommissionInfos>
+                              <CommissionInfo commissionPlanCode="?" commissionRatePercentage="?" commissionRateText="?" currencyCode="?"/>
+                           </CommissionInfos>
+                           <TPA_Extensions/>
+                        </Agreement>
+                     </Agreements>
+                     <VendorComments>
+                        <VendorComment commentType="?" guestViewable="?" otherCommentType="?" proprietary="?">
+                           <Text formatted="?" language="?"/>
+                           <Image/>
+                           <Url/>
+                        </VendorComment>
+                     </VendorComments>
+                     <TPE_Extensions/>
+                  </ResProfile>
+               </ResProfiles>
+               <AnticipatedSettlements>
+                  <AnticipatedSettlement anticipatedSettlementRPH="?" masterRoomStayRPH="?" settlementType="?"/>
+               </AnticipatedSettlements>
+               <VendorPolicies>
+                  <VendorPolicy otherPolicyType="?" policyType="?">
+                     <Text formatted="?" language="?"/>
+                     <Image/>
+                     <Url/>
+                  </VendorPolicy>
+               </VendorPolicies>
+               <TPE_Extensions/>
+            </HotelReservation>
+            <RoutingHops>
+               <RoutingHop comment="?" data="?" localRefId="?" sequenceNumber="?" systemCode="?" timeStamp="?"/>
+            </RoutingHops>
+            <Sessions sessionControlCode="?">
+               <Session otherSessionType="?" sessionId="?" sessionType="?"/>
+            </Sessions>
+            <WrittenConfInst address="?" addressName="?" languageId="?" requested="?" telephone="?">
+               <SupplementalData>
+                  <Text formatted="?" language="?"/>
+                  <Image/>
+                  <Url/>
+               </SupplementalData>
+               <EMail emailType="?" primary="?"/>
+            </WrittenConfInst>
+         </HotelReservations>
+      </FIDELIO_HotelResRQ>

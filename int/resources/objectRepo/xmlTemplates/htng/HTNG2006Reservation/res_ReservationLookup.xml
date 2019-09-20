@@ -1,0 +1,51 @@
+<soapenv:Envelope xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://htng.org/PWSWG/2006/08/SingleGuestItinerary/Reservation/Types" xmlns:typ1="http://htng.org/PWSWG/2006/08/SingleGuestItinerary/Common/Types" xmlns:typ2="http://htng.org/PWSWG/2006/08/SingleGuestItinerary/Activity/Types">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:ReservationLookupResponse>
+         <typ:Result resultStatusFlag="?" code="?">
+            <typ1:Text>
+               <typ1:TextElement language="?"></typ1:TextElement>
+            </typ1:Text>
+            <typ1:IDs>
+               <typ1:UniqueID source="?"></typ1:UniqueID>
+            </typ1:IDs>
+         </typ:Result>
+         <typ:ReservationLookups>
+            <typ:ReservationLookup reservationStatus="?" otherReservationStatus="?">
+               <typ:ReservationID source="?"></typ:ReservationID>
+               <typ:ProfileID source="?"></typ:ProfileID>
+               <typ:RoomNumber></typ:RoomNumber>
+               <typ:DateRange>
+                  <typ2:Start></typ2:Start>
+                  <typ2:End></typ2:End>
+               </typ:DateRange>
+               <typ:ProfileInfo nameOrdered="?" familiarName="?">
+                  <typ1:NameTitle></typ1:NameTitle>
+                  <typ1:FirstName></typ1:FirstName>
+                  <typ1:MiddleName></typ1:MiddleName>
+                  <typ1:LastName></typ1:LastName>
+                  <typ1:NameSuffix></typ1:NameSuffix>
+               </typ:ProfileInfo>
+               <typ:ReservationAddress addressType="?" otherAddressType="?">
+                  <typ1:AddressLine></typ1:AddressLine>
+                  <typ1:CityName></typ1:CityName>
+                  <typ1:StateProv></typ1:StateProv>
+                  <typ1:CountryCode></typ1:CountryCode>
+                  <typ1:PostalCode></typ1:PostalCode>
+               </typ:ReservationAddress>
+               <typ:MembershipID>
+                  <typ1:MembershipType></typ1:MembershipType>
+                  <typ1:MembershipNumber></typ1:MembershipNumber>
+                  <typ1:MembershipLevel></typ1:MembershipLevel>
+                  <typ1:MemberName></typ1:MemberName>
+                  <typ1:EffectiveDate></typ1:EffectiveDate>
+                  <typ1:ExpirationDate></typ1:ExpirationDate>
+                  <typ1:CurrentPoints></typ1:CurrentPoints>
+               </typ:MembershipID>
+               <typ:ConfirmationNo></typ:ConfirmationNo>
+               <typ:ResortId></typ:ResortId>
+            </typ:ReservationLookup>
+         </typ:ReservationLookups>
+      </typ:ReservationLookupResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

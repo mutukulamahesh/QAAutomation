@@ -1,0 +1,101 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:name="http://webservices.micros.com/ows/5.1/Name.wsdl" xmlns:name1="http://webservices.micros.com/og/4.3/Name/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <name:NameLookupRequest>
+         <name:NameLookupCriteria>
+            <name1:Membership>
+               <name1:LastName/>
+               <name1:FirstName/>
+               <name1:MembershipType/>
+               <name1:MembershipNumber/>
+               <name1:NativeName active="?" familiarName="?" languageCode="?" nameOrdered="?">
+                  <com:nameTitle/>
+                  <com:firstName/>
+                  <com:middleName/>
+                  <com:lastName/>
+                  <com:nameSuffix/>
+                  <com:accountName2/>
+                  <com:accountName3/>
+                  <com:profession/>
+               </name1:NativeName>
+            </name1:Membership>
+            <name1:CreditCard>
+               <name1:LastName/>
+               <name1:FirstName/>
+               <name1:CardCode/>
+               <name1:CardNumber/>
+               <name1:LookupVaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+               <name1:NativeName active="?" familiarName="?" languageCode="?" nameOrdered="?">
+                  <com:nameTitle/>
+                  <com:firstName/>
+                  <com:middleName/>
+                  <com:lastName/>
+                  <com:nameSuffix/>
+                  <com:accountName2/>
+                  <com:accountName3/>
+                  <com:profession/>
+               </name1:NativeName>
+            </name1:CreditCard>
+            <name1:EmailAddress>
+               <name1:EmailAddress/>
+            </name1:EmailAddress>
+            <name1:NameLookup>
+               <name1:LastName/>
+               <name1:FirstName/>
+               <name1:MembershipType/>
+               <name1:MembershipNumber/>
+               <name1:CardCode/>
+               <name1:EmailAddress/>
+               <name1:ActiveYn/>
+               <name1:CardNumber/>
+               <name1:LookupVaultedCardData lastFourDigits="?" vaultedCardID="?"/>
+               <name1:NativeName active="?" familiarName="?" languageCode="?" nameOrdered="?">
+                  <com:nameTitle/>
+                  <com:firstName/>
+                  <com:middleName/>
+                  <com:lastName/>
+                  <com:nameSuffix/>
+                  <com:accountName2/>
+                  <com:accountName3/>
+                  <com:profession/>
+               </name1:NativeName>
+               <name1:NoOfRows/>
+            </name1:NameLookup>
+            <name1:Name>
+               <name1:Name/>
+               <name1:NameType/>
+               <name1:NativeName active="?" familiarName="?" languageCode="?" nameOrdered="?">
+                  <com:nameTitle/>
+                  <com:firstName/>
+                  <com:middleName/>
+                  <com:lastName/>
+                  <com:nameSuffix/>
+                  <com:accountName2/>
+                  <com:accountName3/>
+                  <com:profession/>
+               </name1:NativeName>
+               <name1:ActiveYn/>
+            </name1:Name>
+         </name:NameLookupCriteria>
+      </name:NameLookupRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

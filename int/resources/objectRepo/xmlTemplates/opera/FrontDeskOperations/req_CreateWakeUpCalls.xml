@@ -1,0 +1,53 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/fof/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateWakeUpCallsRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Calls>
+            <v91:Call CreateDateTime="?" CreatorID="?" LastModifierID="?" LastModifyDateTime="?" PurgeDate="?">
+               <v91:ReservationInfo>
+                  <v91:ReservationID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                  <v91:HotelCode/>
+                  <v91:Timezone/>
+                  <v91:GuestName/>
+                  <v91:Vip/>
+                  <v91:Arrival/>
+                  <v91:Departure/>
+                  <v91:Room/>
+                  <v91:RoomPhoneNumber/>
+                  <v91:ExtensionNumber/>
+                  <v91:BlockID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                  <v91:BlockCode/>
+               </v91:ReservationInfo>
+               <v91:CallTime/>
+               <v91:FollowUpCallTime/>
+               <v91:IsFollowUpCall/>
+               <v91:Status/>
+               <v91:ProcessedDate/>
+               <v91:ProcessedTime/>
+               <v91:Instructions/>
+               <v91:TimeSpan>
+                  <v91:StartDate/>
+                  <v91:EndDate/>
+                  <v91:Duration/>
+               </v91:TimeSpan>
+               <v91:NewCallTime/>
+               <v91:NewFollowUpCallTime/>
+            </v91:Call>
+         </v9:Calls>
+      </v9:CreateWakeUpCallsRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

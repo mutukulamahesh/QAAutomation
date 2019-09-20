@@ -1,0 +1,35 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:hot="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns:res="http://webservices.micros.com/og/4.3/ResvAdvanced/">
+   <soapenv:Header>
+      <core:OGHeader authToken="?" channelValidation="true" primaryLangID="E" terminalID="?" timeStamp="?" transactionID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName/>
+               <core:UserPassword/>
+               <core:Domain/>
+               <core:SecurityId/>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key/>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:FetchRoomStatusRequest EndRoomNumber="?" FloorNumber="?" HouseKeepingSection="?" IncludeCheckedOut="false" IncludeCleanRoom="true" IncludeConnectingRoom="false" IncludeDirtyRoom="true" IncludeDueOut="true" IncludeInspectedRoom="true" IncludeOOORoom="false" IncludeOOSRoom="false" IncludeOccupied="false" IncludePickUpRoom="false" IncludePseudoRoom="false" IncludeRoomCondition="false" IncludeVacant="true" ReservationStatus="?" RoomClass="?" RoomNumber="?" RoomType="?" SmokingPreference="?">
+         <res:HotelReference chainCode="?" hotelCode="?"/>
+         <res:StartDate/>
+         <res:EndDate/>
+         <res:Features>
+            <hot:Features AttachPreferenceToProfile="?" Description="?" Feature="?">
+               <hot:FeatureID/>
+            </hot:Features>
+         </res:Features>
+         <res:ResvNameId source="?" type="?"/>
+      </res:FetchRoomStatusRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

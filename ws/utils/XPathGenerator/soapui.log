@@ -1,0 +1,26 @@
+2018-11-23 14:37:13,900 WARN  [SoapUI] Missing folder [D:\git\qaauto\ws\utils\XPathGenerator\.\ext] for external libraries
+2018-11-23 14:37:14,026 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\sbasana\soapui-settings.xml]
+2018-11-23 14:37:14,502 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/ws/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
+2018-11-23 14:37:14,522 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/ws/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
+2018-11-23 14:37:14,538 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/ws/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
+2018-11-23 14:37:14,539 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/ws/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
+2018-11-23 14:37:14,540 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/ws/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
+2018-11-23 14:37:14,541 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/ws/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
+2018-11-23 14:37:14,542 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/ws/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
+2018-11-23 14:37:14,545 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/ws/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
+2018-11-23 14:37:14,547 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/ws/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
+2018-11-23 14:37:14,550 INFO  [SchemaUtils] Added default schema from file:/D:/git/qaauto/ws/utils/XPathGenerator/XPath_Util2.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
+2018-11-23 14:37:16,891 INFO  [SchemaUtils] Loading schema types from [http://cloudsmoke12cws1.us.oracle.com:9004/OPERA9WS/o90_smoke12c/OXIIntegrationProcessorService/IntegrationProcessorService?wsdl]
+2018-11-23 14:37:16,896 INFO  [SchemaUtils] Getting schema http://cloudsmoke12cws1.us.oracle.com:9004/OPERA9WS/o90_smoke12c/OXIIntegrationProcessorService/IntegrationProcessorService?wsdl
+2018-11-23 14:37:16,899 INFO  [SchemaUtils] Getting schema http://cloudsmoke12cws1.us.oracle.com:9004/OPERA9WS/o90_smoke12c/OXIIntegrationProcessorService/IntegrationProcessorService?xsd=3
+2018-11-23 14:37:16,901 INFO  [SchemaUtils] Getting schema http://cloudsmoke12cws1.us.oracle.com:9004/OPERA9WS/o90_smoke12c/OXIIntegrationProcessorService/IntegrationProcessorService?xsd=2
+2018-11-23 14:37:16,904 INFO  [SchemaUtils] Getting schema http://cloudsmoke12cws1.us.oracle.com:9004/OPERA9WS/o90_smoke12c/OXIIntegrationProcessorService/IntegrationProcessorService?xsd=1
+2018-11-23 14:37:17,030 INFO  [WsdlImporter] Finding importer for {http://micros/opera/ws/integ/v9_00}IntegrationProcessorPortBinding
+2018-11-23 14:37:17,033 INFO  [WsdlImporter] Importing binding {http://micros/opera/ws/integ/v9_00}IntegrationProcessorPortBinding
+2018-11-23 14:37:17,096 INFO  [Soap11HttpBindingImporter] importing endpoint http://cloudsmoke12cws1.us.oracle.com:9004/OPERA9WS/o90_smoke12c/OXIIntegrationProcessorService/IntegrationProcessorService
+2018-11-23 14:37:17,121 INFO  [Soap11HttpBindingImporter] importing operation FetchBusinessEvents
+2018-11-23 14:37:17,131 INFO  [Soap11HttpBindingImporter] importing operation FetchProcessInboundMessage
+2018-11-23 14:37:17,131 INFO  [Soap11HttpBindingImporter] importing operation ProcessBusinessEvent
+2018-11-23 14:37:17,132 INFO  [Soap11HttpBindingImporter] importing operation ProcessInboundMessage
+2018-11-23 14:37:17,132 INFO  [Soap11HttpBindingImporter] importing operation ProcessScheduledEvent
+2018-11-23 14:37:17,133 INFO  [Soap11HttpBindingImporter] importing operation UpdateBusinessEventsStatus

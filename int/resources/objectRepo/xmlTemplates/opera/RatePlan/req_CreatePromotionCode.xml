@@ -1,0 +1,61 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/par/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreatePromotionCodeRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:PropertyPromotionCode HotelCode="?" PromotionCode="?">
+            <v91:PromotionCodeDetails>
+               <v91:PromotionName>
+                  <v91:DefaultText/>
+                  <v91:TranslatedTexts>
+                     <v91:Text Lang="?"/>
+                  </v91:TranslatedTexts>
+               </v91:PromotionName>
+               <v91:PromotionGroup/>
+               <v91:PromotionGroupName/>
+               <v91:Description/>
+               <v91:BookingDate>
+                  <v91:StartDate/>
+                  <v91:EndDate/>
+                  <v91:Duration/>
+               </v91:BookingDate>
+               <v91:StayDate>
+                  <v91:StartDate/>
+                  <v91:EndDate/>
+                  <v91:Duration/>
+               </v91:StayDate>
+               <v91:Category/>
+               <v91:CategoryDesc/>
+               <v91:PromoInstructions/>
+               <v91:PromoInformation/>
+               <v91:UpgradeAllowed/>
+               <v91:UpdateOutsideBookingDate/>
+               <v91:CheckInOutTime>
+                  <v91:StartDateTime/>
+                  <v91:EndDateTime/>
+               </v91:CheckInOutTime>
+               <v91:InactiveDate/>
+            </v91:PromotionCodeDetails>
+            <v91:PropertyPromotionRateCodes>
+               <v91:PropertyPromotionRateCode HotelCode="?" PromotionCode="?" RateCode="?">
+                  <v91:RateUseDesc/>
+                  <v91:ActionType/>
+               </v91:PropertyPromotionRateCode>
+            </v91:PropertyPromotionRateCodes>
+         </v9:PropertyPromotionCode>
+      </v9:CreatePromotionCodeRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

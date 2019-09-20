@@ -1,0 +1,33 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateHotelNotesRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:HotelNotes>
+            <v91:HotelNote>
+               <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               <v91:Comment ActionDate="?" ActionType="?" Confidential="?" CreateDateTime="?" CreatorID="?" HotelCode="?" Internal="?" LastModifierID="?" LastModifyDateTime="?" OverrideInternal="?" ProtectDescription="?" PurgeDate="?" Type="?" TypeDescription="?">
+                  <v91:Text Formatted="?" Language="?" TextFormat="?"/>
+                  <v91:Image/>
+                  <v91:URL/>
+                  <v91:CommentTitle/>
+                  <v91:NotificationLocation/>
+               </v91:Comment>
+            </v91:HotelNote>
+         </v9:HotelNotes>
+      </v9:CreateHotelNotesRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

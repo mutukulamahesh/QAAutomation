@@ -1,0 +1,29 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateBlockStatusCodeRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:BlockStatusCode AllowPickup="?" InUse="?" LeadStatus="?" LogCatering="?" OrderBy="?" ReturnToInventory="?" ShowDiary="?" Starting="?">
+            <v91:Status Code="?" Description="?"/>
+            <v91:RoomStatusType/>
+            <v91:CateringStatusType/>
+            <v91:DefaultReservationType Code="?" Description="?"/>
+            <v91:ReasonType/>
+            <v91:Color/>
+         </v9:BlockStatusCode>
+      </v9:CreateBlockStatusCodeRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

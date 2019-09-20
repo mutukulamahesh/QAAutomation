@@ -1,0 +1,360 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CancelReservationRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:CxlActivityLog>
+            <v9:CxlActivity>
+               <v91:Reason Code="?">
+                  <v91:Description></v91:Description>
+               </v91:Reason>
+               <v91:CxlDate></v91:CxlDate>
+               <v91:UserID></v91:UserID>
+               <v91:UserName></v91:UserName>
+               <v91:CancellationIDList>
+                  <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               </v91:CancellationIDList>
+            </v9:CxlActivity>
+         </v9:CxlActivityLog>
+         <v9:OldRates>
+            <v91:DailyRate AmountBeforeTax="?" AmountAfterTax="?" Code="?" RateOverride="?" CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?" Start="?" End="?">
+               <v91:Taxes Amount="?" CurrencyCode="?">
+                  <v91:Tax Type="?" Code="?" Amount="?" CurrencyCode="?">
+                     <v91:Description></v91:Description>
+                  </v91:Tax>
+               </v91:Taxes>
+               <v91:Fees Amount="?" CurrencyCode="?">
+                  <v91:Fee Type="?" Code="?" Amount="?" CurrencyCode="?">
+                     <v91:Description></v91:Description>
+                  </v91:Fee>
+               </v91:Fees>
+               <v91:Description></v91:Description>
+               <v91:Discount Percent="?" DiscountCode="?" Amount="?" CurrencyCode="?">
+                  <v91:DiscountReason></v91:DiscountReason>
+               </v91:Discount>
+            </v91:DailyRate>
+         </v9:OldRates>
+         <v9:NewRates>
+            <v91:DailyRate AmountBeforeTax="?" AmountAfterTax="?" Code="?" RateOverride="?" CurrencyCode="?" CurrencySymbol="?" DecimalPlaces="?" Start="?" End="?">
+               <v91:Taxes Amount="?" CurrencyCode="?">
+                  <v91:Tax Type="?" Code="?" Amount="?" CurrencyCode="?">
+                     <v91:Description></v91:Description>
+                  </v91:Tax>
+               </v91:Taxes>
+               <v91:Fees Amount="?" CurrencyCode="?">
+                  <v91:Fee Type="?" Code="?" Amount="?" CurrencyCode="?">
+                     <v91:Description></v91:Description>
+                  </v91:Fee>
+               </v91:Fees>
+               <v91:Description></v91:Description>
+               <v91:Discount Percent="?" DiscountCode="?" Amount="?" CurrencyCode="?">
+                  <v91:DiscountReason></v91:DiscountReason>
+               </v91:Discount>
+            </v91:DailyRate>
+         </v9:NewRates>
+         <v9:Reservations>
+            <v9:Reservation HotelCode="?" HotelName="?" ExpectedServiceTime="?" RoomStayReservation="?" ResStatus="?" ComputedResStatus="?" WalkInIndicator="?" AccessRestriction="?" CommissionPayoutTo="?" PaymentMethod="?" PreRegistered="?" OpenFolio="?" AllowMobileCheckout="?" AllowMobileViewFolio="?" OptedForCommunication="?" AdvanceCheckedIn="?" CreateDateTime="?" CreatorID="?" LastModifyDateTime="?" LastModifierID="?" PurgeDate="?" OverrideExternalChecks="?">
+               <v91:ReservationIDList>
+                  <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               </v91:ReservationIDList>
+               <v91:RoomStay ScheduledCheckoutTime="?" RoomNumberLocked="?" PseudoRoom="?">
+                  <v91:TimeSpan>
+                     <v91:StartDate></v91:StartDate>
+                     <v91:EndDate></v91:EndDate>
+                     <v91:Duration></v91:Duration>
+                  </v91:TimeSpan>
+                  <v91:OriginalTimeSpan>
+                     <v91:StartDate></v91:StartDate>
+                     <v91:EndDate></v91:EndDate>
+                     <v91:Duration></v91:Duration>
+                  </v91:OriginalTimeSpan>
+                  <v91:ExpectedTimes ResExpectedArrivalTime="?" ResExpectedDepartureTime="?" ResExpectedReturnTime="?"/>
+                  <v91:AdultCount></v91:AdultCount>
+                  <v91:ChildCount></v91:ChildCount>
+                  <v91:RoomClass></v91:RoomClass>
+                  <v91:RoomType></v91:RoomType>
+                  <v91:NumberOfRooms></v91:NumberOfRooms>
+                  <v91:RoomNumber></v91:RoomNumber>
+                  <v91:RatePlanCode></v91:RatePlanCode>
+                  <v91:RateAmount Amount="?" CurrencyCode="?"/>
+                  <v91:Points AwardsType="?" Points="?"/>
+                  <v91:RateSuppressed></v91:RateSuppressed>
+                  <v91:ReservationBlock HotelCode="?">
+                     <v91:BlockIDList>
+                        <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     </v91:BlockIDList>
+                     <v91:BlockName></v91:BlockName>
+                  </v91:ReservationBlock>
+                  <v91:BookingChannelCode></v91:BookingChannelCode>
+                  <v91:PartyCode></v91:PartyCode>
+                  <v91:FixedRate></v91:FixedRate>
+                  <v91:TotalAmount Amount="?" CurrencyCode="?"/>
+                  <v91:Guarantee GuaranteeCode="?" ShortDescription="?" OnHold="?"/>
+                  <v91:MarketCode></v91:MarketCode>
+                  <v91:SourceOfBusiness></v91:SourceOfBusiness>
+                  <v91:SourceOfBusinessDescription></v91:SourceOfBusinessDescription>
+                  <v91:Balance Amount="?" CurrencyCode="?"/>
+                  <v91:CompBalance Amount="?" CurrencyCode="?"/>
+                  <v91:RoomTypeCharged></v91:RoomTypeCharged>
+                  <v91:DepositPayments Amount="?" CurrencyCode="?"/>
+                  <v91:GuestServiceStatus></v91:GuestServiceStatus>
+               </v91:RoomStay>
+               <v91:ResGuest NameType="?">
+                  <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  <v91:Membership ProgramCode="?" BonusCode="?" MembershipTypeDesc="?" MembershipLevelDesc="?" AccountID="?" MembershipLevel="?"/>
+                  <v91:NamePrefix></v91:NamePrefix>
+                  <v91:GivenName></v91:GivenName>
+                  <v91:AltGivenName></v91:AltGivenName>
+                  <v91:MiddleName></v91:MiddleName>
+                  <v91:SurnamePrefix></v91:SurnamePrefix>
+                  <v91:Surname></v91:Surname>
+                  <v91:AltSurname></v91:AltSurname>
+                  <v91:NameSuffix></v91:NameSuffix>
+                  <v91:NameTitle></v91:NameTitle>
+                  <v91:FullName></v91:FullName>
+                  <v91:AltFullName></v91:AltFullName>
+                  <v91:PhoneNumber></v91:PhoneNumber>
+                  <v91:Email></v91:Email>
+                  <v91:BirthDate></v91:BirthDate>
+                  <v91:Language></v91:Language>
+                  <v91:Nationality Code="?"></v91:Nationality>
+                  <v91:VIP VIPCode="?" VIPDescription="?"/>
+                  <v91:Address ExcludeNoCity="?">
+                     <v91:CityName></v91:CityName>
+                     <v91:PostalCode></v91:PostalCode>
+                     <v91:State></v91:State>
+                     <v91:CountryName Code="?"></v91:CountryName>
+                     <v91:StreetAddress></v91:StreetAddress>
+                  </v91:Address>
+                  <v91:AccompanyGuests>
+                     <v91:AccompanyGuest>
+                        <v91:FirstName></v91:FirstName>
+                        <v91:LastName></v91:LastName>
+                        <v91:FullName></v91:FullName>
+                        <v91:RegistrationCardNo></v91:RegistrationCardNo>
+                        <v91:ProfileIDList>
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                        </v91:ProfileIDList>
+                     </v91:AccompanyGuest>
+                  </v91:AccompanyGuests>
+                  <v91:ExternalInfo>
+                     <v91:GivenName></v91:GivenName>
+                     <v91:Surname></v91:Surname>
+                  </v91:ExternalInfo>
+                  <v91:GuestLastStayInfo>
+                     <v91:LastStayDate></v91:LastStayDate>
+                     <v91:LastStayRoom></v91:LastStayRoom>
+                     <v91:LastStayRate Amount="?" CurrencyCode="?"/>
+                     <v91:TotalStay></v91:TotalStay>
+                  </v91:GuestLastStayInfo>
+                  <v91:GuestRestrictedCode></v91:GuestRestrictedCode>
+                  <v91:GuestRestrictedReasonDesc></v91:GuestRestrictedReasonDesc>
+                  <v91:GuestRestricted></v91:GuestRestricted>
+                  <v91:RegistrationCardNo></v91:RegistrationCardNo>
+               </v91:ResGuest>
+               <v91:SharedGuests>
+                  <v91:SharedGuest>
+                     <v91:ProfileID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:FirstName></v91:FirstName>
+                     <v91:LastName></v91:LastName>
+                     <v91:FullName></v91:FullName>
+                  </v91:SharedGuest>
+               </v91:SharedGuests>
+               <v91:AttachedProfiles>
+                  <v91:AttachedProfile ResProfileType="?">
+                     <v91:Name></v91:Name>
+                     <v91:ProfileIDList>
+                        <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     </v91:ProfileIDList>
+                  </v91:AttachedProfile>
+               </v91:AttachedProfiles>
+               <v91:ReservationPaymentMethod PaymentMethod="?" Description="?" FolioView="?">
+                  <v91:PaymentCard CardType="?" CardNumber="?" CardNumberMasked="?" ExpirationDate="?" ExpirationDateMasked="?" ExpirationDateExpired="?" CardHolderName="?" AttachCreditCardToProfile="?" Processing="?" Swiped="?" CardNumberType="?">
+                     <v91:CardId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:CurrentAuthorizedAmount Amount="?" CurrencyCode="?"/>
+                     <v91:ApprovalAmountNeeded Amount="?" CurrencyCode="?"/>
+                  </v91:PaymentCard>
+                  <v91:Balance Amount="?" CurrencyCode="?"/>
+                  <v91:AuthorizationRule>
+                     <v91:Code></v91:Code>
+                     <v91:Amount Amount="?" CurrencyCode="?"/>
+                     <v91:Percent></v91:Percent>
+                  </v91:AuthorizationRule>
+                  <v91:EmailFolioInfo EmailFolio="?">
+                     <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:Email EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?" OrderSequence="?"/>
+                  </v91:EmailFolioInfo>
+               </v91:ReservationPaymentMethod>
+               <v91:Specials></v91:Specials>
+               <v91:LastPrivacyPromptDate></v91:LastPrivacyPromptDate>
+               <v91:DisplayColor></v91:DisplayColor>
+               <v91:ReservationIndicators>
+                  <v91:Indicator IndicatorName="?" Count="?"/>
+               </v91:ReservationIndicators>
+               <v91:RoomStatus></v91:RoomStatus>
+               <v91:SearchMatches>
+                  <v91:SearchMatch Attribute="?" Value="?"/>
+               </v91:SearchMatches>
+               <v91:SourceOfSale SourceType="?" SourceCode="?"/>
+               <v91:Waitlist ReasonCode="?" PriorityCode="?" Telephone="?">
+                  <v91:ReasonDescription></v91:ReasonDescription>
+                  <v91:PriorityDescription></v91:PriorityDescription>
+                  <v91:Description></v91:Description>
+               </v91:Waitlist>
+               <v91:Queue Priority="?" AvgQueueTimeToCheckIn="?" AvgQueueTimeCurrentReservations="?" QueueDate="?">
+                  <v91:TimeSpan DurationInSeconds="?">
+                     <v91:StartDate></v91:StartDate>
+                     <v91:EndDate></v91:EndDate>
+                     <v91:Duration></v91:Duration>
+                  </v91:TimeSpan>
+                  <v91:GuestTextInfo>
+                     <v91:SentTime></v91:SentTime>
+                     <v91:SentBy></v91:SentBy>
+                  </v91:GuestTextInfo>
+               </v91:Queue>
+               <v91:Housekeeping TurndownRequested="?" ServiceTime="?" ExpectedServiceTime="?" RoomStatus="?">
+                  <v91:Instructions></v91:Instructions>
+                  <v91:FacilityTaskInfo Date="?">
+                     <v91:Task HotelCode="?" Code="?" Sequence="?">
+                        <v91:Description></v91:Description>
+                        <v91:Instructions></v91:Instructions>
+                        <v91:FacilityDepartureTask></v91:FacilityDepartureTask>
+                        <v91:LinenChange></v91:LinenChange>
+                     </v91:Task>
+                     <v91:Supplies>
+                        <v91:FacilityCode Code="?">
+                           <v91:Description></v91:Description>
+                           <v91:Quantity></v91:Quantity>
+                        </v91:FacilityCode>
+                     </v91:Supplies>
+                  </v91:FacilityTaskInfo>
+                  <v91:LinenChange></v91:LinenChange>
+               </v91:Housekeeping>
+               <v91:Cashiering FinanciallyResponsible="?" ProratedBilling="?" LastRoomAndTaxPostedDate="?" ReverseCheckInAllowed="?" TransactionsPosted="?">
+                  <v91:RevenuesAndBalances>
+                     <v91:TotalFixedCharge Amount="?" CurrencyCode="?"/>
+                     <v91:TotalPayment Amount="?" CurrencyCode="?"/>
+                     <v91:RoomRevenue Amount="?" CurrencyCode="?"/>
+                     <v91:FoodAndBevRevenue Amount="?" CurrencyCode="?"/>
+                     <v91:OtherRevenue Amount="?" CurrencyCode="?"/>
+                     <v91:NonRevenue Amount="?" CurrencyCode="?"/>
+                     <v91:TotalRevenue Amount="?" CurrencyCode="?"/>
+                     <v91:Balance Amount="?" CurrencyCode="?"/>
+                  </v91:RevenuesAndBalances>
+                  <v91:BillingPrivileges PostingRestriction="?" PreStayCharging="?" PostStayCharging="?" FolioCloseDate="?" ScheduledCheckout="?" ScheduledCheckoutTime="?" DirectBillAuthorized="?" VideoCheckout="?" AllowAutoCheckin="?" AutoSettlement="?" AutoSettlementType="?" AutoSettlementFreq="?" CreditLimitAutoPay="?"/>
+                  <v91:TaxType TaxExemptNo="?">
+                     <v91:HotelCode></v91:HotelCode>
+                     <v91:Code></v91:Code>
+                     <v91:Description></v91:Description>
+                     <v91:CollectingAgentTax></v91:CollectingAgentTax>
+                     <v91:PrintAutoAdjust></v91:PrintAutoAdjust>
+                     <v91:ReportExemptDays></v91:ReportExemptDays>
+                     <v91:ReportTaxPerc></v91:ReportTaxPerc>
+                  </v91:TaxType>
+                  <v91:BedTaxReporting TaxRegistrationNo="?" VisaNumber="?" VisaIssueDate="?" VisaExpiryDate="?" TaxableDays="?"/>
+                  <v91:FolioTexts>
+                     <v91:FolioText Text="?" Row="?"/>
+                  </v91:FolioTexts>
+                  <v91:PeriodicFolio LastSettlementDate="?" LastFolioDate="?" Frequency="?"/>
+                  <v91:CompAccounting CompType="?" Authorizer="?"/>
+                  <v91:ResPreConfiguredRoutingInstruction RatePlanCode="?" ProfileType="?"/>
+               </v91:Cashiering>
+               <v91:TaxType>
+                  <v91:HotelCode></v91:HotelCode>
+                  <v91:Code></v91:Code>
+                  <v91:Description></v91:Description>
+                  <v91:CollectingAgentTax></v91:CollectingAgentTax>
+                  <v91:PrintAutoAdjust></v91:PrintAutoAdjust>
+                  <v91:ReportExemptDays></v91:ReportExemptDays>
+                  <v91:ReportTaxPerc></v91:ReportTaxPerc>
+               </v91:TaxType>
+               <v91:Deposit HasPaid="?" HasOutstanding="?">
+                  <v91:AmountRequired></v91:AmountRequired>
+                  <v91:AmountPaid></v91:AmountPaid>
+                  <v91:AmountOwed></v91:AmountOwed>
+                  <v91:DueDate></v91:DueDate>
+                  <v91:PostingDate></v91:PostingDate>
+               </v91:Deposit>
+               <v91:AllowedActions>
+                  <v91:AllowedAction></v91:AllowedAction>
+               </v91:AllowedActions>
+               <v91:RevenuesAndBalances>
+                  <v91:TotalFixedCharge Amount="?" CurrencyCode="?"/>
+                  <v91:TotalPayment Amount="?" CurrencyCode="?"/>
+                  <v91:RoomRevenue Amount="?" CurrencyCode="?"/>
+                  <v91:FoodAndBevRevenue Amount="?" CurrencyCode="?"/>
+                  <v91:OtherRevenue Amount="?" CurrencyCode="?"/>
+                  <v91:NonRevenue Amount="?" CurrencyCode="?"/>
+                  <v91:TotalRevenue Amount="?" CurrencyCode="?"/>
+                  <v91:Balance Amount="?" CurrencyCode="?"/>
+               </v91:RevenuesAndBalances>
+               <v91:HotelInterfaceStatusList>
+                  <v91:RoomExtension></v91:RoomExtension>
+                  <v91:HotelInterface>
+                     <v91:InterfaceId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:HotelCode></v91:HotelCode>
+                     <v91:InterfaceName></v91:InterfaceName>
+                     <v91:InterfaceType></v91:InterfaceType>
+                     <v91:Logo></v91:Logo>
+                     <v91:MachineName></v91:MachineName>
+                     <v91:Status></v91:Status>
+                     <v91:ActiveFlag></v91:ActiveFlag>
+                  </v91:HotelInterface>
+                  <v91:InterfaceRights>
+                     <v91:Right></v91:Right>
+                     <v91:StatusCode></v91:StatusCode>
+                     <v91:Description></v91:Description>
+                     <v91:Category></v91:Category>
+                  </v91:InterfaceRights>
+               </v91:HotelInterfaceStatusList>
+               <v91:GuestPreferredCurrency></v91:GuestPreferredCurrency>
+               <v91:TurndownInfo>
+                  <v91:Allowed></v91:Allowed>
+                  <v91:Status></v91:Status>
+               </v91:TurndownInfo>
+               <v91:MobileNotifications>
+                  <v91:RoomReady></v91:RoomReady>
+                  <v91:KeyReady></v91:KeyReady>
+                  <v91:CheckoutMessageReceived></v91:CheckoutMessageReceived>
+                  <v91:RequiresAction></v91:RequiresAction>
+                  <v91:ErrorMessage></v91:ErrorMessage>
+               </v91:MobileNotifications>
+               <v91:ResCommunication>
+                  <v91:Telephones AllRowsFetched="?" TotalRows="?">
+                     <v91:TelephoneInfo>
+                        <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                        <v91:Telephone PhoneTechType="?" PhoneUseType="?" PhoneUseTypeDescription="?" PhoneNumber="?" Extension="?" PrimaryInd="?" OrderSequence="?"/>
+                     </v91:TelephoneInfo>
+                  </v91:Telephones>
+                  <v91:Emails AllRowsFetched="?" TotalRows="?">
+                     <v91:EmailInfo>
+                        <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                        <v91:Email EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?" OrderSequence="?"/>
+                     </v91:EmailInfo>
+                  </v91:Emails>
+               </v91:ResCommunication>
+               <v91:CxlInstr DeleteResTraces="?" Status="?"/>
+               <v91:RefResId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               <v91:ReservationLockHandle></v91:ReservationLockHandle>
+            </v9:Reservation>
+         </v9:Reservations>
+         <v9:ChannelInformation>
+            <v91:ChannelSummaryInfo MessageID="?" SummaryOnly="?">
+               <v91:BookingChannel ChannelCode="?" ChannelName="?" ChannelType="?"/>
+            </v91:ChannelSummaryInfo>
+            <v91:ChannelResvStatus></v91:ChannelResvStatus>
+            <v91:ChannelMarketingInfo>
+               <v91:MarketingText PolicyType="?" RatePlanCode="?">
+                  <v91:Description></v91:Description>
+               </v91:MarketingText>
+            </v91:ChannelMarketingInfo>
+         </v9:ChannelInformation>
+      </v9:CancelReservationRS>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,92 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchInventoryItemsRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:Items>
+            <v91:Item UsedForEvents="?" UsedForReservation="?">
+               <v91:HotelCode></v91:HotelCode>
+               <v91:ItemID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               <v91:ItemClassID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               <v91:ItemClassCode></v91:ItemClassCode>
+               <v91:ItemClassDescription></v91:ItemClassDescription>
+               <v91:ItemName></v91:ItemName>
+               <v91:ItemDescription></v91:ItemDescription>
+               <v91:ItemCode></v91:ItemCode>
+               <v91:RevenueType></v91:RevenueType>
+               <v91:RevenueTypeEditable></v91:RevenueTypeEditable>
+               <v91:ExternalOrder></v91:ExternalOrder>
+               <v91:Print></v91:Print>
+               <v91:SellInfo>
+                  <v91:Available>
+                     <v91:StartDateTime></v91:StartDateTime>
+                     <v91:EndDateTime></v91:EndDateTime>
+                  </v91:Available>
+                  <v91:QtyInStock></v91:QtyInStock>
+                  <v91:DefaultQty></v91:DefaultQty>
+                  <v91:SellSeparate></v91:SellSeparate>
+                  <v91:SellControl></v91:SellControl>
+                  <v91:WelcomeOffer></v91:WelcomeOffer>
+                  <v91:WebBookable></v91:WebBookable>
+                  <v91:ItemClassWebBookable></v91:ItemClassWebBookable>
+                  <v91:OutsideStay></v91:OutsideStay>
+                  <v91:FixedCharge></v91:FixedCharge>
+                  <v91:Discountable></v91:Discountable>
+                  <v91:ItemClassDiscountable></v91:ItemClassDiscountable>
+                  <v91:CriticalInventory></v91:CriticalInventory>
+                  <v91:Price Amount="?" CurrencyCode="?"/>
+                  <v91:DefaultDuration></v91:DefaultDuration>
+               </v91:SellInfo>
+               <v91:SetupTime></v91:SetupTime>
+               <v91:SetdownTime></v91:SetdownTime>
+               <v91:TraceText></v91:TraceText>
+               <v91:ItemPool></v91:ItemPool>
+               <v91:DisplaySequence></v91:DisplaySequence>
+               <v91:EventTypes>
+                  <v91:Code></v91:Code>
+               </v91:EventTypes>
+               <v91:Departments>
+                  <v91:Code></v91:Code>
+               </v91:Departments>
+               <v91:Attributes>
+                  <v91:Attribute>
+                     <v91:ItemAttributeID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:Name></v91:Name>
+                     <v91:SetupTime></v91:SetupTime>
+                     <v91:SetdownTime></v91:SetdownTime>
+                     <v91:Default></v91:Default>
+                  </v91:Attribute>
+               </v91:Attributes>
+               <v91:Rates>
+                  <v91:Rate>
+                     <v91:ItemRateID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:ItemRateCode></v91:ItemRateCode>
+                     <v91:Name></v91:Name>
+                     <v91:Price Amount="?" CurrencyCode="?"/>
+                     <v91:Hourly></v91:Hourly>
+                     <v91:Default></v91:Default>
+                  </v91:Rate>
+               </v91:Rates>
+               <v91:Vendors>
+                  <v91:Vendor>
+                     <v91:ProfileID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:Name></v91:Name>
+                     <v91:LeadTime></v91:LeadTime>
+                     <v91:Price Amount="?" CurrencyCode="?"/>
+                     <v91:Priority></v91:Priority>
+                     <v91:Phone></v91:Phone>
+                     <v91:Fax></v91:Fax>
+                     <v91:Email></v91:Email>
+                  </v91:Vendor>
+               </v91:Vendors>
+            </v91:Item>
+         </v9:Items>
+      </v9:FetchInventoryItemsRS>
+   </soapenv:Body>
+</soapenv:Envelope>

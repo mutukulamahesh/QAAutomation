@@ -1,0 +1,9 @@
+<configData>
+<WSDLUrl>http://cloudqa12cws1.us.oracle.com:9004/OPERA9WS/cloudqa/OperaPropertyOperationsServices/CashieringService?wsdl</WSDLUrl>
+<DataSourceDirectory>D:\\git\\qaauto\\int\\resources\\dataBank\\opera\\</DataSourceDirectory>
+<XSDDirectory>D:\\git\\qaauto\\int\\resources\\objectRepo\\xmlTemplates\\opera\\</XSDDirectory>
+<PropertyDirectory>D:\\git\\qaauto\\int\\resources\\objectRepo\\properties\\opera\\</PropertyDirectory>
+<ServiceName>Cashiering</ServiceName>
+<Operations>FetchDepositFolio</Operations>
+</configData>
+

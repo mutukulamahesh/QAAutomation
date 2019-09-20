@@ -1,0 +1,57 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/crm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateMembershipRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v91:ProfileIDList>
+            <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+         </v91:ProfileIDList>
+         <v9:ProfileMemberships>
+            <v9:ProfileMembership CentralSetupYn="?" EffectiveDate="?" ExpireDate="?" ExpireDateExclusiveIndicator="?" MembershipID="?" MembershipIDNo="?" OrderSequence="?" PrimaryMembershipYn="?" ProgramID="?" SignupDate="?">
+               <v91:Comment>
+                  <v91:Text Formatted="?" Language="?" TextFormat="?"/>
+                  <v91:Image/>
+                  <v91:URL/>
+               </v91:Comment>
+               <v91:NewMembershipID/>
+               <v91:NameOnCard/>
+               <v91:ProgramDescription/>
+               <v91:MembershipLevel/>
+               <v91:MembershipLevelDescription/>
+               <v91:MembershipClass/>
+               <v91:EarningPreference/>
+               <v91:Inactive/>
+               <v91:Benefits>
+                  <v91:benefit Inactive="?">
+                     <v91:Code/>
+                     <v91:Message/>
+                  </v91:benefit>
+               </v91:Benefits>
+               <v91:TierAdministration/>
+               <v91:Downgrade/>
+               <v91:ReIssueNewCard/>
+               <v91:ExcludeFromBatch/>
+               <v91:UpgradeDescription/>
+               <v91:DowngradeDescription/>
+               <v91:Rating/>
+               <v91:MembershipEnrollmentCode/>
+               <v91:MemberStatus/>
+               <v91:PreferredCard/>
+            </v9:ProfileMembership>
+         </v9:ProfileMemberships>
+      </v9:CreateMembershipRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

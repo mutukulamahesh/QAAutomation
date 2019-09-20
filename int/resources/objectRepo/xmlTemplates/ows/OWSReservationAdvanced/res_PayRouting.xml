@@ -1,0 +1,108 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:res="http://webservices.micros.com/og/4.3/ResvAdvanced/" xmlns:com="http://webservices.micros.com/og/4.3/Common/">
+   <soapenv:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="E" channelValidation="true" terminalID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <core:Intermediaries>
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName></core:UserName>
+               <core:UserPassword></core:UserPassword>
+               <core:Domain></core:Domain>
+               <core:SecurityId></core:SecurityId>
+            </core:UserCredentials>
+            <core:Licence>
+               <core:Key></core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <res:PayRoutingResponse>
+         <res:PayRoutings RoutingInstruction="?" Owner="?" Window="?" Room="?">
+            <res:RoutingType></res:RoutingType>
+            <res:RoutingInstructionsId></res:RoutingInstructionsId>
+            <res:Resort></res:Resort>
+            <res:ResvNameID type="?" source="?"></res:ResvNameID>
+            <res:RoutingCodes>
+               <res:RoutingInstructionCode IsTransactionCode="?">
+                  <res:InstructionCode></res:InstructionCode>
+                  <res:TCGroup></res:TCGroup>
+                  <res:TCSubGroup></res:TCSubGroup>
+               </res:RoutingInstructionCode>
+            </res:RoutingCodes>
+            <res:BillToNameID type="?" source="?"></res:BillToNameID>
+            <res:BeginDate></res:BeginDate>
+            <res:ToResvNameID type="?" source="?"></res:ToResvNameID>
+            <res:BillingInstructionCode></res:BillingInstructionCode>
+            <res:EndDate></res:EndDate>
+            <res:AddTransaction></res:AddTransaction>
+            <res:AddressID type="?" source="?"></res:AddressID>
+            <res:AuthorizerID type="?" source="?"></res:AuthorizerID>
+            <res:RequestedBy></res:RequestedBy>
+            <res:AccountCode></res:AccountCode>
+            <res:CreditLimit></res:CreditLimit>
+            <res:LimitUsed></res:LimitUsed>
+            <res:Comments></res:Comments>
+            <res:Declined></res:Declined>
+            <res:DeclinedBy></res:DeclinedBy>
+            <res:CompVoucherNo></res:CompVoucherNo>
+            <res:CompCovers></res:CompCovers>
+            <res:CompTypeCode></res:CompTypeCode>
+            <res:RoutingPercent></res:RoutingPercent>
+            <res:RoutingLimitType></res:RoutingLimitType>
+            <res:MembershipID type="?" source="?"></res:MembershipID>
+            <res:Day1></res:Day1>
+            <res:Day2></res:Day2>
+            <res:Day3></res:Day3>
+            <res:Day4></res:Day4>
+            <res:Day5></res:Day5>
+            <res:Day6></res:Day6>
+            <res:Day7></res:Day7>
+            <res:DayString></res:DayString>
+            <res:Daily></res:Daily>
+         </res:PayRoutings>
+         <res:PayMethods Owner="?" Window="?">
+            <res:PaymentMethod type="?" value="?" source="?"/>
+            <res:PaymentCard cardType="?" otherCardType="?" chipAndPin="?">
+               <com:cardID></com:cardID>
+               <com:cardCode></com:cardCode>
+               <com:cardHolderName></com:cardHolderName>
+               <com:cardNumber></com:cardNumber>
+               <com:VaultedCardData vaultedCardID="?" lastFourDigits="?"/>
+               <com:seriesCode></com:seriesCode>
+               <com:Track2></com:Track2>
+               <com:effectiveDate></com:effectiveDate>
+               <com:expirationDate></com:expirationDate>
+               <com:EncryptedSwipe>
+                  <com:TrackIndicator></com:TrackIndicator>
+                  <com:SwiperType></com:SwiperType>
+                  <com:SwiperID></com:SwiperID>
+                  <com:MaskedPAN></com:MaskedPAN>
+                  <com:Track1></com:Track1>
+                  <com:Track2></com:Track2>
+                  <com:KeySerialNumber></com:KeySerialNumber>
+               </com:EncryptedSwipe>
+            </res:PaymentCard>
+            <res:last4digits></res:last4digits>
+            <res:ApprovalAmount currencyCode="?" decimals="?" currencyText="?"></res:ApprovalAmount>
+            <res:RuleDescription></res:RuleDescription>
+            <res:AuthorizationRuleNumber></res:AuthorizationRuleNumber>
+            <res:AccountCode></res:AccountCode>
+            <res:AmountOrPercentage currencyCode="?" decimals="?" currencyText="?"></res:AmountOrPercentage>
+            <res:Swiped></res:Swiped>
+         </res:PayMethods>
+         <res:Result resultStatusFlag="?">
+            <com:Text>
+               <com:TextElement formatted="?" language="?"></com:TextElement>
+            </com:Text>
+            <com:IDs>
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <com:OperaErrorCode></com:OperaErrorCode>
+         </res:Result>
+      </res:PayRoutingResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

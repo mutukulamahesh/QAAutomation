@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BAT" configfailurepolicy="continue">
+	<!--<listeners>
+		<listener class-name='com.oracle.cloud.ui.util.CustomReport' />
+	</listeners> -->
+	<test name="Profile">
+		<classes>
+			<class name="com.oracle.hgbu.opera.qaauto.ui.crm.testcases.rates.Rates" >
+			<methods>
+           </methods>
+           </class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

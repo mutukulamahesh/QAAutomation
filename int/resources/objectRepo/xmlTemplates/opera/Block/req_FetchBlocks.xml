@@ -1,0 +1,104 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/rsv/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchBlocksRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Criteria HotelCode="?" MarkAsRecentlyAccessed="?" MaxFetchCount="?" PageNumber="?">
+            <v91:MultipleHotelsSearchList>
+               <v91:HotelCode/>
+            </v91:MultipleHotelsSearchList>
+            <v91:SuperSearch/>
+            <v91:BlockIDList>
+               <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            </v91:BlockIDList>
+            <v91:BlockCode/>
+            <v91:BlockName/>
+            <v91:BlockOwnerList>
+               <v91:BlockOwner/>
+            </v91:BlockOwnerList>
+            <v91:BlockStatusList>
+               <v91:BlockStatus/>
+            </v91:BlockStatusList>
+            <v91:CreatedByUser/>
+            <v91:BlockDateCriteria>
+               <v91:BlockStart End="?" Start="?"/>
+               <v91:BlockEnd End="?" Start="?"/>
+               <v91:ReservationArrival/>
+               <v91:ReservationDeparture/>
+               <v91:BlockStay IncludeShoulderDates="?">
+                  <v91:StayDate/>
+               </v91:BlockStay>
+               <v91:BlockCreatedOn End="?" Start="?"/>
+               <v91:DecisionDate End="?" Start="?"/>
+               <v91:CutOffDate End="?" Start="?"/>
+            </v91:BlockDateCriteria>
+            <v91:AttachedProfiles>
+               <v91:AttachedProfile Category="?">
+                  <v91:Name/>
+                  <v91:AttachedProfileId ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               </v91:AttachedProfile>
+            </v91:AttachedProfiles>
+            <v91:BlockSearchFlags>
+               <v91:Leads/>
+               <v91:TourSeries/>
+               <v91:OnlyPickupBlocks/>
+            </v91:BlockSearchFlags>
+            <v91:BlockRatePlanCodes>
+               <v91:RatePlanCode/>
+            </v91:BlockRatePlanCodes>
+            <v91:TourCode/>
+            <v91:OrderByList>
+               <v91:OrderBy AttributeName="?" OrderType="?"/>
+            </v91:OrderByList>
+            <v91:FetchInstructions>
+               <v91:FetchInstruction>
+                  <v91:Instruction/>
+                  <v91:AdditionalCriteria FetchAllocatedRoomTypes="?">
+                     <v91:StartDate/>
+                     <v91:NumberOfDays/>
+                     <v91:GuestCounts Adults="?" Children="?">
+                        <v91:ChildAges>
+                           <v91:Child Age="?"/>
+                        </v91:ChildAges>
+                        <v91:ChildBuckets Bucket1Count="?" Bucket2Count="?" Bucket3Count="?" Bucket4Count="?" Bucket5Count="?"/>
+                     </v91:GuestCounts>
+                     <v91:ExistingReservationId ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+                     <v91:RoomAllocationCriterion>
+                        <v91:RoomAllocationCriteria/>
+                     </v91:RoomAllocationCriterion>
+                     <v91:AllocationRoomTypes>
+                        <v91:RoomType/>
+                     </v91:AllocationRoomTypes>
+                     <v91:RatePlanCode/>
+                     <v91:CurrencyCode/>
+                  </v91:AdditionalCriteria>
+               </v91:FetchInstruction>
+            </v91:FetchInstructions>
+            <v91:CustomFields>
+               <v91:CustomCharUDFs>
+                  <v91:CustomUDF Altname="?" Name="?" Value="?"/>
+               </v91:CustomCharUDFs>
+               <v91:CustomNumericUDFs>
+                  <v91:CustomUDF Altname="?" Name="?" Value="?"/>
+               </v91:CustomNumericUDFs>
+               <v91:CustomDateUDFs>
+                  <v91:CustomUDF Altname="?" Name="?" Value="?"/>
+               </v91:CustomDateUDFs>
+            </v91:CustomFields>
+         </v9:Criteria>
+      </v9:FetchBlocksRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

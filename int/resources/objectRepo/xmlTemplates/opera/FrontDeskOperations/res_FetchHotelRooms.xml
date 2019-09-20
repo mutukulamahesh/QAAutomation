@@ -1,0 +1,247 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/fof/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchHotelRoomsRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:HotelRooms HotelCode="?">
+            <v91:Room RoomNumber="?">
+               <v91:RoomType RoomType="?">
+                  <v91:Pseudo></v91:Pseudo>
+                  <v91:Suite></v91:Suite>
+                  <v91:RoomClass></v91:RoomClass>
+                  <v91:HouseKeeping></v91:HouseKeeping>
+                  <v91:SmokingPreference></v91:SmokingPreference>
+                  <v91:Building></v91:Building>
+                  <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+               </v91:RoomType>
+               <v91:Floor></v91:Floor>
+               <v91:FloorDescription></v91:FloorDescription>
+               <v91:RoomFeatures>
+                  <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+               </v91:RoomFeatures>
+               <v91:Description>
+                  <v91:DefaultText></v91:DefaultText>
+                  <v91:TranslatedTexts>
+                     <v91:Text Lang="?"></v91:Text>
+                  </v91:TranslatedTexts>
+               </v91:Description>
+               <v91:SmokingPreference></v91:SmokingPreference>
+               <v91:SmokingPreferenceDescription></v91:SmokingPreferenceDescription>
+               <v91:Building></v91:Building>
+               <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+               <v91:RoomSection DaySectionCode="?" EveningSectionCode="?"/>
+               <v91:Housekeeping>
+                  <v91:RoomStatus RoomStatus="?" FrontOfficeStatus="?" HousekeepingStatus="?">
+                     <v91:ReservationStatusList>
+                        <v91:ReservationStatus></v91:ReservationStatus>
+                     </v91:ReservationStatusList>
+                  </v91:RoomStatus>
+                  <v91:RoomPersons FrontOfficePersons="?" HouseKeepingPersons="?"/>
+                  <v91:GuestServiceRequest></v91:GuestServiceRequest>
+                  <v91:CleaningPriority PrioritySequence="?"/>
+                  <v91:RoomCondition>
+                     <v91:RoomCondition Code="?" Description="?"/>
+                     <v91:AssignmentType></v91:AssignmentType>
+                     <v91:Remarks></v91:Remarks>
+                  </v91:RoomCondition>
+                  <v91:LinenChange></v91:LinenChange>
+               </v91:Housekeeping>
+               <v91:OutOfOrder>
+                  <v91:RoomOutOfOrder RoomStatus="?" Start="?" End="?">
+                     <v91:RepairRemarks></v91:RepairRemarks>
+                     <v91:ReturnStatus></v91:ReturnStatus>
+                     <v91:ReasonCode></v91:ReasonCode>
+                     <v91:ReasonDesc></v91:ReasonDesc>
+                     <v91:NewDateRange Start="?" End="?"/>
+                  </v91:RoomOutOfOrder>
+               </v91:OutOfOrder>
+               <v91:Discrepancy>
+                  <v91:RoomDiscrepancy></v91:RoomDiscrepancy>
+               </v91:Discrepancy>
+               <v91:SitePlanSection>
+                  <v91:SectionCode></v91:SectionCode>
+                  <v91:SectionType></v91:SectionType>
+                  <v91:LinkCode></v91:LinkCode>
+                  <v91:Coordinates></v91:Coordinates>
+                  <v91:Description></v91:Description>
+               </v91:SitePlanSection>
+               <v91:ComponentRoomNumber></v91:ComponentRoomNumber>
+               <v91:ConnectingRooms>
+                  <v91:Room RoomNumber="?">
+                     <v91:RoomType RoomType="?">
+                        <v91:Pseudo></v91:Pseudo>
+                        <v91:Suite></v91:Suite>
+                        <v91:RoomClass></v91:RoomClass>
+                        <v91:HouseKeeping></v91:HouseKeeping>
+                        <v91:SmokingPreference></v91:SmokingPreference>
+                        <v91:Building></v91:Building>
+                        <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                     </v91:RoomType>
+                     <v91:Floor></v91:Floor>
+                     <v91:FloorDescription></v91:FloorDescription>
+                     <v91:RoomFeatures>
+                        <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+                     </v91:RoomFeatures>
+                     <v91:Description>
+                        <v91:DefaultText></v91:DefaultText>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"></v91:Text>
+                        </v91:TranslatedTexts>
+                     </v91:Description>
+                     <v91:SmokingPreference></v91:SmokingPreference>
+                     <v91:SmokingPreferenceDescription></v91:SmokingPreferenceDescription>
+                     <v91:Building></v91:Building>
+                     <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                  </v91:Room>
+               </v91:ConnectingRooms>
+               <v91:ComponentRooms>
+                  <v91:Room RoomNumber="?">
+                     <v91:RoomType RoomType="?">
+                        <v91:Pseudo></v91:Pseudo>
+                        <v91:Suite></v91:Suite>
+                        <v91:RoomClass></v91:RoomClass>
+                        <v91:HouseKeeping></v91:HouseKeeping>
+                        <v91:SmokingPreference></v91:SmokingPreference>
+                        <v91:Building></v91:Building>
+                        <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                     </v91:RoomType>
+                     <v91:Floor></v91:Floor>
+                     <v91:FloorDescription></v91:FloorDescription>
+                     <v91:RoomFeatures>
+                        <v91:RoomFeature Code="?" Description="?" Quantity="?" OrderSequence="?"/>
+                     </v91:RoomFeatures>
+                     <v91:Description>
+                        <v91:DefaultText></v91:DefaultText>
+                        <v91:TranslatedTexts>
+                           <v91:Text Lang="?"></v91:Text>
+                        </v91:TranslatedTexts>
+                     </v91:Description>
+                     <v91:SmokingPreference></v91:SmokingPreference>
+                     <v91:SmokingPreferenceDescription></v91:SmokingPreferenceDescription>
+                     <v91:Building></v91:Building>
+                     <v91:RoomAssignmentRating></v91:RoomAssignmentRating>
+                  </v91:Room>
+               </v91:ComponentRooms>
+               <v91:Attendant AttendantID="?" AttendantName="?" HotelCode="?" ActiveFlag="?" Sunday="?" Monday="?" Tuesday="?" Wednesday="?" Thursday="?" Friday="?" Saturday="?" StartTime="?" Status="?">
+                  <v91:Section HotelCode="?" Code="?" Description="?" SectionGroup="?" TargetCredits="?" Rooms="?" RoomCredits="?" Sequence="?" Inactive="?"/>
+                  <v91:Floor></v91:Floor>
+                  <v91:AppUser>
+                     <v91:Hotel Code="?" Description="?"/>
+                     <v91:AppUser></v91:AppUser>
+                     <v91:LDAPUser></v91:LDAPUser>
+                     <v91:ActAs></v91:ActAs>
+                     <v91:ActAt></v91:ActAt>
+                     <v91:UserDefaultLanguage></v91:UserDefaultLanguage>
+                     <v91:AppUserId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                     <v91:CashierId></v91:CashierId>
+                     <v91:CashierTitle></v91:CashierTitle>
+                     <v91:Department></v91:Department>
+                     <v91:DepartmentLocation></v91:DepartmentLocation>
+                     <v91:SalesRepCode></v91:SalesRepCode>
+                     <v91:ExpiryDate></v91:ExpiryDate>
+                     <v91:DisabledUntil></v91:DisabledUntil>
+                     <v91:PasswordChangeDate></v91:PasswordChangeDate>
+                     <v91:UserInfo BirthDate="?" BirthDateMasked="?" Gender="?">
+                        <v91:PersonName NameType="?" Language="?" ExternalSystem="?">
+                           <v91:NamePrefix></v91:NamePrefix>
+                           <v91:GivenName></v91:GivenName>
+                           <v91:MiddleName></v91:MiddleName>
+                           <v91:Surname></v91:Surname>
+                           <v91:NameSuffix></v91:NameSuffix>
+                           <v91:NameTitle></v91:NameTitle>
+                           <v91:NameTitleSuffix></v91:NameTitleSuffix>
+                           <v91:EnvelopeGreeting></v91:EnvelopeGreeting>
+                           <v91:Salutation></v91:Salutation>
+                        </v91:PersonName>
+                        <v91:ProfileId URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                        <v91:AddressInfo>
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <v91:Address Type="?" TypeDescription="?" UpdateReservations="?" PrimaryInd="?">
+                              <v91:AddressLine></v91:AddressLine>
+                              <v91:CityName></v91:CityName>
+                              <v91:PostalCode></v91:PostalCode>
+                              <v91:CityExtension></v91:CityExtension>
+                              <v91:County></v91:County>
+                              <v91:State></v91:State>
+                              <v91:CountryName Code="?"></v91:CountryName>
+                              <v91:Language></v91:Language>
+                           </v91:Address>
+                        </v91:AddressInfo>
+                        <v91:EmailInfo>
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <v91:Email EmailAddress="?" Type="?" TypeDescription="?" EmailFormat="?" PrimaryInd="?" OrderSequence="?"/>
+                        </v91:EmailInfo>
+                        <v91:PhoneInfo>
+                           <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                           <v91:Telephone PhoneTechType="?" PhoneUseType="?" PhoneUseTypeDescription="?" PhoneNumber="?" Extension="?" PrimaryInd="?" OrderSequence="?"/>
+                        </v91:PhoneInfo>
+                        <v91:Department Code="?" Description="?"/>
+                     </v91:UserInfo>
+                     <v91:UserSessionInfo>
+                        <v91:BusinessDate></v91:BusinessDate>
+                        <v91:SystemDate></v91:SystemDate>
+                        <v91:Terminal></v91:Terminal>
+                        <v91:RunningApp></v91:RunningApp>
+                        <v91:ShareProfiles></v91:ShareProfiles>
+                        <v91:Hotel Code="?" Description="?"/>
+                        <v91:CRO Code="?" Description="?"/>
+                        <v91:Chain></v91:Chain>
+                        <v91:CROCountryCode></v91:CROCountryCode>
+                        <v91:SessionDefaults>
+                           <v91:DbDateFormat></v91:DbDateFormat>
+                           <v91:OracleDateFormat></v91:OracleDateFormat>
+                           <v91:OracleTimeFormat></v91:OracleTimeFormat>
+                           <v91:JavaDateFormat></v91:JavaDateFormat>
+                           <v91:JavaTimeFormat></v91:JavaTimeFormat>
+                           <v91:CurrencyCode></v91:CurrencyCode>
+                           <v91:CurrencyFormat></v91:CurrencyFormat>
+                           <v91:DefaultLanguage></v91:DefaultLanguage>
+                           <v91:BaseLanguage></v91:BaseLanguage>
+                        </v91:SessionDefaults>
+                        <v91:Parameters>
+                           <v91:Parameter>
+                              <v91:ParameterName></v91:ParameterName>
+                              <v91:ParameterValue></v91:ParameterValue>
+                           </v91:Parameter>
+                        </v91:Parameters>
+                     </v91:UserSessionInfo>
+                     <v91:AttendantInfo>
+                        <v91:AttendantID></v91:AttendantID>
+                        <v91:HotelCode></v91:HotelCode>
+                     </v91:AttendantInfo>
+                  </v91:AppUser>
+               </v91:Attendant>
+               <v91:Hold>
+                  <v91:HoldUntil></v91:HoldUntil>
+                  <v91:HoldUser></v91:HoldUser>
+                  <v91:Comments></v91:Comments>
+               </v91:Hold>
+               <v91:TurndownInfo>
+                  <v91:TurndownStatusInfo></v91:TurndownStatusInfo>
+               </v91:TurndownInfo>
+               <v91:ResvInfo>
+                  <v91:GuestName></v91:GuestName>
+                  <v91:ReservationID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+                  <v91:ReservationStatusInfo></v91:ReservationStatusInfo>
+                  <v91:StayDateInfo>
+                     <v91:TimeSpan>
+                        <v91:StartDate></v91:StartDate>
+                        <v91:EndDate></v91:EndDate>
+                        <v91:Duration></v91:Duration>
+                     </v91:TimeSpan>
+                     <v91:ExpectedTimes ResExpectedArrivalTime="?" ResExpectedDepartureTime="?" ResExpectedReturnTime="?"/>
+                  </v91:StayDateInfo>
+                  <v91:VIPStatus Code="?"></v91:VIPStatus>
+                  <v91:ProfileID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               </v91:ResvInfo>
+            </v91:Room>
+         </v9:HotelRooms>
+      </v9:FetchHotelRoomsRS>
+   </soapenv:Body>
+</soapenv:Envelope>

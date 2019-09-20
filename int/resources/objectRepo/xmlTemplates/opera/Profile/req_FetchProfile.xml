@@ -1,0 +1,60 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/crm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchProfileRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Criteria FetchEmployeeProfilesOnly="?" HotelCode="?" IncludePurgeProfiles="?" MarkAsRecentlyAccessed="?">
+            <v91:Profiles>
+               <v91:ProfileIDList>
+                  <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               </v91:ProfileIDList>
+               <v91:FetchInstructions>
+                  <v91:FetchInstruction MaxFetchCount="?">
+                     <v91:Instruction/>
+                     <v91:AdditionalCriteria>
+                        <v91:Parameters>
+                           <v91:InstructionParameter>
+                              <v91:InstructionParameterType/>
+                              <v91:Value/>
+                           </v91:InstructionParameter>
+                        </v91:Parameters>
+                     </v91:AdditionalCriteria>
+                  </v91:FetchInstruction>
+               </v91:FetchInstructions>
+            </v91:Profiles>
+            <v91:Profile>
+               <v91:ProfileID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               <v91:FetchInstructions>
+                  <v91:FetchInstruction MaxFetchCount="?">
+                     <v91:Instruction/>
+                     <v91:AdditionalCriteria>
+                        <v91:Parameters>
+                           <v91:InstructionParameter>
+                              <v91:InstructionParameterType/>
+                              <v91:Value/>
+                           </v91:InstructionParameter>
+                        </v91:Parameters>
+                     </v91:AdditionalCriteria>
+                  </v91:FetchInstruction>
+               </v91:FetchInstructions>
+            </v91:Profile>
+            <v91:AllowedActions>
+               <v91:AllowedAction/>
+            </v91:AllowedActions>
+         </v9:Criteria>
+      </v9:FetchProfileRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

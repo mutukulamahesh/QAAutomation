@@ -1,0 +1,32 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchCashiersRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?" TotalPages="?" PageNumber="?" MaxFetchCount="?" AllRowsFetched="?" TotalRows="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:Cashiers>
+            <v91:Cashier Inactive="?">
+               <v91:CashierID></v91:CashierID>
+               <v91:CurrencyCode></v91:CurrencyCode>
+               <v91:Name></v91:Name>
+               <v91:AttachedUser></v91:AttachedUser>
+               <v91:CashierType></v91:CashierType>
+               <v91:StartingAmount></v91:StartingAmount>
+               <v91:FloatOverShort></v91:FloatOverShort>
+               <v91:UsageInfo>
+                  <v91:MaximumDailyUses></v91:MaximumDailyUses>
+                  <v91:History>
+                     <v91:LastOpened></v91:LastOpened>
+                     <v91:TimesOpened></v91:TimesOpened>
+                  </v91:History>
+               </v91:UsageInfo>
+            </v91:Cashier>
+         </v9:Cashiers>
+      </v9:FetchCashiersRS>
+   </soapenv:Body>
+</soapenv:Envelope>

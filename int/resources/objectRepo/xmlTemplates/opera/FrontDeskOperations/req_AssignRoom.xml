@@ -1,0 +1,53 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/fof/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:AssignRoomRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Criteria IncludeDepartureRooms="?" RoomNumberLocked="?" UpdateRoomTypeCharged="?">
+            <v91:HotelCode/>
+            <v91:ReservationIDList>
+               <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            </v91:ReservationIDList>
+            <v91:RoomId/>
+            <v91:OverrideInstructions>
+               <v91:DirtyRoom/>
+               <v91:OutOfServiceRoom/>
+               <v91:SleepDiscrepantRoom/>
+               <v91:OccupancyRestriction/>
+               <v91:RateRestriction/>
+               <v91:InventoryRestriction/>
+               <v91:RoomNumberLocked/>
+               <v91:HoldRoom/>
+               <v91:RateChange RateChange="?">
+                  <v91:Discount Amount="?" CurrencyCode="?" DiscountCode="?" Percent="?">
+                     <v91:DiscountReason/>
+                  </v91:Discount>
+               </v91:RateChange>
+               <v91:OverrideExternalChecks/>
+               <v91:DayUseReserved/>
+               <v91:OverrideInstruction Date="?" Type="?" UserID="?">
+                  <v91:Description/>
+               </v91:OverrideInstruction>
+            </v91:OverrideInstructions>
+            <v91:IncludedSharers>
+               <v91:ReservationIDList>
+                  <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+               </v91:ReservationIDList>
+            </v91:IncludedSharers>
+         </v9:Criteria>
+      </v9:AssignRoomRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

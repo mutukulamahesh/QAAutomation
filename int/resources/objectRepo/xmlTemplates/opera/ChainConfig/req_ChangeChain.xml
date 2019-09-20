@@ -1,0 +1,49 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:ChangeChainRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Chains>
+            <v91:ChainInfo>
+               <v91:ChainCode/>
+               <v91:ChainName/>
+               <v91:ChainDesc/>
+               <v91:ShareProfilesYn/>
+               <v91:ASPYn/>
+               <v91:ChainAddress BarCode="?" CreateDateTime="?" CreatorID="?" LastModifierID="?" LastModifyDateTime="?" PrimaryInd="?" PurgeDate="?" Type="?" TypeDescription="?" UpdateReservations="?">
+                  <v91:AddressLine/>
+                  <v91:CityName/>
+                  <v91:PostalCode/>
+                  <v91:CityExtension/>
+                  <v91:County/>
+                  <v91:State/>
+                  <v91:CountryName Code="?"/>
+                  <v91:Language/>
+               </v91:ChainAddress>
+               <v91:Phone/>
+               <v91:Fax/>
+               <v91:Email/>
+               <v91:StartDate/>
+               <v91:EndDate/>
+               <v91:FrequentFlierCardsAcceptYn/>
+               <v91:BookingConditions/>
+               <v91:LoyaltyProgram/>
+               <v91:MarketingText/>
+            </v91:ChainInfo>
+         </v9:Chains>
+      </v9:ChangeChainRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

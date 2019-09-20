@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Mar 22 15:26:02 IST 2019
+OPERAUIAuto-0.0.1-SNAPSHOT-jar-with-dependencies.jar>=
+OPERAUIAuto-0.0.1-SNAPSHOT.pom>=
+OPERAUIAuto-0.0.1-SNAPSHOT-tests.jar>=
+OPERAUIAuto-0.0.1-SNAPSHOT.jar>=
+OPERAUIAuto-0.0.1-SNAPSHOT-fat-tests.jar>=

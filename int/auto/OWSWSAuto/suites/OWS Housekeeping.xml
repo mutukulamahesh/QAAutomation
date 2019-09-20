@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Opera Integration Automation Suite for OWS Housekeeping" verbose="1"
+	allow-return-values="true">
+	<!-- Pass global parameters here -->
+	<parameter name="environment" value="LAUNCHPAD" />
+	<test name="OWS Housekeeping Suite" preserve-order="true">
+	<!-- Pass parameters here -->
+	<parameter name="runOnEntry" value="ES_01" />
+	<parameter name="wsLayer" value="SSD" />
+		<groups>
+			<run>	
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.ows.housekeeping" /> 
+		</packages>
+	</test>
+</suite>

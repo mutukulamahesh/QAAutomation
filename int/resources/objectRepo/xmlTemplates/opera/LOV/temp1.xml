@@ -1,0 +1,43 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchListOfValuesRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <!--Optional:-->
+         <v91:Success/>
+         <!--Optional:-->
+         <v91:Warnings>
+            <!--Zero or more repetitions:-->
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?">?</v91:Warning>
+         </v91:Warnings>
+         <!--Optional:-->
+         <v91:Errors>
+            <!--Zero or more repetitions:-->
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?">?</v91:Error>
+         </v91:Errors>
+         <!--Optional:-->
+         <v9:ListOfValues LOVName="?" ItemCount="?" Description="?">
+            <!--Optional:-->
+            <v91:Items>
+               <!--Zero or more repetitions:-->
+               <v91:Item Code="?" Name="?" Description="?" OrderValue="?" ParentCode="?" HotelCode="?" Color="?" ShortDescription="?" ImageURL="?" Active="?">
+                  <!--Optional:-->
+                  <v91:IDs>
+                     <!--Zero or more repetitions:-->
+                     <v91:ID Source="?">?</v91:ID>
+                  </v91:IDs>
+                  <!--Optional:-->
+                  <v91:Flexfields>
+                     <!--Zero or more repetitions:-->
+                     <v91:Parameter>
+                        <!--Optional:-->
+                        <v91:ParameterName>?</v91:ParameterName>
+                        <!--Optional:-->
+                        <v91:ParameterValue>?</v91:ParameterValue>
+                     </v91:Parameter>
+                  </v91:Flexfields>
+               </v91:Item>
+            </v91:Items>
+         </v9:ListOfValues>
+      </v9:FetchListOfValuesRS>
+   </soapenv:Body>
+</soapenv:Envelope>

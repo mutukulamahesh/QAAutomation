@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://webservices.micros.com/og/4.3/Common/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:r="http://webservices.micros.com/og/4.3/Reservation/" xmlns:hc="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns:n="http://webservices.micros.com/og/4.3/Name/">
+  <soap:Header>
+    <OGHeader soap:mustUnderstand="1" transactionID="PrasenjitTest-HOWSS-5674" timeStamp="2013-06-22T15:25:01.4625000-05:00" xmlns="http://webservices.micros.com/og/4.3/Core/">
+      <Origin entityID="NIRCH1" systemType="GDS"/>
+      <Destination entityID="O2G" systemType="PMS"/>
+      <Authentication>
+        <UserCredentials>
+          <UserName>SUPERVISOR</UserName>
+          <UserPassword>SCRUMBIZ10</UserPassword>
+          <Domain>NIRMAL</Domain>
+        </UserCredentials>
+      </Authentication>
+    </OGHeader>
+  </soap:Header>
+   <soap:Body>
+      <IgnoreBookingRequest xmlns="http://webservices.micros.com/ows/5.1/Reservation.wsdl" xmlns:ns7="http://webservices.micros.com/og/4.3/Core/" xmlns:ns6="http://webservices.micros.com/og/4.3/Membership/" xmlns:ns5="http://webservices.micros.com/og/4.3/Name/" xmlns:ns4="http://webservices.micros.com/og/4.3/Reservation/" xmlns:ns3="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns:ns2="http://webservices.micros.com/og/4.3/Common/">
+         <HotelReference hotelCode="NIRMAL"/>
+         <ConfirmationNumber type="INTERNAL">6767227</ConfirmationNumber>
+      </IgnoreBookingRequest>
+   </soap:Body>
+</soap:Envelope>

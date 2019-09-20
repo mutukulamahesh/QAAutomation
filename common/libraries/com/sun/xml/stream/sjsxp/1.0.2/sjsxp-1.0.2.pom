@@ -1,0 +1,41 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sun.xml.stream</groupId>
+  <artifactId>sjsxp</artifactId>
+  <version>1.0.2</version>
+  <packaging>jar</packaging>
+  <name>Sun Java Streaming XML Parser</name>
+  <description>Sun Java Streaming XML Parser (SJSXP) is the implementation of JSR 173.</description>
+  <url>http://sjsxp.java.net/</url>
+  <licenses>
+    <license>
+	  <name>CDDL-1.0</name>
+	  <url>http://opensource.org/licenses/CDDL-1.0</url>
+	</license>
+    <license>
+	  <name>GPL-2.0</name>
+	  <url>http://opensource.org/licenses/GPL-2.0</url>
+	</license>
+  </licenses>
+  <scm>
+    <url>https://svn.java.net/svn/sjsxp~svn/trunk/</url>
+	<connection>scm:svn:https://svn.java.net/svn/sjsxp~svn/trunk/</connection>
+  </scm>
+  <developers>
+    <developer>
+	  <id>joehw</id>
+	  <name>Joe Wang</name>
+	</developer>
+    <developer>
+	  <id>spericas</id>
+	  <name>Santiago Pericas-Geertsen</name>
+	</developer>
+  </developers>
+  <dependencies>
+    <dependency>
+      <groupId>javax.xml.stream</groupId>
+      <artifactId>stax-api</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
+</project>

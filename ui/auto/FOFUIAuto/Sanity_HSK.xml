@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BATHousekeeping" configfailurepolicy="continue">
+  <test name="Housekeeping">
+		<classes>
+			<class name="com.oracle.hgbu.opera.qaauto.ui.fof.testcases.hsk.Housekeeping">
+			<methods>
+            <include name="autoAssignRoom" />
+            <include name="manualAssignRoom" />
+            <include name="roomAssignmentFromResvSearch" />
+            <include name="roomAssignmentFromCheckInScreen" />
+            <include name="verifyPaymentInstructionWithRouting" />
+            <include name="verifyVacantRoomReport" />
+            <include name="preRequisiteTaskSheet" />
+            <include name="generateTaskSheetManually" />
+            <include name="generateTaskSheetAutomatically" />
+            <include name="moveRoomsToAnotherTaskSheet" />
+			<include name="createServiceRequestCode" />
+			<include name="createServiceRequestPriority" />
+           </methods>
+           </class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

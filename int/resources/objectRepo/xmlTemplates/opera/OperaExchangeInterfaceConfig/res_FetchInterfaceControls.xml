@@ -1,0 +1,37 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/oxi/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchInterfaceControlsRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:InterfaceControlGroups>
+            <v91:InterfaceControlGroup>
+               <v91:GroupName></v91:GroupName>
+               <v91:DisplayName></v91:DisplayName>
+               <v91:InterfaceControls>
+                  <v91:InterfaceControl Name="?" DisplayName="?" Type="?" HotelCode="?" Sequence="?" EditAllowed="?" Value="?" Scope="?" ValueType="?" ConversionType="?" LevelType="?" LevelCode="?">
+                     <v91:ShortDescription></v91:ShortDescription>
+                     <v91:Description></v91:Description>
+                     <v91:WildCardMatch></v91:WildCardMatch>
+                     <v91:Settings>
+                        <v91:Setting Name="?" DisplayName="?" Type="?" HotelCode="?" Sequence="?" EditAllowed="?" Value="?" Scope="?" ValueType="?" ConversionType="?">
+                           <v91:ShortDescription></v91:ShortDescription>
+                           <v91:Description></v91:Description>
+                           <v91:WildCardMatch></v91:WildCardMatch>
+                        </v91:Setting>
+                     </v91:Settings>
+                     <v91:InterfaceID></v91:InterfaceID>
+                     <v91:UseGlobal></v91:UseGlobal>
+                     <v91:OxiParameterGroup></v91:OxiParameterGroup>
+                  </v91:InterfaceControl>
+               </v91:InterfaceControls>
+            </v91:InterfaceControlGroup>
+         </v9:InterfaceControlGroups>
+      </v9:FetchInterfaceControlsRS>
+   </soapenv:Body>
+</soapenv:Envelope>

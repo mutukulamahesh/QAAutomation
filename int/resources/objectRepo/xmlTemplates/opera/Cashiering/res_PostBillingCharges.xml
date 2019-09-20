@@ -1,0 +1,78 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/fof/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:PostBillingChargesRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:Postings>
+            <v91:Posting TransactionNo="?" TransactionDate="?" TransactionCode="?" TransactionDescription="?" TransactionAmount="?" PostingDate="?" RevenueDate="?" ReceiptNo="?" RoundingDifferenceTrx="?" Commissionable="?" ReversePaymentTransactionNo="?">
+               <v91:ReferenceTransactionNo></v91:ReferenceTransactionNo>
+               <v91:Remark></v91:Remark>
+               <v91:Reference></v91:Reference>
+               <v91:CheckNo></v91:CheckNo>
+               <v91:CheckCount></v91:CheckCount>
+               <v91:PostedAmount Amount="?" CurrencyCode="?"/>
+               <v91:Price Amount="?" CurrencyCode="?"/>
+               <v91:Quantity></v91:Quantity>
+               <v91:TransactionType></v91:TransactionType>
+               <v91:CreditAmount Amount="?" CurrencyCode="?"/>
+               <v91:DebitAmount Amount="?" CurrencyCode="?"/>
+               <v91:ArticleCode></v91:ArticleCode>
+               <v91:CashierInfo CashierId="?" CashierName="?"/>
+               <v91:PaidOut></v91:PaidOut>
+               <v91:ArrangementCode></v91:ArrangementCode>
+               <v91:GroupTypeInfo>
+                  <v91:GroupId></v91:GroupId>
+                  <v91:GroupCount></v91:GroupCount>
+                  <v91:GroupDescription></v91:GroupDescription>
+                  <v91:SubGroupId></v91:SubGroupId>
+               </v91:GroupTypeInfo>
+               <v91:RateCode></v91:RateCode>
+               <v91:UpdateInfo>
+                  <v91:UpdateDate></v91:UpdateDate>
+                  <v91:UpdateBy></v91:UpdateBy>
+               </v91:UpdateInfo>
+               <v91:FbaCertificate></v91:FbaCertificate>
+               <v91:TaxInvoiceNo></v91:TaxInvoiceNo>
+               <v91:ServiceRecovery></v91:ServiceRecovery>
+               <v91:CompPostingsInfo>
+                  <v91:Authorizer></v91:Authorizer>
+                  <v91:ApprovalStatus></v91:ApprovalStatus>
+               </v91:CompPostingsInfo>
+               <v91:FinancialTransactionIDList>
+                  <v91:UniqueID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               </v91:FinancialTransactionIDList>
+               <v91:Exchange>
+                  <v91:DebitAmount Amount="?" CurrencyCode="?"/>
+                  <v91:CreditAmount Amount="?" CurrencyCode="?"/>
+               </v91:Exchange>
+               <v91:ApprovalCode></v91:ApprovalCode>
+               <v91:ApprovalStatus></v91:ApprovalStatus>
+               <v91:GroupByCount></v91:GroupByCount>
+            </v91:Posting>
+         </v9:Postings>
+         <v9:TrxCodesInfo>
+            <v91:TrxInfo TrxCode="?" HotelCode="?" PrintTrxReceipt="?">
+               <v91:Description></v91:Description>
+               <v91:TrxGroup></v91:TrxGroup>
+               <v91:TrxSubGroup></v91:TrxSubGroup>
+               <v91:UniversalProductCode></v91:UniversalProductCode>
+               <v91:Articles>
+                  <v91:Article HotelCode="?" ArticleCode="?" Inactive="?" OrderSequence="?">
+                     <v91:Description></v91:Description>
+                     <v91:TransactionCode></v91:TransactionCode>
+                     <v91:Price Amount="?" CurrencyCode="?"/>
+                     <v91:PostIt AvailableForPostIt="?" Color="?"/>
+                     <v91:UniversalProductCode></v91:UniversalProductCode>
+                  </v91:Article>
+               </v91:Articles>
+            </v91:TrxInfo>
+         </v9:TrxCodesInfo>
+      </v9:PostBillingChargesRS>
+   </soapenv:Body>
+</soapenv:Envelope>

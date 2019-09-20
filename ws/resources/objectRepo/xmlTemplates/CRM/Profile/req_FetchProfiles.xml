@@ -1,0 +1,95 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/crm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchProfilesRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:Criteria ExcludeInactive="?" HotelCode="?" IncludePurgeProfiles="?" MarkAsRecentlyAccessed="?" MaxFetchCount="?" PageNumber="?" SearchType="?" SummaryInfo="?">
+            <v91:SuperSearch Contextual="?">
+               <v91:SearchString/>
+            </v91:SuperSearch>
+            <v91:IncludeAnonymized/>
+            <v91:ProfileTypeList>
+               <v91:ProfileType/>
+            </v91:ProfileTypeList>
+            <v91:ProfileIDList>
+               <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            </v91:ProfileIDList>
+            <v91:ProfileNames>
+               <v91:Name/>
+               <v91:GivenName/>
+            </v91:ProfileNames>
+            <v91:IncognitoNames>
+               <v91:Name/>
+               <v91:GivenName/>
+            </v91:IncognitoNames>
+            <v91:Address ExcludeNoCity="?">
+               <v91:CityName/>
+               <v91:PostalCode/>
+               <v91:State/>
+               <v91:CountryName Code="?"/>
+               <v91:StreetAddress/>
+            </v91:Address>
+            <v91:Keyword/>
+            <v91:Communication/>
+            <v91:Membership/>
+            <v91:MembershipType/>
+            <v91:MembershipLevel/>
+            <v91:PlayerID/>
+            <v91:ARNumber/>
+            <v91:TaxID/>
+            <v91:BusinessSegments>
+               <v91:BusinessSegment/>
+            </v91:BusinessSegments>
+            <v91:AdditionalSearchCriterias CorporateProfiles="?" ExcludeIncompleteProfiles="?" NegotiatedRates="?">
+               <v91:RelatedToProfileID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            </v91:AdditionalSearchCriterias>
+            <v91:ExcludedProfiles ProtectedProfiles="?">
+               <v91:UniqueID ID="?" IDExtension="?" ID_Context="?" Instance="?" Type="?" URL="?"/>
+            </v91:ExcludedProfiles>
+            <v91:OrderByList>
+               <v91:OrderBy AttributeName="?" OrderType="?"/>
+            </v91:OrderByList>
+            <v91:IdentificationNo/>
+            <v91:FetchInstructions>
+               <v91:FetchInstruction MaxFetchCount="?">
+                  <v91:Instruction/>
+                  <v91:AdditionalCriteria>
+                     <v91:Parameters>
+                        <v91:InstructionParameter>
+                           <v91:InstructionParameterType/>
+                           <v91:Value/>
+                        </v91:InstructionParameter>
+                     </v91:Parameters>
+                  </v91:AdditionalCriteria>
+               </v91:FetchInstruction>
+            </v91:FetchInstructions>
+            <v91:AllowedActions>
+               <v91:AllowedAction/>
+            </v91:AllowedActions>
+            <v91:MinimunStays/>
+            <v91:ExcludeBlacklist/>
+            <v91:LastStayBefore/>
+            <v91:VIPCodes>
+               <v91:Code/>
+            </v91:VIPCodes>
+            <v91:PredefinedFilter>
+               <v91:FilterID/>
+               <v91:FilterCode/>
+            </v91:PredefinedFilter>
+         </v9:Criteria>
+      </v9:FetchProfilesRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

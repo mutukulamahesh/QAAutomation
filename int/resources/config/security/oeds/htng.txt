@@ -1,0 +1,17 @@
+<soapenv:Header>
+      <wsa:Action>http://htng.org/PWSWG/2006/08/SingleGuestItinerary#Subscription</wsa:Action>
+      <wsa:From>
+         <wsa:Address>{WS_FROMADDRESS}</wsa:Address>
+      </wsa:From>
+      <wsa:MessageID>urn:uuid:{WS_MSGID}</wsa:MessageID>
+      <wsa:ReplyTo>
+         <wsa:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:Address>
+      </wsa:ReplyTo>
+      <wsa:To>http://www.micros.com/HTNGActivity/</wsa:To>
+      <wsse:Security soapenv:mustUnderstand="1">
+         <wsu:Timestamp wsu:Id="Timestamp-5e7d85b2-d3e1-4645-966f-a0bda8bd7c89">
+            <wsu:Created>{WS_GMT_TIMESTAMP}</wsu:Created>
+            <wsu:Expires>2030-08-31T00:00:00Z</wsu:Expires>
+         </wsu:Timestamp>
+      </wsse:Security>
+</soapenv:Header>

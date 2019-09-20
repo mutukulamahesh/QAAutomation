@@ -1,0 +1,49 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:CreateNoteTypesRQ CorrelationID="?" EchoToken="?" Enforce="?" RequestCount="?" TimeStamp="?" Version="?">
+         <v91:OperaContext>
+            <v91:UserLanguage/>
+            <v91:CROCode/>
+            <v91:HotelCode/>
+            <v91:Language/>
+            <v91:RunningApplication/>
+            <v91:TerminalId/>
+            <v91:LogLevel/>
+            <v91:ExternalSystem/>
+            <v91:Override/>
+            <v91:TargetExternalSystem/>
+            <v91:UseLocal/>
+            <v91:ExternalData/>
+         </v91:OperaContext>
+         <v9:NoteTypes>
+            <v91:NoteType>
+               <v91:NoteGroup/>
+               <v91:Code/>
+               <v91:Description/>
+               <v91:NotificationAreas>
+                  <v91:Code/>
+               </v91:NotificationAreas>
+               <v91:DisplaySequence/>
+               <v91:Inactive/>
+               <v91:Internal/>
+               <v91:OverrideInternal/>
+               <v91:DefaultNoteType/>
+               <v91:DepartmentNotes/>
+               <v91:GlobalAllowed/>
+               <v91:Departments>
+                  <v91:HotelCodeCode Code="?" HotelCode="?"/>
+               </v91:Departments>
+               <v91:DefaultText/>
+               <v91:DefaultNoteText/>
+               <v91:PropertyDefaultNoteTexts>
+                  <v91:DefaultNoteTextDetail>
+                     <v91:HotelCode/>
+                     <v91:DefaultNoteText/>
+                  </v91:DefaultNoteTextDetail>
+               </v91:PropertyDefaultNoteTexts>
+            </v91:NoteType>
+         </v9:NoteTypes>
+      </v9:CreateNoteTypesRQ>
+   </soapenv:Body>
+</soapenv:Envelope>

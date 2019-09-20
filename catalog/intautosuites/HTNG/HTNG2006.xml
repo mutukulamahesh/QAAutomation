@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Opera Integration Automation Suite for HTNG 2006 Version" verbose="1"
+	allow-return-values="true">
+	<!-- Pass global parameters here -->
+	<parameter name="emailFrom" value="operaInterfacesAutomationExecution_notifier_noreply@oracle.com" />
+	<parameter name="emailTo" value="uday.vangala@oracle.com;santhoshi.basana@oracle.com" />
+	<parameter name="emailCC" value="santhoshi.basana@oracle.com" />
+	<parameter name="smtpHost" value="internal-mail-router.oracle.com" />
+	<parameter name="smtpPort" value="25" />
+	
+	<test name="HTNG 2006 Version" preserve-order="true">
+		<!-- Pass parameters here-->
+		<parameter name="environment" value="LAUNCHPAD_19x" />
+		<parameter name="runOnEntry" value="ES_01" />
+		<parameter name="wsLayer" value="SSD" />	
+		<!--  Possible Values ASP, NONASP, CENTRAL	-->
+		<parameter name="schema" value="ASP"/>
+		<parameter name="version" value="19.x"/>
+		<parameter name="testGroup" value="HTNG 2006 Version"/>
+		<groups>
+			<run>
+			</run>
+		</groups>
+		<packages>
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.htng.v2006.profile" />
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.htng.v2006.activity" />
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.htng.v2006.reservation" />
+			<package name="com.oracle.hgbu.opera.qaauto.ws.testcases.htng.v2006.activitysync" />
+		</packages>
+	</test>
+</suite>
+
+
+

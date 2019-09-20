@@ -1,0 +1,62 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:core="http://webservices.micros.com/og/4.3/Core/" xmlns:name="http://webservices.micros.com/ows/5.1/Name.wsdl" xmlns:com="http://webservices.micros.com/og/4.3/Common/" xmlns:name1="http://webservices.micros.com/og/4.3/Name/">
+   <soapenv:Header>
+      <core:OGHeader transactionID="?" authToken="?" timeStamp="?" primaryLangID="E" channelValidation="true" terminalID="?">
+         <core:Origin entityID="?" organizationID="?" systemType="?"/>
+         <core:Destination entityID="?" organizationID="?" systemType="?"/>
+         <!--Optional:-->
+         <core:Intermediaries>
+            <!--1 or more repetitions:-->
+            <core:EndPoint entityID="?" organizationID="?" systemType="?"/>
+         </core:Intermediaries>
+         <!--Optional:-->
+         <core:Authentication>
+            <core:UserCredentials>
+               <core:UserName>?</core:UserName>
+               <core:UserPassword>?</core:UserPassword>
+               <core:Domain>?</core:Domain>
+               <!--Optional:-->
+               <core:SecurityId>?</core:SecurityId>
+            </core:UserCredentials>
+            <!--Optional:-->
+            <core:Licence>
+               <!--Optional:-->
+               <core:Key>?</core:Key>
+            </core:Licence>
+         </core:Authentication>
+      </core:OGHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <name:FetchPreferenceListResponse>
+         <name:Result resultStatusFlag="?">
+            <!--Optional:-->
+            <com:Text>
+               <!--1 or more repetitions:-->
+               <com:TextElement formatted="?" language="?">?</com:TextElement>
+            </com:Text>
+            <!--Optional:-->
+            <com:IDs>
+               <!--Zero or more repetitions:-->
+               <com:IDPair idType="?" operaId="?" externalId="?"/>
+            </com:IDs>
+            <!--Optional:-->
+            <com:OperaErrorCode>?</com:OperaErrorCode>
+         </name:Result>
+         <!--Optional:-->
+         <name:PreferenceList>
+            <!--Zero or more repetitions:-->
+            <name1:Preference resortCode="?" preferenceType="?" otherPreferenceType="?" preferenceValue="?" insertUser="?" insertDate="?" updateUser="?" updateDate="?" inactiveDate="?">
+               <!--Optional:-->
+               <name1:PreferenceDescription>
+                  <!--You have a CHOICE of the next 3 items at this level-->
+                  <com:Text>
+                     <!--1 or more repetitions:-->
+                     <com:TextElement formatted="?" language="?">?</com:TextElement>
+                  </com:Text>
+                  <com:Image>?</com:Image>
+                  <com:Url>?</com:Url>
+               </name1:PreferenceDescription>
+            </name1:Preference>
+         </name:PreferenceList>
+      </name:FetchPreferenceListResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

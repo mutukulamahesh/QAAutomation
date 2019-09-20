@@ -1,0 +1,404 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/par/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchRatePlanSchedulesRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:RatePlanScheduleList HotelCode="?" RatePlanCode="?" AllRowsFetched="?" TotalRows="?">
+            <v91:RatePlanSchedule>
+               <v91:RatePlanScheduleID URL="?" Type="?" Instance="?" ID_Context="?" ID="?" IDExtension="?"/>
+               <v91:RatePlanScheduleDetail TierID="?" SeasonCode="?" Start="?" End="?" Sunday="?" Monday="?" Tuesday="?" Wednesday="?" Thursday="?" Friday="?" Saturday="?">
+                  <v91:RateAmounts OverrideFloorAmount="?">
+                     <v91:OnePersonRate></v91:OnePersonRate>
+                     <v91:TwoPersonRate></v91:TwoPersonRate>
+                     <v91:ThreePersonRate></v91:ThreePersonRate>
+                     <v91:FourPersonRate></v91:FourPersonRate>
+                     <v91:FivePersonRate></v91:FivePersonRate>
+                     <v91:ExtraPersonRate></v91:ExtraPersonRate>
+                     <v91:ExtraChildRate></v91:ExtraChildRate>
+                     <v91:OneChildRate></v91:OneChildRate>
+                     <v91:TwoChildrenRate></v91:TwoChildrenRate>
+                     <v91:ThreeChildrenRate></v91:ThreeChildrenRate>
+                     <v91:FourChildrenRate></v91:FourChildrenRate>
+                     <v91:RateByAgeBuckets>
+                        <v91:RateByAgeBucket MinimumAge="?" MaximumAge="?">
+                           <v91:RateAmount></v91:RateAmount>
+                        </v91:RateByAgeBucket>
+                     </v91:RateByAgeBuckets>
+                     <v91:MinimumChildrenForFreeStay></v91:MinimumChildrenForFreeStay>
+                     <v91:PointsRequired></v91:PointsRequired>
+                  </v91:RateAmounts>
+                  <v91:AdvancedBaseRateOffset offset="?" FlatOrPercentage="?" ApplyBar="?"/>
+                  <v91:RateAmountBoundaries>
+                     <v91:Minimum>
+                        <v91:OnePersonRate></v91:OnePersonRate>
+                        <v91:TwoPersonRate></v91:TwoPersonRate>
+                     </v91:Minimum>
+                     <v91:Maximum>
+                        <v91:OnePersonRate></v91:OnePersonRate>
+                        <v91:TwoPersonRate></v91:TwoPersonRate>
+                     </v91:Maximum>
+                  </v91:RateAmountBoundaries>
+                  <v91:Classifications>
+                     <v91:MarketCode></v91:MarketCode>
+                     <v91:SourceCode></v91:SourceCode>
+                  </v91:Classifications>
+                  <v91:OccupantThresholdPricing>
+                     <v91:Adults Threshold="?" Amount="?"/>
+                     <v91:Children ExcludeBucket1="?" ExcludeBucket2="?" ExcludeBucket3="?" Threshold="?" Amount="?"/>
+                     <v91:Occupants Threshold="?" Amount="?"/>
+                  </v91:OccupantThresholdPricing>
+                  <v91:AdjustmentDetails>
+                     <v91:AdjustmentDetail AdjustmentCode="?" DeleteAdjustment="?">
+                        <v91:OverriddenAmount></v91:OverriddenAmount>
+                     </v91:AdjustmentDetail>
+                  </v91:AdjustmentDetails>
+                  <v91:RateSchedulePackages>
+                     <v91:Packages>
+                        <v91:Package HotelCode="?" Code="?" Description="?" RatePlanCode="?" adjustOverlappingRange="?" AllRowsFetched="?" TotalRows="?" Quantity="?">
+                           <v91:Header>
+                              <v91:PrimaryDetails>
+                                 <v91:Description></v91:Description>
+                                 <v91:ShortDescription></v91:ShortDescription>
+                                 <v91:ForecastGroup></v91:ForecastGroup>
+                                 <v91:BeginSellDate></v91:BeginSellDate>
+                                 <v91:EndSellDate></v91:EndSellDate>
+                              </v91:PrimaryDetails>
+                              <v91:TransactionDetails>
+                                 <v91:Allowance></v91:Allowance>
+                                 <v91:Currency></v91:Currency>
+                                 <v91:PostingType></v91:PostingType>
+                                 <v91:CalculationRule></v91:CalculationRule>
+                                 <v91:PackagePostingRules>
+                                    <v91:TransactionCode Code="?" Type="?">
+                                       <v91:Description></v91:Description>
+                                    </v91:TransactionCode>
+                                    <v91:OverageCode Code="?" Type="?">
+                                       <v91:Description></v91:Description>
+                                    </v91:OverageCode>
+                                    <v91:ProfitCode Code="?" Type="?">
+                                       <v91:Description></v91:Description>
+                                    </v91:ProfitCode>
+                                    <v91:LossCode Code="?" Type="?">
+                                       <v91:Description></v91:Description>
+                                    </v91:LossCode>
+                                    <v91:AlternateCodesList>
+                                       <v91:AlternateCode Code="?" Type="?">
+                                          <v91:Description></v91:Description>
+                                       </v91:AlternateCode>
+                                    </v91:AlternateCodesList>
+                                 </v91:PackagePostingRules>
+                              </v91:TransactionDetails>
+                              <v91:PostingAttributes>
+                                 <v91:AddToRate></v91:AddToRate>
+                                 <v91:PrintSeparateLine></v91:PrintSeparateLine>
+                                 <v91:SellSeparate></v91:SellSeparate>
+                                 <v91:PostNextDay></v91:PostNextDay>
+                                 <v91:ForecastNextDay></v91:ForecastNextDay>
+                                 <v91:DeliveryTimeRequired></v91:DeliveryTimeRequired>
+                                 <v91:WebBookable></v91:WebBookable>
+                                 <v91:Formula></v91:Formula>
+                                 <v91:FormulaFunctionName></v91:FormulaFunctionName>
+                                 <v91:FormulaFunctionArguments>
+                                    <v91:FunctionArgument>
+                                       <v91:Name></v91:Name>
+                                       <v91:Value></v91:Value>
+                                       <v91:Position></v91:Position>
+                                       <v91:DataType></v91:DataType>
+                                       <v91:Required></v91:Required>
+                                    </v91:FunctionArgument>
+                                 </v91:FormulaFunctionArguments>
+                                 <v91:StartTime></v91:StartTime>
+                                 <v91:EndTime></v91:EndTime>
+                                 <v91:Catering></v91:Catering>
+                                 <v91:PostingRhythm Type="?">
+                                    <v91:EveryXNightsStartingNightY StartOnNightY="?" PostEveryXNights="?"/>
+                                    <v91:CertainNightsOfTheWeek Sunday="?" Monday="?" Tuesday="?" Wednesday="?" Thursday="?" Friday="?" Saturday="?"/>
+                                    <v91:CustomStaySchedule Night1="?" Night2="?" Night3="?" Night4="?" Night5="?" Night6="?" Night7="?" Night8="?" Night9="?" Night10="?" Night11="?" Night12="?" Night13="?" Night14="?"/>
+                                    <v91:CustomNightSchedule Night1="?" Night2="?" Night3="?" Night4="?" Night5="?" Night6="?" Night7="?" Night8="?" Night9="?" Night10="?" Night11="?" Night12="?" Night13="?" Night14="?"/>
+                                 </v91:PostingRhythm>
+                                 <v91:PriceCalculationRule></v91:PriceCalculationRule>
+                                 <v91:Ticket></v91:Ticket>
+                                 <v91:InventoryItems>
+                                    <v91:InventoryItem ItemId="?">
+                                       <v91:ArticleNumber></v91:ArticleNumber>
+                                       <v91:Description></v91:Description>
+                                       <v91:Quantity></v91:Quantity>
+                                    </v91:InventoryItem>
+                                 </v91:InventoryItems>
+                              </v91:PostingAttributes>
+                              <v91:UsageDetails UsedInReservations="?" UsedInRates="?" UsedInHouseReservations="?">
+                                 <v91:Source></v91:Source>
+                              </v91:UsageDetails>
+                           </v91:Header>
+                           <v91:Schedules>
+                              <v91:Schedule Start="?" End="?">
+                                 <v91:NewTimeSpan>
+                                    <v91:StartDate></v91:StartDate>
+                                    <v91:EndDate></v91:EndDate>
+                                    <v91:Duration></v91:Duration>
+                                 </v91:NewTimeSpan>
+                                 <v91:SchedulePrices>
+                                    <v91:SchedulePrice>
+                                       <v91:UnitPrice></v91:UnitPrice>
+                                       <v91:UnitAllowance></v91:UnitAllowance>
+                                       <v91:Bucket></v91:Bucket>
+                                    </v91:SchedulePrice>
+                                 </v91:SchedulePrices>
+                                 <v91:RatePlanCode></v91:RatePlanCode>
+                                 <v91:MinNights></v91:MinNights>
+                                 <v91:MaxNights></v91:MaxNights>
+                                 <v91:MinPersons></v91:MinPersons>
+                                 <v91:MaxPersons></v91:MaxPersons>
+                                 <v91:NewMinNights></v91:NewMinNights>
+                                 <v91:NewMaxNights></v91:NewMaxNights>
+                                 <v91:NewMinPersons></v91:NewMinPersons>
+                                 <v91:NewMaxPersons></v91:NewMaxPersons>
+                              </v91:Schedule>
+                           </v91:Schedules>
+                           <v91:ScheduleExceptions>
+                              <v91:ScheduleException Start="?" End="?">
+                                 <v91:NewTimeSpan>
+                                    <v91:StartDate></v91:StartDate>
+                                    <v91:EndDate></v91:EndDate>
+                                    <v91:Duration></v91:Duration>
+                                 </v91:NewTimeSpan>
+                                 <v91:SchedulePrices>
+                                    <v91:SchedulePrice>
+                                       <v91:UnitPrice></v91:UnitPrice>
+                                       <v91:UnitAllowance></v91:UnitAllowance>
+                                       <v91:Bucket></v91:Bucket>
+                                    </v91:SchedulePrice>
+                                 </v91:SchedulePrices>
+                                 <v91:RatePlanCode></v91:RatePlanCode>
+                                 <v91:MinNights></v91:MinNights>
+                                 <v91:MaxNights></v91:MaxNights>
+                                 <v91:MinPersons></v91:MinPersons>
+                                 <v91:MaxPersons></v91:MaxPersons>
+                                 <v91:NewMinNights></v91:NewMinNights>
+                                 <v91:NewMaxNights></v91:NewMaxNights>
+                                 <v91:NewMinPersons></v91:NewMinPersons>
+                                 <v91:NewMaxPersons></v91:NewMaxPersons>
+                              </v91:ScheduleException>
+                           </v91:ScheduleExceptions>
+                        </v91:Package>
+                     </v91:Packages>
+                     <v91:PackageGroups>
+                        <v91:PackageGroup Code="?" SellSeparate="?" WebBookable="?">
+                           <v91:Description></v91:Description>
+                           <v91:ShortDescription></v91:ShortDescription>
+                           <v91:Packages>
+                              <v91:Package HotelCode="?" Code="?" Description="?" RatePlanCode="?" adjustOverlappingRange="?" AllRowsFetched="?" TotalRows="?" Quantity="?">
+                                 <v91:Header>
+                                    <v91:PrimaryDetails>
+                                       <v91:Description></v91:Description>
+                                       <v91:ShortDescription></v91:ShortDescription>
+                                       <v91:ForecastGroup></v91:ForecastGroup>
+                                       <v91:BeginSellDate></v91:BeginSellDate>
+                                       <v91:EndSellDate></v91:EndSellDate>
+                                    </v91:PrimaryDetails>
+                                    <v91:TransactionDetails>
+                                       <v91:Allowance></v91:Allowance>
+                                       <v91:Currency></v91:Currency>
+                                       <v91:PostingType></v91:PostingType>
+                                       <v91:CalculationRule></v91:CalculationRule>
+                                       <v91:PackagePostingRules>
+                                          <v91:TransactionCode Code="?" Type="?">
+                                             <v91:Description></v91:Description>
+                                          </v91:TransactionCode>
+                                          <v91:OverageCode Code="?" Type="?">
+                                             <v91:Description></v91:Description>
+                                          </v91:OverageCode>
+                                          <v91:ProfitCode Code="?" Type="?">
+                                             <v91:Description></v91:Description>
+                                          </v91:ProfitCode>
+                                          <v91:LossCode Code="?" Type="?">
+                                             <v91:Description></v91:Description>
+                                          </v91:LossCode>
+                                          <v91:AlternateCodesList>
+                                             <v91:AlternateCode Code="?" Type="?">
+                                                <v91:Description></v91:Description>
+                                             </v91:AlternateCode>
+                                          </v91:AlternateCodesList>
+                                       </v91:PackagePostingRules>
+                                    </v91:TransactionDetails>
+                                    <v91:PostingAttributes>
+                                       <v91:AddToRate></v91:AddToRate>
+                                       <v91:PrintSeparateLine></v91:PrintSeparateLine>
+                                       <v91:SellSeparate></v91:SellSeparate>
+                                       <v91:PostNextDay></v91:PostNextDay>
+                                       <v91:ForecastNextDay></v91:ForecastNextDay>
+                                       <v91:DeliveryTimeRequired></v91:DeliveryTimeRequired>
+                                       <v91:WebBookable></v91:WebBookable>
+                                       <v91:Formula></v91:Formula>
+                                       <v91:FormulaFunctionName></v91:FormulaFunctionName>
+                                       <v91:FormulaFunctionArguments>
+                                          <v91:FunctionArgument>
+                                             <v91:Name></v91:Name>
+                                             <v91:Value></v91:Value>
+                                             <v91:Position></v91:Position>
+                                             <v91:DataType></v91:DataType>
+                                             <v91:Required></v91:Required>
+                                          </v91:FunctionArgument>
+                                       </v91:FormulaFunctionArguments>
+                                       <v91:StartTime></v91:StartTime>
+                                       <v91:EndTime></v91:EndTime>
+                                       <v91:Catering></v91:Catering>
+                                       <v91:PostingRhythm Type="?">
+                                          <v91:EveryXNightsStartingNightY StartOnNightY="?" PostEveryXNights="?"/>
+                                          <v91:CertainNightsOfTheWeek Sunday="?" Monday="?" Tuesday="?" Wednesday="?" Thursday="?" Friday="?" Saturday="?"/>
+                                          <v91:CustomStaySchedule Night1="?" Night2="?" Night3="?" Night4="?" Night5="?" Night6="?" Night7="?" Night8="?" Night9="?" Night10="?" Night11="?" Night12="?" Night13="?" Night14="?"/>
+                                          <v91:CustomNightSchedule Night1="?" Night2="?" Night3="?" Night4="?" Night5="?" Night6="?" Night7="?" Night8="?" Night9="?" Night10="?" Night11="?" Night12="?" Night13="?" Night14="?"/>
+                                       </v91:PostingRhythm>
+                                       <v91:PriceCalculationRule></v91:PriceCalculationRule>
+                                       <v91:Ticket></v91:Ticket>
+                                       <v91:InventoryItems>
+                                          <v91:InventoryItem ItemId="?">
+                                             <v91:ArticleNumber></v91:ArticleNumber>
+                                             <v91:Description></v91:Description>
+                                             <v91:Quantity></v91:Quantity>
+                                          </v91:InventoryItem>
+                                       </v91:InventoryItems>
+                                    </v91:PostingAttributes>
+                                    <v91:UsageDetails UsedInReservations="?" UsedInRates="?" UsedInHouseReservations="?">
+                                       <v91:Source></v91:Source>
+                                    </v91:UsageDetails>
+                                 </v91:Header>
+                                 <v91:Schedules>
+                                    <v91:Schedule Start="?" End="?">
+                                       <v91:NewTimeSpan>
+                                          <v91:StartDate></v91:StartDate>
+                                          <v91:EndDate></v91:EndDate>
+                                          <v91:Duration></v91:Duration>
+                                       </v91:NewTimeSpan>
+                                       <v91:SchedulePrices>
+                                          <v91:SchedulePrice>
+                                             <v91:UnitPrice></v91:UnitPrice>
+                                             <v91:UnitAllowance></v91:UnitAllowance>
+                                             <v91:Bucket></v91:Bucket>
+                                          </v91:SchedulePrice>
+                                       </v91:SchedulePrices>
+                                       <v91:RatePlanCode></v91:RatePlanCode>
+                                       <v91:MinNights></v91:MinNights>
+                                       <v91:MaxNights></v91:MaxNights>
+                                       <v91:MinPersons></v91:MinPersons>
+                                       <v91:MaxPersons></v91:MaxPersons>
+                                       <v91:NewMinNights></v91:NewMinNights>
+                                       <v91:NewMaxNights></v91:NewMaxNights>
+                                       <v91:NewMinPersons></v91:NewMinPersons>
+                                       <v91:NewMaxPersons></v91:NewMaxPersons>
+                                    </v91:Schedule>
+                                 </v91:Schedules>
+                                 <v91:ScheduleExceptions>
+                                    <v91:ScheduleException Start="?" End="?">
+                                       <v91:NewTimeSpan>
+                                          <v91:StartDate></v91:StartDate>
+                                          <v91:EndDate></v91:EndDate>
+                                          <v91:Duration></v91:Duration>
+                                       </v91:NewTimeSpan>
+                                       <v91:SchedulePrices>
+                                          <v91:SchedulePrice>
+                                             <v91:UnitPrice></v91:UnitPrice>
+                                             <v91:UnitAllowance></v91:UnitAllowance>
+                                             <v91:Bucket></v91:Bucket>
+                                          </v91:SchedulePrice>
+                                       </v91:SchedulePrices>
+                                       <v91:RatePlanCode></v91:RatePlanCode>
+                                       <v91:MinNights></v91:MinNights>
+                                       <v91:MaxNights></v91:MaxNights>
+                                       <v91:MinPersons></v91:MinPersons>
+                                       <v91:MaxPersons></v91:MaxPersons>
+                                       <v91:NewMinNights></v91:NewMinNights>
+                                       <v91:NewMaxNights></v91:NewMaxNights>
+                                       <v91:NewMinPersons></v91:NewMinPersons>
+                                       <v91:NewMaxPersons></v91:NewMaxPersons>
+                                    </v91:ScheduleException>
+                                 </v91:ScheduleExceptions>
+                              </v91:Package>
+                           </v91:Packages>
+                        </v91:PackageGroup>
+                     </v91:PackageGroups>
+                  </v91:RateSchedulePackages>
+                  <v91:RoomTypeList>
+                     <v91:RoomType></v91:RoomType>
+                  </v91:RoomTypeList>
+               </v91:RatePlanScheduleDetail>
+            </v91:RatePlanSchedule>
+         </v9:RatePlanScheduleList>
+         <v9:RatePlanMasterInfo HotelCode="?" RatePlanCode="?" Tiered="?" Daily="?" CurrencyCode="?" BARRate="?" Complimentary="?" HouseUse="?" FloorAmount="?">
+            <v91:PrimaryDetails>
+               <v91:Description>
+                  <v91:DefaultText></v91:DefaultText>
+                  <v91:TranslatedTexts>
+                     <v91:Text Lang="?"></v91:Text>
+                  </v91:TranslatedTexts>
+               </v91:Description>
+               <v91:StartSellDate></v91:StartSellDate>
+               <v91:EndSellDate></v91:EndSellDate>
+               <v91:SellSequence></v91:SellSequence>
+               <v91:PrivilegedRate></v91:PrivilegedRate>
+               <v91:PrivilegedRateRestriction></v91:PrivilegedRateRestriction>
+               <v91:BaseType></v91:BaseType>
+               <v91:LockStatus></v91:LockStatus>
+            </v91:PrimaryDetails>
+            <v91:RoomTypeList>
+               <v91:RoomType>
+                  <v91:Code></v91:Code>
+                  <v91:Description></v91:Description>
+                  <v91:Pseudo></v91:Pseudo>
+                  <v91:RateFloor></v91:RateFloor>
+               </v91:RoomType>
+            </v91:RoomTypeList>
+            <v91:RatePlanBasedOnRates>
+               <v91:RatePlanBasedOnRate BasedOnRatePlanType="?">
+                  <v91:BaseRate>
+                     <v91:BasedOnRatePlan></v91:BasedOnRatePlan>
+                     <v91:BaseAmount></v91:BaseAmount>
+                     <v91:FlatOrPercentage></v91:FlatOrPercentage>
+                     <v91:Rounding></v91:Rounding>
+                     <v91:DependentRatePlans>
+                        <v91:RatePlanCode></v91:RatePlanCode>
+                     </v91:DependentRatePlans>
+                  </v91:BaseRate>
+                  <v91:DynamicBaseRate>
+                     <v91:DynamicBasedOnRatePlan></v91:DynamicBasedOnRatePlan>
+                     <v91:DynamicBaseAmount></v91:DynamicBaseAmount>
+                     <v91:FlatOrPercentage></v91:FlatOrPercentage>
+                     <v91:Rounding></v91:Rounding>
+                     <v91:CompareWithRateSchedules></v91:CompareWithRateSchedules>
+                     <v91:DependentRatePlans>
+                        <v91:RatePlanCode></v91:RatePlanCode>
+                     </v91:DependentRatePlans>
+                  </v91:DynamicBaseRate>
+                  <v91:BARBasedRate>
+                     <v91:BARBaseAmount></v91:BARBaseAmount>
+                     <v91:FlatOrPercentage></v91:FlatOrPercentage>
+                     <v91:Rounding></v91:Rounding>
+                     <v91:CompareWithRateSchedules></v91:CompareWithRateSchedules>
+                     <v91:DefaultToHighestBar></v91:DefaultToHighestBar>
+                  </v91:BARBasedRate>
+                  <v91:AdvancedDynamicBaseRate>
+                     <v91:BasedOnRatePlan></v91:BasedOnRatePlan>
+                     <v91:Rounding></v91:Rounding>
+                     <v91:CompareWithRateSchedules></v91:CompareWithRateSchedules>
+                     <v91:AdvancedDependentRatePlans>
+                        <v91:RatePlanCode></v91:RatePlanCode>
+                     </v91:AdvancedDependentRatePlans>
+                  </v91:AdvancedDynamicBaseRate>
+               </v91:RatePlanBasedOnRate>
+            </v91:RatePlanBasedOnRates>
+            <v91:RateTiers>
+               <v91:RateTier TierID="?">
+                  <v91:StartLOS></v91:StartLOS>
+                  <v91:EndLOS></v91:EndLOS>
+               </v91:RateTier>
+            </v91:RateTiers>
+         </v9:RatePlanMasterInfo>
+      </v9:FetchRatePlanSchedulesRS>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,54 @@
+<soapenv:Envelope xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"  xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://htng.org/PWS/2008B/SingleGuestItinerary/Activity/Types" xmlns:typ1="http://htng.org/PWS/2008B/SingleGuestItinerary/Common/Types">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:CreateActivityRequest>
+         <typ:ResortId></typ:ResortId>
+         <typ:ReservationHeader>
+            <typ:ReservationID source="?"></typ:ReservationID>
+            <typ:TimeSpan>
+               <typ1:Start></typ1:Start>
+               <typ1:End></typ1:End>
+            </typ:TimeSpan>
+         </typ:ReservationHeader>
+         <typ:ProfileID source="?"></typ:ProfileID>
+         <typ:Activities>
+            <typ:Activity status="?">
+               <typ:ActivityIDs>
+                  <typ1:UniqueID source="?"></typ1:UniqueID>
+               </typ:ActivityIDs>
+               <typ:ActivityType></typ:ActivityType>
+               <typ:Location></typ:Location>
+               <typ:Name language="?"></typ:Name>
+               <typ:NumberOfPersons></typ:NumberOfPersons>
+               <typ:TimeSpan>
+                  <typ1:Start></typ1:Start>
+                  <typ1:End></typ1:End>
+               </typ:TimeSpan>
+               <typ:Duration>
+                  <typ1:Start></typ1:Start>
+                  <typ1:End></typ1:End>
+               </typ:Duration>
+               <typ:Description language="?"></typ:Description>
+               <typ:Note language="?"></typ:Note>
+               <typ:GroupCode></typ:GroupCode>
+               <typ:Amount currencyCode="?"></typ:Amount>
+               <typ:DepositRequired currencyCode="?" collectedBy="?"></typ:DepositRequired>
+               <typ:InactiveDate></typ:InactiveDate>
+               <typ:Participants>
+                  <typ:Participant nameOrdered="?" familiarName="?">
+                     <typ1:NameTitle></typ1:NameTitle>
+                     <typ1:FirstName></typ1:FirstName>
+                     <typ1:MiddleName></typ1:MiddleName>
+                     <typ1:LastName></typ1:LastName>
+                     <typ1:NameSuffix></typ1:NameSuffix>
+                  </typ:Participant>
+               </typ:Participants>
+               <typ:URLLink></typ:URLLink>
+               <typ:Extensions>
+                  <typ:ActivitySpecific></typ:ActivitySpecific>
+               </typ:Extensions>
+            </typ:Activity>
+         </typ:Activities>
+      </typ:CreateActivityRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

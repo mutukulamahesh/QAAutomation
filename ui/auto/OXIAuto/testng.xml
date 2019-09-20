@@ -1,0 +1,12 @@
+<suite name="OXI Validations">
+<test name="OXI WL and OSB validations">
+<classes>
+<class name="com.oracle.hgbu.opera.qaauto.ui.OXI.testcases.OXIAuto.Exchange">
+	<groups>
+	<include name="BAT">
+	</include>
+	</groups>
+</class>
+</classes>
+</test>
+</suite>

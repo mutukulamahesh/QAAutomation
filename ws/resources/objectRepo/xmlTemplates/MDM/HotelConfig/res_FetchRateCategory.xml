@@ -1,0 +1,27 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://micros/opera/ws/mdm/v9_00" xmlns:v91="http://micros/opera/ws/common/v9_00">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:FetchRateCategoryRS RetryAllowed="?" EnforceAllowed="?" UseLocalAllowed="?" EchoToken="?" TimeStamp="?" Version="?" CorrelationID="?">
+         <v91:Success/>
+         <v91:Warnings>
+            <v91:Warning RPH="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Warning>
+         </v91:Warnings>
+         <v91:Errors>
+            <v91:Error NodeList="?" ShortText="?" Code="?" DocURL="?" Status="?" Tag="?" RecordID="?" Type="?" Language="?"></v91:Error>
+         </v91:Errors>
+         <v9:HotelRateCategories TotalPages="?" PageNumber="?" MaxFetchCount="?" AllRowsFetched="?" TotalRows="?">
+            <v9:RateCategories HotelCode="?">
+               <v91:RateCategory RateCategory="?">
+                  <v91:RateCategoryDetails>
+                     <v91:BeginDate></v91:BeginDate>
+                     <v91:EndDate></v91:EndDate>
+                     <v91:Description></v91:Description>
+                     <v91:RateClass></v91:RateClass>
+                     <v91:SellSequence></v91:SellSequence>
+                  </v91:RateCategoryDetails>
+               </v91:RateCategory>
+            </v9:RateCategories>
+         </v9:HotelRateCategories>
+      </v9:FetchRateCategoryRS>
+   </soapenv:Body>
+</soapenv:Envelope>
